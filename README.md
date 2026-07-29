@@ -5,14 +5,6 @@
 [![Validate](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/validate.yml/badge.svg)](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/validate.yml)
 [![Collect and report](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/collect.yml/badge.svg)](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/collect.yml)
 
-## Repository description
-
-```text
-Independent, evidence-backed monitor for the Decentralized Trust Graph ecosystem. Tracks ToIP DTG task-force and OpenVTC repositories, preserves auditable change records, classifies material developments, detects cross-repository implications, and publishes daily and weekly portfolio intelligence reports through GitHub Pages. For sound review.
-```
-
-The description above is exactly **345 characters**, including spaces and punctuation.
-
 ## Purpose
 
 GitHub already records repository activity. This project adds the missing portfolio layer: it collects activity across related ToIP and OpenVTC repositories, normalises it into an auditable event model, applies transparent significance rules, and produces reports that explain what changed, why it may matter, and where cross-repository review may be required.
