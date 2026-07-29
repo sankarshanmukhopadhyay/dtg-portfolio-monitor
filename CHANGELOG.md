@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.3.0] - 2026-07-29
+
+### Fixed
+
+- Load the root Jekyll configuration when building the `docs/` source tree.
+- Attach the `pages` step identifier to `actions/configure-pages`, where `base_path` is produced.
+- Replace public links to source `.md` files with stable, base-path-aware clean URLs.
+- Configure the actual GitHub Pages owner and repository rather than placeholder values.
+
+### Added
+
+- Build-time validation for required published routes and leaked `.md` links.
+- Stable routes for repositories, portfolio status, reports, dashboard, methodology, architecture, and operations.
+- Consolidated change units that collapse duplicate commit and pull-request representations.
+- Recurring activity-theme analysis.
+- Generated portfolio dashboard and report index pages.
+- Tests for documentation routes, source links, consolidation, and themes.
+
+### Changed
+
+- Advance package and documentation metadata to v0.3.0.
+- Persist generated dashboard and report-navigation artifacts during scheduled collection.
+
 ## [0.2.0] - 2026-07-29
 
 ### Fixed

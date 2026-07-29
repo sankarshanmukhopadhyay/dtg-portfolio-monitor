@@ -2,8 +2,8 @@
 
 > An independent, evidence-backed observatory for change across the Decentralized Trust Graph ecosystem.
 
-[![Validate](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/validate.yml/badge.svg)](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/validate.yml)
-[![Collect and report](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/collect.yml/badge.svg)](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/collect.yml)
+[![Validate](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor/actions/workflows/validate.yml/badge.svg)](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor/actions/workflows/validate.yml)
+[![Collect and report](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor/actions/workflows/collect.yml/badge.svg)](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor/actions/workflows/collect.yml)
 
 ## Purpose
 
@@ -11,7 +11,7 @@ GitHub already records repository activity. This project adds the missing portfo
 
 This repository is independently maintained and is not an official Trust over IP Foundation or OpenVTC publication.
 
-## What v0.2.0 provides
+## What v0.3.0 provides
 
 - configuration-driven monitoring of 13 repositories;
 - collection of commits, pull requests, issues, releases, and repository metadata;
@@ -21,6 +21,9 @@ This repository is independently maintained and is not an official Trust over IP
 - detection of explicit references to other monitored repositories;
 - portfolio findings for empty, stale, cross-referenced, and incompletely collected repositories;
 - repository-health reporting with configured and observed lifecycle states;
+- consolidated change units that reduce duplicate commit and pull-request reporting;
+- recurring-theme analysis and a compact portfolio dashboard;
+- stable clean GitHub Pages routes with build-time route validation;
 - daily and weekly Markdown reports;
 - machine-readable JSON event and finding stores;
 - scheduled GitHub Actions;
@@ -30,7 +33,7 @@ This repository is independently maintained and is not an official Trust over IP
 ## Start here
 
 1. Create a repository named `dtg-portfolio-monitor`.
-2. Replace `OWNER` in badges and `_config.yml` with your GitHub username.
+2. The GitHub Pages and repository URLs are configured for `sankarshanmukhopadhyay/dtg-portfolio-monitor`.
 3. Commit this payload to the default branch.
 4. Enable **Settings → Pages → Source: GitHub Actions**.
 5. Run **Collect DTG portfolio activity** manually once.
