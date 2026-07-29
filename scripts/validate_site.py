@@ -1,4 +1,5 @@
 from pathlib import Path
+from urllib.parse import urlparse
 import re
 import sys
 
@@ -9,7 +10,6 @@ required = [
     site / "portfolio-status" / "index.html",
     site / "reports" / "index.html",
     site / "dashboard" / "index.html",
-    # Compatibility endpoints for URLs published before clean routes were introduced.
     site / "repositories.md",
     site / "portfolio-status.md",
 ]
@@ -18,27 +18,66 @@ if missing:
     raise SystemExit("Missing required published routes: " + ", ".join(missing))
 
 index = (site / "index.html").read_text(encoding="utf-8", errors="replace")
-if "just-the-docs" not in index.lower():
-    raise SystemExit("Just the Docs theme asset was not detected in the generated homepage")
 
-css_links = re.findall(r'href=["\']([^"\']+\.css[^"\']*)["\']', index)
+# Validate the rendered Just the Docs structure rather than depending on a
+# particular asset filename. Theme releases and custom colour schemes may emit
+# names such as just-the-docs-default.css or just-the-docs-light.css.
+required_layout_markers = (
+    'class="side-bar"',
+    'class="site-header"',
+    'class="main"',
+)
+missing_markers = [marker for marker in required_layout_markers if marker not in index]
+if missing_markers:
+    raise SystemExit(
+        "Generated homepage does not contain the expected Just the Docs layout: "
+        + ", ".join(missing_markers)
+    )
+
+css_links = re.findall(r'href=["\']([^"\']+\.css(?:\?[^"\']*)?)["\']', index)
 if not css_links:
     raise SystemExit("No stylesheet was linked from the generated homepage")
+
+# At least one linked local stylesheet must exist in the built site. Strip the
+# project Pages base path before resolving it against _site.
+local_css = []
+for href in css_links:
+    parsed = urlparse(href)
+    if parsed.scheme or parsed.netloc:
+        continue
+    path = parsed.path
+    marker = "/dtg-portfolio-monitor/"
+    if marker in path:
+        path = path.split(marker, 1)[1]
+    else:
+        path = path.lstrip("/")
+    candidate = site / path
+    if candidate.exists():
+        local_css.append(candidate)
+if not local_css:
+    raise SystemExit(
+        "None of the local stylesheets linked from the homepage exist in the generated site"
+    )
 
 errors = []
 for html in site.rglob("*.html"):
     text = html.read_text(encoding="utf-8", errors="replace")
     for href in re.findall(r'href=["\']([^"\']+)["\']', text):
-        # The two compatibility redirect pages are intentional. Other generated
-        # navigation should never expose Markdown source URLs.
         if href.endswith(".md"):
             errors.append(f"{html}: source Markdown link exposed: {href}")
 if errors:
     raise SystemExit("\n".join(errors))
 
-for legacy, target in ((site / "repositories.md", "/repositories/"), (site / "portfolio-status.md", "/portfolio-status/")):
+for legacy, target in (
+    (site / "repositories.md", "/repositories/"),
+    (site / "portfolio-status.md", "/portfolio-status/"),
+):
     text = legacy.read_text(encoding="utf-8", errors="replace")
     if target not in text:
         raise SystemExit(f"Legacy route {legacy} does not redirect to {target}")
 
-print(f"Validated {len(list(site.rglob('*.html')))} HTML files, Just the Docs assets, clean routes, and legacy redirects.")
+print(
+    f"Validated {len(list(site.rglob('*.html')))} HTML files, "
+    f"Just the Docs layout, {len(local_css)} local stylesheet(s), clean routes, "
+    "and legacy redirects."
+)

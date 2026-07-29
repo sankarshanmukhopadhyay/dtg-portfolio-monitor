@@ -38,7 +38,7 @@ jobs:
           --destination _site
           --config _config.yml
           --baseurl "${{ steps.pages.outputs.base_path }}"
-      - name: Validate theme and published routes
+      - name: Validate Just the Docs layout and published routes
         run: python scripts/validate_site.py _site
       - uses: actions/upload-pages-artifact@v3
         with:
