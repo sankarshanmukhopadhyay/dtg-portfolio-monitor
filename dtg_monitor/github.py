@@ -11,6 +11,13 @@ from urllib.error import HTTPError
 
 API_ROOT = "https://api.github.com"
 
+class GitHubAPIError(RuntimeError):
+    def __init__(self, status: int, url: str, body: str):
+        self.status = status
+        self.url = url
+        self.body = body
+        super().__init__(f"GitHub API {status} for {url}: {body[:500]}")
+
 @dataclass
 class GitHubClient:
     token: str | None = None
@@ -25,7 +32,7 @@ class GitHubClient:
         url = f"{API_ROOT}{path}{query}"
         headers = {
             "Accept": "application/vnd.github+json",
-            "User-Agent": "dtg-portfolio-monitor/0.1.0",
+            "User-Agent": "dtg-portfolio-monitor/0.2.0",
             "X-GitHub-Api-Version": "2022-11-28",
         }
         if self.token:
@@ -37,21 +44,32 @@ class GitHubClient:
                 with urlopen(request, timeout=30) as response:
                     return json.loads(response.read().decode("utf-8"))
             except HTTPError as exc:
+                body = exc.read().decode("utf-8", errors="replace")
                 if exc.code in {403, 429, 500, 502, 503, 504} and attempt + 1 < self.max_retries:
                     retry_after = int(exc.headers.get("Retry-After", "2"))
                     time.sleep(max(retry_after, 2 ** attempt))
                     continue
-                body = exc.read().decode("utf-8", errors="replace")
-                raise RuntimeError(f"GitHub API {exc.code} for {url}: {body[:500]}") from exc
+                raise GitHubAPIError(exc.code, url, body) from exc
         raise RuntimeError(f"GitHub API request failed after retries: {url}")
 
-    def paged(self, path: str, params: dict[str, Any] | None = None, max_pages: int = 10) -> list[Any]:
+    def paged(
+        self,
+        path: str,
+        params: dict[str, Any] | None = None,
+        max_pages: int = 10,
+        empty_on_status: set[int] | None = None,
+    ) -> list[Any]:
         params = dict(params or {})
         params["per_page"] = 100
         output: list[Any] = []
         for page in range(1, max_pages + 1):
             params["page"] = page
-            batch = self.get(path, params)
+            try:
+                batch = self.get(path, params)
+            except GitHubAPIError as exc:
+                if exc.status in (empty_on_status or set()):
+                    return output
+                raise
             if not isinstance(batch, list):
                 raise RuntimeError(f"Expected list from {path}")
             output.extend(batch)

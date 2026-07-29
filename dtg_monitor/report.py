@@ -15,6 +15,12 @@ def _load_latest_events() -> list[dict[str, Any]]:
         return []
     return json.loads(paths[-1].read_text(encoding="utf-8"))
 
+def _load_latest_findings() -> list[dict[str, Any]]:
+    paths = sorted((ROOT / "data" / "findings").glob("**/*.json"))
+    if not paths:
+        return []
+    return json.loads(paths[-1].read_text(encoding="utf-8"))
+
 def _clean(text: str) -> str:
     return " ".join((text or "").replace("|", "\\|").split())
 
@@ -28,6 +34,8 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
         name = now.strftime("%Y-%m-%d")
         title = "Daily DTG Portfolio Change Digest"
 
+    findings = _load_latest_findings()
+    snapshots = {e["repository"]: e for e in events if e["event_type"] == "repository_snapshot"}
     activity = [e for e in events if e["event_type"] != "repository_snapshot"]
     activity.sort(key=lambda e: (ORDER.get(e.get("significance", "low"), 9), e.get("updated_at", "")))
     counts = Counter(e.get("significance", "low") for e in activity)

@@ -2,8 +2,8 @@
 
 > An independent, evidence-backed observatory for change across the Decentralized Trust Graph ecosystem.
 
-[![Validate](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor/actions/workflows/validate.yml/badge.svg)](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor/actions/workflows/validate.yml)
-[![Collect and report](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor/actions/workflows/collect.yml/badge.svg)](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor/actions/workflows/collect.yml)
+[![Validate](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/validate.yml/badge.svg)](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/validate.yml)
+[![Collect and report](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/collect.yml/badge.svg)](https://github.com/OWNER/dtg-portfolio-monitor/actions/workflows/collect.yml)
 
 ## Repository description
 
@@ -19,13 +19,16 @@ GitHub already records repository activity. This project adds the missing portfo
 
 This repository is independently maintained and is not an official Trust over IP Foundation or OpenVTC publication.
 
-## What v0.1.0 provides
+## What v0.2.0 provides
 
 - configuration-driven monitoring of 13 repositories;
 - collection of commits, pull requests, issues, releases, and repository metadata;
 - incremental checkpoints to avoid repeatedly reporting old activity;
+- resilient per-stream collection so empty repositories and isolated API failures do not abort the portfolio run;
 - deterministic change-significance scoring;
 - detection of explicit references to other monitored repositories;
+- portfolio findings for empty, stale, cross-referenced, and incompletely collected repositories;
+- repository-health reporting with configured and observed lifecycle states;
 - daily and weekly Markdown reports;
 - machine-readable JSON event and finding stores;
 - scheduled GitHub Actions;

@@ -62,7 +62,8 @@ repositories:
   - schemas/**
   - '**/*spec*.md'
   - .github/workflows/**
-  notes: ''
+  notes: Empty transitional repository retained as lifecycle evidence; HTX is the
+    active successor workstream.
 - repo: trustoverip/dtgwg-general
   organisation: toip
   workstream: coordination

@@ -1,11 +1,11 @@
 title: DTG Portfolio Monitor
 description: Evidence-backed monitoring across the Decentralized Trust Graph ecosystem
 theme: just-the-docs
-url: https://sankarshanmukhopadhyay.github.io
+url: https://OWNER.github.io
 baseurl: /dtg-portfolio-monitor
-repository: sankarshanmukhopadhyay/dtg-portfolio-monitor
+repository: OWNER/dtg-portfolio-monitor
 aux_links:
-  Repository: https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor
+  Repository: https://github.com/OWNER/dtg-portfolio-monitor
 search_enabled: true
 heading_anchors: true
 color_scheme: light
