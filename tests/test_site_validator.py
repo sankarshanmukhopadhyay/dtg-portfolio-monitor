@@ -18,7 +18,7 @@ class SiteValidatorTests(unittest.TestCase):
         css = site / "assets" / "css" / "just-the-docs-light.css"
         css.parent.mkdir(parents=True, exist_ok=True)
         css.write_text(".side-bar{display:block}", encoding="utf-8")
-        classes = '<div class="side-bar"></div><header class="site-header"></header><main class="main"></main>' if themed else "<main></main>"
+        classes = '<div class="site-shell side-bar"></div><header class="site-header responsive-header"></header><main class="main main-content-wrap"></main>' if themed else "<main></main>"
         (site / "index.html").write_text(
             f'<html><head><link rel="stylesheet" href="/dtg-portfolio-monitor/assets/css/just-the-docs-light.css"></head><body>{classes}</body></html>',
             encoding="utf-8",

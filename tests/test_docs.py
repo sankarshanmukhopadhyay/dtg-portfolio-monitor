@@ -1,4 +1,5 @@
 import unittest
+import yaml
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,6 +43,23 @@ class DocumentationTests(unittest.TestCase):
         gemfile = (ROOT / "Gemfile").read_text(encoding="utf-8")
         self.assertIn("theme: just-the-docs", config)
         self.assertIn('gem "just-the-docs"', gemfile)
+
+    def test_just_the_docs_default_layout_is_configured(self):
+        config = yaml.safe_load((ROOT / "_config.yml").read_text(encoding="utf-8"))
+        defaults = config.get("defaults", [])
+        self.assertTrue(
+            any(
+                item.get("scope", {}).get("type") == "pages"
+                and item.get("values", {}).get("layout") == "default"
+                for item in defaults
+            ),
+            "Normal documentation pages must receive the Just the Docs default layout",
+        )
+
+    def test_legacy_redirects_override_default_layout(self):
+        for name in ("legacy-repositories.md", "legacy-portfolio-status.md"):
+            text = (ROOT / "docs" / name).read_text(encoding="utf-8")
+            self.assertRegex(text, r"(?m)^layout:\s*null\s*$")
 
 if __name__ == "__main__":
     unittest.main()

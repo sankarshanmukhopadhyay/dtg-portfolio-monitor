@@ -20,18 +20,21 @@ if missing:
 index = (site / "index.html").read_text(encoding="utf-8", errors="replace")
 
 # Validate the rendered Just the Docs structure rather than depending on a
-# particular asset filename. Theme releases and custom colour schemes may emit
-# names such as just-the-docs-default.css or just-the-docs-light.css.
-required_layout_markers = (
-    'class="side-bar"',
-    'class="site-header"',
-    'class="main"',
-)
-missing_markers = [marker for marker in required_layout_markers if marker not in index]
-if missing_markers:
+# particular asset filename or exact class-attribute ordering. Theme releases
+# may add extra class tokens while retaining the same layout contract.
+class_attributes = re.findall(r'class=["\']([^"\']+)["\']', index)
+class_tokens = {
+    token
+    for attribute in class_attributes
+    for token in attribute.split()
+}
+required_layout_classes = {"side-bar", "site-header", "main"}
+missing_classes = sorted(required_layout_classes - class_tokens)
+if missing_classes:
     raise SystemExit(
-        "Generated homepage does not contain the expected Just the Docs layout: "
-        + ", ".join(missing_markers)
+        "Generated homepage does not contain the expected Just the Docs layout classes: "
+        + ", ".join(missing_classes)
+        + ". Ensure normal pages receive layout: default."
     )
 
 css_links = re.findall(r'href=["\']([^"\']+\.css(?:\?[^"\']*)?)["\']', index)
