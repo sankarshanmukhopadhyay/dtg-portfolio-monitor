@@ -4,11 +4,27 @@ theme: just-the-docs
 url: https://sankarshanmukhopadhyay.github.io
 baseurl: /dtg-portfolio-monitor
 repository: sankarshanmukhopadhyay/dtg-portfolio-monitor
+
 aux_links:
   Repository: https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor
+aux_links_new_tab: true
+
 search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
 heading_anchors: true
 color_scheme: light
 permalink: pretty
+back_to_top: true
+back_to_top_text: Back to top
+footer_content: Independently maintained portfolio monitor. Not an official Trust over IP Foundation or OpenVTC publication.
+
 exclude:
   - README.md

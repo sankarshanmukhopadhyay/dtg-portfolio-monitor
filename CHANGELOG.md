@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.2] - 2026-07-29
+
+### Fixed
+
+- Apply the Just the Docs gem theme explicitly during the GitHub Actions Jekyll build.
+- Preserve the previously published `/repositories.md` and `/portfolio-status.md` URLs as compatibility redirects.
+- Validate clean routes, legacy routes, and Just the Docs theme assets before deployment.
+- Complete the Just the Docs configuration for search, navigation, footer, and back-to-top behaviour.
+
 ## [0.3.1] - 2026-07-29
 
 ### Fixed
