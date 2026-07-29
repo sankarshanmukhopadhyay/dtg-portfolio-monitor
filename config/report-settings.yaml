@@ -1,0 +1,8 @@
+version: 1
+title: DTG Portfolio Change Report
+timezone: Asia/Kolkata
+daily_lookback_days: 1
+weekly_lookback_days: 7
+stale_after_days: 90
+include_low_significance: true
+maximum_items_per_repository: 50

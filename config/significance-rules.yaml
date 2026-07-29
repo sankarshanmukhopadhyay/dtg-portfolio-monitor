@@ -1,0 +1,77 @@
+version: 1
+thresholds:
+  critical: 80
+  high: 55
+  medium: 25
+  low: 0
+weights:
+  critical: 20
+  high: 12
+  medium: 6
+  low: 0
+rules:
+- id: normative-language
+  description: Normative requirement language changed
+  event_types:
+  - commit
+  - pull_request
+  terms:
+  - MUST
+  - MUST NOT
+  - SHALL
+  - REQUIRED
+  score: 25
+- id: authority-semantics
+  description: Authority, delegation, approval, or revocation semantics
+  terms:
+  - authority
+  - delegation
+  - delegate
+  - revocation
+  - revoke
+  - approval
+  - approver
+  - permission
+  score: 25
+- id: interoperability
+  description: Interoperability, canonicalisation, conformance, or protocol behaviour
+  terms:
+  - interoperability
+  - canonicalization
+  - canonicalisation
+  - conformance
+  - protocol
+  - schema
+  - breaking
+  score: 25
+- id: security-privacy
+  description: Security, privacy, threat, or vulnerability relevance
+  terms:
+  - security
+  - privacy
+  - threat
+  - vulnerability
+  - attack
+  - credential leak
+  score: 30
+- id: implementation-evidence
+  description: Implementation or production evidence
+  terms:
+  - implementation feedback
+  - production
+  - deployed
+  - reference implementation
+  score: 15
+- id: release
+  description: Published release or tag
+  event_types:
+  - release
+  score: 20
+- id: documentation-only
+  description: Likely editorial or documentation-only change
+  terms:
+  - typo
+  - formatting
+  - docs only
+  - documentation only
+  score: -10
