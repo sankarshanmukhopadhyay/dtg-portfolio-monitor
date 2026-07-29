@@ -1,3 +1,12 @@
+## Unreleased
+
+### Changed
+
+- Redesign the portfolio-status report around a synthesis-first information architecture.
+- Replace repeated material, repository, and cross-workstream renderings with one canonical filterable event register.
+- Add explicit breaking-change callouts, leading engineering threads, compact signal tags, significance-band guidance, and a collapsed inactive-repository summary.
+- Explain consolidated commit/PR evidence and signal abbreviations in the methodology.
+
 # Changelog
 
 ## [0.3.2] - 2026-07-29
