@@ -1,35 +1,5 @@
 [
   {
-    "finding_id": "751c346fb3547371a4c9",
-    "kind": "material_cross_reference",
-    "severity": "critical",
-    "repository": "OpenVTC/openvtc",
-    "title": "chore(deps): take vta-sdk 0.19.19 for the canonical spec/vtc join types",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/openvtc/pull/172"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "review_status": "needs-review"
-  },
-  {
-    "finding_id": "f6eebcb541134cdc346a",
-    "kind": "material_cross_reference",
-    "severity": "critical",
-    "repository": "OpenVTC/openvtc",
-    "title": "fix: route canonical spec/vtc Trust Task types to the OpenVTC handler",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/openvtc/pull/171"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "review_status": "needs-review"
-  },
-  {
     "finding_id": "b9228db765842f6f0e0e",
     "kind": "material_cross_reference",
     "severity": "critical",
@@ -362,7 +332,7 @@
     "review_status": "needs-review"
   },
   {
-    "finding_id": "3ab5d12d62fae983ad48",
+    "finding_id": "add1ca2875961e63c94c",
     "kind": "material_cross_reference",
     "severity": "high",
     "repository": "OpenVTC/verifiable-trust-infrastructure",
@@ -494,36 +464,6 @@
     ],
     "related_repositories": [
       "trustoverip/dtgwg-trust-tasks-tf"
-    ],
-    "review_status": "needs-review"
-  },
-  {
-    "finding_id": "6e5dc38e3c72cadc056e",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "feat(vtc): phase 4 — repoint the join-requests ceremony to spec/vtc",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/733"
-    ],
-    "related_repositories": [
-      "OpenVTC/openvtc"
-    ],
-    "review_status": "needs-review"
-  },
-  {
-    "finding_id": "f04aa9144b2106ed74d8",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "feat(vtc): phase 4 — repoint the join-requests ceremony to spec/vtc (#733)",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/a2d2b5c596dbe88f2f4c345e21e2da8aae5a91ef"
-    ],
-    "related_repositories": [
-      "OpenVTC/openvtc"
     ],
     "review_status": "needs-review"
   },
