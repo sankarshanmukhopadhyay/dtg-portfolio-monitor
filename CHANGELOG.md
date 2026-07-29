@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.1] - 2026-07-29
+
+### Fixed
+
+- Replace residual public `.md` links on the documentation homepage with clean, base-path-aware routes.
+- Add or preserve explicit permalinks for repository, portfolio-status, report, and dashboard pages.
+- Align the committed documentation with the route-validation tests introduced in v0.3.0.
+- Restore a green validation workflow before GitHub Pages deployment.
+
 ## [0.3.0] - 2026-07-29
 
 ### Fixed

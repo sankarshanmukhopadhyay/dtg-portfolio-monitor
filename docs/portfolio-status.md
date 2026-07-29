@@ -1,8 +1,8 @@
 ---
 title: Portfolio status
-nav_order: 3
+nav_order: 4
+permalink: /portfolio-status/
 ---
-
 # Weekly DTG Portfolio Change Report
 
 **Generated:** 2026-07-29T01:30:40.540379Z  

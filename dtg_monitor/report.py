@@ -6,6 +6,7 @@ from typing import Any
 import json
 
 from .config import ROOT, repositories
+from .intelligence import consolidate, theme_counts
 
 ORDER = {"critical": 0, "high": 1, "medium": 2, "low": 3}
 
@@ -36,7 +37,9 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
 
     findings = _load_latest_findings()
     snapshots = {e["repository"]: e for e in events if e["event_type"] == "repository_snapshot"}
-    activity = [e for e in events if e["event_type"] != "repository_snapshot"]
+    raw_activity = [e for e in events if e["event_type"] != "repository_snapshot"]
+    activity, collapsed_duplicates = consolidate(raw_activity)
+    themes = theme_counts(activity)
     activity.sort(key=lambda e: (ORDER.get(e.get("significance", "low"), 9), e.get("updated_at", "")))
     counts = Counter(e.get("significance", "low") for e in activity)
     by_repo: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -47,7 +50,8 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
         f"# {title}",
         "",
         f"**Generated:** {now.isoformat().replace('+00:00', 'Z')}  ",
-        f"**Events:** {len(activity)}  ",
+        f"**Change units:** {len(activity)}  ",
+        f"**Duplicate representations consolidated:** {collapsed_duplicates}  ",
         f"**Critical:** {counts['critical']} · **High:** {counts['high']} · **Medium:** {counts['medium']} · **Low:** {counts['low']}",
         "",
         "## Executive summary",
@@ -76,6 +80,8 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
         ]
         if event.get("significance_reasons"):
             lines.append(f"- **Signals:** {'; '.join(event['significance_reasons'])}")
+        if event.get("correlated_events"):
+            lines.append(f"- **Consolidated evidence:** {1 + len(event['correlated_events'])} commit/PR representations")
         if event.get("linked_repositories"):
             lines.append(f"- **Potentially related:** {', '.join(f'`{r}`' for r in event['linked_repositories'])}")
         lines.append("")
@@ -119,5 +125,28 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
 
     latest = ROOT / "docs" / "portfolio-status.md"
     latest.parent.mkdir(parents=True, exist_ok=True)
-    latest.write_text("---\ntitle: Portfolio status\nnav_order: 3\n---\n\n" + "\n".join(lines), encoding="utf-8")
+    latest.write_text("---\ntitle: Portfolio status\nnav_order: 4\npermalink: /portfolio-status/\n---\n\n" + "\n".join(lines), encoding="utf-8")
+
+    dashboard = ROOT / "docs" / "dashboard.md"
+    dashboard_lines = [
+        "---", "title: Dashboard", "nav_order: 2", "permalink: /dashboard/", "---",
+        "# Portfolio dashboard", "",
+        f"**Generated:** {now.isoformat().replace('+00:00', 'Z')}  ",
+        f"**Change units:** {len(activity)}  ",
+        f"**Material change units:** {len(material)}  ",
+        f"**Review findings:** {len(findings)}  ",
+        f"**Duplicate representations consolidated:** {collapsed_duplicates}", "",
+        "## Leading themes", "",
+    ]
+    dashboard_lines += [f"- **{theme.replace('-', ' ').title()}:** {count}" for theme,count in themes[:5]] or ["_No themes detected._"]
+    dashboard.write_text("\n".join(dashboard_lines)+"\n", encoding="utf-8")
+
+    report_index = ROOT / "docs" / "reports.md"
+    report_index.write_text(
+        "---\ntitle: Reports\nnav_order: 5\npermalink: /reports/\n---\n"
+        "# Reports\n\n"
+        "[Open the current portfolio status]({{ \"/portfolio-status/\" | relative_url }}){: .btn .btn-primary }\n\n"
+        f"Latest generated **{period}** report: `{target.relative_to(ROOT)}`.\n",
+        encoding="utf-8",
+    )
     return target

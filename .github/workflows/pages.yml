@@ -28,10 +28,18 @@ jobs:
         with:
           ruby-version: "3.3"
           bundler-cache: true
-      - uses: actions/configure-pages@v5
-      - name: Build site
-        run: bundle exec jekyll build --source docs --destination _site --baseurl "${{ steps.pages.outputs.base_path }}"
+      - name: Configure Pages
         id: pages
+        uses: actions/configure-pages@v5
+      - name: Build site
+        run: >-
+          bundle exec jekyll build
+          --source docs
+          --destination _site
+          --config _config.yml
+          --baseurl "${{ steps.pages.outputs.base_path }}"
+      - name: Validate published routes
+        run: python scripts/validate_site.py _site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

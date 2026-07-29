@@ -1,8 +1,8 @@
 ---
 title: Tracked repositories
-nav_order: 2
+nav_order: 3
+permalink: /repositories/
 ---
-
 # Tracked repositories
 
 | Repository | Workstream | Role | Lifecycle | Weight |

@@ -50,12 +50,12 @@ jobs:
       - name: Commit generated outputs
         if: ${{ github.event_name == 'schedule' || inputs.persist_changes }}
         run: |
-          if git diff --quiet -- data reports docs/portfolio-status.md; then
+          if git diff --quiet -- data reports docs/portfolio-status.md docs/dashboard.md docs/reports.md; then
             echo "No generated changes to commit."
             exit 0
           fi
           git config user.name "dtg-portfolio-monitor[bot]"
           git config user.email "dtg-portfolio-monitor[bot]@users.noreply.github.com"
-          git add data reports docs/portfolio-status.md
+          git add data reports docs/portfolio-status.md docs/dashboard.md docs/reports.md
           git commit -m "chore(monitor): update DTG portfolio observations"
           git push
