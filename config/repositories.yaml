@@ -62,8 +62,8 @@ repositories:
   - schemas/**
   - '**/*spec*.md'
   - .github/workflows/**
-  notes: Empty transitional repository retained as lifecycle evidence; HTX is the
-    active successor workstream.
+  notes: Empty transitional repository retained as lifecycle evidence; HTX is the active successor
+    workstream.
 - repo: trustoverip/dtgwg-general
   organisation: toip
   workstream: coordination
@@ -172,9 +172,9 @@ repositories:
 - repo: trustoverip/dtgwg-rcards-tf
   organisation: toip
   workstream: relationship-cards
-  role: task-force-workspace
-  lifecycle: active
-  reporting_weight: high
+  role: legacy-or-transition
+  lifecycle: transitional
+  reporting_weight: low
   default_branch: main
   monitor:
     commits: true
@@ -189,7 +189,29 @@ repositories:
   - schemas/**
   - '**/*spec*.md'
   - .github/workflows/**
-  notes: ''
+  notes: Legacy Relationship Cards repository retained as lifecycle evidence; active specification
+    work has moved to the VDS Task Force repository.
+- repo: trustoverip/dtgwg-vds-tf
+  organisation: toip
+  workstream: verifiable-data-structures
+  role: normative-specification
+  lifecycle: active
+  reporting_weight: critical
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Home of the DTG Verifiable Data Structures Specification V1.0.
 - repo: trustoverip/dtgwg-agent-names-tf
   organisation: toip
   workstream: agent-names

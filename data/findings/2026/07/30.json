@@ -547,23 +547,10 @@
     "kind": "stale_repository",
     "severity": "low",
     "repository": "trustoverip/dtgwg-agent-names-tf",
-    "title": "No repository push for 126 days",
-    "summary": "The latest recorded push is 126 days old. Review whether the repository is dormant, transitional, or simply stable.",
+    "title": "No repository push for 127 days",
+    "summary": "The latest recorded push is 127 days old. Review whether the repository is dormant, transitional, or simply stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-agent-names-tf"
-    ],
-    "related_repositories": [],
-    "review_status": "needs-review"
-  },
-  {
-    "finding_id": "8b93fd6d1c356d25bce8",
-    "kind": "stale_repository",
-    "severity": "low",
-    "repository": "trustoverip/dtgwg-rcards-tf",
-    "title": "No repository push for 126 days",
-    "summary": "The latest recorded push is 126 days old. Review whether the repository is dormant, transitional, or simply stable.",
-    "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-rcards-tf"
     ],
     "related_repositories": [],
     "review_status": "needs-review"

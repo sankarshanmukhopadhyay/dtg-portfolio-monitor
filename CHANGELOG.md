@@ -1,7 +1,12 @@
 ## Unreleased
 
+### Added
+
+- Add `trustoverip/dtgwg-vds-tf` as the active, critical-weight repository for the DTG Verifiable Data Structures specification.
+
 ### Changed
 
+- Reclassify `trustoverip/dtgwg-rcards-tf` as a low-weight transitional lifecycle record so activity is attributed to the active VDS repository.
 - Redesign the portfolio-status report around a synthesis-first information architecture.
 - Replace repeated material, repository, and cross-workstream renderings with one canonical filterable event register.
 - Add explicit breaking-change callouts, leading engineering threads, compact signal tags, significance-band guidance, and a collapsed inactive-repository summary.

@@ -15,7 +15,8 @@ permalink: /repositories/
 | [`trustoverip/dtgwg-zkp-tf`](https://github.com/trustoverip/dtgwg-zkp-tf) | zero-knowledge-proofs | implementation-guidance | active | critical |
 | [`trustoverip/dtgwg-cred-tf`](https://github.com/trustoverip/dtgwg-cred-tf) | credentials | task-force-workspace | active | high |
 | [`trustoverip/dtgwg-rahp-tf`](https://github.com/trustoverip/dtgwg-rahp-tf) | rahp | task-force-workspace | active | high |
-| [`trustoverip/dtgwg-rcards-tf`](https://github.com/trustoverip/dtgwg-rcards-tf) | relationship-cards | task-force-workspace | active | high |
+| [`trustoverip/dtgwg-rcards-tf`](https://github.com/trustoverip/dtgwg-rcards-tf) | relationship-cards | legacy-or-transition | transitional | low |
+| [`trustoverip/dtgwg-vds-tf`](https://github.com/trustoverip/dtgwg-vds-tf) | verifiable-data-structures | normative-specification | active | critical |
 | [`trustoverip/dtgwg-agent-names-tf`](https://github.com/trustoverip/dtgwg-agent-names-tf) | agent-names | task-force-workspace | active | high |
 | [`OpenVTC/dtg-credentials`](https://github.com/OpenVTC/dtg-credentials) | credentials | implementation-and-examples | active | high |
 | [`OpenVTC/openvtc`](https://github.com/OpenVTC/openvtc) | community-platform | implementation | active | high |

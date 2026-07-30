@@ -13,7 +13,7 @@ This repository is independently maintained and is not an official Trust over IP
 
 ## What v0.3.0 provides
 
-- configuration-driven monitoring of 13 repositories;
+- configuration-driven monitoring of 14 repositories;
 - collection of commits, pull requests, issues, releases, and repository metadata;
 - incremental checkpoints to avoid repeatedly reporting old activity;
 - resilient per-stream collection so empty repositories and isolated API failures do not abort the portfolio run;
