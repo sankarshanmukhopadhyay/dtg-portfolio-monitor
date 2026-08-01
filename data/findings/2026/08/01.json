@@ -1,6 +1,6 @@
 [
   {
-    "finding_id": "5cd5e19fdd629f2761be",
+    "finding_id": "cfcd488d24d517439c8c",
     "kind": "material_cross_reference",
     "severity": "critical",
     "repository": "OpenVTC/verifiable-trust-infrastructure",
@@ -343,6 +343,21 @@
     ],
     "related_repositories": [
       "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "550fc0896f024cc9ecf1",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(webvh): the domain relay reaches TSP, and stops dropping createdAt",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/891"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
     ],
     "review_status": "needs-review"
   },
