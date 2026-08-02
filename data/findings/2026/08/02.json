@@ -256,36 +256,6 @@
     "review_status": "needs-review"
   },
   {
-    "finding_id": "dae9569873dbeb4f09ab",
-    "kind": "material_cross_reference",
-    "severity": "critical",
-    "repository": "trustoverip/dtgwg-trust-tasks-tf",
-    "title": "feat(vtc): the remaining 22 VTC tasks — completes the VTC registry surface",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/144"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "review_status": "needs-review"
-  },
-  {
-    "finding_id": "0eb5efcb5276f3fa2deb",
-    "kind": "material_cross_reference",
-    "severity": "critical",
-    "repository": "trustoverip/dtgwg-trust-tasks-tf",
-    "title": "feat(vtc): the remaining 22 VTC tasks — completes the VTC registry surface (#144)",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/b1529513384f4f77911bdf1425bc5255c9591313"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "review_status": "needs-review"
-  },
-  {
     "finding_id": "7a4c73420a6ffff19190",
     "kind": "material_cross_reference",
     "severity": "high",
