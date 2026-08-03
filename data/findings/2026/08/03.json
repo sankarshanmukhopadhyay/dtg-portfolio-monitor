@@ -211,36 +211,6 @@
     "review_status": "needs-review"
   },
   {
-    "finding_id": "40619899ec0f8d1fe297",
-    "kind": "material_cross_reference",
-    "severity": "critical",
-    "repository": "trustoverip/dtgwg-trust-tasks-tf",
-    "title": "feat(auth): passkey list + revoke, and re-authenticated enrollment",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/145"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "review_status": "needs-review"
-  },
-  {
-    "finding_id": "1323c8aa2d3e4ba7317d",
-    "kind": "material_cross_reference",
-    "severity": "critical",
-    "repository": "trustoverip/dtgwg-trust-tasks-tf",
-    "title": "feat(auth): passkey list + revoke, and re-authenticated enrollment (#145)",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/e7ea67d636fb0655f87a412444f40c83379a8ca4"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "review_status": "needs-review"
-  },
-  {
     "finding_id": "7a4c73420a6ffff19190",
     "kind": "material_cross_reference",
     "severity": "high",
@@ -392,21 +362,6 @@
     "review_status": "needs-review"
   },
   {
-    "finding_id": "7811ca2f58dfb01234a4",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "refactor(vtc): admin passkeys move to the canonical auth/passkey tasks",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/809"
-    ],
-    "related_repositories": [
-      "trustoverip/dtgwg-trust-tasks-tf"
-    ],
-    "review_status": "needs-review"
-  },
-  {
     "finding_id": "ba74021d67486d4bfdda",
     "kind": "material_cross_reference",
     "severity": "high",
@@ -486,8 +441,8 @@
     "kind": "stale_repository",
     "severity": "low",
     "repository": "trustoverip/dtgwg-agent-names-tf",
-    "title": "No repository push for 130 days",
-    "summary": "The latest recorded push is 130 days old. Review whether the repository is dormant, transitional, or simply stable.",
+    "title": "No repository push for 131 days",
+    "summary": "The latest recorded push is 131 days old. Review whether the repository is dormant, transitional, or simply stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-agent-names-tf"
     ],

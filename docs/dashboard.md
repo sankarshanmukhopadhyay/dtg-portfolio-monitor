@@ -5,17 +5,17 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-03T00:11:00.762374Z  
-**Change units:** 165  
-**Material change units:** 91  
+**Generated:** 2026-08-03T03:58:51.492648Z  
+**Change units:** 157  
+**Material change units:** 88  
 **Breaking changes:** 12  
-**Review findings:** 35  
-**Duplicate representations consolidated:** 100
+**Review findings:** 32  
+**Duplicate representations consolidated:** 92
 
 ## Leading themes
 
-- **Delivery and maintenance:** 149
-- **Protocol and interoperability:** 124
-- **Authority and delegation:** 94
-- **Transport and routing:** 94
-- **Credentials and proof:** 64
+- **Delivery and maintenance:** 141
+- **Protocol and interoperability:** 119
+- **Authority and delegation:** 93
+- **Transport and routing:** 87
+- **Credentials and proof:** 62
