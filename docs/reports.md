@@ -7,4 +7,4 @@ permalink: /reports/
 
 [Open the current portfolio status]({{ "/portfolio-status/" | relative_url }}){: .btn .btn-primary }
 
-Latest generated **weekly** report: `reports/weekly/2026-W31.md`.
+Latest generated **weekly** report: `reports/weekly/2026-W32.md`.
