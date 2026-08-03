@@ -75,21 +75,6 @@
     "review_status": "needs-review"
   },
   {
-    "finding_id": "e7418988461242c66053",
-    "kind": "material_cross_reference",
-    "severity": "critical",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "fix(sdk): TSP is a per-surface leg, not a whole-client transport (#803)",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/810"
-    ],
-    "related_repositories": [
-      "OpenVTC/openvtc"
-    ],
-    "review_status": "needs-review"
-  },
-  {
     "finding_id": "97e0a17c01607dc405ab",
     "kind": "material_cross_reference",
     "severity": "critical",
@@ -196,36 +181,6 @@
     "review_status": "needs-review"
   },
   {
-    "finding_id": "690414e0c71aa7778790",
-    "kind": "material_cross_reference",
-    "severity": "critical",
-    "repository": "trustoverip/dtgwg-trust-tasks-tf",
-    "title": "feat(credential-exchange): the issuance and presentation family, 0.1",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/148"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "review_status": "needs-review"
-  },
-  {
-    "finding_id": "7a4c73420a6ffff19190",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "repository": "OpenVTC/openvtc",
-    "title": "feat: route trust tasks over TSP",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/openvtc/pull/196"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "review_status": "needs-review"
-  },
-  {
     "finding_id": "7b1753d7b2c3e6b4f101",
     "kind": "material_cross_reference",
     "severity": "high",
@@ -317,51 +272,6 @@
     "review_status": "needs-review"
   },
   {
-    "finding_id": "85be2a26637dc80ef30a",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "feat(vtc): accept Trust Tasks over TSP",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/833"
-    ],
-    "related_repositories": [
-      "OpenVTC/openvtc"
-    ],
-    "review_status": "needs-review"
-  },
-  {
-    "finding_id": "f46582a9b0f7bd70c54f",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "feat(vtc)!: repoint config export/import, retiring the last openvtc/vtc bindings (#710)",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/834"
-    ],
-    "related_repositories": [
-      "trustoverip/dtgwg-trust-tasks-tf"
-    ],
-    "review_status": "needs-review"
-  },
-  {
-    "finding_id": "d55539badeb03d48e2cf",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "TSP: a consumer already holding a DIDComm session cannot use TSP — connect_tsp opens a second socket and the mediator rejects it (duplicate-channel)",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/803"
-    ],
-    "related_repositories": [
-      "OpenVTC/openvtc"
-    ],
-    "review_status": "needs-review"
-  },
-  {
     "finding_id": "ba74021d67486d4bfdda",
     "kind": "material_cross_reference",
     "severity": "high",
@@ -415,21 +325,6 @@
     "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/149"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "review_status": "needs-review"
-  },
-  {
-    "finding_id": "b648529f6b1b7782d421",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "repository": "trustoverip/dtgwg-trust-tasks-tf",
-    "title": "feat(vtc): config export/import 0.1 — portable community configuration",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/147"
     ],
     "related_repositories": [
       "OpenVTC/verifiable-trust-infrastructure"
