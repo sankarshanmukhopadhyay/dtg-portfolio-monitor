@@ -1,0 +1,161 @@
+[
+  {
+    "finding_id": "cfcd488d24d517439c8c",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(keys)!: fold the keys surface onto canonical keys/*",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/888"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "97e0a17c01607dc405ab",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(acl): AclEntry gains allowedKeys — an actor-scoped signing-key filter",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/164"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "063132e9e331311d0344",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(acl): AclEntry gains allowedKeys — an actor-scoped signing-key filter (#164)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/23d0f48ec20e162a88552bbfab2692d19878b6c1"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "7b1753d7b2c3e6b4f101",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(webvh): the domain relay reaches TSP, and stops dropping createdAt",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/891"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "add1ca2875961e63c94c",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vta-service): sign the step-up approve-request (spec: proof REQUIRED)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/870"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "36c0b6494c74edb2b20a",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(acl): allowedKeys — scope a caller to specific signing-oracle keys (#818)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/865"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "635cdedbde45b87b390e",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(did-templates): consolidate onto the merged six-task 2.0 family",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/864"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "ba74021d67486d4bfdda",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "docs(contributing): a patch bump promises wire compatibility, not Rust source compatibility",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/165"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "908cfc17633e5849778e",
+    "kind": "stale_repository",
+    "severity": "low",
+    "repository": "trustoverip/dtgwg-agent-names-tf",
+    "title": "No repository push for 133 days",
+    "summary": "The latest recorded push is 133 days old. Review whether the repository is dormant, transitional, or simply stable.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-agent-names-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "a708c081a7b9061e544c",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "repository": "trustoverip/dtgwg-rcards-tf",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-rcards-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "observed"
+  },
+  {
+    "finding_id": "574fb2bcaa465e59eb1e",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "repository": "trustoverip/dtgwg-ux-tf",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-ux-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "observed"
+  }
+]
