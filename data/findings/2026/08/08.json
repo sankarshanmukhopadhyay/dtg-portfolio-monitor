@@ -1,16 +1,16 @@
 [
   {
-    "finding_id": "cfcd488d24d517439c8c",
+    "finding_id": "f376480d1de5f09ae96b",
     "kind": "material_cross_reference",
     "severity": "critical",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "feat(keys)!: fold the keys surface onto canonical keys/*",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(acl): a general update task, and a direction for scope filters",
     "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/888"
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/150"
     ],
     "related_repositories": [
-      "trustoverip/dtgwg-trust-tasks-tf"
+      "OpenVTC/verifiable-trust-infrastructure"
     ],
     "review_status": "needs-review"
   },
@@ -47,8 +47,8 @@
     "kind": "stale_repository",
     "severity": "low",
     "repository": "trustoverip/dtgwg-rahp-tf",
-    "title": "No repository push for 91 days",
-    "summary": "The latest recorded push is 91 days old. Review whether the repository is dormant, transitional, or simply stable.",
+    "title": "No repository push for 92 days",
+    "summary": "The latest recorded push is 92 days old. Review whether the repository is dormant, transitional, or simply stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-rahp-tf"
     ],
