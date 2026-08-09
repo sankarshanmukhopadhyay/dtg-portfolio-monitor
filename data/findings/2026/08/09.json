@@ -32,8 +32,8 @@
     "kind": "stale_repository",
     "severity": "low",
     "repository": "trustoverip/dtgwg-rahp-tf",
-    "title": "No repository push for 92 days",
-    "summary": "The latest recorded push is 92 days old. Review whether the repository is dormant, transitional, or simply stable.",
+    "title": "No repository push for 93 days",
+    "summary": "The latest recorded push is 93 days old. Review whether the repository is dormant, transitional, or simply stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-rahp-tf"
     ],
