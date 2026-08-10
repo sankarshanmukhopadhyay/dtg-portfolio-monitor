@@ -9,14 +9,11 @@ on:
         description: Collection lookback window
         required: false
         default: "7"
-      persist_changes:
-        description: Commit generated data and reports
-        required: false
-        type: boolean
-        default: true
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: dtg-portfolio-collection
@@ -25,6 +22,8 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
+    outputs:
+      deployment_ref: ${{ steps.persist.outputs.deployment_ref }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -47,15 +46,26 @@ jobs:
           python -m dtg_monitor report --period weekly
       - name: Run tests
         run: python -m unittest discover -s tests
-      - name: Commit generated outputs
-        if: ${{ github.event_name == 'schedule' || inputs.persist_changes }}
+      - name: Persist generated outputs
+        id: persist
         run: |
           if git diff --quiet -- data reports docs/portfolio-status.md docs/dashboard.md docs/reports.md; then
             echo "No generated changes to commit."
-            exit 0
+          else
+            git config user.name "dtg-portfolio-monitor[bot]"
+            git config user.email "dtg-portfolio-monitor[bot]@users.noreply.github.com"
+            git add data reports docs/portfolio-status.md docs/dashboard.md docs/reports.md
+            git commit -m "chore(monitor): update DTG portfolio observations"
+            git push
           fi
-          git config user.name "dtg-portfolio-monitor[bot]"
-          git config user.email "dtg-portfolio-monitor[bot]@users.noreply.github.com"
-          git add data reports docs/portfolio-status.md docs/dashboard.md docs/reports.md
-          git commit -m "chore(monitor): update DTG portfolio observations"
-          git push
+
+          DEPLOYMENT_REF="$(git rev-parse HEAD)"
+          echo "deployment_ref=$DEPLOYMENT_REF" >> "$GITHUB_OUTPUT"
+          echo "Documentation deployment pinned to $DEPLOYMENT_REF"
+
+  deploy-documentation:
+    name: Build and deploy current documentation
+    needs: collect
+    uses: ./.github/workflows/pages.yml
+    with:
+      ref: ${{ needs.collect.outputs.deployment_ref }}

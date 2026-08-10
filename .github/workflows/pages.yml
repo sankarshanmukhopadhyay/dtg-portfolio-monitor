@@ -9,6 +9,12 @@ on:
       - "Gemfile"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      ref:
+        description: Exact commit to build and deploy
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -24,6 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: ${{ inputs.ref != '' && inputs.ref || github.sha }}
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3"

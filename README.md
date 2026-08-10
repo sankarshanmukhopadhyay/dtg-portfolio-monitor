@@ -37,10 +37,10 @@ This repository is independently maintained and is not an official Trust over IP
 3. Commit this payload to the default branch.
 4. Enable **Settings → Pages → Source: GitHub Actions**.
 5. Run **Collect DTG portfolio activity** manually once.
-6. Review the generated `reports/`, `data/`, and `docs/portfolio-status.md` changes.
-7. Optionally enable the workflow's automatic commit step by leaving `persist_changes` set to `true`.
+6. Confirm that the run persists the generated `reports/`, `data/`, and documentation outputs.
+7. Confirm that the downstream **Build and deploy current documentation** job deploys GitHub Pages from that exact persisted commit.
 
-The workflow uses the built-in `GITHUB_TOKEN` for public GitHub API access. No additional secret is required for the initial deployment.
+Every successful Actions-based collection persists its generated evidence before invoking the reusable Pages workflow. The deployment is pinned to the resulting commit SHA, so the published site and version-controlled evidence remain aligned. The workflow uses the built-in `GITHUB_TOKEN` for public GitHub API access and repository persistence; no additional secret is required for the initial deployment.
 
 ## Local use
 

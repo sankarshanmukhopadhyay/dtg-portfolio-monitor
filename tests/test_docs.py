@@ -61,5 +61,17 @@ class DocumentationTests(unittest.TestCase):
             text = (ROOT / "docs" / name).read_text(encoding="utf-8")
             self.assertRegex(text, r"(?m)^layout:\s*null\s*$")
 
+    def test_collection_explicitly_deploys_persisted_revision(self):
+        collect = (ROOT / ".github/workflows/collect.yml").read_text(encoding="utf-8")
+        pages = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
+
+        self.assertIn("deployment_ref: ${{ steps.persist.outputs.deployment_ref }}", collect)
+        self.assertIn("uses: ./.github/workflows/pages.yml", collect)
+        self.assertIn("ref: ${{ needs.collect.outputs.deployment_ref }}", collect)
+        self.assertNotIn("persist_changes:", collect)
+        self.assertIn("workflow_call:", pages)
+        self.assertIn("Exact commit to build and deploy", pages)
+        self.assertIn("ref: ${{ inputs.ref != '' && inputs.ref || github.sha }}", pages)
+
 if __name__ == "__main__":
     unittest.main()
