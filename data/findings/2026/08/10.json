@@ -15,6 +15,36 @@
     "review_status": "needs-review"
   },
   {
+    "finding_id": "51a8bcbd42fca450132a",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/dtg-credentials",
+    "title": "feat!: track DTG Core Credentials spec v1.0 Working Draft 01",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/dtg-credentials/pull/8"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "c95fb2cb560511b6a467",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/dtg-credentials",
+    "title": "feat!: track DTG Core Credentials spec v1.0 Working Draft 01",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/dtg-credentials/commit/e7992c4ce0101faa35f541db13675b060a16b7d0"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
     "finding_id": "908cfc17633e5849778e",
     "kind": "stale_repository",
     "severity": "low",
@@ -32,8 +62,8 @@
     "kind": "stale_repository",
     "severity": "low",
     "repository": "trustoverip/dtgwg-rahp-tf",
-    "title": "No repository push for 93 days",
-    "summary": "The latest recorded push is 93 days old. Review whether the repository is dormant, transitional, or simply stable.",
+    "title": "No repository push for 94 days",
+    "summary": "The latest recorded push is 94 days old. Review whether the repository is dormant, transitional, or simply stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-rahp-tf"
     ],
