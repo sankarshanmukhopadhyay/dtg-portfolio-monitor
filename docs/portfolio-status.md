@@ -6,7 +6,7 @@ permalink: /portfolio-status/
 
 # Weekly DTG Portfolio Change Report
 
-**Generated:** 2026-08-11T01:49:31.922228Z  
+**Generated:** 2026-08-11T02:07:51.134750Z  
 **Change units:** 92  
 **Duplicate representations consolidated:** 62  
 **Significance bands:** Critical 80+ · High 55–79 · Medium 25–54 · Low <25 ([methodology]({{ '/methodology/' | relative_url }}))  

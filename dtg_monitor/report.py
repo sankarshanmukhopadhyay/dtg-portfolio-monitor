@@ -7,8 +7,9 @@ from typing import Any
 import json
 import re
 
-from .config import ROOT, repositories, rules
+from .config import ROOT, repositories, rules, portfolio_model
 from .intelligence import THEME_LABELS, consolidate, event_themes, theme_counts
+from .awareness import analyse as analyse_awareness, write_snapshot
 
 ORDER = {"critical": 0, "high": 1, "medium": 2, "low": 3}
 SIGNAL_TAGS = {
@@ -132,10 +133,19 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
         for theme in event_themes(event):
             theme_groups[theme].append(event)
     leading_threads = sorted(theme_groups.items(), key=lambda item: len(item[1]), reverse=True)[:5]
+    generated_at = now.isoformat().replace('+00:00', 'Z')
+    awareness = analyse_awareness(
+        activity,
+        model=portfolio_model(),
+        repository_configs=repositories(),
+        findings=findings,
+        generated_at=generated_at,
+    )
+    write_snapshot(awareness, when=now)
 
     lines = [
         f"# {title}", "",
-        f"**Generated:** {now.isoformat().replace('+00:00', 'Z')}  ",
+        f"**Generated:** {generated_at}  ",
         f"**Change units:** {len(activity)}  ",
         f"**Duplicate representations consolidated:** {collapsed_duplicates}  ",
         f"**Significance bands:** {_threshold_legend()} ([methodology]({{{{ '/methodology/' | relative_url }}}}))  ",
@@ -198,7 +208,7 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
     dashboard_lines = [
         "---", "title: Dashboard", "nav_order: 2", "permalink: /dashboard/", "---",
         "# Portfolio dashboard", "",
-        f"**Generated:** {now.isoformat().replace('+00:00', 'Z')}  ",
+        f"**Generated:** {generated_at}  ",
         f"**Change units:** {len(activity)}  ", f"**Material change units:** {len(material)}  ",
         f"**Breaking changes:** {len(breaking)}  ", f"**Review findings:** {len(findings)}  ",
         f"**Duplicate representations consolidated:** {collapsed_duplicates}", "", "## Leading themes", "",
