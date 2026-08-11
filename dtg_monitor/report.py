@@ -10,6 +10,7 @@ import re
 from .config import ROOT, repositories, rules, portfolio_model
 from .intelligence import THEME_LABELS, consolidate, event_themes, theme_counts
 from .awareness import analyse as analyse_awareness, write_snapshot
+from .domain_brief import PULSE_LABELS, render as render_domain_brief
 
 ORDER = {"critical": 0, "high": 1, "medium": 2, "low": 3}
 SIGNAL_TAGS = {
@@ -202,24 +203,44 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
 
     latest = ROOT / "docs" / "portfolio-status.md"
     latest.parent.mkdir(parents=True, exist_ok=True)
-    latest.write_text("---\ntitle: Portfolio status\nnav_order: 4\npermalink: /portfolio-status/\n---\n\n" + "\n".join(lines), encoding="utf-8")
+    latest.write_text("---\ntitle: Portfolio status\nnav_order: 5\npermalink: /portfolio-status/\n---\n\n" + "\n".join(lines), encoding="utf-8")
+
+    domain_brief = ROOT / "docs" / "domain-brief.md"
+    domain_brief.write_text(render_domain_brief(awareness, generated_at), encoding="utf-8")
 
     dashboard = ROOT / "docs" / "dashboard.md"
     dashboard_lines = [
-        "---", "title: Dashboard", "nav_order: 2", "permalink: /dashboard/", "---",
+        "---", "title: Dashboard", "nav_order: 3", "permalink: /dashboard/", "---",
         "# Portfolio dashboard", "",
         f"**Generated:** {generated_at}  ",
         f"**Change units:** {len(activity)}  ", f"**Material change units:** {len(material)}  ",
         f"**Breaking changes:** {len(breaking)}  ", f"**Review findings:** {len(findings)}  ",
-        f"**Duplicate representations consolidated:** {collapsed_duplicates}", "", "## Leading themes", "",
+        f"**Duplicate representations consolidated:** {collapsed_duplicates}", "",
+        "[Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }", "",
+        "## Capability pulse", "",
+        "| Capability | Pulse | Change units | Material |", "|---|---|---:|---:|",
     ]
+    for state in awareness["capabilities"].values():
+        dashboard_lines.append(
+            f"| {state['label']} | **{PULSE_LABELS[state['pulse']]}** | {state['change_units']} | {state['material_change_units']} |"
+        )
+    dashboard_lines += ["", "## Leading themes", ""]
     themes = theme_counts(activity)
-    dashboard_lines += [f"- **{THEME_LABELS.get(theme, theme.replace('-', ' ').title())}:** {count}" for theme,count in themes[:5]] or ["_No themes detected._"]
-    dashboard.write_text("\n".join(dashboard_lines)+"\n", encoding="utf-8")
+    dashboard_lines += [
+        f"- **{THEME_LABELS.get(theme, theme.replace('-', ' ').title())}:** {count}"
+        for theme, count in themes[:5]
+    ] or ["_No themes detected._"]
+    dashboard_lines += [
+        "", "## Portfolio intelligence", "",
+        f"- **Cross-capability convergence signals:** {len(awareness['convergences'])}",
+        f"- **Specification/implementation signals:** {len(awareness['implementation_alignment'])}",
+        f"- **Attention signals:** {len(awareness['attention_signals'])}",
+    ]
+    dashboard.write_text("\n".join(dashboard_lines) + "\n", encoding="utf-8")
 
     report_index = ROOT / "docs" / "reports.md"
     report_index.write_text(
-        "---\ntitle: Reports\nnav_order: 5\npermalink: /reports/\n---\n"
+        "---\ntitle: Reports\nnav_order: 6\npermalink: /reports/\n---\n"
         "# Reports\n\n[Open the current portfolio status]({{ \"/portfolio-status/\" | relative_url }}){: .btn .btn-primary }\n\n"
         f"Latest generated **{period}** report: `{target.relative_to(ROOT)}`.\n", encoding="utf-8",
     )

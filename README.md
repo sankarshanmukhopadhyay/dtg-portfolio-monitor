@@ -11,7 +11,7 @@ GitHub already records repository activity. This project adds the missing portfo
 
 This repository is independently maintained and is not an official Trust over IP Foundation or OpenVTC publication.
 
-## What v0.3.0 provides
+## What v0.4.0 provides
 
 - configuration-driven monitoring of 14 repositories;
 - collection of commits, pull requests, issues, releases, and repository metadata;
@@ -23,6 +23,10 @@ This repository is independently maintained and is not an official Trust over IP
 - repository-health reporting with configured and observed lifecycle states;
 - consolidated change units that reduce duplicate commit and pull-request reporting;
 - recurring-theme analysis and a compact portfolio dashboard;
+- a declared DTG portfolio semantic model that maps workstreams to capabilities;
+- deterministic capability pulse, convergence, specification/implementation alignment, and attention signals;
+- machine-readable situational-awareness snapshots under `data/awareness/`;
+- a generated DTG Domain Brief that explains portfolio movement before exposing the detailed evidence register;
 - stable clean GitHub Pages routes with build-time route validation;
 - daily and weekly Markdown reports;
 - machine-readable JSON event and finding stores;
@@ -55,14 +59,16 @@ python -m unittest discover -s tests
 
 ## Reporting model
 
-The monitor separates four concerns:
+The monitor separates six concerns:
 
 1. **Collection** records source activity without interpretation.
 2. **Normalisation** maps GitHub objects into a stable local event schema.
-3. **Classification** applies visible, deterministic significance rules.
-4. **Reporting** groups events by workstream, repository, and implication.
+3. **Classification** applies visible, deterministic significance and theme rules.
+4. **Portfolio semantics** declare how workstreams map to DTG capabilities and relationships.
+5. **Situational awareness** derives capability movement, convergence, alignment, and attention signals.
+6. **Reporting** renders the machine-readable evidence and awareness state for different audiences.
 
-Automated narrative should remain subordinate to traceable evidence. Every report item links to its source.
+Automated narrative remains subordinate to traceable evidence. The awareness layer is deterministic and does not require an LLM; source events, configuration, and generated snapshots remain the evidence trail.
 
 ## Tracked scope
 

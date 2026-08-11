@@ -23,6 +23,8 @@ class DocumentationTests(unittest.TestCase):
             "portfolio-status.md": "/portfolio-status/",
             "reports.md": "/reports/",
             "dashboard.md": "/dashboard/",
+            "domain-brief.md": "/domain-brief/",
+            "domain-model.md": "/domain-model/",
         }
         for name, route in expected.items():
             text = (root / name).read_text(encoding="utf-8")
@@ -68,6 +70,8 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("deployment_ref: ${{ steps.persist.outputs.deployment_ref }}", collect)
         self.assertIn("uses: ./.github/workflows/pages.yml", collect)
         self.assertIn("ref: ${{ needs.collect.outputs.deployment_ref }}", collect)
+        self.assertIn("docs/domain-brief.md", collect)
+        self.assertIn("data", collect)
         self.assertNotIn("persist_changes:", collect)
         self.assertIn("workflow_call:", pages)
         self.assertIn("Exact commit to build and deploy", pages)

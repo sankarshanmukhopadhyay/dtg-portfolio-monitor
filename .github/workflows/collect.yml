@@ -49,12 +49,12 @@ jobs:
       - name: Persist generated outputs
         id: persist
         run: |
-          if git diff --quiet -- data reports docs/portfolio-status.md docs/dashboard.md docs/reports.md; then
+          if git diff --quiet -- data reports docs/domain-brief.md docs/portfolio-status.md docs/dashboard.md docs/reports.md; then
             echo "No generated changes to commit."
           else
             git config user.name "dtg-portfolio-monitor[bot]"
             git config user.email "dtg-portfolio-monitor[bot]@users.noreply.github.com"
-            git add data reports docs/portfolio-status.md docs/dashboard.md docs/reports.md
+            git add data reports docs/domain-brief.md docs/portfolio-status.md docs/dashboard.md docs/reports.md
             git commit -m "chore(monitor): update DTG portfolio observations"
             git push
           fi

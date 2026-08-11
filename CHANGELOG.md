@@ -1,8 +1,15 @@
-## Unreleased
+# Changelog
+
+## [0.4.0] - 2026-08-11
 
 ### Added
 
 - Add `trustoverip/dtgwg-vds-tf` as the active, critical-weight repository for the DTG Verifiable Data Structures specification.
+- Add a declared DTG portfolio semantic model in `config/portfolio-model.yaml`.
+- Add deterministic capability pulse, cross-capability convergence, specification/implementation alignment, and related-capability attention signals.
+- Persist machine-readable situational-awareness snapshots under `data/awareness/`.
+- Add the generated DTG Domain Brief and capability-oriented dashboard.
+- Add documentation for the domain model, awareness methodology, and interpretation boundary.
 
 ### Changed
 
@@ -11,8 +18,7 @@
 - Replace repeated material, repository, and cross-workstream renderings with one canonical filterable event register.
 - Add explicit breaking-change callouts, leading engineering threads, compact signal tags, significance-band guidance, and a collapsed inactive-repository summary.
 - Explain consolidated commit/PR evidence and signal abbreviations in the methodology.
-
-# Changelog
+- Expand scheduled persistence so awareness data and the Domain Brief are deployed from the same evidence-pinned commit.
 
 ## [0.3.2] - 2026-07-29
 

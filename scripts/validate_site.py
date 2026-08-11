@@ -10,6 +10,8 @@ required = [
     site / "portfolio-status" / "index.html",
     site / "reports" / "index.html",
     site / "dashboard" / "index.html",
+    site / "domain-brief" / "index.html",
+    site / "domain-model" / "index.html",
     site / "repositories.md",
     site / "portfolio-status.md",
 ]

@@ -9,7 +9,7 @@ class SiteValidatorTests(unittest.TestCase):
     def _build_site(self, themed=True):
         temporary = tempfile.TemporaryDirectory()
         site = Path(temporary.name)
-        for route in ("repositories", "portfolio-status", "reports", "dashboard"):
+        for route in ("repositories", "portfolio-status", "reports", "dashboard", "domain-brief", "domain-model"):
             target = site / route / "index.html"
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text("<html><body>page</body></html>", encoding="utf-8")

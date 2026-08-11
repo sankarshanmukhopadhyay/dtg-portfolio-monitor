@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dtg-portfolio-monitor"
-version = "0.3.2"
+version = "0.4.0"
 description = "Evidence-backed monitoring and reporting across DTG-related repositories"
 requires-python = ">=3.11"
 dependencies = ["PyYAML==6.0.2"]
