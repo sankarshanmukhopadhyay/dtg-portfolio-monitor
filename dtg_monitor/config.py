@@ -24,3 +24,6 @@ def rules() -> dict[str, Any]:
 
 def report_settings() -> dict[str, Any]:
     return load_yaml(ROOT / "config" / "report-settings.yaml")
+
+def portfolio_model() -> dict[str, Any]:
+    return load_yaml(ROOT / "config" / "portfolio-model.yaml")

@@ -1,0 +1,119 @@
+version: 1
+
+purpose: >-
+  Analytical model used by the monitor to group repository activity into DTG
+  capabilities and to surface cross-workstream movement. It is a monitoring
+  model, not a normative DTG architecture.
+
+pulse_thresholds:
+  advancing_strongly_material: 8
+  advancing_material: 3
+  active_changes: 1
+
+capabilities:
+  - id: human-trust-and-safety
+    label: Human trust and safety
+    purpose: >-
+      Make trust interactions understandable to people and pressure-test DTG
+      specifications for foreseeable risks, harms, and assurance gaps.
+    workstreams:
+      - human-trust-experience
+      - rahp
+
+  - id: relationships-and-naming
+    label: Relationships and naming
+    purpose: >-
+      Represent parties, agents, names, and verifiable relationships within the
+      trust graph.
+    workstreams:
+      - agent-names
+      - relationship-cards
+      - verifiable-data-structures
+
+  - id: credentials-and-evidence
+    label: Credentials and evidence
+    purpose: >-
+      Provide verifiable evidence about membership, relationships, attributes,
+      authority, and privacy-preserving proof.
+    workstreams:
+      - credentials
+      - zero-knowledge-proofs
+
+  - id: governed-action
+    label: Governed action
+    purpose: >-
+      Enable consequential actions to be requested, authorised, executed, and
+      evidenced through Trust Tasks and related protocol semantics.
+    workstreams:
+      - trust-tasks
+
+  - id: implementation
+    label: Implementation and interoperability
+    purpose: >-
+      Exercise DTG specifications in running software and expose integration,
+      deployment, and interoperability gaps.
+    workstreams:
+      - community-platform
+      - verifiable-trust-infrastructure
+
+  - id: coordination
+    label: Portfolio coordination
+    purpose: >-
+      Coordinate DTG-wide work that is not attributable to one technical
+      capability.
+    workstreams:
+      - coordination
+
+relationships:
+  - from: credentials-and-evidence
+    to: governed-action
+    kind: supplies-evidence-to
+    rationale: Trust Tasks can rely on credential and proof evidence when evaluating requests and authority.
+
+  - from: relationships-and-naming
+    to: credentials-and-evidence
+    kind: contextualises
+    rationale: Relationship structures and identifiers provide context for credential evidence.
+
+  - from: credentials-and-evidence
+    to: implementation
+    kind: exercised-by
+    rationale: OpenVTC implementations exercise credential formats, issuance, presentation, and proof behaviour.
+
+  - from: governed-action
+    to: implementation
+    kind: exercised-by
+    rationale: OpenVTC implementations exercise Trust Task execution, transport, approval, and receipt behaviour.
+
+  - from: human-trust-and-safety
+    to: credentials-and-evidence
+    kind: pressure-tests
+    rationale: Human trust and RAHP work can surface credential risks, harms, and assurance requirements.
+
+  - from: human-trust-and-safety
+    to: governed-action
+    kind: pressure-tests
+    rationale: Human trust and RAHP work can surface execution, authority, and redress risks.
+
+implementation_links:
+  - specification_repository: trustoverip/dtgwg-cred-spec
+    implementation_repositories:
+      - OpenVTC/dtg-credentials
+      - OpenVTC/openvtc
+      - OpenVTC/verifiable-trust-infrastructure
+    capability: credentials-and-evidence
+    themes:
+      - credentials-and-proof
+      - governance-and-lifecycle
+
+  - specification_repository: trustoverip/dtgwg-trust-tasks-tf
+    implementation_repositories:
+      - OpenVTC/openvtc
+      - OpenVTC/verifiable-trust-infrastructure
+    capability: governed-action
+    themes:
+      - authority-and-delegation
+      - credentials-and-proof
+      - protocol-and-interoperability
+      - transport-and-routing
+      - governance-and-lifecycle
