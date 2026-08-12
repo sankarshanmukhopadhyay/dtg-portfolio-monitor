@@ -1,0 +1,86 @@
+[
+  {
+    "finding_id": "f376480d1de5f09ae96b",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(acl): a general update task, and a direction for scope filters",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/150"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "51a8bcbd42fca450132a",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/dtg-credentials",
+    "title": "feat!: track DTG Core Credentials spec v1.0 Working Draft 01",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/dtg-credentials/pull/8"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "c95fb2cb560511b6a467",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/dtg-credentials",
+    "title": "feat!: track DTG Core Credentials spec v1.0 Working Draft 01",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/dtg-credentials/commit/e7992c4ce0101faa35f541db13675b060a16b7d0"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "908cfc17633e5849778e",
+    "kind": "stale_repository",
+    "severity": "low",
+    "repository": "trustoverip/dtgwg-agent-names-tf",
+    "title": "No repository push for 140 days",
+    "summary": "The latest recorded push is 140 days old. Review whether the repository is dormant, transitional, or simply stable.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-agent-names-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "a708c081a7b9061e544c",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "repository": "trustoverip/dtgwg-rcards-tf",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-rcards-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "observed"
+  },
+  {
+    "finding_id": "574fb2bcaa465e59eb1e",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "repository": "trustoverip/dtgwg-ux-tf",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-ux-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "observed"
+  }
+]
