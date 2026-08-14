@@ -60,6 +60,36 @@
     "review_status": "needs-review"
   },
   {
+    "finding_id": "0d7371a6fce4aedb5e90",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "fix(webvh)!: align the reconcile task with the spec published upstream",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/977"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "9f8b191ddb0ee5854a47",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "fix(webvh)!: align the reconcile task with the spec published upstream (#977)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/2a4dae22baa3d514b88b078aa0c55dbc3cbaac42"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
     "finding_id": "908cfc17633e5849778e",
     "kind": "stale_repository",
     "severity": "low",
