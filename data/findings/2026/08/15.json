@@ -30,21 +30,6 @@
     "review_status": "needs-review"
   },
   {
-    "finding_id": "f376480d1de5f09ae96b",
-    "kind": "material_cross_reference",
-    "severity": "critical",
-    "repository": "trustoverip/dtgwg-trust-tasks-tf",
-    "title": "feat(acl): a general update task, and a direction for scope filters",
-    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/150"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "review_status": "needs-review"
-  },
-  {
     "finding_id": "51a8bcbd42fca450132a",
     "kind": "material_cross_reference",
     "severity": "high",
