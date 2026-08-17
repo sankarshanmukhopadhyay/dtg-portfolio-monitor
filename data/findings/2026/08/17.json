@@ -1,0 +1,161 @@
+[
+  {
+    "finding_id": "d4bf846a82cf7d894495",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "OpenVTC/openvtc",
+    "title": "v0.3.0",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/openvtc/releases/tag/v0.3.0"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "11a63e94e633afb05219",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(did-webvh): let a minted DID advertise TSP at the VTA's mediator",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/959"
+    ],
+    "related_repositories": [
+      "OpenVTC/openvtc"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "64922473cd5a2cf07dc6",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "fix(specs): the taskContext id locates the session document; a digest binds it",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/229"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "d1d68d844a6c58fd8a95",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(framework): a citation carries a task digest, not just an id (§4.9.3)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/236"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "51a8bcbd42fca450132a",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/dtg-credentials",
+    "title": "feat!: track DTG Core Credentials spec v1.0 Working Draft 01",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/dtg-credentials/pull/8"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "c95fb2cb560511b6a467",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/dtg-credentials",
+    "title": "feat!: track DTG Core Credentials spec v1.0 Working Draft 01",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/dtg-credentials/commit/e7992c4ce0101faa35f541db13675b060a16b7d0"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "0d7371a6fce4aedb5e90",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "fix(webvh)!: align the reconcile task with the spec published upstream",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/977"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "9f8b191ddb0ee5854a47",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "fix(webvh)!: align the reconcile task with the spec published upstream (#977)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/2a4dae22baa3d514b88b078aa0c55dbc3cbaac42"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "908cfc17633e5849778e",
+    "kind": "stale_repository",
+    "severity": "low",
+    "repository": "trustoverip/dtgwg-agent-names-tf",
+    "title": "No repository push for 145 days",
+    "summary": "The latest recorded push is 145 days old. Review whether the repository is dormant, transitional, or simply stable.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-agent-names-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "a708c081a7b9061e544c",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "repository": "trustoverip/dtgwg-rcards-tf",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-rcards-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "observed"
+  },
+  {
+    "finding_id": "574fb2bcaa465e59eb1e",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "repository": "trustoverip/dtgwg-ux-tf",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-ux-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "observed"
+  }
+]
