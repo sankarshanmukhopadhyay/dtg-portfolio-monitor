@@ -4,6 +4,7 @@
       "advancing": "credentials-and-evidence",
       "evidence_urls": [
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/14",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/19",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/15"
       ],
       "kind": "related-capability-asymmetry",
@@ -15,6 +16,7 @@
       "advancing": "credentials-and-evidence",
       "evidence_urls": [
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/14",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/19",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/15"
       ],
       "kind": "related-capability-asymmetry",
@@ -56,41 +58,43 @@
       "themes": []
     },
     "credentials-and-evidence": {
-      "change_units": 6,
+      "change_units": 8,
       "evidence_urls": [
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/14",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/19",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/15"
       ],
       "label": "Credentials and evidence",
-      "material_change_units": 2,
-      "pulse": "active",
+      "material_change_units": 3,
+      "pulse": "advancing",
       "purpose": "Provide verifiable evidence about membership, relationships, attributes, authority, and privacy-preserving proof.",
       "repositories": [
-        "trustoverip/dtgwg-cred-spec"
+        "trustoverip/dtgwg-cred-spec",
+        "trustoverip/dtgwg-cred-tf"
       ],
       "themes": [
         {
-          "count": 5,
-          "id": "delivery-and-maintenance",
-          "label": "Delivery and maintenance"
-        },
-        {
-          "count": 4,
+          "count": 6,
           "id": "credentials-and-proof",
           "label": "Credentials and proof"
         },
         {
-          "count": 4,
+          "count": 6,
+          "id": "delivery-and-maintenance",
+          "label": "Delivery and maintenance"
+        },
+        {
+          "count": 5,
           "id": "protocol-and-interoperability",
           "label": "Protocol and interoperability"
         },
         {
-          "count": 2,
+          "count": 3,
           "id": "governance-and-lifecycle",
           "label": "Governance and lifecycle"
         },
         {
-          "count": 1,
+          "count": 2,
           "id": "security-and-privacy",
           "label": "Security and privacy"
         }
@@ -158,7 +162,7 @@
       "themes": []
     },
     "implementation": {
-      "change_units": 185,
+      "change_units": 199,
       "evidence_urls": [
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/937",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/941",
@@ -183,22 +187,22 @@
       ],
       "themes": [
         {
-          "count": 112,
+          "count": 109,
           "id": "delivery-and-maintenance",
           "label": "Delivery and maintenance"
         },
         {
-          "count": 64,
+          "count": 63,
           "id": "protocol-and-interoperability",
           "label": "Protocol and interoperability"
         },
         {
-          "count": 50,
+          "count": 49,
           "id": "credentials-and-proof",
           "label": "Credentials and proof"
         },
         {
-          "count": 49,
+          "count": 46,
           "id": "transport-and-routing",
           "label": "Transport and routing"
         },
@@ -220,7 +224,7 @@
       "themes": []
     }
   },
-  "change_units": 232,
+  "change_units": 248,
   "convergences": [
     {
       "evidence_urls": [
@@ -262,6 +266,7 @@
     {
       "evidence_urls": [
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/14",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/19",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/15",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/937",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/941",
@@ -271,12 +276,11 @@
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/987",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/989",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/990",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vti-common-v0.12.0",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-vault-v0.2.0"
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vti-common-v0.12.0"
       ],
       "from": "credentials-and-evidence",
       "kind": "cross-capability-convergence",
-      "material_change_units": 45,
+      "material_change_units": 46,
       "rationale": "OpenVTC implementations exercise credential formats, issuance, presentation, and proof behaviour.",
       "relationship": "exercised-by",
       "repositories": [
@@ -285,9 +289,11 @@
         "trustoverip/dtgwg-cred-spec"
       ],
       "shared_themes": [
+        "authority-and-delegation",
         "credentials-and-proof",
         "delivery-and-maintenance",
         "governance-and-lifecycle",
+        "human-trust-experience",
         "protocol-and-interoperability",
         "security-and-privacy"
       ],
@@ -296,6 +302,7 @@
     {
       "evidence_urls": [
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/14",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/19",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/15",
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/208",
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/209",
@@ -305,12 +312,11 @@
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/221",
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/219",
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/220",
-        "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/222",
-        "https://github.com/trustoverip/dtgwg-trust-tasks-tf/issues/206"
+        "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/222"
       ],
       "from": "credentials-and-evidence",
       "kind": "cross-capability-convergence",
-      "material_change_units": 33,
+      "material_change_units": 34,
       "rationale": "Trust Tasks can rely on credential and proof evidence when evaluating requests and authority.",
       "relationship": "supplies-evidence-to",
       "repositories": [
@@ -318,9 +324,11 @@
         "trustoverip/dtgwg-trust-tasks-tf"
       ],
       "shared_themes": [
+        "authority-and-delegation",
         "credentials-and-proof",
         "delivery-and-maintenance",
         "governance-and-lifecycle",
+        "human-trust-experience",
         "protocol-and-interoperability",
         "security-and-privacy"
       ],
@@ -334,7 +342,7 @@
   ],
   "dominant_themes": [
     {
-      "count": 158,
+      "count": 156,
       "id": "delivery-and-maintenance",
       "label": "Delivery and maintenance"
     },
@@ -344,27 +352,28 @@
       "label": "Protocol and interoperability"
     },
     {
-      "count": 83,
+      "count": 84,
       "id": "credentials-and-proof",
       "label": "Credentials and proof"
     },
     {
-      "count": 74,
+      "count": 71,
       "id": "transport-and-routing",
       "label": "Transport and routing"
     },
     {
-      "count": 58,
+      "count": 59,
       "id": "authority-and-delegation",
       "label": "Authority and delegation"
     }
   ],
-  "generated_at": "2026-08-18T23:51:05.152923Z",
+  "generated_at": "2026-08-18T23:56:42.333891Z",
   "implementation_alignment": [
     {
       "capability": "credentials-and-evidence",
       "evidence_urls": [
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/14",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/19",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/15",
         "https://github.com/OpenVTC/openvtc/releases/tag/v0.3.0",
         "https://github.com/OpenVTC/openvtc/pull/221",
@@ -374,8 +383,7 @@
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/990",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vti-common-v0.12.0",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-vault-v0.2.0",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.16.0",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/995"
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.16.0"
       ],
       "implementation_material_change_units": 31,
       "implementation_repositories": [
@@ -383,7 +391,7 @@
         "OpenVTC/verifiable-trust-infrastructure"
       ],
       "kind": "specification-implementation-alignment",
-      "specification_material_change_units": 2,
+      "specification_material_change_units": 3,
       "specification_repository": "trustoverip/dtgwg-cred-spec",
       "state": "moving-together"
     },
@@ -414,7 +422,7 @@
       "state": "moving-together"
     }
   ],
-  "material_change_units": 76,
+  "material_change_units": 77,
   "model_version": 1,
   "review_findings": 6,
   "schema_version": 1,

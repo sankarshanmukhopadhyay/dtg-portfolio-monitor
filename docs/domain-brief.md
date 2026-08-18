@@ -5,8 +5,8 @@ permalink: /domain-brief/
 ---
 # DTG Domain Brief
 
-**Generated:** 2026-08-18T23:51:05.152923Z  
-**Change units:** 232 · **Material:** 76  
+**Generated:** 2026-08-18T23:56:42.333891Z  
+**Change units:** 248 · **Material:** 77  
 
 This is the situational-awareness view of the monitored DTG portfolio. It interprets observed GitHub evidence through the declared [DTG domain model]({{ '/domain-model/' | relative_url }}). It is not an official ToIP architectural statement.
 
@@ -16,7 +16,7 @@ The strongest observed movement is currently concentrated in **Implementation an
 
 **Implementation and interoperability** — 43 material change units, led by delivery and maintenance, protocol and interoperability.
 **Governed action** — 31 material change units, led by delivery and maintenance, protocol and interoperability.
-**Credentials and evidence** — 2 material change units, led by delivery and maintenance, credentials and proof.
+**Credentials and evidence** — 3 material change units, led by credentials and proof, delivery and maintenance.
 
 ## Portfolio pulse
 
@@ -24,9 +24,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Active** | 6 | 2 |
+| Credentials and evidence | **Advancing** | 8 | 3 |
 | Governed action | **Advancing strongly** | 41 | 31 |
-| Implementation and interoperability | **Advancing strongly** | 185 | 43 |
+| Implementation and interoperability | **Advancing strongly** | 199 | 43 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 > **Quiet is not a failure state.** It means no activity was observed in the monitored GitHub streams during this window; the capability may be stable, on a different cadence, or active elsewhere.
@@ -34,12 +34,12 @@ The strongest observed movement is currently concentrated in **Implementation an
 ## Cross-workstream convergence
 
 - **Governed action ↔ Implementation and interoperability.** Material activity is present on both sides of the declared `exercised-by` relationship around authority and delegation, credentials and proof.
-- **Credentials and evidence ↔ Implementation and interoperability.** Material activity is present on both sides of the declared `exercised-by` relationship around credentials and proof, delivery and maintenance.
-- **Credentials and evidence ↔ Governed action.** Material activity is present on both sides of the declared `supplies-evidence-to` relationship around credentials and proof, delivery and maintenance.
+- **Credentials and evidence ↔ Implementation and interoperability.** Material activity is present on both sides of the declared `exercised-by` relationship around authority and delegation, credentials and proof.
+- **Credentials and evidence ↔ Governed action.** Material activity is present on both sides of the declared `supplies-evidence-to` relationship around authority and delegation, credentials and proof.
 
 ## Specification and implementation alignment
 
-- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 2 material specification change unit(s) and 31 material implementation change unit(s).
+- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 3 material specification change unit(s) and 31 material implementation change unit(s).
 - **Governed action: specification and implementation are moving together.** The monitor observed 31 material specification change unit(s) and 42 material implementation change unit(s).
 
 ## Attention signals
