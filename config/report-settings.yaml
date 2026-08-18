@@ -2,6 +2,7 @@ version: 1
 title: DTG Portfolio Change Report
 timezone: Asia/Kolkata
 daily_lookback_days: 1
+daily_report_retention_months: 2
 weekly_lookback_days: 7
 stale_after_days: 90
 include_low_significance: true

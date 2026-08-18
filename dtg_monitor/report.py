@@ -7,7 +7,7 @@ from typing import Any
 import json
 import re
 
-from .config import ROOT, repositories, rules, portfolio_model
+from .config import ROOT, repositories, rules, portfolio_model, report_settings
 from .intelligence import THEME_LABELS, consolidate, event_themes, theme_counts
 from .awareness import analyse as analyse_awareness, write_snapshot
 from .domain_brief import PULSE_LABELS, render as render_domain_brief
@@ -72,41 +72,112 @@ def _thread_summary(theme: str, events: list[dict[str, Any]]) -> str:
     return f"**{THEME_LABELS.get(theme, theme.replace('-', ' ').title())}** — {len(events)} events across {repo_text}; {impact}."
 
 
+def _event_sort_key(event: dict[str, Any]) -> tuple[str, str, int, str]:
+    """Sort the canonical register by date (newest first), then repository."""
+    date = (event.get("updated_at") or "")[:10]
+    return (date, event.get("repository", ""), ORDER.get(event.get("significance", "low"), 9), event.get("title", ""))
+
+
 def _event_table(activity: list[dict[str, Any]]) -> list[str]:
+    """Render a dependency-free event register ordered by date, then repository."""
     rows = [
-        '<div class="portfolio-filters" role="group" aria-label="Portfolio event filters">',
-        '  <label>Repository <select id="portfolio-repo-filter"><option value="">All repositories</option></select></label>',
-        '  <label>Significance <select id="portfolio-significance-filter"><option value="">All levels</option><option>critical</option><option>high</option><option>medium</option><option>low</option></select></label>',
-        '  <label>Signal <select id="portfolio-signal-filter"><option value="">All signals</option></select></label>',
-        '  <label><input id="portfolio-breaking-filter" type="checkbox"> Breaking only</label>',
-        '  <button id="portfolio-filter-reset" type="button">Reset</button>',
-        '</div>',
-        '<p id="portfolio-filter-count" class="portfolio-filter-count"></p>',
-        '<div class="table-wrapper"><table id="portfolio-event-table" class="portfolio-event-table">',
-        '<thead><tr><th>Significance</th><th>Repository</th><th>Type / state</th><th>Change</th><th>Signals</th><th>Related</th><th>Updated</th></tr></thead>',
+        '<div class="table-wrapper"><table class="portfolio-event-table">',
+        '<thead><tr><th>Date</th><th>Repository</th><th>Significance</th><th>Type / state</th><th>Change</th><th>Signals</th><th>Related</th></tr></thead>',
         '<tbody>',
     ]
-    for event in activity:
-        tags = _signal_tags(event)
-        tag_html = " ".join(f'<span class="signal-chip" title="{escape(reason)}">{escape(tag)}</span>' for tag, reason in zip(tags, event.get("significance_reasons", []))) or "—"
-        related = ", ".join(f"<code>{escape(repo)}</code>" for repo in event.get("linked_repositories", [])) or "—"
-        evidence = ""
-        if event.get("correlated_events"):
-            count = 1 + len(event["correlated_events"])
-            evidence = f'<span class="evidence-note" title="A commit and its associated pull request are represented as one change unit.">{count} sources consolidated</span>'
-        breaking = _is_breaking(event)
-        breaking_badge = '<span class="breaking-chip">BREAKING</span> ' if breaking else ""
-        rows.append(
-            f'<tr data-repo="{escape(event["repository"])}" data-significance="{escape(event.get("significance", "low"))}" '
-            f'data-signals="{escape(" ".join(tags))}" data-breaking="{str(breaking).lower()}">'
-            f'<td><strong>{escape(event.get("significance", "low"))}</strong> ({event.get("significance_score", 0)})</td>'
-            f'<td><code>{escape(event["repository"])}</code></td>'
-            f'<td>{escape(event.get("event_type", ""))} / {escape(event.get("state", ""))}</td>'
-            f'<td>{breaking_badge}<a href="{escape(event["url"])}">{escape(" ".join((event.get("title") or "").split()))}</a>{evidence}</td>'
-            f'<td>{tag_html}</td><td>{related}</td><td>{escape(event.get("updated_at", "")[:10])}</td></tr>'
-        )
-    rows += ['</tbody></table></div>', '<script src="{{ \'/assets/js/portfolio-table.js\' | relative_url }}"></script>']
+    ordered = sorted(activity, key=_event_sort_key, reverse=True)
+    # ``reverse=True`` would also reverse repository names, so regroup dates and
+    # explicitly order repositories inside each day for predictable scanning.
+    by_date: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for event in ordered:
+        by_date[(event.get("updated_at") or "")[:10]].append(event)
+    for date in sorted(by_date, reverse=True):
+        for event in sorted(by_date[date], key=lambda e: (e.get("repository", ""), ORDER.get(e.get("significance", "low"), 9), e.get("title", ""))):
+            tags = _signal_tags(event)
+            tag_html = " ".join(f'<span class="signal-chip" title="{escape(reason)}">{escape(tag)}</span>' for tag, reason in zip(tags, event.get("significance_reasons", []))) or "—"
+            related = ", ".join(f"<code>{escape(repo)}</code>" for repo in event.get("linked_repositories", [])) or "—"
+            evidence = ""
+            if event.get("correlated_events"):
+                count = 1 + len(event["correlated_events"])
+                evidence = f'<span class="evidence-note" title="A commit and its associated pull request are represented as one change unit.">{count} sources consolidated</span>'
+            breaking_badge = '<span class="breaking-chip">BREAKING</span> ' if _is_breaking(event) else ""
+            rows.append(
+                f'<tr><td>{escape(date)}</td>'
+                f'<td><code>{escape(event["repository"])}</code></td>'
+                f'<td><strong>{escape(event.get("significance", "low"))}</strong> ({event.get("significance_score", 0)})</td>'
+                f'<td>{escape(event.get("event_type", ""))} / {escape(event.get("state", ""))}</td>'
+                f'<td>{breaking_badge}<a href="{escape(event["url"])}">{escape(" ".join((event.get("title") or "").split()))}</a>{evidence}</td>'
+                f'<td>{tag_html}</td><td>{related}</td></tr>'
+            )
+    rows += ['</tbody></table></div>']
     return rows
+
+
+def _cross_repository_section(activity: list[dict[str, Any]]) -> list[str]:
+    linked = [event for event in activity if event.get("linked_repositories")]
+    lines = ["## Cross-repository changes", ""]
+    if not linked:
+        lines.append("_No explicit references to another monitored repository were detected in this window._")
+        return lines
+    lines += [
+        "Events below explicitly reference another monitored repository. This is evidence of a cross-repository dependency or coordination signal, not proof that the repositories changed atomically.",
+        "",
+        "| Date | Source repository | Related repository(s) | Change | Significance |",
+        "|---|---|---|---|---|",
+    ]
+    for event in sorted(linked, key=lambda e: ((e.get("updated_at") or "")[:10], e.get("repository", "")), reverse=True):
+        related = ", ".join(f"`{repo}`" for repo in event.get("linked_repositories", []))
+        lines.append(
+            f"| {(event.get('updated_at') or '')[:10]} | `{event['repository']}` | {related} | "
+            f"[{_clean(event.get('title', ''))}]({event['url']}) | **{event.get('significance', 'low')}** ({event.get('significance_score', 0)}) |"
+        )
+    return lines
+
+
+def _release_section(activity: list[dict[str, Any]]) -> list[str]:
+    releases = [event for event in activity if event.get("event_type") == "release"]
+    lines = ["## Tagged release activity", ""]
+    if not releases:
+        lines.append("_No published GitHub releases or prereleases were detected in this window._")
+        return lines
+    by_repo: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for event in releases:
+        by_repo[event["repository"]].append(event)
+    lines += [
+        "This is a compact release pulse. The canonical event register below retains every release event detected in the collection window.",
+        "",
+        "| Repository | Releases in window | Latest release | Latest date | State |",
+        "|---|---:|---|---|---|",
+    ]
+    for repo in sorted(by_repo):
+        repo_releases = sorted(by_repo[repo], key=lambda e: e.get("updated_at", ""), reverse=True)
+        latest = repo_releases[0]
+        lines.append(
+            f"| `{repo}` | {len(repo_releases)} | [{_clean(latest.get('title', ''))}]({latest['url']}) | "
+            f"{(latest.get('updated_at') or '')[:10]} | {latest.get('state', '')} |"
+        )
+    return lines
+
+
+def _month_index(value: datetime) -> int:
+    return value.year * 12 + value.month
+
+
+def _prune_daily_reports(now: datetime, retain_months: int) -> list[Path]:
+    """Keep daily reports for the current and configured number of calendar months."""
+    if retain_months < 1:
+        return []
+    removed: list[Path] = []
+    current = _month_index(now)
+    for path in (ROOT / "reports" / "daily").glob("????-??-??.md"):
+        try:
+            report_date = datetime.strptime(path.stem, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+        if current - _month_index(report_date) >= retain_months:
+            path.unlink()
+            removed.append(path)
+    return removed
 
 
 def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) -> Path:
@@ -126,6 +197,8 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
     counts = Counter(e.get("significance", "low") for e in activity)
     material = [e for e in activity if e.get("significance") in {"critical", "high"}]
     breaking = [e for e in activity if _is_breaking(e)]
+    releases = [e for e in activity if e.get("event_type") == "release"]
+    cross_repo = [e for e in activity if e.get("linked_repositories")]
     active_repos = {e["repository"] for e in activity}
     inactive_repos = [cfg["repo"] for cfg in repositories() if cfg["repo"] not in active_repos]
 
@@ -178,9 +251,12 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
     else:
         lines.append("_No recurring engineering threads were detected._")
 
+    lines += [""] + _cross_repository_section(activity)
+    lines += [""] + _release_section(activity)
+
     lines += [
         "", "## Event register", "",
-        "This is the canonical detail view. Use the controls to filter the consolidated change units. Signal abbreviations are defined in the [methodology]({{ '/methodology/' | relative_url }}).",
+        "This is the canonical detail view. Events are ordered by **date (newest first), then repository**, so portfolio-wide movement remains visible without client-side controls. Signal abbreviations are defined in the [methodology]({{ '/methodology/' | relative_url }}).",
         "",
     ]
     lines += _event_table(activity)
@@ -200,6 +276,8 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
     target = ROOT / "reports" / period / f"{name}.md"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text("\n".join(lines), encoding="utf-8")
+    if period == "daily":
+        _prune_daily_reports(now, int(report_settings().get("daily_report_retention_months", 2)))
 
     latest = ROOT / "docs" / "portfolio-status.md"
     latest.parent.mkdir(parents=True, exist_ok=True)
@@ -214,7 +292,7 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
         "# Portfolio dashboard", "",
         f"**Generated:** {generated_at}  ",
         f"**Change units:** {len(activity)}  ", f"**Material change units:** {len(material)}  ",
-        f"**Breaking changes:** {len(breaking)}  ", f"**Review findings:** {len(findings)}  ",
+        f"**Breaking changes:** {len(breaking)}  ", f"**Tagged releases:** {len(releases)}  ", f"**Cross-repository changes:** {len(cross_repo)}  ", f"**Review findings:** {len(findings)}  ",
         f"**Duplicate representations consolidated:** {collapsed_duplicates}", "",
         "[Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }", "",
         "## Capability pulse", "",

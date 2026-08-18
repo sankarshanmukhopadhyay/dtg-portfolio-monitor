@@ -36,3 +36,9 @@ The Actions workflow intentionally does not provide a non-persisting collection 
 ## Failure handling
 
 A failed collection does not update the successful checkpoint. API errors fail the workflow rather than silently producing an incomplete report. Documentation deployment is downstream of the collection job, so collection, report-generation, test, persistence, or site-build failures prevent publication of a newer Pages state.
+
+## Generated-report retention
+
+Daily Markdown reports are an operational convenience, not the long-term evidence store. `daily_report_retention_months` in `config/report-settings.yaml` bounds the checked-in daily report set to the current and immediately preceding calendar month by default. Older daily reports are removed automatically during daily report generation. Weekly reports remain available for longer-horizon review, and deleted daily reports remain recoverable from Git history.
+
+This policy limits repository churn without weakening source traceability: machine-readable event/finding stores and source GitHub URLs remain the evidence of record.

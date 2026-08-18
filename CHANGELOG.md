@@ -1,5 +1,18 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- Add a dedicated cross-repository change register based on explicit references between monitored repositories.
+- Add a compact tagged-release activity pulse showing release counts and the latest release per repository.
+- Add configurable daily-report retention, keeping the current and previous calendar month by default.
+
+### Changed
+
+- Replace the JavaScript-dependent portfolio event filters with a dependency-free canonical event register ordered by date (newest first), then repository.
+- Surface tagged-release and cross-repository change counts on the portfolio dashboard.
+
 ## [0.4.0] - 2026-08-11
 
 ### Added

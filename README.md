@@ -28,7 +28,9 @@ This repository is independently maintained and is not an official Trust over IP
 - machine-readable situational-awareness snapshots under `data/awareness/`;
 - a generated DTG Domain Brief that explains portfolio movement before exposing the detailed evidence register;
 - stable clean GitHub Pages routes with build-time route validation;
-- daily and weekly Markdown reports;
+- dependency-free portfolio status ordered by date then repository;
+- dedicated cross-repository change and tagged-release registers;
+- bounded daily-report retention (current and previous calendar month by default) plus weekly Markdown reports;
 - machine-readable JSON event and finding stores;
 - scheduled GitHub Actions;
 - GitHub Pages documentation;

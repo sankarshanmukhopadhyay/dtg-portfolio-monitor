@@ -5,10 +5,12 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-18T13:11:29.699075Z  
+**Generated:** 2026-08-18T23:51:05.152923Z  
 **Change units:** 232  
 **Material change units:** 76  
 **Breaking changes:** 9  
+**Tagged releases:** 103  
+**Cross-repository changes:** 13  
 **Review findings:** 9  
 **Duplicate representations consolidated:** 123
 
