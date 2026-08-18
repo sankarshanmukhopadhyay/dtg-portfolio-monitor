@@ -5,14 +5,14 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-18T23:51:05.152923Z  
-**Change units:** 232  
-**Material change units:** 76  
+**Generated:** 2026-08-18T23:56:42.333891Z  
+**Change units:** 248  
+**Material change units:** 77  
 **Breaking changes:** 9  
-**Tagged releases:** 103  
-**Cross-repository changes:** 13  
+**Tagged releases:** 121  
+**Cross-repository changes:** 14  
 **Review findings:** 9  
-**Duplicate representations consolidated:** 123
+**Duplicate representations consolidated:** 121
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -22,18 +22,18 @@ permalink: /dashboard/
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Active** | 6 | 2 |
+| Credentials and evidence | **Advancing** | 8 | 3 |
 | Governed action | **Advancing strongly** | 41 | 31 |
-| Implementation and interoperability | **Advancing strongly** | 185 | 43 |
+| Implementation and interoperability | **Advancing strongly** | 199 | 43 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ## Leading themes
 
-- **Delivery and maintenance:** 158
+- **Delivery and maintenance:** 156
 - **Protocol and interoperability:** 107
-- **Credentials and proof:** 83
-- **Transport and routing:** 74
-- **Authority and delegation:** 58
+- **Credentials and proof:** 84
+- **Transport and routing:** 71
+- **Authority and delegation:** 59
 
 ## Portfolio intelligence
 
