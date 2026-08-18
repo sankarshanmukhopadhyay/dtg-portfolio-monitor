@@ -158,10 +158,8 @@
       "themes": []
     },
     "implementation": {
-      "change_units": 193,
+      "change_units": 185,
       "evidence_urls": [
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/921",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/928",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/937",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/941",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/959",
@@ -171,10 +169,12 @@
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/989",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/990",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vti-common-v0.12.0",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-vault-v0.2.0"
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-vault-v0.2.0",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.16.0",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/995"
       ],
       "label": "Implementation and interoperability",
-      "material_change_units": 49,
+      "material_change_units": 43,
       "pulse": "advancing-strongly",
       "purpose": "Exercise DTG specifications in running software and expose integration, deployment, and interoperability gaps.",
       "repositories": [
@@ -183,27 +183,27 @@
       ],
       "themes": [
         {
-          "count": 119,
+          "count": 112,
           "id": "delivery-and-maintenance",
           "label": "Delivery and maintenance"
         },
         {
-          "count": 73,
+          "count": 64,
           "id": "protocol-and-interoperability",
           "label": "Protocol and interoperability"
         },
         {
-          "count": 56,
-          "id": "transport-and-routing",
-          "label": "Transport and routing"
-        },
-        {
-          "count": 55,
+          "count": 50,
           "id": "credentials-and-proof",
           "label": "Credentials and proof"
         },
         {
-          "count": 47,
+          "count": 49,
+          "id": "transport-and-routing",
+          "label": "Transport and routing"
+        },
+        {
+          "count": 43,
           "id": "authority-and-delegation",
           "label": "Authority and delegation"
         }
@@ -220,7 +220,7 @@
       "themes": []
     }
   },
-  "change_units": 240,
+  "change_units": 232,
   "convergences": [
     {
       "evidence_urls": [
@@ -239,7 +239,7 @@
       ],
       "from": "governed-action",
       "kind": "cross-capability-convergence",
-      "material_change_units": 80,
+      "material_change_units": 74,
       "rationale": "OpenVTC implementations exercise Trust Task execution, transport, approval, and receipt behaviour.",
       "relationship": "exercised-by",
       "repositories": [
@@ -263,8 +263,6 @@
       "evidence_urls": [
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/14",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/15",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/921",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/928",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/937",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/941",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/959",
@@ -272,11 +270,13 @@
         "https://github.com/OpenVTC/openvtc/releases/tag/v0.3.0",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/987",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/989",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/990"
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/990",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vti-common-v0.12.0",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-vault-v0.2.0"
       ],
       "from": "credentials-and-evidence",
       "kind": "cross-capability-convergence",
-      "material_change_units": 51,
+      "material_change_units": 45,
       "rationale": "OpenVTC implementations exercise credential formats, issuance, presentation, and proof behaviour.",
       "relationship": "exercised-by",
       "repositories": [
@@ -334,32 +334,32 @@
   ],
   "dominant_themes": [
     {
-      "count": 165,
+      "count": 158,
       "id": "delivery-and-maintenance",
       "label": "Delivery and maintenance"
     },
     {
-      "count": 116,
+      "count": 107,
       "id": "protocol-and-interoperability",
       "label": "Protocol and interoperability"
     },
     {
-      "count": 88,
+      "count": 83,
       "id": "credentials-and-proof",
       "label": "Credentials and proof"
     },
     {
-      "count": 81,
+      "count": 74,
       "id": "transport-and-routing",
       "label": "Transport and routing"
     },
     {
-      "count": 62,
+      "count": 58,
       "id": "authority-and-delegation",
       "label": "Authority and delegation"
     }
   ],
-  "generated_at": "2026-08-18T01:53:05.196132Z",
+  "generated_at": "2026-08-18T13:11:29.699075Z",
   "implementation_alignment": [
     {
       "capability": "credentials-and-evidence",
@@ -368,16 +368,16 @@
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/15",
         "https://github.com/OpenVTC/openvtc/releases/tag/v0.3.0",
         "https://github.com/OpenVTC/openvtc/pull/221",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/921",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/928",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.15.0",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/987",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/989",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/990",
         "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vti-common-v0.12.0",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-vault-v0.2.0"
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-vault-v0.2.0",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.16.0",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/995"
       ],
-      "implementation_material_change_units": 35,
+      "implementation_material_change_units": 31,
       "implementation_repositories": [
         "OpenVTC/openvtc",
         "OpenVTC/verifiable-trust-infrastructure"
@@ -403,7 +403,7 @@
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/225",
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/226"
       ],
-      "implementation_material_change_units": 48,
+      "implementation_material_change_units": 42,
       "implementation_repositories": [
         "OpenVTC/openvtc",
         "OpenVTC/verifiable-trust-infrastructure"
@@ -414,7 +414,7 @@
       "state": "moving-together"
     }
   ],
-  "material_change_units": 82,
+  "material_change_units": 76,
   "model_version": 1,
   "review_findings": 6,
   "schema_version": 1,
