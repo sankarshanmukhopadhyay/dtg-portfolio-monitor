@@ -42,3 +42,10 @@ A failed collection does not update the successful checkpoint. API errors fail t
 Daily Markdown reports are an operational convenience, not the long-term evidence store. `daily_report_retention_months` in `config/report-settings.yaml` bounds the checked-in daily report set to the current and immediately preceding calendar month by default. Older daily reports are removed automatically during daily report generation. Weekly reports remain available for longer-horizon review, and deleted daily reports remain recoverable from Git history.
 
 This policy limits repository churn without weakening source traceability: machine-readable event/finding stores and source GitHub URLs remain the evidence of record.
+
+## Mermaid diagrams
+
+Mermaid rendering is provided by Just the Docs and is enabled through the root `_config.yml`. The Mermaid version is pinned so GitHub Pages builds are reproducible. Documentation authors can use fenced `mermaid` blocks directly; do not add page-specific Mermaid scripts or duplicate initialization code.
+
+The documentation test suite verifies that Mermaid remains enabled while Mermaid diagram sources exist. The Pages workflow remains the end-to-end check that the theme loads the renderer and emits the published diagrams.
+

@@ -8,6 +8,11 @@
 - Add a compact tagged-release activity pulse showing release counts and the latest release per repository.
 - Add configurable daily-report retention, keeping the current and previous calendar month by default.
 
+### Fixed
+
+- Enable Just the Docs Mermaid support so diagrams on the domain-model and architecture pages render on GitHub Pages.
+- Add a regression test requiring Mermaid configuration whenever diagram sources are present.
+
 ### Changed
 
 - Replace the JavaScript-dependent portfolio event filters with a dependency-free canonical event register ordered by date (newest first), then repository.

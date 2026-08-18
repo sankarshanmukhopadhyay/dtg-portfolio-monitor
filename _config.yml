@@ -18,6 +18,9 @@ search:
   button: false
 heading_anchors: true
 color_scheme: light
+mermaid:
+  # Just the Docs Mermaid support is opt-in. Pin the renderer for reproducible Pages builds.
+  version: "9.4.3"
 permalink: pretty
 back_to_top: true
 back_to_top_text: Back to top

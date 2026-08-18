@@ -46,6 +46,17 @@ class DocumentationTests(unittest.TestCase):
         self.assertIn("theme: just-the-docs", config)
         self.assertIn('gem "just-the-docs"', gemfile)
 
+    def test_mermaid_rendering_is_enabled_when_diagrams_exist(self):
+        config = yaml.safe_load((ROOT / "_config.yml").read_text(encoding="utf-8"))
+        mermaid = config.get("mermaid", {})
+        self.assertTrue(mermaid.get("version"), "Mermaid must be enabled in Just the Docs")
+
+        diagram_pages = []
+        for path in (ROOT / "docs").glob("*.md"):
+            if "```mermaid" in path.read_text(encoding="utf-8"):
+                diagram_pages.append(path.name)
+        self.assertTrue(diagram_pages, "Expected at least one Mermaid diagram page")
+
     def test_just_the_docs_default_layout_is_configured(self):
         config = yaml.safe_load((ROOT / "_config.yml").read_text(encoding="utf-8"))
         defaults = config.get("defaults", [])
