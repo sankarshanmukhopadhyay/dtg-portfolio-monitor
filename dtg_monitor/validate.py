@@ -81,4 +81,8 @@ def validate() -> list[str]:
                 errors.append(f"cross-spec composition {cid} references unknown repository: {repo}")
         if item.get("readiness") not in {"runnable", "candidate"}:
             errors.append(f"cross-spec composition {cid} has invalid readiness")
+        if item.get("readiness") == "runnable":
+            for field in ("issue_mode", "evidence_grade", "corpus_id", "assessment"):
+                if not item.get(field):
+                    errors.append(f"runnable cross-spec composition {cid} requires {field}")
     return errors

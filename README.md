@@ -87,4 +87,4 @@ Apache-2.0. See [LICENSE](LICENSE).
 
 ### Cross-specification assurance coordination
 
-`config/cross-spec-pressure-tests.yaml` declares DTG composition seams that warrant pressure testing. The Portfolio Monitor exposes readiness and relationships; RAHP Toolkit owns manual execution, evidence and durable review issues. Upstream issue filing remains a human governance decision after RAHP findings are triaged.
+`config/cross-spec-pressure-tests.yaml` declares eight DTG composition seams, all now runnable through RAHP Toolkit. The Portfolio Monitor exposes readiness, evidence grade and relationships; RAHP Toolkit owns manual execution, evidence and durable review issues through the optional `profiles/dtg/` pack. RAHP core remains ecosystem-neutral. Upstream issue filing remains a human governance decision after RAHP findings are triaged.

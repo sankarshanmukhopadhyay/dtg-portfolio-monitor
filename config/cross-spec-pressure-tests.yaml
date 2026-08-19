@@ -4,41 +4,87 @@ executor:
   workflow: .github/workflows/cross-spec-pressure-test.yml
   invocation: manual-workflow-dispatch
   review_record: github-issue
-purpose: >-
-  Portfolio discovery metadata for declared cross-specification assurance seams.
-  RAHP Toolkit remains authoritative for assessment execution, evidence, findings
-  and review-issue lifecycle.
+  registry: profiles/dtg/cross-spec-tests.yaml
+purpose: Portfolio discovery metadata for declared cross-specification assurance seams. RAHP Toolkit remains authoritative
+  for assessment execution, evidence, findings and review-issue lifecycle.
 compositions:
-  - id: trust-tasks--credential-spec
-    repositories: [trustoverip/dtgwg-trust-tasks-tf, trustoverip/dtgwg-cred-spec]
-    priority: P0
-    readiness: runnable
-    issue_mode: rahp-review-with-upstream-candidates
-  - id: credential-spec--zkp
-    repositories: [trustoverip/dtgwg-cred-spec, trustoverip/dtgwg-zkp-tf]
-    priority: P0
-    readiness: candidate
-  - id: credential-spec--vds
-    repositories: [trustoverip/dtgwg-cred-spec, trustoverip/dtgwg-vds-tf]
-    priority: P0
-    readiness: candidate
-  - id: trust-tasks--zkp
-    repositories: [trustoverip/dtgwg-trust-tasks-tf, trustoverip/dtgwg-zkp-tf]
-    priority: P0
-    readiness: candidate
-  - id: trust-tasks--vds
-    repositories: [trustoverip/dtgwg-trust-tasks-tf, trustoverip/dtgwg-vds-tf]
-    priority: P1
-    readiness: candidate
-  - id: zkp--vds
-    repositories: [trustoverip/dtgwg-zkp-tf, trustoverip/dtgwg-vds-tf]
-    priority: P1
-    readiness: candidate
-  - id: agent-names--trust-tasks
-    repositories: [trustoverip/dtgwg-agent-names-tf, trustoverip/dtgwg-trust-tasks-tf]
-    priority: P1
-    readiness: candidate
-  - id: agent-names--credential-spec
-    repositories: [trustoverip/dtgwg-agent-names-tf, trustoverip/dtgwg-cred-spec]
-    priority: P1
-    readiness: candidate
+- id: trust-tasks--credential-spec
+  repositories:
+  - trustoverip/dtgwg-trust-tasks-tf
+  - trustoverip/dtgwg-cred-spec
+  priority: P0
+  readiness: runnable
+  issue_mode: rahp-review-with-upstream-candidates
+  evidence_grade: source-pinned
+  corpus_id: CORPUS-TT-CREDSPEC-COMPOSED
+  assessment: examples/cross-spec/trust-tasks-credspec/pressure-test.yaml
+- id: credential-spec--zkp
+  repositories:
+  - trustoverip/dtgwg-cred-spec
+  - trustoverip/dtgwg-zkp-tf
+  priority: P0
+  readiness: runnable
+  issue_mode: rahp-review-with-upstream-candidates
+  evidence_grade: source-informed
+  corpus_id: CORPUS-CREDSPEC-ZKP-COMPOSED
+  assessment: examples/cross-spec/credential-spec--zkp/pressure-test.yaml
+- id: credential-spec--vds
+  repositories:
+  - trustoverip/dtgwg-cred-spec
+  - trustoverip/dtgwg-vds-tf
+  priority: P0
+  readiness: runnable
+  issue_mode: rahp-review-with-upstream-candidates
+  evidence_grade: scenario-baseline
+  corpus_id: CORPUS-CREDSPEC-VDS-COMPOSED
+  assessment: examples/cross-spec/credential-spec--vds/pressure-test.yaml
+- id: trust-tasks--zkp
+  repositories:
+  - trustoverip/dtgwg-trust-tasks-tf
+  - trustoverip/dtgwg-zkp-tf
+  priority: P0
+  readiness: runnable
+  issue_mode: rahp-review-with-upstream-candidates
+  evidence_grade: source-informed
+  corpus_id: CORPUS-TT-ZKP-COMPOSED
+  assessment: examples/cross-spec/trust-tasks--zkp/pressure-test.yaml
+- id: trust-tasks--vds
+  repositories:
+  - trustoverip/dtgwg-trust-tasks-tf
+  - trustoverip/dtgwg-vds-tf
+  priority: P1
+  readiness: runnable
+  issue_mode: rahp-review-with-upstream-candidates
+  evidence_grade: scenario-baseline
+  corpus_id: CORPUS-TT-VDS-COMPOSED
+  assessment: examples/cross-spec/trust-tasks--vds/pressure-test.yaml
+- id: zkp--vds
+  repositories:
+  - trustoverip/dtgwg-zkp-tf
+  - trustoverip/dtgwg-vds-tf
+  priority: P1
+  readiness: runnable
+  issue_mode: rahp-review-with-upstream-candidates
+  evidence_grade: scenario-baseline
+  corpus_id: CORPUS-ZKP-VDS-COMPOSED
+  assessment: examples/cross-spec/zkp--vds/pressure-test.yaml
+- id: agent-names--trust-tasks
+  repositories:
+  - trustoverip/dtgwg-agent-names-tf
+  - trustoverip/dtgwg-trust-tasks-tf
+  priority: P1
+  readiness: runnable
+  issue_mode: rahp-review-with-upstream-candidates
+  evidence_grade: scenario-baseline
+  corpus_id: CORPUS-AGENTNAMES-TT-COMPOSED
+  assessment: examples/cross-spec/agent-names--trust-tasks/pressure-test.yaml
+- id: agent-names--credential-spec
+  repositories:
+  - trustoverip/dtgwg-agent-names-tf
+  - trustoverip/dtgwg-cred-spec
+  priority: P1
+  readiness: runnable
+  issue_mode: rahp-review-with-upstream-candidates
+  evidence_grade: scenario-baseline
+  corpus_id: CORPUS-AGENTNAMES-CREDSPEC-COMPOSED
+  assessment: examples/cross-spec/agent-names--credential-spec/pressure-test.yaml

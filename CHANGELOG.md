@@ -1,3 +1,10 @@
+
+## Unreleased
+
+### Changed
+- Marked all eight declared DTG cross-specification assurance seams runnable and synchronized their corpus, assessment and evidence-grade metadata with the RAHP Toolkit DTG profile.
+- Recorded the profile registry used by the ecosystem-neutral RAHP cross-specification executor.
+
 # Changelog
 
 ## [Unreleased]

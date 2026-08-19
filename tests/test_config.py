@@ -28,6 +28,16 @@ class ConfigTests(unittest.TestCase):
         self.assertEqual("runnable", items["trust-tasks--credential-spec"]["readiness"])
         self.assertEqual(8, len(items))
 
+    def test_all_cross_spec_compositions_runnable(self):
+        registry = cross_spec_pressure_tests()
+        self.assertEqual(8, len(registry["compositions"]))
+        for item in registry["compositions"]:
+            self.assertEqual("runnable", item["readiness"])
+            self.assertIn(item["evidence_grade"], {"source-pinned", "source-informed", "scenario-baseline"})
+            self.assertTrue(item["corpus_id"])
+            self.assertTrue(item["assessment"])
+        self.assertEqual("profiles/dtg/cross-spec-tests.yaml", registry["executor"]["registry"])
+
     def test_configuration_valid(self):
         self.assertEqual([], validate())
 
