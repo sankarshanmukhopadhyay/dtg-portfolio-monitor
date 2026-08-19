@@ -27,7 +27,7 @@ The YAML registry is the source of truth. Changes to monitoring scope should be 
 
 ## Cross-specification assurance seams
 
-The portfolio declares eight runnable composition boundaries in `config/cross-spec-pressure-tests.yaml`. This registry is **discovery metadata**, not assessment evidence. It records the evidence grade and points to the optional DTG profile in RAHP Toolkit; RAHP core remains ecosystem-neutral and RAHP Toolkit remains the execution authority.
+The portfolio declares eight runnable composition boundaries in `config/cross-spec-pressure-tests.yaml`. This registry is **discovery metadata**, not assessment evidence. It records the evidence grade and points DTG users to RAHP Toolkit's dedicated DTG launcher while retaining the generic profile-driven workflow as the ecosystem-neutral execution surface. The optional DTG profile owns the composition data; RAHP core remains ecosystem-neutral and RAHP Toolkit remains the execution authority.
 
 | Composition | Priority | Readiness |
 |---|---:|---|

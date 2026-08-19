@@ -1,6 +1,8 @@
 
 ## Unreleased
 
+- Point DTG cross-specification execution metadata at the dedicated RAHP DTG launcher while retaining the generic profile-driven workflow as an explicit fallback/extension surface.
+
 ### Changed
 - Marked all eight declared DTG cross-specification assurance seams runnable and synchronized their corpus, assessment and evidence-grade metadata with the RAHP Toolkit DTG profile.
 - Recorded the profile registry used by the ecosystem-neutral RAHP cross-specification executor.

@@ -1,7 +1,8 @@
 version: 1
 executor:
   repository: sankarshanmukhopadhyay/rahp-toolkit
-  workflow: .github/workflows/cross-spec-pressure-test.yml
+  workflow: .github/workflows/dtg-cross-spec-pressure-test.yml
+  generic_workflow: .github/workflows/cross-spec-pressure-test.yml
   invocation: manual-workflow-dispatch
   review_record: github-issue
   registry: profiles/dtg/cross-spec-tests.yaml
