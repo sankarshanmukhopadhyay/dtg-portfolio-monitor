@@ -4,6 +4,8 @@
 
 ### Added
 
+- Add a synchronized cross-specification pressure-test registry that declares runnable and candidate DTG composition seams and points execution to RAHP Toolkit.
+- Document the durable RAHP review-issue and upstream-triage governance model on the repository inventory page.
 - Add a dedicated cross-repository change register based on explicit references between monitored repositories.
 - Add a compact tagged-release activity pulse showing release counts and the latest release per repository.
 - Add configurable daily-report retention, keeping the current and previous calendar month by default.

@@ -27,3 +27,7 @@ def report_settings() -> dict[str, Any]:
 
 def portfolio_model() -> dict[str, Any]:
     return load_yaml(ROOT / "config" / "portfolio-model.yaml")
+
+
+def cross_spec_pressure_tests() -> dict[str, Any]:
+    return load_yaml(ROOT / "config" / "cross-spec-pressure-tests.yaml")

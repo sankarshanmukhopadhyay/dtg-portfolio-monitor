@@ -1,0 +1,44 @@
+version: 1
+executor:
+  repository: sankarshanmukhopadhyay/rahp-toolkit
+  workflow: .github/workflows/cross-spec-pressure-test.yml
+  invocation: manual-workflow-dispatch
+  review_record: github-issue
+purpose: >-
+  Portfolio discovery metadata for declared cross-specification assurance seams.
+  RAHP Toolkit remains authoritative for assessment execution, evidence, findings
+  and review-issue lifecycle.
+compositions:
+  - id: trust-tasks--credential-spec
+    repositories: [trustoverip/dtgwg-trust-tasks-tf, trustoverip/dtgwg-cred-spec]
+    priority: P0
+    readiness: runnable
+    issue_mode: rahp-review-with-upstream-candidates
+  - id: credential-spec--zkp
+    repositories: [trustoverip/dtgwg-cred-spec, trustoverip/dtgwg-zkp-tf]
+    priority: P0
+    readiness: candidate
+  - id: credential-spec--vds
+    repositories: [trustoverip/dtgwg-cred-spec, trustoverip/dtgwg-vds-tf]
+    priority: P0
+    readiness: candidate
+  - id: trust-tasks--zkp
+    repositories: [trustoverip/dtgwg-trust-tasks-tf, trustoverip/dtgwg-zkp-tf]
+    priority: P0
+    readiness: candidate
+  - id: trust-tasks--vds
+    repositories: [trustoverip/dtgwg-trust-tasks-tf, trustoverip/dtgwg-vds-tf]
+    priority: P1
+    readiness: candidate
+  - id: zkp--vds
+    repositories: [trustoverip/dtgwg-zkp-tf, trustoverip/dtgwg-vds-tf]
+    priority: P1
+    readiness: candidate
+  - id: agent-names--trust-tasks
+    repositories: [trustoverip/dtgwg-agent-names-tf, trustoverip/dtgwg-trust-tasks-tf]
+    priority: P1
+    readiness: candidate
+  - id: agent-names--credential-spec
+    repositories: [trustoverip/dtgwg-agent-names-tf, trustoverip/dtgwg-cred-spec]
+    priority: P1
+    readiness: candidate

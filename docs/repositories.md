@@ -23,3 +23,21 @@ permalink: /repositories/
 | [`OpenVTC/verifiable-trust-infrastructure`](https://github.com/OpenVTC/verifiable-trust-infrastructure) | verifiable-trust-infrastructure | reference-implementation | active | critical |
 
 The YAML registry is the source of truth. Changes to monitoring scope should be made in `config/repositories.yaml` and validated before merge.
+
+
+## Cross-specification assurance seams
+
+The portfolio now declares high-value composition boundaries in `config/cross-spec-pressure-tests.yaml`. This registry is **discovery metadata**, not assessment evidence. RAHP Toolkit remains the execution authority.
+
+| Composition | Priority | Readiness |
+|---|---:|---|
+| Trust Tasks × Credential Specification | P0 | **Runnable** |
+| Credential Specification × ZKP | P0 | Candidate |
+| Credential Specification × VDS | P0 | Candidate |
+| Trust Tasks × ZKP | P0 | Candidate |
+| Trust Tasks × VDS | P1 | Candidate |
+| ZKP × VDS | P1 | Candidate |
+| Agent Names × Trust Tasks | P1 | Candidate |
+| Agent Names × Credential Specification | P1 | Candidate |
+
+A `Runnable` seam has a reviewed composed corpus and durable assessment in RAHP and can be invoked manually through the RAHP GitHub Actions workflow. `Candidate` means the architectural seam is declared but cannot be run until the RAHP corpus and evidence baseline are added. Manual execution publishes a durable RAHP review issue suitable for WG circulation and contains upstream-ready issue candidates for findings that require specification changes.

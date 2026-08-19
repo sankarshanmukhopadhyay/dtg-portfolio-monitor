@@ -1,5 +1,5 @@
 import unittest
-from dtg_monitor.config import repositories, portfolio_model
+from dtg_monitor.config import repositories, portfolio_model, cross_spec_pressure_tests
 from dtg_monitor.validate import validate
 
 class ConfigTests(unittest.TestCase):
@@ -21,6 +21,12 @@ class ConfigTests(unittest.TestCase):
         mapped = {stream for capability in model["capabilities"] for stream in capability["workstreams"]}
         configured = {item["workstream"] for item in repositories()}
         self.assertEqual(configured, mapped)
+
+    def test_cross_spec_registry_has_runnable_canonical_pair(self):
+        registry = cross_spec_pressure_tests()
+        items = {x["id"]: x for x in registry["compositions"]}
+        self.assertEqual("runnable", items["trust-tasks--credential-spec"]["readiness"])
+        self.assertEqual(8, len(items))
 
     def test_configuration_valid(self):
         self.assertEqual([], validate())

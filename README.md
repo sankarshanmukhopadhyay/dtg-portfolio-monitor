@@ -83,3 +83,8 @@ The monitor may create findings in this repository, but it does not automaticall
 ## Licence
 
 Apache-2.0. See [LICENSE](LICENSE).
+
+
+### Cross-specification assurance coordination
+
+`config/cross-spec-pressure-tests.yaml` declares DTG composition seams that warrant pressure testing. The Portfolio Monitor exposes readiness and relationships; RAHP Toolkit owns manual execution, evidence and durable review issues. Upstream issue filing remains a human governance decision after RAHP findings are triaged.
