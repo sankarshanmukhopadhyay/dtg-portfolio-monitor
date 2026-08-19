@@ -5,14 +5,14 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-18T23:56:42.333891Z  
+**Generated:** 2026-08-19T01:55:12.642522Z  
 **Change units:** 248  
 **Material change units:** 77  
 **Breaking changes:** 9  
 **Tagged releases:** 121  
 **Cross-repository changes:** 14  
 **Review findings:** 9  
-**Duplicate representations consolidated:** 121
+**Duplicate representations consolidated:** 122
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 

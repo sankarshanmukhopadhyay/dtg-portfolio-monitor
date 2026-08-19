@@ -5,7 +5,7 @@ permalink: /domain-brief/
 ---
 # DTG Domain Brief
 
-**Generated:** 2026-08-18T23:56:42.333891Z  
+**Generated:** 2026-08-19T01:55:12.642522Z  
 **Change units:** 248 · **Material:** 77  
 
 This is the situational-awareness view of the monitored DTG portfolio. It interprets observed GitHub evidence through the declared [DTG domain model]({{ '/domain-model/' | relative_url }}). It is not an official ToIP architectural statement.
