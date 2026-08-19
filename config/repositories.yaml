@@ -21,6 +21,28 @@ repositories:
   - '**/*spec*.md'
   - .github/workflows/**
   notes: ''
+- repo: trustoverip/dtgwg-trust-tasks-spec
+  organisation: toip
+  workstream: trust-tasks
+  role: normative-specification
+  lifecycle: active
+  reporting_weight: critical
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - spec/**
+  - specs.json
+  - docs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Canonical Trust Tasks specification repository; monitored separately from the Trust Tasks task-force workspace.
 - repo: trustoverip/dtgwg-htx-tf
   organisation: toip
   workstream: human-trust-experience

@@ -117,3 +117,15 @@ implementation_links:
       - protocol-and-interoperability
       - transport-and-routing
       - governance-and-lifecycle
+
+  - specification_repository: trustoverip/dtgwg-trust-tasks-spec
+    implementation_repositories:
+      - OpenVTC/openvtc
+      - OpenVTC/verifiable-trust-infrastructure
+    capability: governed-action
+    themes:
+      - authority-and-delegation
+      - credentials-and-proof
+      - protocol-and-interoperability
+      - transport-and-routing
+      - governance-and-lifecycle

@@ -4,13 +4,21 @@ from dtg_monitor.validate import validate
 
 class ConfigTests(unittest.TestCase):
     def test_repository_count(self):
-        self.assertEqual(14, len(repositories()))
+        self.assertEqual(15, len(repositories()))
 
     def test_required_openvtc_repositories(self):
         names = {item["repo"] for item in repositories()}
         self.assertIn("OpenVTC/dtg-credentials", names)
         self.assertIn("OpenVTC/openvtc", names)
         self.assertIn("OpenVTC/verifiable-trust-infrastructure", names)
+
+    def test_required_trust_tasks_spec_repository(self):
+        items = {item["repo"]: item for item in repositories()}
+        repo = items["trustoverip/dtgwg-trust-tasks-spec"]
+        self.assertEqual("normative-specification", repo["role"])
+        self.assertEqual("critical", repo["reporting_weight"])
+        self.assertIn("spec/**", repo["material_paths"])
+        self.assertIn("specs.json", repo["material_paths"])
 
     def test_required_vds_repository(self):
         names = {item["repo"] for item in repositories()}

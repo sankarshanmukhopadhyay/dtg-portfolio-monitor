@@ -13,6 +13,8 @@
 
 ### Added
 
+- Add `trustoverip/dtgwg-trust-tasks-spec` as an active, critical-weight normative Trust Tasks specification repository, including its `spec/**` and `specs.json` evidence surfaces.
+- Map the Trust Tasks specification repository to the OpenVTC implementation layer for cross-repository awareness and alignment signals.
 - Add a synchronized cross-specification pressure-test registry that declares runnable and candidate DTG composition seams and points execution to RAHP Toolkit.
 - Document the durable RAHP review-issue and upstream-triage governance model on the repository inventory page.
 - Add a dedicated cross-repository change register based on explicit references between monitored repositories.

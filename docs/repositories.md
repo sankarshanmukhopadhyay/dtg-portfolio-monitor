@@ -8,6 +8,7 @@ permalink: /repositories/
 | Repository | Workstream | Role | Lifecycle | Weight |
 |---|---|---|---|---|
 | [`trustoverip/dtgwg-trust-tasks-tf`](https://github.com/trustoverip/dtgwg-trust-tasks-tf) | trust-tasks | protocol-and-task-specification | active | critical |
+| [`trustoverip/dtgwg-trust-tasks-spec`](https://github.com/trustoverip/dtgwg-trust-tasks-spec) | trust-tasks | normative-specification | active | critical |
 | [`trustoverip/dtgwg-htx-tf`](https://github.com/trustoverip/dtgwg-htx-tf) | human-trust-experience | task-force-workspace | active | high |
 | [`trustoverip/dtgwg-ux-tf`](https://github.com/trustoverip/dtgwg-ux-tf) | human-trust-experience | legacy-or-transition | transitional | low |
 | [`trustoverip/dtgwg-general`](https://github.com/trustoverip/dtgwg-general) | coordination | coordination | active | high |
