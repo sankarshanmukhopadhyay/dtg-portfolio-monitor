@@ -90,6 +90,21 @@
     "review_status": "needs-review"
   },
   {
+    "finding_id": "c85661e8f5e7046360e3",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vta): specify the services family — the transports an agent advertises",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/243"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
     "finding_id": "908cfc17633e5849778e",
     "kind": "stale_repository",
     "severity": "low",

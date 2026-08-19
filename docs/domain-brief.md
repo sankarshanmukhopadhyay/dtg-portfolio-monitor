@@ -5,8 +5,8 @@ permalink: /domain-brief/
 ---
 # DTG Domain Brief
 
-**Generated:** 2026-08-19T13:12:55.921371Z  
-**Change units:** 264 · **Material:** 78  
+**Generated:** 2026-08-19T15:31:17.711287Z  
+**Change units:** 263 · **Material:** 81  
 
 This is the situational-awareness view of the monitored DTG portfolio. It interprets observed GitHub evidence through the declared [DTG domain model]({{ '/domain-model/' | relative_url }}). It is not an official ToIP architectural statement.
 
@@ -14,8 +14,8 @@ This is the situational-awareness view of the monitored DTG portfolio. It interp
 
 The strongest observed movement is currently concentrated in **Implementation and interoperability, Governed action, and Credentials and evidence**.
 
-**Implementation and interoperability** — 43 material change units, led by delivery and maintenance, protocol and interoperability.
-**Governed action** — 32 material change units, led by delivery and maintenance, protocol and interoperability.
+**Implementation and interoperability** — 44 material change units, led by delivery and maintenance, protocol and interoperability.
+**Governed action** — 34 material change units, led by delivery and maintenance, protocol and interoperability.
 **Credentials and evidence** — 3 material change units, led by credentials and proof, delivery and maintenance.
 
 ## Portfolio pulse
@@ -25,8 +25,8 @@ The strongest observed movement is currently concentrated in **Implementation an
 | Human trust and safety | **Active** | 3 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Advancing** | 7 | 3 |
-| Governed action | **Advancing strongly** | 46 | 32 |
-| Implementation and interoperability | **Advancing strongly** | 208 | 43 |
+| Governed action | **Advancing strongly** | 51 | 34 |
+| Implementation and interoperability | **Advancing strongly** | 202 | 44 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 > **Quiet is not a failure state.** It means no activity was observed in the monitored GitHub streams during this window; the capability may be stable, on a different cadence, or active elsewhere.
@@ -39,8 +39,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 
 ## Specification and implementation alignment
 
-- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 2 material specification change unit(s) and 32 material implementation change unit(s).
-- **Governed action: specification and implementation are moving together.** The monitor observed 32 material specification change unit(s) and 43 material implementation change unit(s).
+- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 2 material specification change unit(s) and 34 material implementation change unit(s).
+- **Governed action: specification and implementation are moving together.** The monitor observed 34 material specification change unit(s) and 44 material implementation change unit(s).
+- **Governed action: implementation movement is ahead of normative specification activity in this window.**
 
 ## Attention signals
 
@@ -50,9 +51,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 
 1. Whether **Credentials and evidence** implementation experience feeds back into the associated specification work.
 2. Whether **Governed action** implementation experience feeds back into the associated specification work.
-3. Whether activity resumes or remains intentionally stable in **Relationships and naming** while related work advances.
-4. Whether the current convergence between **Governed action** and **Implementation and interoperability** creates new cross-repository dependencies or review needs.
-5. Whether the current convergence between **Credentials and evidence** and **Implementation and interoperability** creates new cross-repository dependencies or review needs.
+3. Whether normative work catches up with implementation movement in **Governed action**.
+4. Whether activity resumes or remains intentionally stable in **Relationships and naming** while related work advances.
+5. Whether the current convergence between **Governed action** and **Implementation and interoperability** creates new cross-repository dependencies or review needs.
 
 ## Evidence trail
 
