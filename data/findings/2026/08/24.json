@@ -1,0 +1,571 @@
+[
+  {
+    "finding_id": "597ee7e32d43dbcff3fa",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "chore: release",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1048"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec",
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "ac2a6089ce6602446ff1",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc): implement the VPC as the deliberate-correlation mechanism on an edge",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1074"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "dab35957d704804f5588",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc): implement the VPC as the deliberate-correlation mechanism on an edge (#1074)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/25eebe960c9f6392ba335d5f2a158a92bb2c988a"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "f1eb253ef5a4189f3ceb",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc)!: let a member publish a relationship edge without naming themselves in it",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1061"
+    ],
+    "related_repositories": [
+      "OpenVTC/openvtc",
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "18070aeed0bfa398d4b7",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc)!: let a member publish a relationship edge without naming themselves in it (#1061)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/1513937d54c30218003046413f143bcd47afcc5b"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "c10081f4628c95d067b1",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "No removal notice reaches a member the VTC removes",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1053"
+    ],
+    "related_repositories": [
+      "OpenVTC/openvtc"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "d8bb61abe7bdfd076ff7",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "docs: design note for Trust Task version negotiation and its versioning contract",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1046"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "30d7cdbe146eed469d42",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "trustoverip/dtgwg-cred-spec",
+    "title": "Name the asymmetric edge: two halves may declare different correlation scopes",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-cred-spec/issues/23"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "86b7f79c8e49e0f4a6c0",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vtc): tell a member when a community removes them",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/256"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "4aa9f6c6a6cc80d362d7",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vta): withdraw an extended code the framework already names",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/253"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "10a9e99c48d920767d1d",
+    "kind": "material_cross_reference",
+    "severity": "critical",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vta): withdraw an extended code the framework already names (#253)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/100471dce7d881433390175f4a8eeddbcf65436e"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "bd590a9422de31ab016b",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/dtg-credentials",
+    "title": "Add the delegation credential (VDC) to the catalog",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/dtg-credentials/issues/10"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure",
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "e2f7d5d51878ab286013",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/openvtc",
+    "title": "fix(join)!: require the DTG common structure on an ingested invitation",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/openvtc/pull/256"
+    ],
+    "related_repositories": [
+      "OpenVTC/dtg-credentials",
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "70fc13f94b2f210ec591",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/openvtc",
+    "title": "fix(join)!: require the DTG common structure on an ingested invitation (#256)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/openvtc/commit/b81226f174abeb42900ae6ddab32e0d39cc95273"
+    ],
+    "related_repositories": [
+      "OpenVTC/dtg-credentials",
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "b9ce1e9753c89eff693f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/openvtc",
+    "title": "feat(relationships)!: issue the VRC under the relationship DID, not the persona",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/openvtc/pull/255"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "64be965167491ee27485",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/openvtc",
+    "title": "feat(relationships)!: issue the VRC under the relationship DID, not the persona (#255)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/openvtc/commit/56f5234cbfc6c267e8b36b31c2a6ca3377b2582a"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "9cd0e1919f8020fbfc29",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/openvtc",
+    "title": "feat(relationships): default to a pairwise R-DID, and say what the choice costs (#254)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/openvtc/commit/3529cf400bf1590a396df824800c34a84a2fd760"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "1d2468a659483f7533e1",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "The persona credential (VPC) has no implementation",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1067"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "e6ed30924a9924d79e3f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "Pairwise relationship identifiers vs. the relationships ACL policy",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1054"
+    ],
+    "related_repositories": [
+      "OpenVTC/openvtc"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "801316f7f361b37cb8ef",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "Trust Task Context Binding is not implemented",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1065"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "e3cf486109e64f87049c",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc): tell a member when the community removes them",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1060"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "87a4c1653e3ad57e859d",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc): tell a member when the community removes them (#1060)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/ac8c9c484fea2196a2e167a9e9144db88ff17f5f"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "fac2450b4bd6423dc328",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "fix(vtc)!: tell a rejected applicant why, on the one path built to recover it",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1058"
+    ],
+    "related_repositories": [
+      "OpenVTC/openvtc"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "a9887e3d60a376aae75d",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(app-state): a third store for versioned, namespaced application state",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1051"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "51f71b386535a785c0c6",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "Allow reprovision to run as a DTTE-consentable task, for self-service recovery",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1030"
+    ],
+    "related_repositories": [
+      "OpenVTC/openvtc"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "7f63dbf8a6a518197da4",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "docs: design note for Trust Task version negotiation and its versioning contract (#1046)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/9a0352e3b7135d51695da7fb460317d4f6216124"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "282f72b0a77b7316973d",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "docs: design note for the application-state store",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1041"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "3271fdd2cd15e40b018a",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "trustoverip/dtgwg-cred-spec",
+    "title": "Replace the four VID types with a declared correlation scope",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-cred-spec/issues/22"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "2ae1b8218d606395eebb",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "trustoverip/dtgwg-cred-spec",
+    "title": "VRC edge-verifiability conditions exist only in the glossary and contradict the body",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-cred-spec/issues/21"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "c4ca353b46b565eefe1c",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "trustoverip/dtgwg-cred-spec",
+    "title": "Relationship policy discovery: both communities must admit an edge, neither can find out",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-cred-spec/issues/25"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "cf4b76db223b1982bf31",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "trustoverip/dtgwg-cred-spec",
+    "title": "Edge verifiability across VTN contexts: different VTNs, or none at all",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-cred-spec/issues/24"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "986897186a85108baf43",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vtc): tell a member when a community removes them (#256)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/4937c70df95e56ed6404b8c004106ecb121a23cf"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "443ccb283a3ad1b6fc60",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vta): an application-state store, versioned and namespaced",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/252"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "3d0c0e06ac45af520d9b",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vta): an application-state store, versioned and namespaced (#252)",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/ce14586b921b4308a0f9a2c415f456925c381cc3"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "c85661e8f5e7046360e3",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vta): specify the services family — the transports an agent advertises",
+    "summary": "A material event explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/243"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "908cfc17633e5849778e",
+    "kind": "stale_repository",
+    "severity": "low",
+    "repository": "trustoverip/dtgwg-agent-names-tf",
+    "title": "No repository push for 152 days",
+    "summary": "The latest recorded push is 152 days old. Review whether the repository is dormant, transitional, or simply stable.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-agent-names-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "needs-review"
+  },
+  {
+    "finding_id": "a708c081a7b9061e544c",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "repository": "trustoverip/dtgwg-rcards-tf",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-rcards-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "observed"
+  },
+  {
+    "finding_id": "574fb2bcaa465e59eb1e",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "repository": "trustoverip/dtgwg-ux-tf",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-ux-tf"
+    ],
+    "related_repositories": [],
+    "review_status": "observed"
+  }
+]
