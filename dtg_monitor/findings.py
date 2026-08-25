@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from typing import Any
 import hashlib
 
+from .config import finding_dispositions
 
 LIFECYCLE_STATES = {"open", "resolved", "superseded", "duplicate", "accepted-risk", "not-applicable"}
 DISPOSITION_STATES = LIFECYCLE_STATES - {"open"}
@@ -15,18 +16,15 @@ def _fingerprint(kind: str, repository: str, subject: str) -> str:
     return hashlib.sha256(f"{kind}|{repository}|{subject}".encode()).hexdigest()[:24]
 
 
-def _finding(
-    *, kind: str, repository: str, subject: str, title: str, summary: str,
-    evidence_urls: list[str], related_repositories: list[str], materiality: str,
-    urgency: str, assurance_impact: str = "none", review_status: str = "unreviewed",
-) -> dict[str, Any]:
+def _finding(*, kind: str, repository: str, subject: str, title: str, summary: str,
+             evidence_urls: list[str], related_repositories: list[str], materiality: str,
+             urgency: str, assurance_impact: str = "none", review_status: str = "unreviewed") -> dict[str, Any]:
     fingerprint = _fingerprint(kind, repository, subject)
     return {
         "finding_id": fingerprint[:20], "fingerprint": fingerprint, "kind": kind,
         "severity": materiality, "materiality": materiality, "urgency": urgency,
         "assurance_impact": assurance_impact, "repository": repository, "title": title,
-        "summary": summary,
-        "evidence_urls": list(dict.fromkeys(url for url in evidence_urls if url)),
+        "summary": summary, "evidence_urls": list(dict.fromkeys(url for url in evidence_urls if url)),
         "related_repositories": sorted(set(related_repositories)), "state": "open",
         "review_status": review_status, "authority": None, "disposition": None,
         "related_findings": [], "successor_finding": None,
@@ -55,8 +53,7 @@ def validate_dispositions(dispositions: list[dict[str, Any]]) -> None:
             datetime.fromisoformat(str(disposition["recorded_at"]).replace("Z", "+00:00"))
         except ValueError as exc:
             raise ValueError(f"{prefix}.disposition.recorded_at must be RFC3339-compatible") from exc
-        evidence = disposition.get("evidence", [])
-        if not isinstance(evidence, list):
+        if not isinstance(disposition.get("evidence", []), list):
             raise ValueError(f"{prefix}.disposition.evidence must be a list")
 
 
@@ -94,10 +91,8 @@ def _assurance_impact(event: dict[str, Any]) -> str:
     return "none"
 
 
-def build_findings(
-    events: list[dict[str, Any]], collection_warnings: list[dict[str, Any]],
-    stale_after_days: int = 90, dispositions: list[dict[str, Any]] | None = None,
-) -> list[dict[str, Any]]:
+def build_findings(events: list[dict[str, Any]], collection_warnings: list[dict[str, Any]],
+                   stale_after_days: int = 90, dispositions: list[dict[str, Any]] | None = None) -> list[dict[str, Any]]:
     """Build findings from consolidated units and overlay governed dispositions."""
     now = datetime.now(timezone.utc)
     findings: list[dict[str, Any]] = []
@@ -106,49 +101,37 @@ def build_findings(
 
     for repository, snapshot in snapshots.items():
         if snapshot.get("is_empty"):
-            findings.append(_finding(
-                kind="empty_repository", repository=repository, subject="repository",
+            findings.append(_finding(kind="empty_repository", repository=repository, subject="repository",
                 title="Repository has no commits",
                 summary="GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
                 evidence_urls=[snapshot["url"]], related_repositories=[], materiality="informational",
-                urgency="informational", review_status="observed",
-            ))
+                urgency="informational", review_status="observed"))
         pushed_at = snapshot.get("pushed_at")
         if pushed_at:
             pushed = datetime.fromisoformat(pushed_at.replace("Z", "+00:00"))
             age = (now - pushed).days
             if age >= stale_after_days:
-                findings.append(_finding(
-                    kind="stale_repository", repository=repository, subject=pushed_at,
+                findings.append(_finding(kind="stale_repository", repository=repository, subject=pushed_at,
                     title=f"No repository push for {age} days",
                     summary=f"The latest recorded push is {age} days old. Review whether the repository is dormant, transitional, or intentionally stable.",
-                    evidence_urls=[snapshot["url"]], related_repositories=[], materiality="low", urgency="routine",
-                ))
+                    evidence_urls=[snapshot["url"]], related_repositories=[], materiality="low", urgency="routine"))
 
     for event in activity:
         if event.get("linked_repositories") and event.get("significance") in {"critical", "high"}:
-            assurance_impact = _assurance_impact(event)
-            urgency = "elevated" if assurance_impact in {"unknown", "potentially-breaking"} else "routine"
-            findings.append(_finding(
-                kind="material_cross_reference", repository=event["repository"],
+            impact = _assurance_impact(event)
+            findings.append(_finding(kind="material_cross_reference", repository=event["repository"],
                 subject=f"{event.get('repository')}|{event.get('change_unit_key', event.get('event_id'))}",
-                title=event["title"],
-                summary="A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+                title=event["title"], summary="A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
                 evidence_urls=_event_evidence(event), related_repositories=event["linked_repositories"],
                 materiality="high" if event.get("significance") == "critical" else event.get("significance", "medium"),
-                urgency=urgency, assurance_impact=assurance_impact,
-            ))
+                urgency="elevated" if impact in {"unknown", "potentially-breaking"} else "routine", assurance_impact=impact))
 
     for warning in collection_warnings:
-        findings.append(_finding(
-            kind="collection_warning", repository=warning["repository"], subject=warning["stream"],
+        findings.append(_finding(kind="collection_warning", repository=warning["repository"], subject=warning["stream"],
             title=f"Collection gap in {warning['stream']}", summary=warning["message"],
             evidence_urls=[warning.get("url")] if warning.get("url") else [], related_repositories=[],
-            materiality="medium", urgency="urgent", assurance_impact="unknown", review_status="action-required",
-        ))
+            materiality="medium", urgency="urgent", assurance_impact="unknown", review_status="action-required"))
 
-    findings = apply_dispositions(findings, dispositions or [])
-    return sorted(findings, key=lambda f: (
-        1 if f["state"] != "open" else 0, URGENCY_ORDER.get(f["urgency"], 9),
-        f["repository"], f["kind"], f["fingerprint"],
-    ))
+    findings = apply_dispositions(findings, finding_dispositions() if dispositions is None else dispositions)
+    return sorted(findings, key=lambda f: (1 if f["state"] != "open" else 0,
+        URGENCY_ORDER.get(f["urgency"], 9), f["repository"], f["kind"], f["fingerprint"]))
