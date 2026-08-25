@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 import hashlib
 import json
+import os
 
 from .config import ROOT, portfolio_model, repositories
 from .intelligence import THEME_LABELS, event_themes
@@ -80,6 +81,15 @@ def _assertion(
     }
 
 
+def _environment_provenance() -> dict[str, Any]:
+    return {
+        "source_revision": os.getenv("GITHUB_SHA"),
+        "collection_run_id": os.getenv("GITHUB_RUN_ID"),
+        "repository": os.getenv("GITHUB_REPOSITORY"),
+        "publication_state": "workflow-generated" if os.getenv("GITHUB_ACTIONS") == "true" else "local-generated",
+    }
+
+
 def analyse(
     events: list[dict[str, Any]],
     *,
@@ -94,7 +104,7 @@ def analyse(
     repository_configs = repository_configs or repositories()
     findings = findings or []
     generated_at = generated_at or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-    provenance = provenance or {}
+    provenance = _environment_provenance() if provenance is None else provenance
 
     capabilities, workstream_to_capability = _capability_index(model)
     repo_to_workstream = {item["repo"]: item["workstream"] for item in repository_configs}
