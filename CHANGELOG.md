@@ -1,35 +1,40 @@
-
-## Unreleased
-
-- Point DTG cross-specification execution metadata at the dedicated RAHP DTG launcher while retaining the generic profile-driven workflow as an explicit fallback/extension surface.
-
-### Changed
-- Marked all eight declared DTG cross-specification assurance seams runnable and synchronized their corpus, assessment and evidence-grade metadata with the RAHP Toolkit DTG profile.
-- Recorded the profile registry used by the ecosystem-neutral RAHP cross-specification executor.
-
 # Changelog
 
 ## [Unreleased]
 
+No unreleased changes recorded after v0.5.0.
+
+## [0.5.0] - 2026-08-25
+
 ### Added
 
-- Add `trustoverip/dtgwg-trust-tasks-spec` as an active, critical-weight normative Trust Tasks specification repository, including its `spec/**` and `specs.json` evidence surfaces.
-- Map the Trust Tasks specification repository to the OpenVTC implementation layer for cross-repository awareness and alignment signals.
-- Add a synchronized cross-specification pressure-test registry that declares runnable and candidate DTG composition seams and points execution to RAHP Toolkit.
-- Document the durable RAHP review-issue and upstream-triage governance model on the repository inventory page.
-- Add a dedicated cross-repository change register based on explicit references between monitored repositories.
-- Add a compact tagged-release activity pulse showing release counts and the latest release per repository.
-- Add configurable daily-report retention, keeping the current and previous calendar month by default.
-
-### Fixed
-
-- Enable Just the Docs Mermaid support so diagrams on the domain-model and architecture pages render on GitHub Pages.
-- Add a regression test requiring Mermaid configuration whenever diagram sources are present.
+- Stable finding fingerprints and an explicit lifecycle/disposition envelope.
+- Governed `config/finding-dispositions.yaml` ledger requiring authority, rationale, timestamp, and evidence for non-open finding states.
+- Separate finding `materiality`, `urgency`, and `assurance_impact` semantics while retaining `severity` as a v0.4 compatibility alias.
+- Machine-addressable DTG assertions with stable IDs, deterministic confidence, review class, metrics, and direct evidence URLs.
+- A decision queue combining decision findings, review-required assertions, watch assertions, and disposed findings.
+- Observation provenance recording evidence-through time, source revision, Actions run ID, generating repository, and publication state.
+- Bounded daily JSON evidence retention for event, finding, and awareness snapshots.
+- Validated GitHub Actions release automation with a synchronized `VERSION` contract.
+- `trustoverip/dtgwg-trust-tasks-spec` as a monitored normative Trust Tasks specification repository and its declared implementation relationship.
 
 ### Changed
 
-- Replace the JavaScript-dependent portfolio event filters with a dependency-free canonical event register ordered by date (newest first), then repository.
-- Surface tagged-release and cross-repository change counts on the portfolio dashboard.
+- Generate findings from consolidated change units instead of raw PR and commit objects independently.
+- Preserve all correlated evidence URLs, linked repositories, significance reasons, strongest significance, and maximum score during consolidation.
+- Reframe the Domain Brief and dashboard around review decisions before portfolio movement and raw event detail.
+- Treat implementation-ahead and specification-ahead alignment signals as `review-required`; convergence and moving-together signals remain `watch`.
+- Make collection warnings urgent review findings so degraded evidence cannot appear equivalent to a clean observation.
+- Bound generated evidence before persistence in the scheduled collection workflow.
+- Replace JavaScript-dependent portfolio filtering with a dependency-free canonical event register ordered by date and repository.
+- Surface tagged-release and cross-repository change counts on the dashboard.
+- Keep cross-specification seam declarations as coordination metadata only in v0.5.0; external assurance execution, including RAHP invocation, is explicitly deferred.
+
+### Fixed
+
+- Prevent pull requests and their correlated merge commits from creating duplicate semantic review obligations.
+- Synchronize package version declarations that had drifted between `pyproject.toml` and `dtg_monitor.__version__`.
+- Enable and validate Just the Docs Mermaid rendering where diagram sources are present.
 
 ## [0.4.0] - 2026-08-11
 
