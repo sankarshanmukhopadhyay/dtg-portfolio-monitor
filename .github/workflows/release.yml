@@ -1,0 +1,109 @@
+name: Release
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "VERSION"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version without v prefix (must match VERSION)
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dtg-portfolio-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Resolve and validate version contract
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERSION_FILE="$(tr -d '[:space:]' < VERSION)"
+          REQUESTED="${{ inputs.version }}"
+          if [[ -n "$REQUESTED" && "$REQUESTED" != "$VERSION_FILE" ]]; then
+            echo "workflow input $REQUESTED does not match VERSION $VERSION_FILE" >&2
+            exit 1
+          fi
+          if [[ ! "$VERSION_FILE" =~ ^0\.5\.[0-9]+$ ]]; then
+            echo "v0.5.x release workflow refuses non-0.5.x version: $VERSION_FILE" >&2
+            exit 1
+          fi
+          PYPROJECT_VERSION="$(python - <<'PY'
+          import tomllib
+          print(tomllib.load(open('pyproject.toml','rb'))['project']['version'])
+          PY
+          )"
+          PACKAGE_VERSION="$(python - <<'PY'
+          import dtg_monitor
+          print(dtg_monitor.__version__)
+          PY
+          )"
+          test "$VERSION_FILE" = "$PYPROJECT_VERSION"
+          test "$VERSION_FILE" = "$PACKAGE_VERSION"
+          TAG="v$VERSION_FILE"
+          NOTES="docs/release-notes-$TAG.md"
+          test -f "$NOTES"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "tag $TAG already exists" >&2
+            exit 1
+          fi
+          echo "version=$VERSION_FILE" >> "$GITHUB_OUTPUT"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "notes=$NOTES" >> "$GITHUB_OUTPUT"
+
+      - name: Verify release runs from current main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Validate configuration and schemas
+        run: python -m dtg_monitor validate
+      - name: Run unit tests
+        run: python -m unittest discover -s tests
+
+      - name: Build release documentation
+        run: bundle exec jekyll build --source docs --destination _site --config _config.yml
+      - name: Validate published routes
+        run: python scripts/validate_site.py _site
+
+      - name: Create signed-by-Actions annotated tag
+        env:
+          TAG: ${{ steps.version.outputs.tag }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "$TAG" -m "DTG Portfolio Monitor $TAG"
+          git push origin "$TAG"
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ steps.version.outputs.tag }}
+          NOTES: ${{ steps.version.outputs.notes }}
+        run: gh release create "$TAG" --verify-tag --title "$TAG — Decision-grade Portfolio Review" --notes-file "$NOTES"
