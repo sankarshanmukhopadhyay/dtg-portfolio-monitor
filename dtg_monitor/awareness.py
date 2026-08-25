@@ -4,6 +4,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+import hashlib
 import json
 
 from .config import ROOT, portfolio_model, repositories
@@ -42,9 +43,41 @@ def _evidence_urls(events: list[dict[str, Any]], limit: int = 12) -> list[str]:
         url = event.get("url")
         if url and url not in urls:
             urls.append(url)
+        for correlated in event.get("correlated_events", []):
+            correlated_url = correlated.get("url")
+            if correlated_url and correlated_url not in urls:
+                urls.append(correlated_url)
         if len(urls) >= limit:
             break
-    return urls
+    return urls[:limit]
+
+
+def _assertion_id(kind: str, subject: str, evidence_urls: list[str]) -> str:
+    basis = f"{kind}|{subject}|{'|'.join(sorted(evidence_urls))}"
+    return "DTG-A-" + hashlib.sha256(basis.encode()).hexdigest()[:16].upper()
+
+
+def _assertion(
+    *,
+    kind: str,
+    subject: str,
+    statement: str,
+    state: str,
+    review_class: str,
+    evidence_urls: list[str],
+    metrics: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    return {
+        "assertion_id": _assertion_id(kind, subject, evidence_urls),
+        "kind": kind,
+        "subject": subject,
+        "statement": statement,
+        "state": state,
+        "review_class": review_class,
+        "confidence": "deterministic",
+        "evidence_urls": evidence_urls,
+        "metrics": metrics or {},
+    }
 
 
 def analyse(
@@ -54,25 +87,18 @@ def analyse(
     repository_configs: list[dict[str, Any]] | None = None,
     findings: list[dict[str, Any]] | None = None,
     generated_at: str | None = None,
+    provenance: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    """Build a deterministic DTG situational-awareness snapshot.
-
-    ``events`` should contain consolidated, non-snapshot change units. The
-    function deliberately uses declared portfolio semantics rather than an LLM
-    so that every generated signal can be reproduced from configuration and
-    GitHub evidence.
-    """
+    """Build a deterministic, machine-addressable DTG situational-awareness snapshot."""
     model = model or portfolio_model()
     repository_configs = repository_configs or repositories()
     findings = findings or []
     generated_at = generated_at or datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    provenance = provenance or {}
 
     capabilities, workstream_to_capability = _capability_index(model)
     repo_to_workstream = {item["repo"]: item["workstream"] for item in repository_configs}
-    repo_to_capability = {
-        repo: workstream_to_capability.get(workstream)
-        for repo, workstream in repo_to_workstream.items()
-    }
+    repo_to_capability = {repo: workstream_to_capability.get(workstream) for repo, workstream in repo_to_workstream.items()}
 
     by_capability: dict[str, list[dict[str, Any]]] = defaultdict(list)
     unmapped_events: list[dict[str, Any]] = []
@@ -158,14 +184,8 @@ def analyse(
         def relevant(event: dict[str, Any]) -> bool:
             return not relevant_themes or bool(relevant_themes & set(event_themes(event)))
 
-        spec_material = [
-            e for e in by_repo.get(spec_repo, [])
-            if e.get("significance") in MATERIAL_LEVELS and relevant(e)
-        ]
-        impl_material = [
-            e for repo in impl_repos for e in by_repo.get(repo, [])
-            if e.get("significance") in MATERIAL_LEVELS and relevant(e)
-        ]
+        spec_material = [e for e in by_repo.get(spec_repo, []) if e.get("significance") in MATERIAL_LEVELS and relevant(e)]
+        impl_material = [e for repo in impl_repos for e in by_repo.get(repo, []) if e.get("significance") in MATERIAL_LEVELS and relevant(e)]
         if spec_material and impl_material:
             state = "moving-together"
         elif len(spec_material) >= thresholds["advancing_material"] and not impl_material:
@@ -187,22 +207,73 @@ def analyse(
                 "evidence_urls": _evidence_urls(evidence),
             })
 
-    ranked = sorted(
-        capability_states.items(),
-        key=lambda item: (item[1]["material_change_units"], item[1]["change_units"]),
-        reverse=True,
-    )
+    ranked = sorted(capability_states.items(), key=lambda item: (item[1]["material_change_units"], item[1]["change_units"]), reverse=True)
     dominant_capabilities = [capability_id for capability_id, state in ranked if state["change_units"]][:3]
     dominant_themes = [
         {"id": theme, "label": THEME_LABELS.get(theme, theme), "count": count}
         for theme, count in portfolio_themes.most_common(5)
     ]
 
-    material_findings = [f for f in findings if f.get("severity") in {"critical", "high", "medium"}]
+    assertions: list[dict[str, Any]] = []
+    for item in implementation_alignment:
+        label = capabilities[item["capability"]]["label"]
+        state = item["state"]
+        review_class = "review-required" if state in {"implementation-ahead", "specification-ahead"} else "watch"
+        statement = {
+            "moving-together": f"{label} specification and implementation are moving together in this window.",
+            "implementation-ahead": f"{label} implementation movement is ahead of normative specification activity in this window.",
+            "specification-ahead": f"{label} specification movement is ahead of implementation activity in this window.",
+        }[state]
+        assertions.append(_assertion(
+            kind="specification-implementation-alignment",
+            subject=item["capability"],
+            statement=statement,
+            state=state,
+            review_class=review_class,
+            evidence_urls=item["evidence_urls"],
+            metrics={
+                "specification_material_change_units": item["specification_material_change_units"],
+                "implementation_material_change_units": item["implementation_material_change_units"],
+            },
+        ))
+    for item in convergences:
+        subject = f"{item['from']}->{item['to']}"
+        assertions.append(_assertion(
+            kind="cross-capability-convergence",
+            subject=subject,
+            statement=f"Material movement is present on both sides of the declared {item['relationship']} relationship.",
+            state="observed",
+            review_class="watch",
+            evidence_urls=item["evidence_urls"],
+            metrics={"material_change_units": item["material_change_units"]},
+        ))
+    for item in asymmetries:
+        assertions.append(_assertion(
+            kind="related-capability-asymmetry",
+            subject=f"{item['advancing']}->{item['quiet']}",
+            statement=item["summary"],
+            state="observed",
+            review_class="watch",
+            evidence_urls=item["evidence_urls"],
+        ))
+
+    open_findings = [f for f in findings if f.get("state", "open") == "open"]
+    decision_findings = [f for f in open_findings if f.get("urgency") in {"urgent", "elevated"} or f.get("review_status") == "action-required"]
+    watch_assertions = [a for a in assertions if a["review_class"] == "watch"]
+    review_assertions = [a for a in assertions if a["review_class"] == "review-required"]
+
+    evidence_through = max((e.get("updated_at", "") for e in events), default="")
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": generated_at,
         "model_version": model.get("version", 1),
+        "observation": {
+            "evidence_through": evidence_through,
+            "source_revision": provenance.get("source_revision"),
+            "collection_run_id": provenance.get("collection_run_id"),
+            "repository": provenance.get("repository"),
+            "publication_state": provenance.get("publication_state", "generated"),
+        },
         "change_units": len(events),
         "material_change_units": sum(e.get("significance") in MATERIAL_LEVELS for e in events),
         "dominant_capabilities": dominant_capabilities,
@@ -211,7 +282,14 @@ def analyse(
         "convergences": sorted(convergences, key=lambda item: item["material_change_units"], reverse=True),
         "implementation_alignment": implementation_alignment,
         "attention_signals": asymmetries,
-        "review_findings": len(material_findings),
+        "assertions": assertions,
+        "decision_queue": {
+            "decision_findings": len(decision_findings),
+            "review_assertions": len(review_assertions),
+            "watch_assertions": len(watch_assertions),
+            "open_findings": len(open_findings),
+        },
+        "review_findings": len(open_findings),
         "unmapped_change_units": len(unmapped_events),
     }
 
