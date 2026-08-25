@@ -44,6 +44,8 @@ jobs:
         run: |
           python -m dtg_monitor report --period daily
           python -m dtg_monitor report --period weekly
+      - name: Bound generated evidence history
+        run: python scripts/prune_evidence.py
       - name: Run tests
         run: python -m unittest discover -s tests
       - name: Persist generated outputs

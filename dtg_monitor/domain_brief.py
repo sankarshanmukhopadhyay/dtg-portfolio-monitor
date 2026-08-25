@@ -68,6 +68,13 @@ def _alignment_text(snapshot: dict[str, Any], item: dict[str, Any]) -> str:
 
 
 def render(snapshot: dict[str, Any], generated_at: str) -> str:
+    observation = snapshot.get("observation", {})
+    source_revision = observation.get("source_revision") or "local/unknown"
+    run_id = observation.get("collection_run_id") or "local/unknown"
+    evidence_through = observation.get("evidence_through") or generated_at
+    publication_state = observation.get("publication_state") or "generated"
+    queue = snapshot.get("decision_queue", {})
+
     lines = [
         "---",
         "title: DTG Domain Brief",
@@ -77,9 +84,20 @@ def render(snapshot: dict[str, Any], generated_at: str) -> str:
         "# DTG Domain Brief",
         "",
         f"**Generated:** {generated_at}  ",
+        f"**Evidence through:** {evidence_through}  ",
+        f"**Source revision:** `{source_revision}` · **Collection run:** `{run_id}` · **Publication state:** `{publication_state}`  ",
         f"**Change units:** {snapshot['change_units']} · **Material:** {snapshot['material_change_units']}  ",
         "",
         "This is the situational-awareness view of the monitored DTG portfolio. It interprets observed GitHub evidence through the declared [DTG domain model]({{ '/domain-model/' | relative_url }}). It is not an official ToIP architectural statement.",
+        "",
+        "## Review queue",
+        "",
+        f"- **Decision findings:** {queue.get('decision_findings', 0)}",
+        f"- **Review-required assertions:** {queue.get('review_assertions', 0)}",
+        f"- **Watch assertions:** {queue.get('watch_assertions', 0)}",
+        f"- **Open findings:** {queue.get('open_findings', 0)}",
+        "",
+        "Review-required items are deterministic coordination or alignment signals. They are not automatic declarations of specification failure.",
         "",
         "## Where DTG is moving",
         "",
@@ -119,6 +137,17 @@ def render(snapshot: dict[str, Any], generated_at: str) -> str:
     else:
         lines.append("_No related-capability asymmetry met the current deterministic signal threshold._")
 
+    lines += ["", "## Machine-addressable assertions", ""]
+    assertions = snapshot.get("assertions", [])
+    if assertions:
+        lines += ["| Assertion | Class | State | Statement |", "|---|---|---|---|"]
+        for assertion in assertions[:20]:
+            lines.append(
+                f"| `{assertion['assertion_id']}` | {assertion['review_class']} | {assertion['state']} | {assertion['statement']} |"
+            )
+    else:
+        lines.append("_No deterministic portfolio assertions were produced in this window._")
+
     lines += ["", "## What to watch next", ""]
     watch: list[str] = []
     for item in snapshot["implementation_alignment"]:
@@ -145,7 +174,7 @@ def render(snapshot: dict[str, Any], generated_at: str) -> str:
         "",
         "Use the [Dashboard]({{ '/dashboard/' | relative_url }}) for capability-level indicators and the [Portfolio Status]({{ '/portfolio-status/' | relative_url }}) for the canonical event register and source links.",
         "",
-        "The machine-readable awareness snapshot is persisted under `data/awareness/` so that every published interpretation can be reproduced from versioned evidence and configuration.",
+        "The machine-readable awareness snapshot is persisted under `data/awareness/`. Assertions carry stable IDs, deterministic confidence and direct evidence URLs so each published interpretation can be reproduced from versioned evidence and configuration.",
         "",
     ]
     return "\n".join(lines)

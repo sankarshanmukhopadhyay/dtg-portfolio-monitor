@@ -73,21 +73,17 @@ def _thread_summary(theme: str, events: list[dict[str, Any]]) -> str:
 
 
 def _event_sort_key(event: dict[str, Any]) -> tuple[str, str, int, str]:
-    """Sort the canonical register by date (newest first), then repository."""
     date = (event.get("updated_at") or "")[:10]
     return (date, event.get("repository", ""), ORDER.get(event.get("significance", "low"), 9), event.get("title", ""))
 
 
 def _event_table(activity: list[dict[str, Any]]) -> list[str]:
-    """Render a dependency-free event register ordered by date, then repository."""
     rows = [
         '<div class="table-wrapper"><table class="portfolio-event-table">',
         '<thead><tr><th>Date</th><th>Repository</th><th>Significance</th><th>Type / state</th><th>Change</th><th>Signals</th><th>Related</th></tr></thead>',
         '<tbody>',
     ]
     ordered = sorted(activity, key=_event_sort_key, reverse=True)
-    # ``reverse=True`` would also reverse repository names, so regroup dates and
-    # explicitly order repositories inside each day for predictable scanning.
     by_date: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for event in ordered:
         by_date[(event.get("updated_at") or "")[:10]].append(event)
@@ -164,7 +160,6 @@ def _month_index(value: datetime) -> int:
 
 
 def _prune_daily_reports(now: datetime, retain_months: int) -> list[Path]:
-    """Keep daily reports for the current and configured number of calendar months."""
     if retain_months < 1:
         return []
     removed: list[Path] = []
@@ -178,6 +173,18 @@ def _prune_daily_reports(now: datetime, retain_months: int) -> list[Path]:
             path.unlink()
             removed.append(path)
     return removed
+
+
+def _decision_findings(findings: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [
+        finding for finding in findings
+        if finding.get("state", "open") == "open"
+        and (finding.get("urgency") in {"urgent", "elevated"} or finding.get("review_status") == "action-required")
+    ]
+
+
+def _resolved_findings(findings: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [finding for finding in findings if finding.get("state", "open") != "open"]
 
 
 def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) -> Path:
@@ -216,6 +223,10 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
         generated_at=generated_at,
     )
     write_snapshot(awareness, when=now)
+    decision_findings = _decision_findings(findings)
+    resolved_findings = _resolved_findings(findings)
+    review_assertions = [a for a in awareness.get("assertions", []) if a.get("review_class") == "review-required"]
+    watch_assertions = [a for a in awareness.get("assertions", []) if a.get("review_class") == "watch"]
 
     lines = [
         f"# {title}", "",
@@ -224,12 +235,19 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
         f"**Duplicate representations consolidated:** {collapsed_duplicates}  ",
         f"**Significance bands:** {_threshold_legend()} ([methodology]({{{{ '/methodology/' | relative_url }}}}))  ",
         f"**Critical:** {counts['critical']} · **High:** {counts['high']} · **Medium:** {counts['medium']} · **Low:** {counts['low']}",
+        "", "## Decision summary", "",
+        f"- **Decision findings:** {len(decision_findings)}",
+        f"- **Review-required assertions:** {len(review_assertions)}",
+        f"- **Watch assertions:** {len(watch_assertions)}",
+        f"- **Resolved/disposed findings represented in this snapshot:** {len(resolved_findings)}",
+        "",
+        "Findings and assertions are deterministic review signals. They do not automatically change upstream specifications or repositories.",
         "", "## Executive summary", "",
     ]
     if material:
-        lines.append(f"{len(material)} material change events were detected across {len(set(e['repository'] for e in material))} repositories.")
+        lines.append(f"{len(material)} material change units were detected across {len(set(e['repository'] for e in material))} repositories.")
         links = sum(1 for e in material if e.get("linked_repositories"))
-        lines.append(f"{links} material events explicitly reference another monitored repository and may merit coordinated review.")
+        lines.append(f"{links} material change units explicitly reference another monitored repository and may merit coordinated review.")
         if leading_threads:
             names = ", ".join(THEME_LABELS.get(theme, theme) for theme, _ in leading_threads[:3])
             lines.append(f"The dominant portfolio threads were {names}.")
@@ -269,8 +287,8 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
 
     lines += [
         "", "## Method note", "",
-        "Significance is assigned by deterministic rules in `config/significance-rules.yaml`. Scores are review signals, not authoritative judgements. "
-        "Duplicate representations means that a commit and its associated pull request were consolidated into one change unit. Source links remain the evidence of record.", "",
+        "Significance is assigned by deterministic rules in `config/significance-rules.yaml`. Scores are materiality signals, not authoritative judgements. "
+        "Findings separately expose review urgency and assurance impact. Duplicate representations means that a commit and its associated pull request were consolidated into one change unit. Source links remain the evidence of record.", "",
     ]
 
     target = ROOT / "reports" / period / f"{name}.md"
@@ -287,32 +305,78 @@ def generate(period: str = "daily", events: list[dict[str, Any]] | None = None) 
     domain_brief.write_text(render_domain_brief(awareness, generated_at), encoding="utf-8")
 
     dashboard = ROOT / "docs" / "dashboard.md"
+    observation = awareness.get("observation", {})
     dashboard_lines = [
         "---", "title: Dashboard", "nav_order: 3", "permalink: /dashboard/", "---",
         "# Portfolio dashboard", "",
         f"**Generated:** {generated_at}  ",
-        f"**Change units:** {len(activity)}  ", f"**Material change units:** {len(material)}  ",
-        f"**Breaking changes:** {len(breaking)}  ", f"**Tagged releases:** {len(releases)}  ", f"**Cross-repository changes:** {len(cross_repo)}  ", f"**Review findings:** {len(findings)}  ",
+        f"**Evidence through:** {observation.get('evidence_through') or generated_at}  ",
+        f"**Source revision:** `{observation.get('source_revision') or 'local/unknown'}` · **Collection run:** `{observation.get('collection_run_id') or 'local/unknown'}`  ",
+        "",
+        "## Review now", "",
+        f"**{len(decision_findings)} decision finding(s)** · **{len(review_assertions)} review-required assertion(s)**", "",
+    ]
+    if decision_findings:
+        dashboard_lines += ["### Decision findings", "", "| Urgency | Repository | Finding | Impact | Evidence |", "|---|---|---|---|---|"]
+        for finding in decision_findings[:12]:
+            evidence = finding.get("evidence_urls", [])
+            evidence_link = f"[source]({evidence[0]})" if evidence else "—"
+            dashboard_lines.append(
+                f"| **{finding.get('urgency', 'routine')}** | `{finding.get('repository', '')}` | `{finding.get('fingerprint', finding.get('finding_id', ''))}` {finding.get('title', '')} | {finding.get('assurance_impact', 'none')} | {evidence_link} |"
+            )
+    if review_assertions:
+        dashboard_lines += ["", "### Review-required assertions", "", "| Assertion | State | Statement | Evidence |", "|---|---|---|---|"]
+        for assertion in review_assertions[:12]:
+            evidence = assertion.get("evidence_urls", [])
+            evidence_link = f"[source]({evidence[0]})" if evidence else "—"
+            dashboard_lines.append(
+                f"| `{assertion['assertion_id']}` | {assertion['state']} | {assertion['statement']} | {evidence_link} |"
+            )
+    if not decision_findings and not review_assertions:
+        dashboard_lines.append("_No decision-required items were produced in the current evaluated window._")
+
+    dashboard_lines += [
+        "", "## Watch", "",
+        f"**{len(watch_assertions)} deterministic watch assertion(s)** · **{len(findings) - len(decision_findings)} other finding(s)**", "",
+    ]
+    for assertion in watch_assertions[:8]:
+        dashboard_lines.append(f"- `{assertion['assertion_id']}` — {assertion['statement']}")
+    if not watch_assertions:
+        dashboard_lines.append("_No watch assertions were produced._")
+
+    dashboard_lines += ["", "## Recently disposed", ""]
+    if resolved_findings:
+        for finding in resolved_findings[:8]:
+            dashboard_lines.append(
+                f"- `{finding.get('fingerprint', finding.get('finding_id', ''))}` — **{finding.get('state')}** — {finding.get('title', '')}"
+            )
+    else:
+        dashboard_lines.append("_No explicit finding dispositions are represented in the current snapshot._")
+
+    dashboard_lines += [
+        "", "## Portfolio movement", "",
+        f"**Change units:** {len(activity)} · **Material:** {len(material)} · **Breaking:** {len(breaking)} · **Tagged releases:** {len(releases)} · **Cross-repository:** {len(cross_repo)}  ",
         f"**Duplicate representations consolidated:** {collapsed_duplicates}", "",
         "[Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }", "",
-        "## Capability pulse", "",
+        "### Capability pulse", "",
         "| Capability | Pulse | Change units | Material |", "|---|---|---:|---:|",
     ]
     for state in awareness["capabilities"].values():
         dashboard_lines.append(
             f"| {state['label']} | **{PULSE_LABELS[state['pulse']]}** | {state['change_units']} | {state['material_change_units']} |"
         )
-    dashboard_lines += ["", "## Leading themes", ""]
+    dashboard_lines += ["", "### Leading themes", ""]
     themes = theme_counts(activity)
     dashboard_lines += [
         f"- **{THEME_LABELS.get(theme, theme.replace('-', ' ').title())}:** {count}"
         for theme, count in themes[:5]
     ] or ["_No themes detected._"]
     dashboard_lines += [
-        "", "## Portfolio intelligence", "",
+        "", "### Portfolio intelligence", "",
         f"- **Cross-capability convergence signals:** {len(awareness['convergences'])}",
         f"- **Specification/implementation signals:** {len(awareness['implementation_alignment'])}",
         f"- **Attention signals:** {len(awareness['attention_signals'])}",
+        f"- **Machine-addressable assertions:** {len(awareness.get('assertions', []))}",
     ]
     dashboard.write_text("\n".join(dashboard_lines) + "\n", encoding="utf-8")
 
