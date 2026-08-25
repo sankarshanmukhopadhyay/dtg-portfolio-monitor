@@ -1,0 +1,4 @@
+version: 1
+# Governed, maintainer-authored decisions keyed by stable finding fingerprint.
+# Generated collection/report workflows read this file but do not modify it.
+dispositions: []
