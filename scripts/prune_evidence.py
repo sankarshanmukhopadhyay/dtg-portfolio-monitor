@@ -10,6 +10,15 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from pathlib import Path
 import re
+import sys
+
+# GitHub Actions invokes this file directly (`python scripts/prune_evidence.py`).
+# In that mode Python places `scripts/` rather than the repository root on
+# sys.path. Bootstrap the repository root explicitly so local package imports
+# behave the same way as `python -m ...` invocations.
+REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
+if str(REPOSITORY_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPOSITORY_ROOT))
 
 from dtg_monitor.config import ROOT, report_settings
 

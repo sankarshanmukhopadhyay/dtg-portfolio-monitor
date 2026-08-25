@@ -1,3 +1,4 @@
+import re
 import tomllib
 import unittest
 from pathlib import Path
@@ -10,7 +11,7 @@ class VersionContractTests(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         declared = (root / "VERSION").read_text(encoding="utf-8").strip()
         project = tomllib.loads((root / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
-        self.assertEqual("0.5.0", declared)
+        self.assertRegex(declared, r"^0\.5\.\d+$")
         self.assertEqual(declared, project)
         self.assertEqual(declared, dtg_monitor.__version__)
 

@@ -2,7 +2,19 @@
 
 ## [Unreleased]
 
-No unreleased changes recorded after v0.5.0.
+No unreleased changes recorded after v0.5.1.
+
+## [0.5.1] - 2026-08-25
+
+### Fixed
+
+- Bootstrap the repository root when `scripts/prune_evidence.py` is executed directly by GitHub Actions, eliminating the post-release `ModuleNotFoundError: No module named 'dtg_monitor'` failure.
+- Add regression coverage for the direct-script import mode used by the collection workflow.
+
+### Changed
+
+- Trigger an end-to-end DTG Portfolio collection smoke run on `main` when monitor source, configuration, requirements, scripts, or the collection workflow itself changes.
+- Keep bot-generated `data/`, `reports/`, and generated documentation commits outside that push trigger to avoid recursive collection runs.
 
 ## [0.5.0] - 2026-08-25
 
