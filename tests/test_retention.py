@@ -1,9 +1,14 @@
+import os
+import subprocess
+import sys
 import tempfile
 import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 
 from scripts.prune_evidence import prune_tree
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 class RetentionTests(unittest.TestCase):
@@ -32,6 +37,23 @@ class RetentionTests(unittest.TestCase):
             path.write_text("{}\n", encoding="utf-8")
             self.assertEqual([], prune_tree(root, 0, datetime(2026, 8, 25, tzinfo=timezone.utc)))
             self.assertTrue(path.exists())
+
+    def test_direct_script_mode_can_import_monitor_package_without_pythonpath(self):
+        env = dict(os.environ)
+        env.pop("PYTHONPATH", None)
+        result = subprocess.run(
+            [
+                sys.executable,
+                "-c",
+                "import runpy; runpy.run_path('scripts/prune_evidence.py', run_name='retention_import_test')",
+            ],
+            cwd=ROOT,
+            env=env,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(0, result.returncode, result.stderr)
 
 
 if __name__ == "__main__":
