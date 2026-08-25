@@ -8,6 +8,7 @@ from .classify import classify
 from .config import ROOT, repositories, rules, report_settings
 from .findings import build_findings
 from .github import GitHubAPIError, GitHubClient, utc_now
+from .intelligence import consolidate
 
 def _iso_cutoff(days: int) -> str:
     return (datetime.now(timezone.utc) - timedelta(days=days)).isoformat().replace("+00:00", "Z")
@@ -101,7 +102,6 @@ def collect(lookback_days: int = 7, client: GitHubClient | None = None) -> list[
         meta_event["event_id"] = _event_id(repo, meta_event["event_type"], meta_event["item_id"], meta_event["updated_at"])
         events.append(meta_event)
 
-        # Empty repositories legitimately return 409 from the commits endpoint.
         commits = [] if is_empty else _safe_stream(
             repo, "commits", repo_url,
             lambda: client.paged(f"/repos/{owner}/{name}/commits", {"since": cutoff}, empty_on_status={409}),
@@ -198,8 +198,12 @@ def collect(lookback_days: int = 7, client: GitHubClient | None = None) -> list[
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
+    snapshots = [event for event in output if event.get("event_type") == "repository_snapshot"]
+    activity = [event for event in output if event.get("event_type") != "repository_snapshot"]
+    consolidated_activity, collapsed_events = consolidate(activity)
+    finding_input = snapshots + consolidated_activity
     findings = build_findings(
-        output,
+        finding_input,
         warnings,
         stale_after_days=int(report_settings().get("stale_after_days", 90)),
     )
@@ -211,6 +215,8 @@ def collect(lookback_days: int = 7, client: GitHubClient | None = None) -> list[
         "last_successful_collection": collected_at,
         "lookback_days": lookback_days,
         "event_count": len(output),
+        "change_unit_count": len(consolidated_activity),
+        "collapsed_event_count": collapsed_events,
         "finding_count": len(findings),
         "warning_count": len(warnings),
         "collection_warnings": warnings,
