@@ -127,6 +127,31 @@
     "successor_finding": null
   },
   {
+    "finding_id": "4dc0ead95acaf412635d",
+    "fingerprint": "4dc0ead95acaf412635d0a2e",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "chore(vtc)!: recognise and submit 0.2 — drift reaches zero",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1105",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/71b0430c45d339df9f8cc8a6959fe618d19568e4"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
     "finding_id": "6781acab7527413a142a",
     "fingerprint": "6781acab7527413a142ab5f8",
     "kind": "material_cross_reference",
@@ -192,6 +217,31 @@
     ],
     "related_repositories": [
       "OpenVTC/openvtc"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "c03f138a2576afef97db",
+    "fingerprint": "c03f138a2576afef97db1a98",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "chore(deps)!: trust-tasks-rs 0.11.10, and ten entries the specs now define",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1102",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/d50b3a4775d950bc9e22c51c69d0a8a088a31137"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
     ],
     "state": "open",
     "review_status": "unreviewed",
@@ -267,12 +317,10 @@
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1026",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1004",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/998",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/997",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/9d33efcef2fd95e3e5a8bf6f908ceea0b70d62e4",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/97708820c625de2fad7c93d066008f04a1a162d5",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/274a697b4cdfa9d533d2981a7881cd2e22703d91",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4a556b59e8609e9dfff7ec0ba155bbeccb099868",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/10d74fc50297c817ce90327044ffa1052f48f31a"
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4a556b59e8609e9dfff7ec0ba155bbeccb099868"
     ],
     "related_repositories": [
       "trustoverip/dtgwg-cred-spec",
@@ -336,8 +384,8 @@
     "successor_finding": null
   },
   {
-    "finding_id": "0c91f92c022c871b1af7",
-    "fingerprint": "0c91f92c022c871b1af75ffe",
+    "finding_id": "53aa26ddadffb0385d35",
+    "fingerprint": "53aa26ddadffb0385d354e1d",
     "kind": "material_cross_reference",
     "severity": "high",
     "materiality": "high",
@@ -360,8 +408,8 @@
     "successor_finding": null
   },
   {
-    "finding_id": "4cb192811ff813da6b72",
-    "fingerprint": "4cb192811ff813da6b7275ce",
+    "finding_id": "56c59b528eb8361c81d5",
+    "fingerprint": "56c59b528eb8361c81d58a41",
     "kind": "material_cross_reference",
     "severity": "high",
     "materiality": "high",
@@ -547,6 +595,31 @@
     "evidence_urls": [
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1000",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/9215eb298f8f1b6e7ede516879e213ee1b2969fa"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "2a30ffa59b9b44ea569c",
+    "fingerprint": "2a30ffa59b9b44ea569c4a8f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "chore(vtc): install/claim 0.2, and a drift note that blamed the wrong side",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1103",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/eca6a1fe7515969297710b6a303ffd582f860558"
     ],
     "related_repositories": [
       "trustoverip/dtgwg-trust-tasks-tf"
@@ -752,8 +825,8 @@
     "successor_finding": null
   },
   {
-    "finding_id": "46c42ef96e7f342f4956",
-    "fingerprint": "46c42ef96e7f342f4956db15",
+    "finding_id": "69e2a25ba441d60aa75a",
+    "fingerprint": "69e2a25ba441d60aa75aa028",
     "kind": "material_cross_reference",
     "severity": "high",
     "materiality": "high",
@@ -776,8 +849,8 @@
     "successor_finding": null
   },
   {
-    "finding_id": "7e27c8c9f072eabc3915",
-    "fingerprint": "7e27c8c9f072eabc391551e3",
+    "finding_id": "cafce3fa7a185328184f",
+    "fingerprint": "cafce3fa7a185328184fa05e",
     "kind": "material_cross_reference",
     "severity": "high",
     "materiality": "high",
