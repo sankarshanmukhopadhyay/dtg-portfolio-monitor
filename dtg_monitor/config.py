@@ -5,12 +5,14 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 
+
 def load_yaml(path: Path) -> dict[str, Any]:
     with path.open("r", encoding="utf-8") as handle:
         data = yaml.safe_load(handle)
     if not isinstance(data, dict):
         raise ValueError(f"{path} must contain a YAML mapping")
     return data
+
 
 def repositories() -> list[dict[str, Any]]:
     data = load_yaml(ROOT / "config" / "repositories.yaml")
@@ -19,14 +21,25 @@ def repositories() -> list[dict[str, Any]]:
         raise ValueError("repositories must be a list")
     return repos
 
+
 def rules() -> dict[str, Any]:
     return load_yaml(ROOT / "config" / "significance-rules.yaml")
+
 
 def report_settings() -> dict[str, Any]:
     return load_yaml(ROOT / "config" / "report-settings.yaml")
 
+
 def portfolio_model() -> dict[str, Any]:
     return load_yaml(ROOT / "config" / "portfolio-model.yaml")
+
+
+def finding_dispositions() -> list[dict[str, Any]]:
+    data = load_yaml(ROOT / "config" / "finding-dispositions.yaml")
+    dispositions = data.get("dispositions", [])
+    if not isinstance(dispositions, list):
+        raise ValueError("finding dispositions must be a list")
+    return dispositions
 
 
 def cross_spec_pressure_tests() -> dict[str, Any]:
