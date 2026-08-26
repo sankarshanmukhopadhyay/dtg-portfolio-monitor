@@ -11,13 +11,18 @@ DTG Portfolio Monitor separates **curated scope authority** from **dynamic scope
 
 ## Admission policy
 
-The scheduled collection run enumerates repositories for each configured source owner and evaluates each repository against machine-readable policy. The initial policy admits public, non-archived repositories whose names match the declared prefixes:
+The scheduled collection run enumerates repositories only from the `trustoverip` organization and evaluates repository names against the official DTG working-group namespace. Automatic admission is limited to public, non-archived repositories matching:
 
-- `trustoverip/dtgwg-*`;
-- `OpenVTC/dtg-*`;
-- `sankarshanmukhopadhyay/dtg-*`.
+- owner: `trustoverip`
+- repository-name prefix: `dtgwg`
 
-Forks are rejected by default unless their full repository name is listed in `policy.allow_forks`. The monitor repository itself is explicitly excluded to prevent self-observation.
+This intentionally covers names such as `dtgwg-general`, `dtgwg-cred-tf`, and future `trustoverip/dtgwg*` repositories without requiring a manual registry edit.
+
+Repositories under other owners are not discovery candidates. In particular, repositories owned by `sankarshanmukhopadhyay` are never dynamically admitted merely because their names begin with `dtg` or `dtgwg`. Personal forks, assurance tooling, implementation profiles, and experiments must be added explicitly to `config/repositories.yaml` if there is a reviewed reason to monitor them.
+
+Existing OpenVTC repositories remain curated entries. They are not part of automatic discovery.
+
+Forks are rejected by default unless explicitly allowlisted. This is a secondary control; the primary authority boundary is the `trustoverip` owner plus `dtgwg*` namespace.
 
 ## Evidence and auditability
 
@@ -27,15 +32,15 @@ Every discovery run writes:
 - `data/effective-repositories.yaml` — the merged effective registry used by collection and reporting;
 - `docs/repositories.md` — the generated human-readable scope page.
 
-This means scope membership is reproducible from policy plus GitHub repository metadata, and each rejection is explainable by a stable reason such as `explicitly-excluded`, `private-repository`, `archived-repository`, or `fork-not-allowlisted`.
+This means scope membership is reproducible from policy plus GitHub repository metadata.
 
 ## Authority, override, and revocation
 
-Curated entries take precedence over discovered defaults. This is the authority boundary: dynamic discovery may add an observation target, but only a reviewed change to `config/repositories.yaml` may replace its explicit portfolio semantics.
+Curated entries take precedence over discovered defaults. Dynamic discovery may add an observation target, but only a reviewed change to `config/repositories.yaml` may replace explicit portfolio semantics.
 
 Automatic admission can be revoked by any of the following governed changes:
 
-1. remove or narrow a discovery source/prefix;
+1. narrow or remove the `trustoverip` discovery source/prefix;
 2. add the repository to `policy.exclude_repositories`;
 3. remove a fork from `policy.allow_forks`;
 4. archive or make the repository private upstream.
