@@ -46,6 +46,7 @@ For a new deployment, enable **Settings → Pages → Source: GitHub Actions**, 
 ```bash
 python -m pip install -r requirements.txt
 python -m dtg_monitor validate
+GITHUB_TOKEN=... python scripts/discover_repositories.py
 GITHUB_TOKEN=... python -m dtg_monitor collect --lookback-days 7
 python -m dtg_monitor report --period daily
 python -m dtg_monitor report --period weekly
@@ -68,7 +69,9 @@ Automated interpretation remains subordinate to traceable evidence. The awarenes
 
 ## Tracked scope
 
-The source of truth is [`config/repositories.yaml`](config/repositories.yaml). It includes ToIP DTG coordination/specification/task-force repositories and OpenVTC implementation/credential repositories, including declared lifecycle status where relevant.
+`config/repositories.yaml` is the curated authority for explicitly modelled repositories. `config/repository-discovery.yaml` adds a deterministic discovery policy for public DTG repositories owned by declared sources. Each collection run writes `data/repository-discovery.json` and `data/effective-repositories.yaml`; collection and reporting consume the effective registry, and `docs/repositories.md` is regenerated from the same scope evidence.
+
+Curated entries always override discovered defaults. Forks are excluded from automatic admission unless allowlisted, and the monitor excludes itself. Discovery can therefore extend observation scope without silently changing curated workstream, role, lifecycle, or reporting semantics. See [Repository discovery](docs/repository-discovery.md).
 
 ## Governance boundary
 
