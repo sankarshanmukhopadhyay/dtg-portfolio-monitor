@@ -5,9 +5,9 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-26T07:15:01.806861Z  
-**Evidence through:** 2026-08-26T07:12:08Z  
-**Source revision:** `a0f192c39f72bc885494360120cb8ce566bb85b9` · **Collection run:** `32941718444`  
+**Generated:** 2026-08-26T07:20:22.190404Z  
+**Evidence through:** 2026-08-26T07:17:32Z  
+**Source revision:** `981ee2947613286ccf117371c1a853ebfdd45f10` · **Collection run:** `32942144155`  
 
 ## Review now
 

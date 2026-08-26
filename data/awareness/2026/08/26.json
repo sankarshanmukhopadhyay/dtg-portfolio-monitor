@@ -560,7 +560,7 @@
       "label": "Governance and lifecycle"
     }
   ],
-  "generated_at": "2026-08-26T07:15:01.806861Z",
+  "generated_at": "2026-08-26T07:20:22.190404Z",
   "implementation_alignment": [
     {
       "capability": "credentials-and-evidence",
@@ -645,11 +645,11 @@
   "material_change_units": 135,
   "model_version": 1,
   "observation": {
-    "collection_run_id": "32941718444",
-    "evidence_through": "2026-08-26T07:12:08Z",
+    "collection_run_id": "32942144155",
+    "evidence_through": "2026-08-26T07:17:32Z",
     "publication_state": "workflow-generated",
     "repository": "sankarshanmukhopadhyay/dtg-portfolio-monitor",
-    "source_revision": "a0f192c39f72bc885494360120cb8ce566bb85b9"
+    "source_revision": "981ee2947613286ccf117371c1a853ebfdd45f10"
   },
   "review_findings": 55,
   "schema_version": 2,
