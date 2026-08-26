@@ -1,5 +1,5 @@
 from __future__ import annotations
-from .config import repositories, rules, report_settings, portfolio_model, cross_spec_pressure_tests
+from .config import curated_repositories, repositories, rules, report_settings, portfolio_model, cross_spec_pressure_tests
 
 VALID_WEIGHTS = {"critical", "high", "medium", "low"}
 VALID_LIFECYCLES = {"active", "transitional", "dormant", "archived"}
@@ -9,6 +9,7 @@ def validate() -> list[str]:
     errors: list[str] = []
     seen: set[str] = set()
     repo_items = repositories()
+    curated_items = curated_repositories()
     for index, item in enumerate(repo_items):
         prefix = f"repositories[{index}]"
         repo = item.get("repo", "")
@@ -49,9 +50,13 @@ def validate() -> list[str]:
             if stream in model_workstreams:
                 errors.append(f"workstream mapped to multiple capabilities: {stream}")
             model_workstreams.add(stream)
-    configured_workstreams = {item.get("workstream") for item in repo_items}
-    for stream in sorted(configured_workstreams - model_workstreams):
-        errors.append(f"portfolio-model does not map workstream: {stream}")
+
+    # Only reviewed/curated entries carry semantic authority. Dynamic discovery
+    # expands observation scope but may remain intentionally unmapped.
+    curated_workstreams = {item.get("workstream") for item in curated_items}
+    for stream in sorted(curated_workstreams - model_workstreams):
+        errors.append(f"portfolio-model does not map curated workstream: {stream}")
+
     for relation in model.get("relationships", []):
         if relation.get("from") not in capability_ids or relation.get("to") not in capability_ids:
             errors.append("portfolio-model relationship references an unknown capability")
