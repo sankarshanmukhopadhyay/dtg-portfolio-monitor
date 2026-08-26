@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from copy import deepcopy
-from pathlib import Path
 from typing import Any
 import json
 import yaml
@@ -17,6 +16,12 @@ REPOSITORY_PAGE = ROOT / "docs" / "repositories.md"
 
 def discovery_config() -> dict[str, Any]:
     return load_yaml(DISCOVERY_CONFIG)
+
+
+def _matches_source(name: str, source: dict[str, Any]) -> bool:
+    if source.get("match_all", False):
+        return True
+    return any(name.startswith(prefix) for prefix in source.get("prefixes", []))
 
 
 def _candidate_config(repo: dict[str, Any], source: dict[str, Any], policy: dict[str, Any]) -> dict[str, Any]:
@@ -45,8 +50,8 @@ def _candidate_config(repo: dict[str, Any], source: dict[str, Any], policy: dict
 def evaluate_candidate(repo: dict[str, Any], source: dict[str, Any], policy: dict[str, Any]) -> tuple[bool, str]:
     full_name = repo.get("full_name", "")
     name = repo.get("name", "")
-    if not any(name.startswith(prefix) for prefix in source.get("prefixes", [])):
-        return False, "name-prefix-mismatch"
+    if not _matches_source(name, source):
+        return False, "source-rule-mismatch"
     if full_name in set(policy.get("exclude_repositories", [])):
         return False, "explicitly-excluded"
     if policy.get("public_only", True) and repo.get("private", False):
@@ -67,10 +72,10 @@ def discover(client: GitHubClient) -> dict[str, Any]:
     for source in cfg.get("sources", []):
         owner = source["owner"]
         for repo in client.paged(f"/users/{owner}/repos", {"type": "public", "sort": "full_name"}):
-            accepted, reason = evaluate_candidate(repo, source, policy)
             name = repo.get("name", "")
-            if not any(name.startswith(prefix) for prefix in source.get("prefixes", [])):
+            if not _matches_source(name, source):
                 continue
+            accepted, reason = evaluate_candidate(repo, source, policy)
             decision = {
                 "repository": repo.get("full_name"),
                 "owner": owner,
@@ -130,9 +135,9 @@ def render_repository_page(effective: list[dict[str, Any]], snapshot: dict[str, 
         "",
         "## Governance boundary",
         "",
-        "Dynamic discovery is an admission mechanism, not an authority override. `config/repositories.yaml` remains authoritative for explicitly curated metadata. `config/repository-discovery.yaml` defines who may be discovered, naming scope, exclusions, fork policy, and defaults. Removing a source, adding an exclusion, or archiving a repository revokes automatic admission on the next collection run.",
+        "Dynamic discovery is an admission mechanism, not an authority override. `config/repositories.yaml` remains authoritative for explicitly curated metadata. `config/repository-discovery.yaml` defines trusted source owners, source matching rules, exclusions, fork policy, and defaults. Removing a source, narrowing a rule, adding an exclusion, or archiving a repository revokes automatic admission on the next collection run.",
         "",
-        "Forks are excluded by default to avoid duplicate observation of upstream DTG repositories. A fork must be explicitly allowlisted before it can enter dynamic scope.",
+        "Forks are excluded by default to avoid duplicate observation of upstream or downstream copies. A fork must be explicitly allowlisted before it can enter dynamic scope.",
         "",
         "## Discovery decisions",
         "",
