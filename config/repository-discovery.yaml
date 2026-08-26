@@ -3,8 +3,7 @@ policy:
   public_only: true
   exclude_archived: true
   exclude_forks: true
-  exclude_repositories:
-    - sankarshanmukhopadhyay/dtg-portfolio-monitor
+  exclude_repositories: []
   allow_forks: []
   default_monitor:
     commits: true
@@ -22,17 +21,7 @@ policy:
     - .github/workflows/**
 sources:
   - owner: trustoverip
-    prefixes: [dtgwg-]
+    prefixes: [dtgwg]
     organisation: toip
     default_role: discovered-dtg-workstream
-    default_weight: high
-  - owner: OpenVTC
-    prefixes: [dtg-]
-    organisation: openvtc
-    default_role: discovered-dtg-implementation
-    default_weight: high
-  - owner: sankarshanmukhopadhyay
-    prefixes: [dtg-]
-    organisation: independent
-    default_role: assurance-or-implementation-profile
     default_weight: high
