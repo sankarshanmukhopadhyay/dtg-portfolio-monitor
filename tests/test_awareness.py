@@ -1,7 +1,7 @@
 import unittest
 
 from dtg_monitor.awareness import analyse
-from dtg_monitor.config import portfolio_model, repositories
+from dtg_monitor.config import curated_repositories, portfolio_model
 
 
 def event(repo, significance="high", title="credential proof protocol", updated_at="2026-08-11T00:00:00Z"):
@@ -69,14 +69,33 @@ class AwarenessTests(unittest.TestCase):
         self.assertTrue(all(item["pulse"] == "quiet" for item in snapshot["capabilities"].values()))
         self.assertEqual([], snapshot["attention_signals"])
 
-    def test_all_configured_repositories_map_to_a_capability(self):
+    def test_all_curated_repositories_map_to_a_capability(self):
         model = portfolio_model()
         stream_to_cap = {
             stream: capability["id"]
             for capability in model["capabilities"]
             for stream in capability["workstreams"]
         }
-        self.assertTrue(all(item["workstream"] in stream_to_cap for item in repositories()))
+        self.assertTrue(all(item["workstream"] in stream_to_cap for item in curated_repositories()))
+
+    def test_unmapped_dynamic_repository_is_retained_as_observation(self):
+        dynamic_repo = {
+            "repo": "OpenVTC/new-dynamic-tool",
+            "organisation": "openvtc",
+            "workstream": "new-dynamic-tool",
+            "role": "discovered-openvtc-repository",
+            "lifecycle": "active",
+            "reporting_weight": "high",
+            "discovery": {"source_owner": "OpenVTC", "admission": "automatic"},
+        }
+        snapshot = analyse(
+            [event("OpenVTC/new-dynamic-tool")],
+            repository_configs=curated_repositories() + [dynamic_repo],
+            generated_at="2026-08-11T00:00:00Z",
+        )
+        self.assertEqual(1, snapshot["change_units"])
+        self.assertEqual(1, snapshot["unmapped_change_units"])
+        self.assertNotIn("new-dynamic-tool", snapshot["dominant_capabilities"])
 
 
 if __name__ == "__main__":
