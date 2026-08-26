@@ -11,18 +11,26 @@ DTG Portfolio Monitor separates **curated scope authority** from **dynamic scope
 
 ## Admission policy
 
-The scheduled collection run enumerates repositories only from the `trustoverip` organization and evaluates repository names against the official DTG working-group namespace. Automatic admission is limited to public, non-archived repositories matching:
+The scheduled collection run currently trusts two organizational namespaces.
+
+### Trust over IP DTG
+
+Automatic admission is limited to public, non-archived repositories matching:
 
 - owner: `trustoverip`
 - repository-name prefix: `dtgwg`
 
-This intentionally covers names such as `dtgwg-general`, `dtgwg-cred-tf`, and future `trustoverip/dtgwg*` repositories without requiring a manual registry edit.
+This covers names such as `dtgwg-general`, `dtgwg-cred-tf`, and future `trustoverip/dtgwg*` repositories without requiring a manual registry edit.
+
+### OpenVTC
+
+All public, non-archived repositories owned by `OpenVTC` are eligible for automatic admission. This is organization-wide by design because OpenVTC contains multiple implementation, SDK, infrastructure, governance, and experimental repositories whose names do not share one stable DTG prefix but can still produce relevant implementation evidence.
+
+Existing curated OpenVTC entries remain authoritative for their explicit role, workstream, lifecycle, weight, branch, and material-path metadata. Newly discovered OpenVTC repositories receive discovery defaults until curated metadata is added.
 
 Repositories under other owners are not discovery candidates. In particular, repositories owned by `sankarshanmukhopadhyay` are never dynamically admitted merely because their names begin with `dtg` or `dtgwg`. Personal forks, assurance tooling, implementation profiles, and experiments must be added explicitly to `config/repositories.yaml` if there is a reviewed reason to monitor them.
 
-Existing OpenVTC repositories remain curated entries. They are not part of automatic discovery.
-
-Forks are rejected by default unless explicitly allowlisted. This is a secondary control; the primary authority boundary is the `trustoverip` owner plus `dtgwg*` namespace.
+Forks are rejected by default unless explicitly allowlisted.
 
 ## Evidence and auditability
 
@@ -40,7 +48,7 @@ Curated entries take precedence over discovered defaults. Dynamic discovery may 
 
 Automatic admission can be revoked by any of the following governed changes:
 
-1. narrow or remove the `trustoverip` discovery source/prefix;
+1. narrow or remove a trusted source rule;
 2. add the repository to `policy.exclude_repositories`;
 3. remove a fork from `policy.allow_forks`;
 4. archive or make the repository private upstream.

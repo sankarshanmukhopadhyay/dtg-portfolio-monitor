@@ -69,9 +69,9 @@ Automated interpretation remains subordinate to traceable evidence. The awarenes
 
 ## Tracked scope
 
-`config/repositories.yaml` is the curated authority for explicitly modelled repositories. `config/repository-discovery.yaml` adds a deterministic discovery policy **only for repositories in the `trustoverip` organization whose names begin with `dtgwg`**. Each collection run writes `data/repository-discovery.json` and `data/effective-repositories.yaml`; collection and reporting consume the effective registry, and `docs/repositories.md` is regenerated from the same scope evidence.
+`config/repositories.yaml` is the curated authority for explicitly modelled repositories. `config/repository-discovery.yaml` adds deterministic automatic discovery from two trusted organizational namespaces: **`trustoverip/dtgwg*`** and **all public, non-archived `OpenVTC/*` repositories**. Each collection run writes `data/repository-discovery.json` and `data/effective-repositories.yaml`; collection and reporting consume the effective registry, and `docs/repositories.md` is regenerated from the same scope evidence.
 
-Repositories under `sankarshanmukhopadhyay`, OpenVTC, or any other owner are not automatically admitted by name. They remain governed by explicit curated entries. This prevents personal forks, assurance tooling, profiles, and experiments from being conflated with official DTG scope. Curated entries always override discovered defaults. See [Repository discovery](docs/repository-discovery.md).
+Repositories under `sankarshanmukhopadhyay` or any other untrusted owner are not automatically admitted by naming similarity. They remain governed by explicit curated entries. This prevents personal forks, assurance tooling, profiles, and experiments from being conflated with the trusted dynamic scope. Existing curated OpenVTC entries override discovered defaults. See [Repository discovery](docs/repository-discovery.md).
 
 ## Governance boundary
 
