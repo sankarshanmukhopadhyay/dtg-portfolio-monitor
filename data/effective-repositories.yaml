@@ -1,0 +1,321 @@
+version: 1
+repositories:
+- repo: OpenVTC/dtg-credentials
+  organisation: openvtc
+  workstream: credentials
+  role: implementation-and-examples
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
+- repo: OpenVTC/openvtc
+  organisation: openvtc
+  workstream: community-platform
+  role: implementation
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
+- repo: OpenVTC/verifiable-trust-infrastructure
+  organisation: openvtc
+  workstream: verifiable-trust-infrastructure
+  role: reference-implementation
+  lifecycle: active
+  reporting_weight: critical
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
+- repo: trustoverip/dtgwg-agent-names-tf
+  organisation: toip
+  workstream: agent-names
+  role: task-force-workspace
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
+- repo: trustoverip/dtgwg-cred-spec
+  organisation: toip
+  workstream: credentials
+  role: normative-specification
+  lifecycle: active
+  reporting_weight: critical
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
+- repo: trustoverip/dtgwg-cred-tf
+  organisation: toip
+  workstream: credentials
+  role: task-force-workspace
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
+- repo: trustoverip/dtgwg-general
+  organisation: toip
+  workstream: coordination
+  role: coordination
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
+- repo: trustoverip/dtgwg-htx-tf
+  organisation: toip
+  workstream: human-trust-experience
+  role: task-force-workspace
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
+- repo: trustoverip/dtgwg-rahp-tf
+  organisation: toip
+  workstream: rahp
+  role: task-force-workspace
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
+- repo: trustoverip/dtgwg-rcards-tf
+  organisation: toip
+  workstream: relationship-cards
+  role: legacy-or-transition
+  lifecycle: transitional
+  reporting_weight: low
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Legacy Relationship Cards repository retained as lifecycle evidence; active
+    specification work has moved to the VDS Task Force repository.
+- repo: trustoverip/dtgwg-trust-tasks-spec
+  organisation: toip
+  workstream: trust-tasks
+  role: normative-specification
+  lifecycle: active
+  reporting_weight: critical
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - spec/**
+  - specs.json
+  - docs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Canonical Trust Tasks specification repository; monitored separately from
+    the Trust Tasks task-force workspace.
+- repo: trustoverip/dtgwg-trust-tasks-tf
+  organisation: toip
+  workstream: trust-tasks
+  role: protocol-and-task-specification
+  lifecycle: active
+  reporting_weight: critical
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
+- repo: trustoverip/dtgwg-ux-tf
+  organisation: toip
+  workstream: human-trust-experience
+  role: legacy-or-transition
+  lifecycle: transitional
+  reporting_weight: low
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Empty transitional repository retained as lifecycle evidence; HTX is the
+    active successor workstream.
+- repo: trustoverip/dtgwg-vds-tf
+  organisation: toip
+  workstream: verifiable-data-structures
+  role: normative-specification
+  lifecycle: active
+  reporting_weight: critical
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Home of the DTG Verifiable Data Structures Specification V1.0.
+- repo: trustoverip/dtgwg-zkp-tf
+  organisation: toip
+  workstream: zero-knowledge-proofs
+  role: implementation-guidance
+  lifecycle: active
+  reporting_weight: critical
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: ''
