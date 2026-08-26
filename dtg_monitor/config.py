@@ -15,7 +15,9 @@ def load_yaml(path: Path) -> dict[str, Any]:
 
 
 def repositories() -> list[dict[str, Any]]:
-    data = load_yaml(ROOT / "config" / "repositories.yaml")
+    effective = ROOT / "data" / "effective-repositories.yaml"
+    source = effective if effective.exists() else ROOT / "config" / "repositories.yaml"
+    data = load_yaml(source)
     repos = data.get("repositories")
     if not isinstance(repos, list):
         raise ValueError("repositories must be a list")

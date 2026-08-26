@@ -43,6 +43,10 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - name: Validate configuration
         run: python -m dtg_monitor validate
+      - name: Discover effective DTG repository scope
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/discover_repositories.py
       - name: Collect activity
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -59,12 +63,12 @@ jobs:
       - name: Persist generated outputs
         id: persist
         run: |
-          if git diff --quiet -- data reports docs/domain-brief.md docs/portfolio-status.md docs/dashboard.md docs/reports.md; then
+          if git diff --quiet -- data reports docs/domain-brief.md docs/portfolio-status.md docs/dashboard.md docs/reports.md docs/repositories.md; then
             echo "No generated changes to commit."
           else
             git config user.name "dtg-portfolio-monitor[bot]"
             git config user.email "dtg-portfolio-monitor[bot]@users.noreply.github.com"
-            git add data reports docs/domain-brief.md docs/portfolio-status.md docs/dashboard.md docs/reports.md
+            git add data reports docs/domain-brief.md docs/portfolio-status.md docs/dashboard.md docs/reports.md docs/repositories.md
             git commit -m "chore(monitor): update DTG portfolio observations"
             git push
           fi
