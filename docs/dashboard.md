@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-26T07:20:22.190404Z  
-**Evidence through:** 2026-08-26T07:17:32Z  
-**Source revision:** `981ee2947613286ccf117371c1a853ebfdd45f10` · **Collection run:** `32942144155`  
+**Generated:** 2026-08-26T13:20:09.776655Z  
+**Evidence through:** 2026-08-26T13:18:46Z  
+**Source revision:** `79a0a5657f980acdcec7b044e2d752b28cd8a6e2` · **Collection run:** `32973457480`  
 
 ## Review now
 
-**26 decision finding(s)** · **0 review-required assertion(s)**
+**29 decision finding(s)** · **0 review-required assertion(s)**
 
 ### Decision findings
 
@@ -28,19 +28,20 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `5695ce35d813ee41e72ce1c2` vta-sdk-v0.29.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.29.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `6781acab7527413a142ab5f8` docs: design note for the application-state store | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1041) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `7fe94ec7bc0d47204c9f926f` docs: design note for Trust Task version negotiation and its versioning contract | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1046) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `c0175e1ba5040685b4bac7f3` No removal notice reaches a member the VTC removes | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1053) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `84cdbaec444c3b0023cb3e61` fix(vta)!: take keyId from the wire instead of minting one | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1123) |
 
 ## Watch
 
-**7 deterministic watch assertion(s)** · **29 other finding(s)**
+**9 deterministic watch assertion(s)** · **30 other finding(s)**
 
-- `DTG-A-6BDD81733056244F` — Credentials and evidence specification and implementation are moving together in this window.
-- `DTG-A-B6758B19E17E655B` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-FFBBA44C373832E0` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-DDB1C874F5EF0584` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-D8E521C68A1076D6` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-B897B58CB1ABDE33` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-5B924474BBF6AA6F` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
+- `DTG-A-CCDFD403B0874B3E` — Credentials and evidence specification and implementation are moving together in this window.
+- `DTG-A-AB6CC525C36D20FF` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-F26BEAA5FE51F518` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-591A0A59B8EF78BD` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-5EB13EC52A97D7E5` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-A7DFF945900B7A26` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-2E431A54A35AF48E` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
+- `DTG-A-26CACA7F1DE160E3` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
 
 ## Recently disposed
 
@@ -48,8 +49,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 314 · **Material:** 135 · **Breaking:** 36 · **Tagged releases:** 72 · **Cross-repository:** 75  
-**Duplicate representations consolidated:** 173
+**Change units:** 321 · **Material:** 147 · **Breaking:** 41 · **Tagged releases:** 72 · **Cross-repository:** 78  
+**Duplicate representations consolidated:** 182
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -57,24 +58,24 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 | Capability | Pulse | Change units | Material |
 |---|---|---:|---:|
-| Human trust and safety | **Active** | 3 | 0 |
+| Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing strongly** | 16 | 9 |
-| Governed action | **Advancing strongly** | 45 | 28 |
-| Implementation and interoperability | **Advancing strongly** | 210 | 93 |
+| Credentials and evidence | **Advancing strongly** | 16 | 10 |
+| Governed action | **Advancing strongly** | 56 | 37 |
+| Implementation and interoperability | **Advancing strongly** | 210 | 95 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 238
-- **Protocol and interoperability:** 175
-- **Credentials and proof:** 155
-- **Transport and routing:** 129
-- **Governance and lifecycle:** 104
+- **Delivery and maintenance:** 251
+- **Protocol and interoperability:** 189
+- **Credentials and proof:** 168
+- **Transport and routing:** 136
+- **Governance and lifecycle:** 111
 
 ### Portfolio intelligence
 
 - **Cross-capability convergence signals:** 3
 - **Specification/implementation signals:** 3
-- **Attention signals:** 1
-- **Machine-addressable assertions:** 7
+- **Attention signals:** 3
+- **Machine-addressable assertions:** 9
