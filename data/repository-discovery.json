@@ -1,8 +1,428 @@
 {
   "version": 1,
-  "generated_at": "2026-08-26T07:01:42.097333Z",
+  "generated_at": "2026-08-26T07:13:43.393286Z",
   "policy": "config/repository-discovery.yaml",
   "admitted": [
+    {
+      "repo": "OpenVTC/dtg-credentials",
+      "organisation": "openvtc",
+      "workstream": "dtg-credentials",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/governance",
+      "organisation": "openvtc",
+      "workstream": "governance",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/openvtc",
+      "organisation": "openvtc",
+      "workstream": "openvtc",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/probablistic-sampling-for-connection-vcs",
+      "organisation": "openvtc",
+      "workstream": "probablistic-sampling-for-connection-vcs",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/rp-sdk-js",
+      "organisation": "openvtc",
+      "workstream": "rp-sdk-js",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/verifiable-git-infrastructure",
+      "organisation": "openvtc",
+      "workstream": "verifiable-git-infrastructure",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/verifiable-trust-infrastructure",
+      "organisation": "openvtc",
+      "workstream": "verifiable-trust-infrastructure",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/vta-agent-memory",
+      "organisation": "openvtc",
+      "workstream": "vta-agent-memory",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/vta-browser-plugin",
+      "organisation": "openvtc",
+      "workstream": "vta-browser-plugin",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/vta-mobile-agent-ios",
+      "organisation": "openvtc",
+      "workstream": "vta-mobile-agent-ios",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/vti-didcomm-js",
+      "organisation": "openvtc",
+      "workstream": "vti-didcomm-js",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/vti-push-gateway",
+      "organisation": "openvtc",
+      "workstream": "vti-push-gateway",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/vti-setup",
+      "organisation": "openvtc",
+      "workstream": "vti-setup",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/wiki",
+      "organisation": "openvtc",
+      "workstream": "wiki",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "v4",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
     {
       "repo": "trustoverip/dtgwg-agent-names-tf",
       "organisation": "toip",
@@ -365,6 +785,132 @@
     }
   ],
   "decisions": [
+    {
+      "repository": "OpenVTC/dtg-credentials",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/governance",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/openvtc",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/probablistic-sampling-for-connection-vcs",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/rp-sdk-js",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/verifiable-git-infrastructure",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/verifiable-trust-infrastructure",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/vta-agent-memory",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/vta-browser-plugin",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/vta-mobile-agent-ios",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/vti-didcomm-js",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/vti-push-gateway",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/vti-setup",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/wiki",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
     {
       "repository": "trustoverip/dtgwg-agent-names-tf",
       "owner": "trustoverip",

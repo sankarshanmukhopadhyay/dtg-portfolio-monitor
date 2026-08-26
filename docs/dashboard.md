@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-26T07:02:29.311609Z  
-**Evidence through:** 2026-08-26T07:02:00Z  
-**Source revision:** `30c6a676005c9538e421097b45a51608f4a0d15b` · **Collection run:** `32940750017`  
+**Generated:** 2026-08-26T07:15:01.806861Z  
+**Evidence through:** 2026-08-26T07:12:08Z  
+**Source revision:** `a0f192c39f72bc885494360120cb8ce566bb85b9` · **Collection run:** `32941718444`  
 
 ## Review now
 
-**27 decision finding(s)** · **0 review-required assertion(s)**
+**26 decision finding(s)** · **0 review-required assertion(s)**
 
 ### Decision findings
 
@@ -32,7 +32,7 @@ permalink: /dashboard/
 
 ## Watch
 
-**7 deterministic watch assertion(s)** · **24 other finding(s)**
+**7 deterministic watch assertion(s)** · **29 other finding(s)**
 
 - `DTG-A-6BDD81733056244F` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-B6758B19E17E655B` — Governed action specification and implementation are moving together in this window.
@@ -48,8 +48,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 269 · **Material:** 127 · **Breaking:** 35 · **Tagged releases:** 67 · **Cross-repository:** 65  
-**Duplicate representations consolidated:** 152
+**Change units:** 314 · **Material:** 135 · **Breaking:** 36 · **Tagged releases:** 72 · **Cross-repository:** 75  
+**Duplicate representations consolidated:** 173
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -60,17 +60,17 @@ _No explicit finding dispositions are represented in the current snapshot._
 | Human trust and safety | **Active** | 3 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Advancing strongly** | 16 | 9 |
-| Governed action | **Advancing strongly** | 44 | 27 |
-| Implementation and interoperability | **Advancing strongly** | 206 | 91 |
+| Governed action | **Advancing strongly** | 45 | 28 |
+| Implementation and interoperability | **Advancing strongly** | 210 | 93 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 209
-- **Protocol and interoperability:** 163
-- **Credentials and proof:** 145
-- **Transport and routing:** 116
-- **Governance and lifecycle:** 98
+- **Delivery and maintenance:** 238
+- **Protocol and interoperability:** 175
+- **Credentials and proof:** 155
+- **Transport and routing:** 129
+- **Governance and lifecycle:** 104
 
 ### Portfolio intelligence
 

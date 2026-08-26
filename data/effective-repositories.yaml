@@ -21,6 +21,31 @@ repositories:
   - '**/*spec*.md'
   - .github/workflows/**
   notes: ''
+- repo: OpenVTC/governance
+  organisation: openvtc
+  workstream: governance
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
 - repo: OpenVTC/openvtc
   organisation: openvtc
   workstream: community-platform
@@ -42,6 +67,81 @@ repositories:
   - '**/*spec*.md'
   - .github/workflows/**
   notes: ''
+- repo: OpenVTC/probablistic-sampling-for-connection-vcs
+  organisation: openvtc
+  workstream: probablistic-sampling-for-connection-vcs
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
+- repo: OpenVTC/rp-sdk-js
+  organisation: openvtc
+  workstream: rp-sdk-js
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
+- repo: OpenVTC/verifiable-git-infrastructure
+  organisation: openvtc
+  workstream: verifiable-git-infrastructure
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
 - repo: OpenVTC/verifiable-trust-infrastructure
   organisation: openvtc
   workstream: verifiable-trust-infrastructure
@@ -63,6 +163,181 @@ repositories:
   - '**/*spec*.md'
   - .github/workflows/**
   notes: ''
+- repo: OpenVTC/vta-agent-memory
+  organisation: openvtc
+  workstream: vta-agent-memory
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
+- repo: OpenVTC/vta-browser-plugin
+  organisation: openvtc
+  workstream: vta-browser-plugin
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
+- repo: OpenVTC/vta-mobile-agent-ios
+  organisation: openvtc
+  workstream: vta-mobile-agent-ios
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
+- repo: OpenVTC/vti-didcomm-js
+  organisation: openvtc
+  workstream: vti-didcomm-js
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
+- repo: OpenVTC/vti-push-gateway
+  organisation: openvtc
+  workstream: vti-push-gateway
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
+- repo: OpenVTC/vti-setup
+  organisation: openvtc
+  workstream: vti-setup
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
+- repo: OpenVTC/wiki
+  organisation: openvtc
+  workstream: wiki
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: v4
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
 - repo: trustoverip/dtgwg-agent-names-tf
   organisation: toip
   workstream: agent-names

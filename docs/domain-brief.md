@@ -5,19 +5,19 @@ permalink: /domain-brief/
 ---
 # DTG Domain Brief
 
-**Generated:** 2026-08-26T07:02:29.311609Z  
-**Evidence through:** 2026-08-26T07:02:00Z  
-**Source revision:** `30c6a676005c9538e421097b45a51608f4a0d15b` · **Collection run:** `32940750017` · **Publication state:** `workflow-generated`  
-**Change units:** 269 · **Material:** 127  
+**Generated:** 2026-08-26T07:15:01.806861Z  
+**Evidence through:** 2026-08-26T07:12:08Z  
+**Source revision:** `a0f192c39f72bc885494360120cb8ce566bb85b9` · **Collection run:** `32941718444` · **Publication state:** `workflow-generated`  
+**Change units:** 314 · **Material:** 135  
 
 This is the situational-awareness view of the monitored DTG portfolio. It interprets observed GitHub evidence through the declared [DTG domain model]({{ '/domain-model/' | relative_url }}). It is not an official ToIP architectural statement.
 
 ## Review queue
 
-- **Decision findings:** 27
+- **Decision findings:** 26
 - **Review-required assertions:** 0
 - **Watch assertions:** 7
-- **Open findings:** 51
+- **Open findings:** 55
 
 Review-required items are deterministic coordination or alignment signals. They are not automatic declarations of specification failure.
 
@@ -25,8 +25,8 @@ Review-required items are deterministic coordination or alignment signals. They 
 
 The strongest observed movement is currently concentrated in **Implementation and interoperability, Governed action, and Credentials and evidence**.
 
-**Implementation and interoperability** — 91 material change units, led by delivery and maintenance, protocol and interoperability.
-**Governed action** — 27 material change units, led by delivery and maintenance, protocol and interoperability.
+**Implementation and interoperability** — 93 material change units, led by delivery and maintenance, protocol and interoperability.
+**Governed action** — 28 material change units, led by delivery and maintenance, protocol and interoperability.
 **Credentials and evidence** — 9 material change units, led by credentials and proof, delivery and maintenance.
 
 ## Portfolio pulse
@@ -36,8 +36,8 @@ The strongest observed movement is currently concentrated in **Implementation an
 | Human trust and safety | **Active** | 3 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Advancing strongly** | 16 | 9 |
-| Governed action | **Advancing strongly** | 44 | 27 |
-| Implementation and interoperability | **Advancing strongly** | 206 | 91 |
+| Governed action | **Advancing strongly** | 45 | 28 |
+| Implementation and interoperability | **Advancing strongly** | 210 | 93 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 > **Quiet is not a failure state.** It means no activity was observed in the monitored GitHub streams during this window; the capability may be stable, on a different cadence, or active elsewhere.
@@ -50,9 +50,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 
 ## Specification and implementation alignment
 
-- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 7 material specification change unit(s) and 72 material implementation change unit(s).
-- **Governed action: specification and implementation are moving together.** The monitor observed 24 material specification change unit(s) and 90 material implementation change unit(s).
-- **Governed action: specification and implementation are moving together.** The monitor observed 3 material specification change unit(s) and 90 material implementation change unit(s).
+- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 7 material specification change unit(s) and 74 material implementation change unit(s).
+- **Governed action: specification and implementation are moving together.** The monitor observed 25 material specification change unit(s) and 92 material implementation change unit(s).
+- **Governed action: specification and implementation are moving together.** The monitor observed 3 material specification change unit(s) and 92 material implementation change unit(s).
 
 ## Attention signals
 
