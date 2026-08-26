@@ -14,14 +14,23 @@ def load_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
-def repositories() -> list[dict[str, Any]]:
-    effective = ROOT / "data" / "effective-repositories.yaml"
-    source = effective if effective.exists() else ROOT / "config" / "repositories.yaml"
-    data = load_yaml(source)
+def _repository_list(path: Path) -> list[dict[str, Any]]:
+    data = load_yaml(path)
     repos = data.get("repositories")
     if not isinstance(repos, list):
         raise ValueError("repositories must be a list")
     return repos
+
+
+def curated_repositories() -> list[dict[str, Any]]:
+    """Return the reviewed repository registry that carries portfolio semantics."""
+    return _repository_list(ROOT / "config" / "repositories.yaml")
+
+
+def repositories() -> list[dict[str, Any]]:
+    """Return the effective observation scope, including dynamic discoveries when present."""
+    effective = ROOT / "data" / "effective-repositories.yaml"
+    return _repository_list(effective) if effective.exists() else curated_repositories()
 
 
 def rules() -> dict[str, Any]:
