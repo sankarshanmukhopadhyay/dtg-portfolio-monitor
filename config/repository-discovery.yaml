@@ -25,3 +25,8 @@ sources:
     organisation: toip
     default_role: discovered-dtg-workstream
     default_weight: high
+  - owner: OpenVTC
+    match_all: true
+    organisation: openvtc
+    default_role: discovered-openvtc-repository
+    default_weight: high
