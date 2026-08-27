@@ -62,6 +62,7 @@ jobs:
         run: python -m unittest discover -s tests
       - name: Persist generated outputs
         id: persist
+        shell: bash
         run: |
           if git diff --quiet -- data reports docs/domain-brief.md docs/portfolio-status.md docs/dashboard.md docs/reports.md docs/repositories.md; then
             echo "No generated changes to commit."
@@ -70,7 +71,27 @@ jobs:
             git config user.email "dtg-portfolio-monitor[bot]@users.noreply.github.com"
             git add data reports docs/domain-brief.md docs/portfolio-status.md docs/dashboard.md docs/reports.md docs/repositories.md
             git commit -m "chore(monitor): update DTG portfolio observations"
-            git push
+
+            pushed=false
+            for attempt in 1 2 3; do
+              echo "Persistence attempt $attempt/3"
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo "::error::Generated monitor evidence conflicts with newer main; refusing to overwrite either evidence set."
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                pushed=true
+                break
+              fi
+              sleep $((attempt * 2))
+            done
+
+            if [ "$pushed" != "true" ]; then
+              echo "::error::Could not persist generated monitor evidence after 3 fast-forward-safe retries."
+              exit 1
+            fi
           fi
 
           DEPLOYMENT_REF="$(git rev-parse HEAD)"
