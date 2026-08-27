@@ -5,9 +5,9 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-27T09:56:13.450063Z  
-**Evidence through:** 2026-08-27T09:33:27Z  
-**Source revision:** `ab0f64bbc2846488680f01ff964a31492f3cb6b4` · **Collection run:** `33060710289`  
+**Generated:** 2026-08-27T22:19:03.794232Z  
+**Evidence through:** 2026-08-27T21:02:35Z  
+**Source revision:** `e0632b7f27d29ac5718fd98d2403bcdb1af81285` · **Collection run:** `33121944097`  
 
 ## Review now
 
@@ -32,16 +32,16 @@ permalink: /dashboard/
 
 ## Watch
 
-**9 deterministic watch assertion(s)** · **26 other finding(s)**
+**9 deterministic watch assertion(s)** · **29 other finding(s)**
 
-- `DTG-A-D5075E858A37E248` — Credentials and evidence specification and implementation are moving together in this window.
+- `DTG-A-4D869EA6A255372B` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-576BBE3D6048C32D` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-A010AE56A4977124` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-E60878D0206638CD` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-B508B1A3013BB355` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-053705B8AC7DF5AF` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-829533138CC7FD59` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-607665F6BBD815F5` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-99B4A3E10A087954` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-7A305195BBF3BC4C` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
-- `DTG-A-80F8046A72E8A750` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
+- `DTG-A-1531B2C65E1ED252` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
+- `DTG-A-4E8486A867B08A01` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
 
 ## Recently disposed
 
@@ -49,8 +49,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 369 · **Material:** 173 · **Breaking:** 45 · **Tagged releases:** 80 · **Cross-repository:** 83  
-**Duplicate representations consolidated:** 208
+**Change units:** 346 · **Material:** 173 · **Breaking:** 46 · **Tagged releases:** 69 · **Cross-repository:** 84  
+**Duplicate representations consolidated:** 198
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -61,17 +61,17 @@ _No explicit finding dispositions are represented in the current snapshot._
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Advancing strongly** | 17 | 12 |
-| Governed action | **Advancing strongly** | 103 | 59 |
-| Implementation and interoperability | **Advancing strongly** | 213 | 99 |
+| Governed action | **Advancing strongly** | 111 | 61 |
+| Implementation and interoperability | **Advancing strongly** | 184 | 98 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 298
-- **Protocol and interoperability:** 227
-- **Credentials and proof:** 190
-- **Transport and routing:** 153
-- **Governance and lifecycle:** 136
+- **Delivery and maintenance:** 278
+- **Protocol and interoperability:** 224
+- **Credentials and proof:** 185
+- **Transport and routing:** 148
+- **Governance and lifecycle:** 133
 
 ### Portfolio intelligence
 
