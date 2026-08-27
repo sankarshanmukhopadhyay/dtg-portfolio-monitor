@@ -1325,31 +1325,6 @@
     "successor_finding": null
   },
   {
-    "finding_id": "0f5ccbddf0684189b23e",
-    "fingerprint": "0f5ccbddf0684189b23e50ad",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "routine",
-    "assurance_impact": "none",
-    "repository": "OpenVTC/wiki",
-    "title": "Refresh wiki for July–August 2026 ecosystem cycle",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/wiki/pull/24",
-      "https://github.com/OpenVTC/wiki/commit/bfa90cb653a4d79212887ab563307604afd56bc4"
-    ],
-    "related_repositories": [
-      "trustoverip/dtgwg-cred-spec"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
     "finding_id": "908cfc17633e5849778e",
     "fingerprint": "908cfc17633e5849778e2b76",
     "kind": "stale_repository",

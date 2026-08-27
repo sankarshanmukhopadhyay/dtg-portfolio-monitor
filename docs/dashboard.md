@@ -5,9 +5,9 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-27T06:25:07.653111Z  
-**Evidence through:** 2026-08-27T06:08:00Z  
-**Source revision:** `0e42cb4ddfc6cf316b6b7821132446c93fec603b` · **Collection run:** `33045716562`  
+**Generated:** 2026-08-27T09:56:13.450063Z  
+**Evidence through:** 2026-08-27T09:33:27Z  
+**Source revision:** `ab0f64bbc2846488680f01ff964a31492f3cb6b4` · **Collection run:** `33060710289`  
 
 ## Review now
 
@@ -32,7 +32,7 @@ permalink: /dashboard/
 
 ## Watch
 
-**9 deterministic watch assertion(s)** · **27 other finding(s)**
+**9 deterministic watch assertion(s)** · **26 other finding(s)**
 
 - `DTG-A-D5075E858A37E248` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-576BBE3D6048C32D` — Governed action specification and implementation are moving together in this window.
@@ -49,8 +49,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 364 · **Material:** 171 · **Breaking:** 44 · **Tagged releases:** 80 · **Cross-repository:** 83  
-**Duplicate representations consolidated:** 203
+**Change units:** 369 · **Material:** 173 · **Breaking:** 45 · **Tagged releases:** 80 · **Cross-repository:** 83  
+**Duplicate representations consolidated:** 208
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -61,17 +61,17 @@ _No explicit finding dispositions are represented in the current snapshot._
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Advancing strongly** | 17 | 12 |
-| Governed action | **Advancing strongly** | 99 | 56 |
-| Implementation and interoperability | **Advancing strongly** | 211 | 99 |
+| Governed action | **Advancing strongly** | 103 | 59 |
+| Implementation and interoperability | **Advancing strongly** | 213 | 99 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 294
-- **Protocol and interoperability:** 222
-- **Credentials and proof:** 186
-- **Transport and routing:** 152
-- **Governance and lifecycle:** 134
+- **Delivery and maintenance:** 298
+- **Protocol and interoperability:** 227
+- **Credentials and proof:** 190
+- **Transport and routing:** 153
+- **Governance and lifecycle:** 136
 
 ### Portfolio intelligence
 
