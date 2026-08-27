@@ -512,9 +512,9 @@ repositories:
 - repo: trustoverip/dtgwg-trust-tasks-tf
   organisation: toip
   workstream: trust-tasks
-  role: protocol-and-task-specification
+  role: task-force-workspace
   lifecycle: active
-  reporting_weight: critical
+  reporting_weight: high
   default_branch: main
   monitor:
     commits: true
@@ -525,11 +525,19 @@ repositories:
   material_paths:
   - README.md
   - docs/**
-  - specs/**
-  - schemas/**
-  - '**/*spec*.md'
+  - bindings/**
+  - trust-tasks-rs/**
+  - trust-tasks-ts/**
+  - trust-tasks-proof/**
+  - trust-tasks-https/**
+  - trust-tasks-didcomm/**
+  - trust-tasks-didcomm-v1/**
+  - trust-tasks-capability-client/**
+  - scripts/**
   - .github/workflows/**
-  notes: ''
+  notes: Active Trust Tasks task-force workspace for bindings, libraries and implementation/tooling
+    work. The canonical normative framework moved to trustoverip/dtgwg-trust-tasks-spec;
+    migrated specs/** content here is not the normative RAHP trigger surface.
 - repo: trustoverip/dtgwg-ux-tf
   organisation: toip
   workstream: human-trust-experience
