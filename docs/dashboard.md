@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-28T11:30:23.413549Z  
-**Evidence through:** 2026-08-28T11:17:02Z  
-**Source revision:** `c1e5488722ed1839f18588de0af99ca017baa928` · **Collection run:** `33167299462`  
+**Generated:** 2026-08-28T22:25:51.495563Z  
+**Evidence through:** 2026-08-28T22:06:04Z  
+**Source revision:** `5a22a63978428587016fdc643e326fbec85e496d` · **Collection run:** `33216697397`  
 
 ## Review now
 
-**35 decision finding(s)** · **0 review-required assertion(s)**
+**38 decision finding(s)** · **0 review-required assertion(s)**
 
 ### Decision findings
 
@@ -25,18 +25,18 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `3717300c98bce7eeb629e01b` fix(vtc)!: follow the spec on every auth response, and close the conformance gate | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1112) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `37e85475851e8e2ea963fb90` fix(vtc)!: tell a rejected applicant why, on the one path built to recover it | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1058) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `4dc0ead95acaf412635d0a2e` chore(vtc)!: recognise and submit 0.2 — drift reaches zero | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1105) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `50fd344cc3fa0524b54f4368` pnm-cli-v0.14.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/pnm-cli-v0.14.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `5695ce35d813ee41e72ce1c2` vta-sdk-v0.29.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.29.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `6781acab7527413a142ab5f8` docs: design note for the application-state store | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1041) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `75265392ce825e018ff67a4b` feat(vta)!: close the CI cache class, map the 0.5.0 lifecycle, cover more tasks | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1134) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `7fe94ec7bc0d47204c9f926f` docs: design note for Trust Task version negotiation and its versioning contract | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1046) |
 
 ## Watch
 
-**9 deterministic watch assertion(s)** · **31 other finding(s)**
+**9 deterministic watch assertion(s)** · **33 other finding(s)**
 
 - `DTG-A-CD20E8ACC0A4F608` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-576BBE3D6048C32D` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-053705B8AC7DF5AF` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-E311B04FD8EDB2C3` — Governed action specification and implementation are moving together in this window.
 - `DTG-A-3A449798A6700E66` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
 - `DTG-A-D29D701736BA0893` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-99B4A3E10A087954` — Material movement is present on both sides of the declared exercised-by relationship.
@@ -49,8 +49,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 374 · **Material:** 184 · **Breaking:** 50 · **Tagged releases:** 62 · **Cross-repository:** 87  
-**Duplicate representations consolidated:** 227
+**Change units:** 433 · **Material:** 216 · **Breaking:** 53 · **Tagged releases:** 89 · **Cross-repository:** 94  
+**Duplicate representations consolidated:** 256
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -60,18 +60,18 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing strongly** | 20 | 12 |
-| Governed action | **Advancing strongly** | 124 | 64 |
-| Implementation and interoperability | **Advancing strongly** | 192 | 103 |
+| Credentials and evidence | **Advancing strongly** | 25 | 14 |
+| Governed action | **Advancing strongly** | 134 | 66 |
+| Implementation and interoperability | **Advancing strongly** | 227 | 129 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 305
-- **Protocol and interoperability:** 241
-- **Credentials and proof:** 199
-- **Transport and routing:** 157
-- **Governance and lifecycle:** 137
+- **Delivery and maintenance:** 351
+- **Protocol and interoperability:** 274
+- **Credentials and proof:** 224
+- **Transport and routing:** 176
+- **Governance and lifecycle:** 147
 
 ### Portfolio intelligence
 
