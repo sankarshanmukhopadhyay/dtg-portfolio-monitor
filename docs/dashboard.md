@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-08-27T22:19:03.794232Z  
-**Evidence through:** 2026-08-27T21:02:35Z  
-**Source revision:** `e0632b7f27d29ac5718fd98d2403bcdb1af81285` · **Collection run:** `33121944097`  
+**Generated:** 2026-08-28T11:30:23.413549Z  
+**Evidence through:** 2026-08-28T11:17:02Z  
+**Source revision:** `c1e5488722ed1839f18588de0af99ca017baa928` · **Collection run:** `33167299462`  
 
 ## Review now
 
-**34 decision finding(s)** · **0 review-required assertion(s)**
+**35 decision finding(s)** · **0 review-required assertion(s)**
 
 ### Decision findings
 
@@ -32,16 +32,16 @@ permalink: /dashboard/
 
 ## Watch
 
-**9 deterministic watch assertion(s)** · **29 other finding(s)**
+**9 deterministic watch assertion(s)** · **31 other finding(s)**
 
-- `DTG-A-4D869EA6A255372B` — Credentials and evidence specification and implementation are moving together in this window.
+- `DTG-A-CD20E8ACC0A4F608` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-576BBE3D6048C32D` — Governed action specification and implementation are moving together in this window.
 - `DTG-A-053705B8AC7DF5AF` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-829533138CC7FD59` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-607665F6BBD815F5` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-3A449798A6700E66` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-D29D701736BA0893` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-99B4A3E10A087954` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-1531B2C65E1ED252` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
-- `DTG-A-4E8486A867B08A01` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
+- `DTG-A-7347E1E461DAF263` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
+- `DTG-A-2D4DB46C3D96D780` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
 
 ## Recently disposed
 
@@ -49,8 +49,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 346 · **Material:** 173 · **Breaking:** 46 · **Tagged releases:** 69 · **Cross-repository:** 84  
-**Duplicate representations consolidated:** 198
+**Change units:** 374 · **Material:** 184 · **Breaking:** 50 · **Tagged releases:** 62 · **Cross-repository:** 87  
+**Duplicate representations consolidated:** 227
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -60,18 +60,18 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing strongly** | 17 | 12 |
-| Governed action | **Advancing strongly** | 111 | 61 |
-| Implementation and interoperability | **Advancing strongly** | 184 | 98 |
+| Credentials and evidence | **Advancing strongly** | 20 | 12 |
+| Governed action | **Advancing strongly** | 124 | 64 |
+| Implementation and interoperability | **Advancing strongly** | 192 | 103 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 278
-- **Protocol and interoperability:** 224
-- **Credentials and proof:** 185
-- **Transport and routing:** 148
-- **Governance and lifecycle:** 133
+- **Delivery and maintenance:** 305
+- **Protocol and interoperability:** 241
+- **Credentials and proof:** 199
+- **Transport and routing:** 157
+- **Governance and lifecycle:** 137
 
 ### Portfolio intelligence
 
