@@ -1,90 +1,90 @@
 {
-  "last_successful_collection": "2026-08-30T05:29:21.873767Z",
+  "last_successful_collection": "2026-08-30T16:44:19.547489Z",
   "lookback_days": 7,
-  "event_count": 730,
-  "change_unit_count": 436,
-  "collapsed_event_count": 268,
-  "finding_count": 67,
+  "event_count": 763,
+  "change_unit_count": 458,
+  "collapsed_event_count": 279,
+  "finding_count": 65,
   "warning_count": 0,
   "collection_warnings": [],
   "repositories": {
     "OpenVTC/dtg-credentials": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/governance": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/openvtc": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/probablistic-sampling-for-connection-vcs": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/rp-sdk-js": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/verifiable-git-infrastructure": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/verifiable-trust-infrastructure": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/vta-agent-memory": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/vta-browser-plugin": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/vta-mobile-agent-ios": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/vti-didcomm-js": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/vti-push-gateway": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/vti-setup": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "OpenVTC/wiki": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-agent-names-tf": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-cred-spec": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-cred-tf": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-general": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-htx-tf": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-rahp-tf": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-rcards-tf": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-trust-tasks-spec": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-trust-tasks-tf": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-ux-tf": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-vds-tf": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     },
     "trustoverip/dtgwg-zkp-tf": {
-      "collected_at": "2026-08-30T05:29:21.873767Z"
+      "collected_at": "2026-08-30T16:44:19.547489Z"
     }
   }
 }
