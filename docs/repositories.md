@@ -7,7 +7,7 @@ permalink: /repositories/
 
 The effective monitoring scope combines the curated registry with repositories admitted by the deterministic discovery policy. Curated metadata always overrides discovered defaults.
 
-**Discovery evidence generated:** 2026-09-02T16:38:09.862483Z  
+**Discovery evidence generated:** 2026-09-03T04:37:50.120154Z  
 **Policy:** `config/repository-discovery.yaml`
 
 | Repository | Workstream | Role | Lifecycle | Weight | Admission |
@@ -26,6 +26,7 @@ The effective monitoring scope combines the curated registry with repositories a
 | [`OpenVTC/vti-push-gateway`](https://github.com/OpenVTC/vti-push-gateway) | vti-push-gateway | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/vti-setup`](https://github.com/OpenVTC/vti-setup) | vti-setup | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/wiki`](https://github.com/OpenVTC/wiki) | wiki | discovered-openvtc-repository | active | high | dynamic |
+| [`trustoverip/dtgwg-agent-names-spec`](https://github.com/trustoverip/dtgwg-agent-names-spec) | -agent-names-spec | discovered-dtg-workstream | active | high | dynamic |
 | [`trustoverip/dtgwg-agent-names-tf`](https://github.com/trustoverip/dtgwg-agent-names-tf) | agent-names | task-force-workspace | active | high | curated |
 | [`trustoverip/dtgwg-cred-spec`](https://github.com/trustoverip/dtgwg-cred-spec) | credentials | normative-specification | active | critical | curated |
 | [`trustoverip/dtgwg-cred-tf`](https://github.com/trustoverip/dtgwg-cred-tf) | credentials | task-force-workspace | active | high | curated |
@@ -36,7 +37,10 @@ The effective monitoring scope combines the curated registry with repositories a
 | [`trustoverip/dtgwg-trust-tasks-spec`](https://github.com/trustoverip/dtgwg-trust-tasks-spec) | trust-tasks | normative-specification | active | critical | curated |
 | [`trustoverip/dtgwg-trust-tasks-tf`](https://github.com/trustoverip/dtgwg-trust-tasks-tf) | trust-tasks | task-force-workspace | active | high | curated |
 | [`trustoverip/dtgwg-ux-tf`](https://github.com/trustoverip/dtgwg-ux-tf) | human-trust-experience | legacy-or-transition | transitional | low | curated |
+| [`trustoverip/dtgwg-vds-spec`](https://github.com/trustoverip/dtgwg-vds-spec) | -vds-spec | discovered-dtg-workstream | active | high | dynamic |
 | [`trustoverip/dtgwg-vds-tf`](https://github.com/trustoverip/dtgwg-vds-tf) | verifiable-data-structures | normative-specification | active | critical | curated |
+| [`trustoverip/dtgwg-vti-spec`](https://github.com/trustoverip/dtgwg-vti-spec) | -vti-spec | discovered-dtg-workstream | active | high | dynamic |
+| [`trustoverip/dtgwg-zkp-spec`](https://github.com/trustoverip/dtgwg-zkp-spec) | -zkp-spec | discovered-dtg-workstream | active | high | dynamic |
 | [`trustoverip/dtgwg-zkp-tf`](https://github.com/trustoverip/dtgwg-zkp-tf) | zero-knowledge-proofs | implementation-guidance | active | critical | curated |
 
 ## Governance boundary
@@ -47,7 +51,7 @@ Forks are excluded by default to avoid duplicate observation of upstream or down
 
 ## Discovery decisions
 
-Current run: **26 admitted candidate(s)** and **0 rejected candidate(s)**. The full machine-readable decision record is persisted at `data/repository-discovery.json`.
+Current run: **30 admitted candidate(s)** and **0 rejected candidate(s)**. The full machine-readable decision record is persisted at `data/repository-discovery.json`.
 
 ## Cross-specification assurance seams
 

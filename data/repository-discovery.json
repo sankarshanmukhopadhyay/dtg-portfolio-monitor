@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-02T16:38:09.862483Z",
+  "generated_at": "2026-09-03T04:37:50.120154Z",
   "policy": "config/repository-discovery.yaml",
   "admitted": [
     {
@@ -424,6 +424,36 @@
       }
     },
     {
+      "repo": "trustoverip/dtgwg-agent-names-spec",
+      "organisation": "toip",
+      "workstream": "-agent-names-spec",
+      "role": "discovered-dtg-workstream",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "trustoverip",
+        "admission": "automatic"
+      }
+    },
+    {
       "repo": "trustoverip/dtgwg-agent-names-tf",
       "organisation": "toip",
       "workstream": "-agent-names-tf",
@@ -724,9 +754,99 @@
       }
     },
     {
+      "repo": "trustoverip/dtgwg-vds-spec",
+      "organisation": "toip",
+      "workstream": "-vds-spec",
+      "role": "discovered-dtg-workstream",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "trustoverip",
+        "admission": "automatic"
+      }
+    },
+    {
       "repo": "trustoverip/dtgwg-vds-tf",
       "organisation": "toip",
       "workstream": "-vds-tf",
+      "role": "discovered-dtg-workstream",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "trustoverip",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "trustoverip/dtgwg-vti-spec",
+      "organisation": "toip",
+      "workstream": "-vti-spec",
+      "role": "discovered-dtg-workstream",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "trustoverip",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "trustoverip/dtgwg-zkp-spec",
+      "organisation": "toip",
+      "workstream": "-zkp-spec",
       "role": "discovered-dtg-workstream",
       "lifecycle": "active",
       "reporting_weight": "high",
@@ -912,6 +1032,15 @@
       "private": false
     },
     {
+      "repository": "trustoverip/dtgwg-agent-names-spec",
+      "owner": "trustoverip",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
       "repository": "trustoverip/dtgwg-agent-names-tf",
       "owner": "trustoverip",
       "admitted": true,
@@ -1002,7 +1131,34 @@
       "private": false
     },
     {
+      "repository": "trustoverip/dtgwg-vds-spec",
+      "owner": "trustoverip",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
       "repository": "trustoverip/dtgwg-vds-tf",
+      "owner": "trustoverip",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "trustoverip/dtgwg-vti-spec",
+      "owner": "trustoverip",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "trustoverip/dtgwg-zkp-spec",
       "owner": "trustoverip",
       "admitted": true,
       "reason": "policy-match",

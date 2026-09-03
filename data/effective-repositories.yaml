@@ -338,6 +338,31 @@ repositories:
   discovery:
     source_owner: OpenVTC
     admission: automatic
+- repo: trustoverip/dtgwg-agent-names-spec
+  organisation: toip
+  workstream: -agent-names-spec
+  role: discovered-dtg-workstream
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: trustoverip
+    admission: automatic
 - repo: trustoverip/dtgwg-agent-names-tf
   organisation: toip
   workstream: agent-names
@@ -560,6 +585,31 @@ repositories:
   - .github/workflows/**
   notes: Empty transitional repository retained as lifecycle evidence; HTX is the
     active successor workstream.
+- repo: trustoverip/dtgwg-vds-spec
+  organisation: toip
+  workstream: -vds-spec
+  role: discovered-dtg-workstream
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: trustoverip
+    admission: automatic
 - repo: trustoverip/dtgwg-vds-tf
   organisation: toip
   workstream: verifiable-data-structures
@@ -581,6 +631,56 @@ repositories:
   - '**/*spec*.md'
   - .github/workflows/**
   notes: Home of the DTG Verifiable Data Structures Specification V1.0.
+- repo: trustoverip/dtgwg-vti-spec
+  organisation: toip
+  workstream: -vti-spec
+  role: discovered-dtg-workstream
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: trustoverip
+    admission: automatic
+- repo: trustoverip/dtgwg-zkp-spec
+  organisation: toip
+  workstream: -zkp-spec
+  role: discovered-dtg-workstream
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: trustoverip
+    admission: automatic
 - repo: trustoverip/dtgwg-zkp-tf
   organisation: toip
   workstream: zero-knowledge-proofs
