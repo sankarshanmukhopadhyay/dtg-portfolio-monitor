@@ -183,10 +183,12 @@
     "title": "feat(rooms): data rooms end to end — storage, dispatch, verification, MLS, and a host",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1237"
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1237",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/47ce7a8df7cf467197c2d18742bf587d4ec36547"
     ],
     "related_repositories": [
-      "OpenVTC/dtg-credentials"
+      "OpenVTC/dtg-credentials",
+      "trustoverip/dtgwg-trust-tasks-tf"
     ],
     "state": "open",
     "review_status": "unreviewed",
@@ -505,31 +507,6 @@
     "successor_finding": null
   },
   {
-    "finding_id": "3a52a79d39abc1121fa2",
-    "fingerprint": "3a52a79d39abc1121fa2482e",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "routine",
-    "assurance_impact": "none",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "feat(compliance)!: enforce SPEC §7.2's flag-driven checks, and sign what we send",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1146",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/58da6826eeb9fe735d70421e0af79e72b1e3eceb"
-    ],
-    "related_repositories": [
-      "trustoverip/dtgwg-trust-tasks-tf"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
     "finding_id": "3da9379391566605c918",
     "fingerprint": "3da9379391566605c9186538",
     "kind": "material_cross_reference",
@@ -615,8 +592,7 @@
     "title": "fix(sdk)!: give every authenticated client its identity, and adopt provision/integration 0.3",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1147",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/7d45b6d33e38e7a13f5fc07fd2015c67e59a340f"
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1147"
     ],
     "related_repositories": [
       "trustoverip/dtgwg-trust-tasks-tf"
@@ -644,31 +620,6 @@
     ],
     "related_repositories": [
       "trustoverip/dtgwg-cred-spec"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
-    "finding_id": "dfb2124136117e6858f3",
-    "fingerprint": "dfb2124136117e6858f3093a",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "routine",
-    "assurance_impact": "none",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "feat(tasks): catch up to the registry on vault 0.3, device/wipe 0.2 and credentials/issue 0.2",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1145",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/d582a9de39b4936a4c9e2cef6169d3de74b3b23a"
-    ],
-    "related_repositories": [
-      "trustoverip/dtgwg-trust-tasks-tf"
     ],
     "state": "open",
     "review_status": "unreviewed",
