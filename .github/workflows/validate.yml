@@ -21,3 +21,23 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - run: python -m dtg_monitor validate
       - run: python -m unittest discover -s tests
+
+  pages-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - name: Build documentation artifact
+        run: >-
+          bundle exec jekyll build
+          --source docs
+          --destination _site
+          --config _config.yml
+          --baseurl "/dtg-portfolio-monitor"
+      - name: Validate documentation artifact
+        run: python scripts/validate_site.py _site
+      - name: Assert Event register CSS is compiled
+        run: grep -R -q "portfolio-event-table" _site/assets/css
