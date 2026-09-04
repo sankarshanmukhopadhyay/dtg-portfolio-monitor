@@ -74,6 +74,26 @@ class DocumentationTests(unittest.TestCase):
             text = (ROOT / "docs" / name).read_text(encoding="utf-8")
             self.assertRegex(text, r"(?m)^layout:\s*null\s*$")
 
+    def test_custom_sass_is_inside_jekyll_source(self):
+        custom = ROOT / "docs" / "_sass" / "custom" / "custom.scss"
+        self.assertTrue(custom.is_file(), "Custom Sass must live inside the docs/ Jekyll source tree")
+        self.assertIn(".portfolio-event-table", custom.read_text(encoding="utf-8"))
+        self.assertFalse(
+            (ROOT / "_sass" / "custom" / "custom.scss").exists(),
+            "Root-level custom Sass is outside the Pages --source docs boundary",
+        )
+
+    def test_pages_push_covers_publication_inputs(self):
+        pages = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
+        for expected in (
+            '- "docs/**"',
+            '- "_config.yml"',
+            '- "Gemfile"',
+            '- "scripts/validate_site.py"',
+            '- ".github/workflows/pages.yml"',
+        ):
+            self.assertIn(expected, pages)
+
     def test_collection_explicitly_deploys_persisted_revision(self):
         collect = (ROOT / ".github/workflows/collect.yml").read_text(encoding="utf-8")
         pages = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
