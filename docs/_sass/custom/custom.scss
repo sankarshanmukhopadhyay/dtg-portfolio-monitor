@@ -1,0 +1,48 @@
+.portfolio-filters { display:flex; flex-wrap:wrap; gap:.75rem; align-items:end; padding:1rem; margin:1rem 0 .5rem; background:#f5f6fa; border:1px solid #dfe2e8; border-radius:.35rem; }
+.portfolio-filters label { display:flex; flex-direction:column; gap:.25rem; font-size:.85rem; font-weight:600; }
+.portfolio-filters label:last-of-type { flex-direction:row; align-items:center; }
+.portfolio-filters select, .portfolio-filters button { min-height:2rem; }
+.portfolio-filter-count { font-size:.85rem; color:#5c6370; }
+
+/* The portfolio status page is an analytical surface rather than a prose page.
+ * Widen only pages that contain the event register; keep ordinary docs at the
+ * theme's default reading width. */
+@media (min-width: 66.5rem) {
+  .main-content:has(.portfolio-event-table) {
+    max-width: 96rem;
+  }
+
+  .main-content:has(.portfolio-event-table) .table-wrapper {
+    overflow-x: visible;
+  }
+}
+
+.portfolio-event-table {
+  width: 100%;
+  table-layout: auto;
+  font-size: .82rem;
+}
+
+.portfolio-event-table th,
+.portfolio-event-table td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  vertical-align: top;
+}
+
+/* Preserve compact semantic markers while allowing surrounding cell content
+ * to wrap. */
+.signal-chip, .breaking-chip { display:inline-block; margin:.1rem .15rem .1rem 0; padding:.08rem .35rem; border:1px solid #c7ccd4; border-radius:999px; font-size:.7rem; font-weight:700; white-space:nowrap; }
+.breaking-chip { border-color:#b42318; color:#b42318; }
+.evidence-note { display:block; margin-top:.25rem; font-size:.72rem; color:#5c6370; }
+tr[hidden] { display:none; }
+
+/* On smaller screens, the theme's table wrapper remains the defensive
+ * horizontal-overflow boundary rather than squeezing evidence into illegible
+ * columns. */
+@media (max-width: 66.49rem) {
+  .portfolio-event-table {
+    min-width: 48rem;
+  }
+}
