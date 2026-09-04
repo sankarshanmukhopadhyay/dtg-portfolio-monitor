@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-09-04T04:39:55.062290Z  
-**Evidence through:** 2026-09-04T04:38:55Z  
-**Source revision:** `3714b5cf9bd2cedb9e12609adb18fceb6662acdc` · **Collection run:** `33837582140`  
+**Generated:** 2026-09-04T16:26:30.008863Z  
+**Evidence through:** 2026-09-04T16:25:50Z  
+**Source revision:** `bac9be3c992d35c8ed6c47fcdd00884650f4092b` · **Collection run:** `33895046080`  
 
 ## Review now
 
-**19 decision finding(s)** · **1 review-required assertion(s)**
+**16 decision finding(s)** · **1 review-required assertion(s)**
 
 ### Decision findings
 
@@ -21,14 +21,14 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/openvtc` | `1424d521e64b748aad17908c` feat(devices): send this install's current name on the heartbeat | potentially-breaking | [source](https://github.com/OpenVTC/openvtc/pull/264) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `149a49aa1cb3037f0cfb0f0f` feat(vta): implement vta/credentials/list, and check the vault/credentials family | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1235) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `4c9cc4d721ef21aaed00d14f` feat(vta): discharge the backup family's spec debt, and audit what it was hiding | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1239) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `50fd344cc3fa0524b54f4368` pnm-cli-v0.14.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/pnm-cli-v0.14.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `6bf9515457f4bb0cb381ee0b` feat(rooms): group custody, so a key-holder still has the group tomorrow | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1248) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `9b38c4f3af53eb6f1669b50e` vta-service-v0.23.1 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.1) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `b2352b42ce91d91f1375e627` vta-service-v0.22.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.22.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `b506e3491fe0d4776198a570` feat(rooms): data rooms end to end — storage, dispatch, verification, MLS, and a host | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1237) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `cb2470b45bf486b6af80ecd3` feat(rooms): the presentation oracle, so an agent never holds its human's credentials | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1247) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `e121b18291ff4d8f4d55fd81` chore: release | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1232) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `f5a7e52ff8f5d90f5201df6c` vti-common-v0.15.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vti-common-v0.15.0) |
+| **elevated** | `OpenVTC/vta-agent-memory` | `ca518efb8b8085c52b893898` feat(fence): treat recalled memory as untrusted data, not instructions | potentially-breaking | [source](https://github.com/OpenVTC/vta-agent-memory/pull/13) |
+| **elevated** | `OpenVTC/vta-browser-plugin` | `8ef75e6e2fa45fa9a9c88ca0` feat(rp-login): add walletProfile — ask who this site knows you as | potentially-breaking | [source](https://github.com/OpenVTC/vta-browser-plugin/pull/145) |
+| **elevated** | `trustoverip/dtgwg-cred-spec` | `a3b65e64b856c9d421a241ce` feat: replace the four VID types with a declared correlation scope (pairwise | directed | public) | potentially-breaking | [source](https://github.com/trustoverip/dtgwg-cred-spec/pull/30) |
 
 ### Review-required assertions
 
@@ -38,16 +38,16 @@ permalink: /dashboard/
 
 ## Watch
 
-**8 deterministic watch assertion(s)** · **14 other finding(s)**
+**8 deterministic watch assertion(s)** · **9 other finding(s)**
 
-- `DTG-A-E6150A6526473467` — Credentials and evidence specification and implementation are moving together in this window.
-- `DTG-A-8B8C7CBB922375F5` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-474F7484E996409E` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-95C1E5B97A0405C2` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-ED0C667773FBB6CD` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-C56F4B4777E02E0F` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
-- `DTG-A-8C768C952058EF5F` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
-- `DTG-A-BF7B0C23AF005EE0` — Governed action has material activity while related capability Human trust and safety is quiet in this observation window.
+- `DTG-A-3BBB0A9A75FF143F` — Credentials and evidence specification and implementation are moving together in this window.
+- `DTG-A-36789DACC9B77348` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-37B147FFD2A22336` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-19DF2B1FB50B9647` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-D60F976DE0D3E723` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-6FF96F4F68EC4655` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
+- `DTG-A-DFD1B47320C5F0DB` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
+- `DTG-A-AF53DC9408F1ADE8` — Governed action has material activity while related capability Human trust and safety is quiet in this observation window.
 
 ## Recently disposed
 
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 388 · **Material:** 151 · **Breaking:** 8 · **Tagged releases:** 111 · **Cross-repository:** 45  
-**Duplicate representations consolidated:** 186
+**Change units:** 303 · **Material:** 112 · **Breaking:** 3 · **Tagged releases:** 77 · **Cross-repository:** 36  
+**Duplicate representations consolidated:** 141
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -66,18 +66,18 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing strongly** | 31 | 15 |
-| Governed action | **Advancing strongly** | 79 | 21 |
-| Implementation and interoperability | **Advancing strongly** | 168 | 79 |
+| Credentials and evidence | **Advancing strongly** | 25 | 14 |
+| Governed action | **Advancing strongly** | 58 | 17 |
+| Implementation and interoperability | **Advancing strongly** | 122 | 50 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 274
-- **Protocol and interoperability:** 178
-- **Credentials and proof:** 151
-- **Transport and routing:** 116
-- **Authority and delegation:** 108
+- **Delivery and maintenance:** 211
+- **Protocol and interoperability:** 134
+- **Credentials and proof:** 121
+- **Transport and routing:** 99
+- **Authority and delegation:** 94
 
 ### Portfolio intelligence
 
