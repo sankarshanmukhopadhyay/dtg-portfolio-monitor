@@ -1,102 +1,102 @@
 {
-  "last_successful_collection": "2026-09-03T16:29:25.892700Z",
+  "last_successful_collection": "2026-09-04T04:39:07.247675Z",
   "lookback_days": 7,
-  "event_count": 606,
-  "change_unit_count": 387,
-  "collapsed_event_count": 189,
+  "event_count": 604,
+  "change_unit_count": 388,
+  "collapsed_event_count": 186,
   "finding_count": 33,
   "warning_count": 0,
   "collection_warnings": [],
   "repositories": {
     "OpenVTC/dtg-credentials": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/governance": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/openvtc": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/probablistic-sampling-for-connection-vcs": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/rp-sdk-js": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/verifiable-git-infrastructure": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/verifiable-trust-infrastructure": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/vta-agent-memory": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/vta-browser-plugin": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/vta-mobile-agent-ios": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/vti-didcomm-js": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/vti-push-gateway": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/vti-setup": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "OpenVTC/wiki": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-agent-names-spec": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-agent-names-tf": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-cred-spec": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-cred-tf": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-general": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-htx-tf": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-rahp-tf": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-rcards-tf": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-trust-tasks-spec": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-trust-tasks-tf": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-ux-tf": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-vds-spec": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-vds-tf": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-vti-spec": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-zkp-spec": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     },
     "trustoverip/dtgwg-zkp-tf": {
-      "collected_at": "2026-09-03T16:29:25.892700Z"
+      "collected_at": "2026-09-04T04:39:07.247675Z"
     }
   }
 }

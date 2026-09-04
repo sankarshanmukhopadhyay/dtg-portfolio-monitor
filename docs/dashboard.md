@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-09-03T16:30:22.139245Z  
-**Evidence through:** 2026-09-03T16:10:53Z  
-**Source revision:** `69d6dd1f6dc355aac7233f350d0ffa6df2965837` · **Collection run:** `33778906324`  
+**Generated:** 2026-09-04T04:39:55.062290Z  
+**Evidence through:** 2026-09-04T04:38:55Z  
+**Source revision:** `3714b5cf9bd2cedb9e12609adb18fceb6662acdc` · **Collection run:** `33837582140`  
 
 ## Review now
 
-**18 decision finding(s)** · **1 review-required assertion(s)**
+**19 decision finding(s)** · **1 review-required assertion(s)**
 
 ### Decision findings
 
@@ -22,13 +22,13 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `149a49aa1cb3037f0cfb0f0f` feat(vta): implement vta/credentials/list, and check the vault/credentials family | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1235) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `4c9cc4d721ef21aaed00d14f` feat(vta): discharge the backup family's spec debt, and audit what it was hiding | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1239) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `50fd344cc3fa0524b54f4368` pnm-cli-v0.14.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/pnm-cli-v0.14.0) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `6bf9515457f4bb0cb381ee0b` feat(rooms): group custody, so a key-holder still has the group tomorrow | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1248) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `9b38c4f3af53eb6f1669b50e` vta-service-v0.23.1 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.1) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `b2352b42ce91d91f1375e627` vta-service-v0.22.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.22.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `b506e3491fe0d4776198a570` feat(rooms): data rooms end to end — storage, dispatch, verification, MLS, and a host | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1237) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `cb2470b45bf486b6af80ecd3` feat(rooms): the presentation oracle, so an agent never holds its human's credentials | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1247) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `e121b18291ff4d8f4d55fd81` chore: release | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1232) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `ea833e9560c87a8d01bda08b` vta-sdk-v0.30.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.30.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `f5a7e52ff8f5d90f5201df6c` vti-common-v0.15.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vti-common-v0.15.0) |
-| **elevated** | `OpenVTC/vta-agent-memory` | `ca518efb8b8085c52b893898` feat(fence): treat recalled memory as untrusted data, not instructions | potentially-breaking | [source](https://github.com/OpenVTC/vta-agent-memory/pull/13) |
 
 ### Review-required assertions
 
@@ -38,7 +38,7 @@ permalink: /dashboard/
 
 ## Watch
 
-**8 deterministic watch assertion(s)** · **15 other finding(s)**
+**8 deterministic watch assertion(s)** · **14 other finding(s)**
 
 - `DTG-A-E6150A6526473467` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-8B8C7CBB922375F5` — Governed action specification and implementation are moving together in this window.
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 387 · **Material:** 153 · **Breaking:** 11 · **Tagged releases:** 104 · **Cross-repository:** 45  
-**Duplicate representations consolidated:** 189
+**Change units:** 388 · **Material:** 151 · **Breaking:** 8 · **Tagged releases:** 111 · **Cross-repository:** 45  
+**Duplicate representations consolidated:** 186
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -66,18 +66,18 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing strongly** | 30 | 15 |
-| Governed action | **Advancing strongly** | 70 | 19 |
-| Implementation and interoperability | **Advancing strongly** | 177 | 83 |
+| Credentials and evidence | **Advancing strongly** | 31 | 15 |
+| Governed action | **Advancing strongly** | 79 | 21 |
+| Implementation and interoperability | **Advancing strongly** | 168 | 79 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 278
-- **Protocol and interoperability:** 182
+- **Delivery and maintenance:** 274
+- **Protocol and interoperability:** 178
 - **Credentials and proof:** 151
-- **Transport and routing:** 117
-- **Authority and delegation:** 109
+- **Transport and routing:** 116
+- **Authority and delegation:** 108
 
 ### Portfolio intelligence
 
