@@ -1,7 +1,7 @@
 {
   "assertions": [
     {
-      "assertion_id": "DTG-A-5FFCEB6ABFFD6521",
+      "assertion_id": "DTG-A-04998916B6129D8C",
       "confidence": "deterministic",
       "evidence_urls": [
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
@@ -13,13 +13,13 @@
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/26",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/27",
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15"
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14"
       ],
       "kind": "specification-implementation-alignment",
       "metrics": {
-        "implementation_material_change_units": 31,
+        "implementation_material_change_units": 25,
         "specification_material_change_units": 9
       },
       "review_class": "watch",
@@ -46,8 +46,8 @@
       ],
       "kind": "specification-implementation-alignment",
       "metrics": {
-        "implementation_material_change_units": 32,
-        "specification_material_change_units": 17
+        "implementation_material_change_units": 23,
+        "specification_material_change_units": 21
       },
       "review_class": "watch",
       "state": "moving-together",
@@ -55,52 +55,52 @@
       "subject": "governed-action"
     },
     {
-      "assertion_id": "DTG-A-9A43C3E5241EAA86",
+      "assertion_id": "DTG-A-8D47D2D6AAD1791C",
       "confidence": "deterministic",
       "evidence_urls": [
+        "https://github.com/trustoverip/dtgwg-trust-tasks-spec/pull/12",
+        "https://github.com/trustoverip/dtgwg-trust-tasks-spec/commit/d8633c32ae6ef4297326fefe3d89fe34eafc6a39",
         "https://github.com/OpenVTC/openvtc/pull/273",
         "https://github.com/OpenVTC/openvtc/commit/73f585e5dafce6605a1f3e0a6ade08a5ef1dff4e",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1198",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/f70df37a283a30439cb7b2fdc9448cfae6dedcb4",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-keyspaces-v0.2.4",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.1",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.32.2",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.2",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1152",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1219",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/8ad087690918cd4a2726813ba2db042b31cd8536",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1220"
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1227",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4b1fdd0a59ae85c42173b3440d397bde7b829e86",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.32.3",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-cli-common-v0.12.3",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.4",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1233",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/22178cd0760c220c8fe46c54e60158c4c9389ae9",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1247"
       ],
       "kind": "specification-implementation-alignment",
       "metrics": {
-        "implementation_material_change_units": 32,
-        "specification_material_change_units": 0
+        "implementation_material_change_units": 23,
+        "specification_material_change_units": 1
       },
-      "review_class": "review-required",
-      "state": "implementation-ahead",
-      "statement": "Governed action implementation movement is ahead of normative specification activity in this window.",
+      "review_class": "watch",
+      "state": "moving-together",
+      "statement": "Governed action specification and implementation are moving together in this window.",
       "subject": "governed-action"
     },
     {
-      "assertion_id": "DTG-A-DE5E7693E768570F",
+      "assertion_id": "DTG-A-0656C3EE16B5E53C",
       "confidence": "deterministic",
       "evidence_urls": [
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15",
-        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/31",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/30",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/29",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/35",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/20",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/21",
-        "https://github.com/OpenVTC/dtg-credentials/pull/13"
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14",
+        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/22",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/26"
       ],
       "kind": "cross-capability-convergence",
       "metrics": {
-        "material_change_units": 33
+        "material_change_units": 37
       },
       "review_class": "watch",
       "state": "observed",
@@ -108,25 +108,25 @@
       "subject": "credentials-and-evidence->governed-action"
     },
     {
-      "assertion_id": "DTG-A-6E68B24720AEF2CF",
+      "assertion_id": "DTG-A-EA80B9274EAE0395",
       "confidence": "deterministic",
       "evidence_urls": [
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15",
-        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/31",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/30",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/29",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/35",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/20",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/21",
-        "https://github.com/OpenVTC/dtg-credentials/pull/13"
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14",
+        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/22",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/26"
       ],
       "kind": "cross-capability-convergence",
       "metrics": {
-        "material_change_units": 49
+        "material_change_units": 39
       },
       "review_class": "watch",
       "state": "observed",
@@ -152,7 +152,7 @@
       ],
       "kind": "cross-capability-convergence",
       "metrics": {
-        "material_change_units": 52
+        "material_change_units": 48
       },
       "review_class": "watch",
       "state": "observed",
@@ -160,21 +160,21 @@
       "subject": "governed-action->implementation"
     },
     {
-      "assertion_id": "DTG-A-002EC42001184EBB",
+      "assertion_id": "DTG-A-39F878BCF2059B77",
       "confidence": "deterministic",
       "evidence_urls": [
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15",
-        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/31",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/30",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/29",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/35",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/20",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/21",
-        "https://github.com/OpenVTC/dtg-credentials/pull/13"
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14",
+        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/22",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/26"
       ],
       "kind": "related-capability-asymmetry",
       "metrics": {},
@@ -184,21 +184,21 @@
       "subject": "credentials-and-evidence->relationships-and-naming"
     },
     {
-      "assertion_id": "DTG-A-195CC0BE6F3B81E7",
+      "assertion_id": "DTG-A-1106CCE6204A8430",
       "confidence": "deterministic",
       "evidence_urls": [
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15",
-        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/31",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/30",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/29",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/35",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/20",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/21",
-        "https://github.com/OpenVTC/dtg-credentials/pull/13"
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14",
+        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/22",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/26"
       ],
       "kind": "related-capability-asymmetry",
       "metrics": {},
@@ -236,18 +236,18 @@
     {
       "advancing": "credentials-and-evidence",
       "evidence_urls": [
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15",
-        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/31",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/30",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/29",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/35",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/20",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/21",
-        "https://github.com/OpenVTC/dtg-credentials/pull/13"
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14",
+        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/22",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/26"
       ],
       "kind": "related-capability-asymmetry",
       "quiet": "relationships-and-naming",
@@ -257,18 +257,18 @@
     {
       "advancing": "credentials-and-evidence",
       "evidence_urls": [
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15",
-        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/31",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/30",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/29",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/35",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/20",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/21",
-        "https://github.com/OpenVTC/dtg-credentials/pull/13"
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14",
+        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/22",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/26"
       ],
       "kind": "related-capability-asymmetry",
       "quiet": "human-trust-and-safety",
@@ -309,38 +309,37 @@
       "themes": []
     },
     "credentials-and-evidence": {
-      "change_units": 28,
+      "change_units": 27,
       "evidence_urls": [
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15",
-        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/31",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/30",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/29",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/35",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/20",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/21",
-        "https://github.com/OpenVTC/dtg-credentials/pull/13"
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14",
+        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/22",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/26"
       ],
       "label": "Credentials and evidence",
-      "material_change_units": 15,
+      "material_change_units": 14,
       "pulse": "advancing-strongly",
       "purpose": "Provide verifiable evidence about membership, relationships, attributes, authority, and privacy-preserving proof.",
       "repositories": [
         "OpenVTC/dtg-credentials",
-        "trustoverip/dtgwg-cred-spec",
-        "trustoverip/dtgwg-zkp-tf"
+        "trustoverip/dtgwg-cred-spec"
       ],
       "themes": [
         {
-          "count": 22,
+          "count": 21,
           "id": "delivery-and-maintenance",
           "label": "Delivery and maintenance"
         },
         {
-          "count": 17,
+          "count": 15,
           "id": "credentials-and-proof",
           "label": "Credentials and proof"
         },
@@ -350,19 +349,19 @@
           "label": "Security and privacy"
         },
         {
-          "count": 12,
-          "id": "protocol-and-interoperability",
-          "label": "Protocol and interoperability"
-        },
-        {
           "count": 11,
           "id": "governance-and-lifecycle",
           "label": "Governance and lifecycle"
+        },
+        {
+          "count": 10,
+          "id": "protocol-and-interoperability",
+          "label": "Protocol and interoperability"
         }
       ]
     },
     "governed-action": {
-      "change_units": 62,
+      "change_units": 69,
       "evidence_urls": [
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/338",
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/9f0533018bcb30f9b24d7f60dfd9e2bc442c4bd5",
@@ -378,7 +377,7 @@
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/347"
       ],
       "label": "Governed action",
-      "material_change_units": 18,
+      "material_change_units": 23,
       "pulse": "advancing-strongly",
       "purpose": "Enable consequential actions to be requested, authorised, executed, and evidenced through Trust Tasks and related protocol semantics.",
       "repositories": [
@@ -387,29 +386,29 @@
       ],
       "themes": [
         {
-          "count": 33,
+          "count": 39,
           "id": "delivery-and-maintenance",
           "label": "Delivery and maintenance"
         },
         {
-          "count": 25,
-          "id": "credentials-and-proof",
-          "label": "Credentials and proof"
-        },
-        {
-          "count": 25,
+          "count": 32,
           "id": "protocol-and-interoperability",
           "label": "Protocol and interoperability"
         },
         {
-          "count": 13,
-          "id": "governance-and-lifecycle",
-          "label": "Governance and lifecycle"
+          "count": 31,
+          "id": "credentials-and-proof",
+          "label": "Credentials and proof"
         },
         {
-          "count": 13,
+          "count": 17,
           "id": "authority-and-delegation",
           "label": "Authority and delegation"
+        },
+        {
+          "count": 17,
+          "id": "transport-and-routing",
+          "label": "Transport and routing"
         }
       ]
     },
@@ -424,23 +423,23 @@
       "themes": []
     },
     "implementation": {
-      "change_units": 83,
+      "change_units": 67,
       "evidence_urls": [
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1198",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/f70df37a283a30439cb7b2fdc9448cfae6dedcb4",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-keyspaces-v0.2.4",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.1",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.32.2",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.2",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1152",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1219",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/8ad087690918cd4a2726813ba2db042b31cd8536",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1220",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/ebd71556469b5464bd291af14a6a3f83fcef7576",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1223"
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1227",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4b1fdd0a59ae85c42173b3440d397bde7b829e86",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.32.3",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-cli-common-v0.12.3",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.4",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1233",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/22178cd0760c220c8fe46c54e60158c4c9389ae9",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1247",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/b726063f3cf5c40f54cda26367e0f237922abfe8",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1241",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/59c48a4b0399f3957c6ebb4547508ad8f6aebb63",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1238"
       ],
       "label": "Implementation and interoperability",
-      "material_change_units": 34,
+      "material_change_units": 25,
       "pulse": "advancing-strongly",
       "purpose": "Exercise DTG specifications in running software and expose integration, deployment, and interoperability gaps.",
       "repositories": [
@@ -449,29 +448,29 @@
       ],
       "themes": [
         {
-          "count": 67,
+          "count": 53,
           "id": "delivery-and-maintenance",
           "label": "Delivery and maintenance"
         },
         {
-          "count": 47,
+          "count": 37,
           "id": "protocol-and-interoperability",
           "label": "Protocol and interoperability"
         },
         {
-          "count": 39,
+          "count": 30,
           "id": "credentials-and-proof",
           "label": "Credentials and proof"
         },
         {
-          "count": 35,
-          "id": "transport-and-routing",
-          "label": "Transport and routing"
+          "count": 27,
+          "id": "authority-and-delegation",
+          "label": "Authority and delegation"
         },
         {
-          "count": 31,
-          "id": "governance-and-lifecycle",
-          "label": "Governance and lifecycle"
+          "count": 25,
+          "id": "transport-and-routing",
+          "label": "Transport and routing"
         }
       ]
     },
@@ -486,7 +485,7 @@
       "themes": []
     }
   },
-  "change_units": 285,
+  "change_units": 269,
   "convergences": [
     {
       "evidence_urls": [
@@ -505,7 +504,7 @@
       ],
       "from": "governed-action",
       "kind": "cross-capability-convergence",
-      "material_change_units": 52,
+      "material_change_units": 48,
       "rationale": "OpenVTC implementations exercise Trust Task execution, transport, approval, and receipt behaviour.",
       "relationship": "exercised-by",
       "repositories": [
@@ -513,44 +512,6 @@
         "OpenVTC/verifiable-trust-infrastructure",
         "trustoverip/dtgwg-trust-tasks-spec",
         "trustoverip/dtgwg-trust-tasks-tf"
-      ],
-      "shared_themes": [
-        "authority-and-delegation",
-        "credentials-and-proof",
-        "delivery-and-maintenance",
-        "governance-and-lifecycle",
-        "protocol-and-interoperability",
-        "security-and-privacy",
-        "transport-and-routing"
-      ],
-      "to": "implementation"
-    },
-    {
-      "evidence_urls": [
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
-        "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15",
-        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
-        "https://github.com/trustoverip/dtgwg-cred-spec/issues/31",
-        "https://github.com/trustoverip/dtgwg-cred-spec/pull/30",
-        "https://github.com/trustoverip/dtgwg-cred-spec/pull/29",
-        "https://github.com/trustoverip/dtgwg-cred-spec/pull/35",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/20",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/21",
-        "https://github.com/OpenVTC/dtg-credentials/pull/13"
-      ],
-      "from": "credentials-and-evidence",
-      "kind": "cross-capability-convergence",
-      "material_change_units": 49,
-      "rationale": "OpenVTC implementations exercise credential formats, issuance, presentation, and proof behaviour.",
-      "relationship": "exercised-by",
-      "repositories": [
-        "OpenVTC/dtg-credentials",
-        "OpenVTC/openvtc",
-        "OpenVTC/verifiable-trust-infrastructure",
-        "trustoverip/dtgwg-cred-spec",
-        "trustoverip/dtgwg-zkp-tf"
       ],
       "shared_themes": [
         "authority-and-delegation",
@@ -566,36 +527,74 @@
     },
     {
       "evidence_urls": [
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15",
-        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/31",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/30",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/29",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/35",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/20",
-        "https://github.com/trustoverip/dtgwg-zkp-tf/pull/21",
-        "https://github.com/OpenVTC/dtg-credentials/pull/13"
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14",
+        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/22",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/26"
       ],
       "from": "credentials-and-evidence",
       "kind": "cross-capability-convergence",
-      "material_change_units": 33,
-      "rationale": "Trust Tasks can rely on credential and proof evidence when evaluating requests and authority.",
-      "relationship": "supplies-evidence-to",
+      "material_change_units": 39,
+      "rationale": "OpenVTC implementations exercise credential formats, issuance, presentation, and proof behaviour.",
+      "relationship": "exercised-by",
       "repositories": [
         "OpenVTC/dtg-credentials",
-        "trustoverip/dtgwg-cred-spec",
-        "trustoverip/dtgwg-trust-tasks-spec",
-        "trustoverip/dtgwg-trust-tasks-tf",
-        "trustoverip/dtgwg-zkp-tf"
+        "OpenVTC/openvtc",
+        "OpenVTC/verifiable-trust-infrastructure",
+        "trustoverip/dtgwg-cred-spec"
       ],
       "shared_themes": [
         "authority-and-delegation",
         "credentials-and-proof",
         "delivery-and-maintenance",
         "governance-and-lifecycle",
+        "human-trust-experience",
+        "protocol-and-interoperability",
+        "security-and-privacy",
+        "transport-and-routing"
+      ],
+      "to": "implementation"
+    },
+    {
+      "evidence_urls": [
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/23",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/31",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/30",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/29",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/35",
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14",
+        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/22",
+        "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
+        "https://github.com/trustoverip/dtgwg-cred-spec/pull/26"
+      ],
+      "from": "credentials-and-evidence",
+      "kind": "cross-capability-convergence",
+      "material_change_units": 37,
+      "rationale": "Trust Tasks can rely on credential and proof evidence when evaluating requests and authority.",
+      "relationship": "supplies-evidence-to",
+      "repositories": [
+        "OpenVTC/dtg-credentials",
+        "trustoverip/dtgwg-cred-spec",
+        "trustoverip/dtgwg-trust-tasks-spec",
+        "trustoverip/dtgwg-trust-tasks-tf"
+      ],
+      "shared_themes": [
+        "authority-and-delegation",
+        "credentials-and-proof",
+        "delivery-and-maintenance",
+        "governance-and-lifecycle",
+        "human-trust-experience",
         "protocol-and-interoperability",
         "security-and-privacy",
         "transport-and-routing"
@@ -604,10 +603,10 @@
     }
   ],
   "decision_queue": {
-    "decision_findings": 15,
-    "open_findings": 22,
-    "review_assertions": 1,
-    "watch_assertions": 8
+    "decision_findings": 17,
+    "open_findings": 23,
+    "review_assertions": 0,
+    "watch_assertions": 9
   },
   "dominant_capabilities": [
     "implementation",
@@ -616,32 +615,32 @@
   ],
   "dominant_themes": [
     {
-      "count": 122,
+      "count": 113,
       "id": "delivery-and-maintenance",
       "label": "Delivery and maintenance"
     },
     {
-      "count": 84,
+      "count": 79,
       "id": "protocol-and-interoperability",
       "label": "Protocol and interoperability"
     },
     {
-      "count": 81,
+      "count": 76,
       "id": "credentials-and-proof",
       "label": "Credentials and proof"
     },
     {
-      "count": 55,
+      "count": 52,
       "id": "governance-and-lifecycle",
       "label": "Governance and lifecycle"
     },
     {
-      "count": 50,
+      "count": 51,
       "id": "authority-and-delegation",
       "label": "Authority and delegation"
     }
   ],
-  "generated_at": "2026-09-05T04:36:54.016429Z",
+  "generated_at": "2026-09-05T15:19:10.573601Z",
   "implementation_alignment": [
     {
       "capability": "credentials-and-evidence",
@@ -655,11 +654,11 @@
         "https://github.com/trustoverip/dtgwg-cred-spec/issues/21",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/26",
         "https://github.com/trustoverip/dtgwg-cred-spec/pull/27",
-        "https://github.com/OpenVTC/dtg-credentials/pull/14",
-        "https://github.com/OpenVTC/dtg-credentials/commit/d28e51f4600fc559f518ca6688f7a87bcba683f0",
-        "https://github.com/OpenVTC/dtg-credentials/pull/15"
+        "https://github.com/OpenVTC/dtg-credentials/pull/15",
+        "https://github.com/OpenVTC/dtg-credentials/commit/72ff7740d6434ec48708ca0c2d5522c000057f9f",
+        "https://github.com/OpenVTC/dtg-credentials/pull/14"
       ],
-      "implementation_material_change_units": 31,
+      "implementation_material_change_units": 25,
       "implementation_repositories": [
         "OpenVTC/dtg-credentials",
         "OpenVTC/verifiable-trust-infrastructure"
@@ -685,53 +684,53 @@
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/releases/tag/trust-tasks-rs-v0.17.6",
         "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/347"
       ],
-      "implementation_material_change_units": 32,
+      "implementation_material_change_units": 23,
       "implementation_repositories": [
         "OpenVTC/openvtc",
         "OpenVTC/verifiable-trust-infrastructure"
       ],
       "kind": "specification-implementation-alignment",
-      "specification_material_change_units": 17,
+      "specification_material_change_units": 21,
       "specification_repository": "trustoverip/dtgwg-trust-tasks-tf",
       "state": "moving-together"
     },
     {
       "capability": "governed-action",
       "evidence_urls": [
+        "https://github.com/trustoverip/dtgwg-trust-tasks-spec/pull/12",
+        "https://github.com/trustoverip/dtgwg-trust-tasks-spec/commit/d8633c32ae6ef4297326fefe3d89fe34eafc6a39",
         "https://github.com/OpenVTC/openvtc/pull/273",
         "https://github.com/OpenVTC/openvtc/commit/73f585e5dafce6605a1f3e0a6ade08a5ef1dff4e",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1198",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/f70df37a283a30439cb7b2fdc9448cfae6dedcb4",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-keyspaces-v0.2.4",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.1",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.32.2",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.2",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1152",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1219",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/8ad087690918cd4a2726813ba2db042b31cd8536",
-        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1220"
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1227",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4b1fdd0a59ae85c42173b3440d397bde7b829e86",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.32.3",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-cli-common-v0.12.3",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.4",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1233",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/22178cd0760c220c8fe46c54e60158c4c9389ae9",
+        "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1247"
       ],
-      "implementation_material_change_units": 32,
+      "implementation_material_change_units": 23,
       "implementation_repositories": [
         "OpenVTC/openvtc",
         "OpenVTC/verifiable-trust-infrastructure"
       ],
       "kind": "specification-implementation-alignment",
-      "specification_material_change_units": 0,
+      "specification_material_change_units": 1,
       "specification_repository": "trustoverip/dtgwg-trust-tasks-spec",
-      "state": "implementation-ahead"
+      "state": "moving-together"
     }
   ],
-  "material_change_units": 99,
+  "material_change_units": 92,
   "model_version": 1,
   "observation": {
-    "collection_run_id": "33944951866",
-    "evidence_through": "2026-09-05T01:51:29Z",
+    "collection_run_id": "33974367076",
+    "evidence_through": "2026-09-05T15:18:32Z",
     "publication_state": "workflow-generated",
     "repository": "sankarshanmukhopadhyay/dtg-portfolio-monitor",
-    "source_revision": "28d25bff48ad0f3b74bc861f2f42208f76db6813"
+    "source_revision": "20a780a6facb3ffb774ac16982d8d5bd097523f2"
   },
-  "review_findings": 22,
+  "review_findings": 23,
   "schema_version": 2,
-  "unmapped_change_units": 112
+  "unmapped_change_units": 106
 }
