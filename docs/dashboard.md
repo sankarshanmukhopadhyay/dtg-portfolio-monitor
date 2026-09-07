@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-09-07T04:49:24.819181Z  
-**Evidence through:** 2026-09-07T00:23:33Z  
-**Source revision:** `c62d97ceea50b5d38929ca2a64dff4c780ac1a45` · **Collection run:** `34084468177`  
+**Generated:** 2026-09-07T17:46:54.619044Z  
+**Evidence through:** 2026-09-07T17:43:50Z  
+**Source revision:** `ab42f9497897e0139cc97f42d754ebbb869bee45` · **Collection run:** `34148909556`  
 
 ## Review now
 
-**29 decision finding(s)** · **0 review-required assertion(s)**
+**32 decision finding(s)** · **0 review-required assertion(s)**
 
 ### Decision findings
 
@@ -27,21 +27,21 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `7dd6b4462431ce5bd7de3d9e` feat(persona)!: move to trust-tasks-rs 0.18 and resolve inline entries | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1266) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `7f99c83965c1db9db10ed8f3` vta-cli-common-v0.12.4 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-cli-common-v0.12.4) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `b506e3491fe0d4776198a570` feat(rooms): data rooms end to end — storage, dispatch, verification, MLS, and a host | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1237) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `bc019942d104f552f0baa362` vta-service-v0.23.5 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-service-v0.23.5) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `c822b32e6c5662a9997ff0cb` feat(persona): the operator surface, and a preview built to be read | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1257) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `cb2470b45bf486b6af80ecd3` feat(rooms): the presentation oracle, so an agent never holds its human's credentials | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1247) |
 
 ## Watch
 
 **9 deterministic watch assertion(s)** · **9 other finding(s)**
 
-- `DTG-A-F78201A232A8EEDF` — Credentials and evidence specification and implementation are moving together in this window.
+- `DTG-A-F9DB6C919750A1BE` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-36789DACC9B77348` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-A305DADFCFF7702F` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-6CCC0A15F466E6B4` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-560FA044A08ADFF3` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-E12E8D9E5904D637` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-A9D69625796B9684` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-3AEB12FEA0658134` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-D60F976DE0D3E723` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-8C015F80B7E6232E` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
-- `DTG-A-7DF0358DB35E53F0` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
+- `DTG-A-63135181AD34CD69` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
+- `DTG-A-62BF6F348D01EC02` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
 
 ## Recently disposed
 
@@ -49,8 +49,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 328 · **Material:** 124 · **Breaking:** 8 · **Tagged releases:** 89 · **Cross-repository:** 53  
-**Duplicate representations consolidated:** 149
+**Change units:** 454 · **Material:** 154 · **Breaking:** 14 · **Tagged releases:** 118 · **Cross-repository:** 59  
+**Duplicate representations consolidated:** 197
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -60,18 +60,18 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing strongly** | 29 | 17 |
-| Governed action | **Advancing strongly** | 115 | 34 |
-| Implementation and interoperability | **Advancing strongly** | 91 | 46 |
+| Credentials and evidence | **Advancing strongly** | 38 | 22 |
+| Governed action | **Advancing strongly** | 130 | 35 |
+| Implementation and interoperability | **Advancing strongly** | 142 | 62 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 221
-- **Protocol and interoperability:** 142
-- **Credentials and proof:** 125
-- **Authority and delegation:** 92
-- **Transport and routing:** 82
+- **Delivery and maintenance:** 299
+- **Protocol and interoperability:** 197
+- **Credentials and proof:** 160
+- **Authority and delegation:** 125
+- **Governance and lifecycle:** 102
 
 ### Portfolio intelligence
 
