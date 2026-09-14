@@ -7,7 +7,7 @@ permalink: /repositories/
 
 The effective monitoring scope combines the curated registry with repositories admitted by the deterministic discovery policy. Curated metadata always overrides discovered defaults.
 
-**Discovery evidence generated:** 2026-09-13T16:23:39.253365Z  
+**Discovery evidence generated:** 2026-09-14T05:02:26.458816Z  
 **Policy:** `config/repository-discovery.yaml`
 
 | Repository | Workstream | Role | Lifecycle | Weight | Admission |
