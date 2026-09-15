@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-09-14T18:06:49.745669Z  
-**Evidence through:** 2026-09-14T17:48:42Z  
-**Source revision:** `cd6eb6fe656436bfcd50d89906e0f28b7a652b4b` · **Collection run:** `34878667274`  
+**Generated:** 2026-09-15T05:00:31.131182Z  
+**Evidence through:** 2026-09-15T04:59:25Z  
+**Source revision:** `fc758ffd7466b31e52ba57ddea87fdc5e3de4dc2` · **Collection run:** `34930918273`  
 
 ## Review now
 
-**53 decision finding(s)** · **1 review-required assertion(s)**
+**49 decision finding(s)** · **1 review-required assertion(s)**
 
 ### Decision findings
 
@@ -34,20 +34,20 @@ permalink: /dashboard/
 
 | Assertion | State | Statement | Evidence |
 |---|---|---|---|
-| `DTG-A-D7FCC7F975D0A5D1` | implementation-ahead | Governed action implementation movement is ahead of normative specification activity in this window. | [source](https://github.com/OpenVTC/openvtc/pull/283) |
+| `DTG-A-0CBE7A9777E21F5D` | implementation-ahead | Governed action implementation movement is ahead of normative specification activity in this window. | [source](https://github.com/OpenVTC/openvtc/pull/283) |
 
 ## Watch
 
 **8 deterministic watch assertion(s)** · **18 other finding(s)**
 
 - `DTG-A-7C531BDA60354CEE` — Credentials and evidence specification and implementation are moving together in this window.
-- `DTG-A-7BE83CA7B39319D5` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-638B74DD6D829473` — Governed action specification and implementation are moving together in this window.
 - `DTG-A-EA75C6CA708B3572` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
 - `DTG-A-B2FB95C832F1BF27` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-9DD82C6CB3A7A059` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-4FC895F7F830A4B3` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-F3B13DD846F42999` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
 - `DTG-A-3F5BF6EA994AC597` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
-- `DTG-A-FB5A7A66B5E0482B` — Governed action has material activity while related capability Human trust and safety is quiet in this observation window.
+- `DTG-A-00FB108B5D285A9B` — Governed action has material activity while related capability Human trust and safety is quiet in this observation window.
 
 ## Recently disposed
 
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 894 · **Material:** 273 · **Breaking:** 21 · **Tagged releases:** 264 · **Cross-repository:** 102  
-**Duplicate representations consolidated:** 396
+**Change units:** 860 · **Material:** 260 · **Breaking:** 19 · **Tagged releases:** 234 · **Cross-repository:** 104  
+**Duplicate representations consolidated:** 386
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -66,18 +66,18 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing strongly** | 41 | 26 |
-| Governed action | **Advancing strongly** | 228 | 56 |
-| Implementation and interoperability | **Advancing strongly** | 324 | 124 |
+| Credentials and evidence | **Advancing strongly** | 42 | 26 |
+| Governed action | **Advancing strongly** | 215 | 52 |
+| Implementation and interoperability | **Advancing strongly** | 303 | 120 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 573
-- **Protocol and interoperability:** 323
-- **Credentials and proof:** 321
-- **Authority and delegation:** 266
-- **Governance and lifecycle:** 215
+- **Delivery and maintenance:** 563
+- **Credentials and proof:** 323
+- **Protocol and interoperability:** 315
+- **Authority and delegation:** 247
+- **Governance and lifecycle:** 213
 
 ### Portfolio intelligence
 
