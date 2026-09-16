@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-09-15T17:05:12.438863Z  
-**Evidence through:** 2026-09-15T17:00:45Z  
-**Source revision:** `eca28c7e28e8b16dc37cb055e113f93e7cd395d7` · **Collection run:** `34998879990`  
+**Generated:** 2026-09-16T04:55:17.274603Z  
+**Evidence through:** 2026-09-16T00:32:38Z  
+**Source revision:** `d6ab8d8caf7b881ce6db50c8a0db19c0592e0d10` · **Collection run:** `35057401928`  
 
 ## Review now
 
-**48 decision finding(s)** · **1 review-required assertion(s)**
+**43 decision finding(s)** · **1 review-required assertion(s)**
 
 ### Decision findings
 
@@ -20,7 +20,6 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/dtg-credentials` | `01c0b3e160885ecb9f818a13` feat!: a VAC is not a bearer credential; remove `audience` | potentially-breaking | [source](https://github.com/OpenVTC/dtg-credentials/pull/21) |
 | **elevated** | `OpenVTC/dtg-credentials` | `034f21a5e8d61d0592574ad1` feat: set `credentialStatus` on a credential being built; `PartialEq` on the type | potentially-breaking | [source](https://github.com/OpenVTC/dtg-credentials/pull/24) |
 | **elevated** | `OpenVTC/dtg-credentials` | `2a53f45ce2cc63e5bd7f9dd5` ci: pin actions to commit SHAs, scope the publish token, add Dependabot | potentially-breaking | [source](https://github.com/OpenVTC/dtg-credentials/pull/27) |
-| **elevated** | `OpenVTC/dtg-credentials` | `506f342e3c98d41469c9c2b5` Working Draft 02: digest encoding, VAC parent digests, and the VDC | potentially-breaking | [source](https://github.com/OpenVTC/dtg-credentials/pull/20) |
 | **elevated** | `OpenVTC/dtg-credentials` | `70623bd0786b0afdf672cad3` delegation::verify_chain takes no presenter, so a VDC is still a bearer credential | potentially-breaking | [source](https://github.com/OpenVTC/dtg-credentials/issues/23) |
 | **elevated** | `OpenVTC/dtg-credentials` | `ef69e5f150b8a98a45231c66` Add the delegation credential (VDC) to the catalog | potentially-breaking | [source](https://github.com/OpenVTC/dtg-credentials/issues/10) |
 | **elevated** | `OpenVTC/openvtc` | `5e066277145877762c4ac06d` docs(design): vetted admission via peer identity vetting | potentially-breaking | [source](https://github.com/OpenVTC/openvtc/pull/292) |
@@ -29,6 +28,7 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/openvtc` | `bc384e287556c94f131c2c17` ci(deps): Bump the actions group with 3 updates | potentially-breaking | [source](https://github.com/OpenVTC/openvtc/pull/313) |
 | **elevated** | `OpenVTC/verifiable-git-infrastructure` | `598764f918b68ff8d3b7f88c` fix(vgi-core): find the Signed-by-DID trailer block the way git does | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-git-infrastructure/pull/47) |
 | **elevated** | `OpenVTC/verifiable-git-infrastructure` | `85dce17dfd099feed7bcead6` chore(deps): take vta-sdk 0.38.0 and drop didwebvh-rs 0.6.1 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-git-infrastructure/pull/51) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `0233196a18111fc003dccb0d` fix(rooms)!: a listing pages honestly, or a short page means nothing | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1380) |
 
 ### Review-required assertions
 
@@ -38,16 +38,16 @@ permalink: /dashboard/
 
 ## Watch
 
-**8 deterministic watch assertion(s)** · **13 other finding(s)**
+**8 deterministic watch assertion(s)** · **14 other finding(s)**
 
-- `DTG-A-7C531BDA60354CEE` — Credentials and evidence specification and implementation are moving together in this window.
-- `DTG-A-EC92469A5B6BE225` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-65267A53C83BF044` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-8B56E10BDC32B8F2` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-B509745340B8DF61` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-7E6270AF5BD428CD` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
-- `DTG-A-408A4C593402194E` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
-- `DTG-A-7DED86510FEC26D0` — Governed action has material activity while related capability Human trust and safety is quiet in this observation window.
+- `DTG-A-1911700C65612A02` — Credentials and evidence specification and implementation are moving together in this window.
+- `DTG-A-65F9CC4E238F57EF` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-6D9FD694C9AC77E9` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-9D2EFD3860CC7E64` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-F0416FC5491C3666` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-E0043FFCEA752FA2` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
+- `DTG-A-73A87FBA1040BF31` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
+- `DTG-A-214C910CF61AFF96` — Governed action has material activity while related capability Human trust and safety is quiet in this observation window.
 
 ## Recently disposed
 
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 810 · **Material:** 237 · **Breaking:** 19 · **Tagged releases:** 226 · **Cross-repository:** 94  
-**Duplicate representations consolidated:** 360
+**Change units:** 807 · **Material:** 236 · **Breaking:** 20 · **Tagged releases:** 235 · **Cross-repository:** 88  
+**Duplicate representations consolidated:** 367
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -66,18 +66,18 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing strongly** | 39 | 23 |
-| Governed action | **Advancing strongly** | 192 | 43 |
-| Implementation and interoperability | **Advancing strongly** | 305 | 111 |
+| Credentials and evidence | **Advancing strongly** | 38 | 23 |
+| Governed action | **Advancing strongly** | 193 | 43 |
+| Implementation and interoperability | **Advancing strongly** | 316 | 113 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 535
-- **Credentials and proof:** 304
-- **Protocol and interoperability:** 294
-- **Authority and delegation:** 223
-- **Governance and lifecycle:** 206
+- **Delivery and maintenance:** 528
+- **Credentials and proof:** 297
+- **Protocol and interoperability:** 291
+- **Authority and delegation:** 214
+- **Governance and lifecycle:** 197
 
 ### Portfolio intelligence
 
