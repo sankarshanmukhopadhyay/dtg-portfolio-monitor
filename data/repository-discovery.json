@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-16T05:20:56.772523Z",
+  "generated_at": "2026-09-16T17:03:50.811812Z",
   "policy": "config/repository-discovery.yaml",
   "admitted": [
     {
@@ -127,6 +127,36 @@
       "repo": "OpenVTC/rp-sdk-js",
       "organisation": "openvtc",
       "workstream": "rp-sdk-js",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/tsp-conformance",
+      "organisation": "openvtc",
+      "workstream": "tsp-conformance",
       "role": "discovered-openvtc-repository",
       "lifecycle": "active",
       "reporting_weight": "high",
@@ -943,6 +973,15 @@
     },
     {
       "repository": "OpenVTC/rp-sdk-js",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/tsp-conformance",
       "owner": "OpenVTC",
       "admitted": true,
       "reason": "policy-match",
