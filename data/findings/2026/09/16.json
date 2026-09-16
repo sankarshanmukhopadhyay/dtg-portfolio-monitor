@@ -766,14 +766,12 @@
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1416",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1396",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1336",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1307",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4ceda6d3341e228d878d7db1b23a8af4dfe1149e",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/017e773db6ffc2ebbd10c661082795a4f14cd68e",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/873eaf664ec41a1b8dd8e48c64be34e482c1f0e6",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/52ad5af919095034752fd9474a03668f0702e83f",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/3d44f0a2fb003df2d6300ba96afb52e8a3894384",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/f43d26eb61edf2655930ddd79e17b55b16924769",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/c6eca57635372d4a8ae7bcd462f2c3fd826e737e"
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/f43d26eb61edf2655930ddd79e17b55b16924769"
     ],
     "related_repositories": [
       "trustoverip/dtgwg-trust-tasks-tf"

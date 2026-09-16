@@ -5,9 +5,9 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-09-16T04:55:17.274603Z  
+**Generated:** 2026-09-16T05:22:08.800378Z  
 **Evidence through:** 2026-09-16T00:32:38Z  
-**Source revision:** `d6ab8d8caf7b881ce6db50c8a0db19c0592e0d10` · **Collection run:** `35057401928`  
+**Source revision:** `817a9251abd5540c847eddcd643942b70518ae3c` · **Collection run:** `35059139492`  
 
 ## Review now
 
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 807 · **Material:** 236 · **Breaking:** 20 · **Tagged releases:** 235 · **Cross-repository:** 88  
-**Duplicate representations consolidated:** 367
+**Change units:** 797 · **Material:** 233 · **Breaking:** 20 · **Tagged releases:** 226 · **Cross-repository:** 88  
+**Duplicate representations consolidated:** 364
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -68,16 +68,16 @@ _No explicit finding dispositions are represented in the current snapshot._
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Advancing strongly** | 38 | 23 |
 | Governed action | **Advancing strongly** | 193 | 43 |
-| Implementation and interoperability | **Advancing strongly** | 316 | 113 |
+| Implementation and interoperability | **Advancing strongly** | 307 | 110 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 528
-- **Credentials and proof:** 297
-- **Protocol and interoperability:** 291
-- **Authority and delegation:** 214
-- **Governance and lifecycle:** 197
+- **Delivery and maintenance:** 524
+- **Credentials and proof:** 292
+- **Protocol and interoperability:** 290
+- **Authority and delegation:** 209
+- **Governance and lifecycle:** 194
 
 ### Portfolio intelligence
 
