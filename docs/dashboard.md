@@ -5,9 +5,9 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-09-16T17:05:19.024669Z  
-**Evidence through:** 2026-09-16T17:04:04Z  
-**Source revision:** `90649f602b688dba7c8db59eaf7718c940dcdccb` · **Collection run:** `35125800908`  
+**Generated:** 2026-09-17T04:59:05.035221Z  
+**Evidence through:** 2026-09-16T23:34:37Z  
+**Source revision:** `a617bb7ed9354b8465b8c2c278f3bd4ed0badc1f` · **Collection run:** `35183858561`  
 
 ## Review now
 
@@ -27,8 +27,8 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `0233196a18111fc003dccb0d` fix(rooms)!: a listing pages honestly, or a short page means nothing | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1380) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `05e4c8568c99a6a4e45b8e6b` feat(vta): a key can be marked as never leaving the VTA | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1401) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `22075d14e2d888f290144823` feat(vta): a service can fetch the keys of the DID it operates | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1398) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `324ebce0e061b82989ec801d` rooms/keys/present: the oracle's presentation cannot deserialize at the host | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1357) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `332e22d57e7085ad5963db27` vta-sdk-v0.35.1 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.35.1) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `384fc01d163071fb115fd382` feat(vtc): retry and discard a failed sync job from the console | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1493) |
 
 ### Review-required assertions
 
@@ -38,7 +38,7 @@ permalink: /dashboard/
 
 ## Watch
 
-**8 deterministic watch assertion(s)** · **14 other finding(s)**
+**8 deterministic watch assertion(s)** · **15 other finding(s)**
 
 - `DTG-A-1911700C65612A02` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-B43878F585AB8662` — Governed action specification and implementation are moving together in this window.
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 783 · **Material:** 217 · **Breaking:** 16 · **Tagged releases:** 224 · **Cross-repository:** 70  
-**Duplicate representations consolidated:** 352
+**Change units:** 822 · **Material:** 217 · **Breaking:** 16 · **Tagged releases:** 258 · **Cross-repository:** 71  
+**Duplicate representations consolidated:** 359
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -67,17 +67,17 @@ _No explicit finding dispositions are represented in the current snapshot._
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Advancing strongly** | 32 | 16 |
-| Governed action | **Advancing strongly** | 179 | 39 |
-| Implementation and interoperability | **Advancing strongly** | 313 | 104 |
+| Governed action | **Advancing strongly** | 189 | 36 |
+| Implementation and interoperability | **Advancing strongly** | 346 | 107 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 509
-- **Protocol and interoperability:** 289
-- **Credentials and proof:** 259
-- **Transport and routing:** 205
-- **Authority and delegation:** 197
+- **Delivery and maintenance:** 523
+- **Protocol and interoperability:** 297
+- **Credentials and proof:** 261
+- **Transport and routing:** 229
+- **Authority and delegation:** 203
 
 ### Portfolio intelligence
 
