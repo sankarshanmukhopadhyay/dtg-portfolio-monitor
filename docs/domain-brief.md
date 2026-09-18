@@ -5,19 +5,19 @@ permalink: /domain-brief/
 ---
 # DTG Domain Brief
 
-**Generated:** 2026-09-17T17:05:51.533955Z  
-**Evidence through:** 2026-09-17T17:04:25Z  
-**Source revision:** `4f560afd16e879d958bb1195f314ede60bdcf889` · **Collection run:** `35250450418` · **Publication state:** `workflow-generated`  
-**Change units:** 750 · **Material:** 174  
+**Generated:** 2026-09-18T04:51:28.589642Z  
+**Evidence through:** 2026-09-17T21:54:56Z  
+**Source revision:** `8ceab8f614c646dc5b8cf84f5b631872fc870b0c` · **Collection run:** `35308429298` · **Publication state:** `workflow-generated`  
+**Change units:** 717 · **Material:** 163  
 
 This is the situational-awareness view of the monitored DTG portfolio. It interprets observed GitHub evidence through the declared [DTG domain model]({{ '/domain-model/' | relative_url }}). It is not an official ToIP architectural statement.
 
 ## Review queue
 
-- **Decision findings:** 24
-- **Review-required assertions:** 1
-- **Watch assertions:** 8
-- **Open findings:** 37
+- **Decision findings:** 19
+- **Review-required assertions:** 0
+- **Watch assertions:** 9
+- **Open findings:** 34
 
 Review-required items are deterministic coordination or alignment signals. They are not automatic declarations of specification failure.
 
@@ -25,9 +25,9 @@ Review-required items are deterministic coordination or alignment signals. They 
 
 The strongest observed movement is currently concentrated in **Implementation and interoperability, Governed action, and Credentials and evidence**.
 
-**Implementation and interoperability** — 98 material change units, led by delivery and maintenance, transport and routing.
-**Governed action** — 21 material change units, led by delivery and maintenance, protocol and interoperability.
-**Credentials and evidence** — 8 material change units, led by credentials and proof, delivery and maintenance.
+**Implementation and interoperability** — 88 material change units, led by delivery and maintenance, transport and routing.
+**Governed action** — 19 material change units, led by delivery and maintenance, protocol and interoperability.
+**Credentials and evidence** — 9 material change units, led by credentials and proof, delivery and maintenance.
 
 ## Portfolio pulse
 
@@ -35,9 +35,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing strongly** | 17 | 8 |
-| Governed action | **Advancing strongly** | 148 | 21 |
-| Implementation and interoperability | **Advancing strongly** | 347 | 98 |
+| Credentials and evidence | **Advancing strongly** | 18 | 9 |
+| Governed action | **Advancing strongly** | 138 | 19 |
+| Implementation and interoperability | **Advancing strongly** | 333 | 88 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 > **Quiet is not a failure state.** It means no activity was observed in the monitored GitHub streams during this window; the capability may be stable, on a different cadence, or active elsewhere.
@@ -50,9 +50,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 
 ## Specification and implementation alignment
 
-- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 4 material specification change unit(s) and 61 material implementation change unit(s).
-- **Governed action: specification and implementation are moving together.** The monitor observed 21 material specification change unit(s) and 93 material implementation change unit(s).
-- **Governed action: implementation movement is ahead of normative specification activity in this window.**
+- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 5 material specification change unit(s) and 51 material implementation change unit(s).
+- **Governed action: specification and implementation are moving together.** The monitor observed 18 material specification change unit(s) and 84 material implementation change unit(s).
+- **Governed action: specification and implementation are moving together.** The monitor observed 1 material specification change unit(s) and 84 material implementation change unit(s).
 
 ## Attention signals
 
@@ -64,9 +64,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 
 | Assertion | Class | State | Statement |
 |---|---|---|---|
-| `DTG-A-838EF9EECDFF8397` | watch | moving-together | Credentials and evidence specification and implementation are moving together in this window. |
+| `DTG-A-3511243EDFB7682D` | watch | moving-together | Credentials and evidence specification and implementation are moving together in this window. |
 | `DTG-A-6FC55FE6908DC735` | watch | moving-together | Governed action specification and implementation are moving together in this window. |
-| `DTG-A-3B9D581400EBF5DB` | review-required | implementation-ahead | Governed action implementation movement is ahead of normative specification activity in this window. |
+| `DTG-A-3423099B0BCEF23A` | watch | moving-together | Governed action specification and implementation are moving together in this window. |
 | `DTG-A-ED25C6C9C8AB0C57` | watch | observed | Material movement is present on both sides of the declared supplies-evidence-to relationship. |
 | `DTG-A-D708C290E388F52B` | watch | observed | Material movement is present on both sides of the declared exercised-by relationship. |
 | `DTG-A-CBAC7D629E1A4096` | watch | observed | Material movement is present on both sides of the declared exercised-by relationship. |
@@ -78,9 +78,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 
 1. Whether **Credentials and evidence** implementation experience feeds back into the associated specification work.
 2. Whether **Governed action** implementation experience feeds back into the associated specification work.
-3. Whether normative work catches up with implementation movement in **Governed action**.
-4. Whether activity resumes or remains intentionally stable in **Relationships and naming** while related work advances.
-5. Whether activity resumes or remains intentionally stable in **Human trust and safety** while related work advances.
+3. Whether activity resumes or remains intentionally stable in **Relationships and naming** while related work advances.
+4. Whether activity resumes or remains intentionally stable in **Human trust and safety** while related work advances.
+5. Whether the current convergence between **Governed action** and **Implementation and interoperability** creates new cross-repository dependencies or review needs.
 
 ## Evidence trail
 
