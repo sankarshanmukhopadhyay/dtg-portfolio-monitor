@@ -1,80 +1,5 @@
 [
   {
-    "finding_id": "2a53f45ce2cc63e5bd7f",
-    "fingerprint": "2a53f45ce2cc63e5bd7f9dd5",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "OpenVTC/dtg-credentials",
-    "title": "ci: pin actions to commit SHAs, scope the publish token, add Dependabot",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/dtg-credentials/pull/27",
-      "https://github.com/OpenVTC/dtg-credentials/commit/804cb8d6940ac003cb752c965525ae188fdb84f9"
-    ],
-    "related_repositories": [
-      "OpenVTC/openvtc"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
-    "finding_id": "7c6ccc49fc6b4141eb9d",
-    "fingerprint": "7c6ccc49fc6b4141eb9dd7aa",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "OpenVTC/openvtc",
-    "title": "ci: pin every action to a commit SHA, drop write-all, and add Dependabot",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/openvtc/pull/310",
-      "https://github.com/OpenVTC/openvtc/commit/d402b9ad064aa4414ed2ee761be4fdf12004a5cd"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-git-infrastructure"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
-    "finding_id": "9ff50bc250c0f83b4002",
-    "fingerprint": "9ff50bc250c0f83b4002f453",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "OpenVTC/openvtc",
-    "title": "feat(vetting): guided join, vetter directory and profile, QR tickets, grant checks, resend and branding",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/openvtc/pull/307",
-      "https://github.com/OpenVTC/openvtc/pull/302"
-    ],
-    "related_repositories": [
-      "trustoverip/dtgwg-trust-tasks-tf"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
     "finding_id": "ae8b679843537c3e857b",
     "fingerprint": "ae8b679843537c3e857b737b",
     "kind": "material_cross_reference",
@@ -100,56 +25,6 @@
     "successor_finding": null
   },
   {
-    "finding_id": "bc384e287556c94f131c",
-    "fingerprint": "bc384e287556c94f131c2c17",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "OpenVTC/openvtc",
-    "title": "ci(deps): Bump the actions group with 3 updates",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/openvtc/pull/313"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-git-infrastructure"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
-    "finding_id": "598764f918b68ff8d3b7",
-    "fingerprint": "598764f918b68ff8d3b7f88c",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "OpenVTC/verifiable-git-infrastructure",
-    "title": "fix(vgi-core): find the Signed-by-DID trailer block the way git does",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-git-infrastructure/pull/47",
-      "https://github.com/OpenVTC/verifiable-git-infrastructure/commit/b6bd424fee32b3533bc402f3a48548b3ac445b52"
-    ],
-    "related_repositories": [
-      "OpenVTC/governance",
-      "OpenVTC/openvtc"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
     "finding_id": "85dce17dfd099feed7bc",
     "fingerprint": "85dce17dfd099feed7bcead6",
     "kind": "material_cross_reference",
@@ -166,6 +41,30 @@
     ],
     "related_repositories": [
       "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "2218d86bb35b96032f44",
+    "fingerprint": "2218d86bb35b96032f44a75f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "fix(vta)!: preview the whole subtree a context delete destroys",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1576"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
     ],
     "state": "open",
     "review_status": "unreviewed",
@@ -214,6 +113,31 @@
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.40.0"
     ],
     "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "9009b737d20cb756f857",
+    "fingerprint": "9009b737d20cb756f8574133",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "fix(vta)!: delete a context's did:webvh DIDs off their hosting servers, not just locally",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1575"
+    ],
+    "related_repositories": [
+      "OpenVTC/vta-browser-plugin",
       "trustoverip/dtgwg-trust-tasks-tf"
     ],
     "state": "open",
@@ -273,31 +197,6 @@
     "successor_finding": null
   },
   {
-    "finding_id": "abf969639b136d0884f7",
-    "fingerprint": "abf969639b136d0884f7412e",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "ci: pin every action to a commit SHA and drop CI to least privilege",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1440",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/5400674d6743de1184af4c99f95161d8bd8783a0"
-    ],
-    "related_repositories": [
-      "OpenVTC/openvtc"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
     "finding_id": "db3159cfd9c7580d8821",
     "fingerprint": "db3159cfd9c7580d8821d3cb",
     "kind": "material_cross_reference",
@@ -322,46 +221,45 @@
     "successor_finding": null
   },
   {
-    "finding_id": "dfe4192b8bb69fe2726d",
-    "fingerprint": "dfe4192b8bb69fe2726df36b",
+    "finding_id": "e121b18291ff4d8f4d55",
+    "fingerprint": "e121b18291ff4d8f4d55fd81",
     "kind": "material_cross_reference",
     "severity": "high",
     "materiality": "high",
     "urgency": "elevated",
     "assurance_impact": "potentially-breaking",
     "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "refactor(vta-sdk)!: vetting wire types come from the published trust-tasks specs",
+    "title": "chore: release",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1439",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/7a5d8aa00c389142158407c381a10d48e57d9c33"
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1570",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1568",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1564",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1552",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1539",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1529",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1524",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1523",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1506",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1499",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1494",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1458",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1452",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/f6b71126107cb02c370d473bc5b31ea6109148ec",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/6767b59700dcc34fbd714fa97f87733b85d637bd",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/1c0a417f0d07d7c5954c979a2188b502d21a3d13",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4045e3ad79d59e6aeeac054fc87bff6538374b11",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/bdb372f25f3027921e704fa39f28e906df6963a0",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/669471ce0580570d2c0deea36a615d891b587a71",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/d25f52b3d1af230c8f6d069e515f453daddf1b43",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/2e752c29e75725e223d538d418e2477ede34ff52",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/163dbc54118fdc615a9312b052f9e04fb0a4c3e4",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4ceda6d3341e228d878d7db1b23a8af4dfe1149e",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/017e773db6ffc2ebbd10c661082795a4f14cd68e",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/873eaf664ec41a1b8dd8e48c64be34e482c1f0e6"
     ],
     "related_repositories": [
       "trustoverip/dtgwg-trust-tasks-tf"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
-    "finding_id": "283e2b3aa4b8fc0d13ae",
-    "fingerprint": "283e2b3aa4b8fc0d13ae41ff",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "OpenVTC/vta-browser-plugin",
-    "title": "fix(did): refuse to resolve a did:webvh hosted on a local-only name or non-public address",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/vta-browser-plugin/pull/232"
-    ],
-    "related_repositories": [
-      "OpenVTC/vti-didcomm-js"
     ],
     "state": "open",
     "review_status": "unreviewed",
@@ -571,56 +469,6 @@
     "successor_finding": null
   },
   {
-    "finding_id": "e121b18291ff4d8f4d55",
-    "fingerprint": "e121b18291ff4d8f4d55fd81",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "routine",
-    "assurance_impact": "none",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "chore: release",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1568",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1564",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1552",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1539",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1529",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1524",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1523",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1506",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1499",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1494",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1458",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1452",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1449",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1416",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/6767b59700dcc34fbd714fa97f87733b85d637bd",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/1c0a417f0d07d7c5954c979a2188b502d21a3d13",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4045e3ad79d59e6aeeac054fc87bff6538374b11",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/bdb372f25f3027921e704fa39f28e906df6963a0",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/669471ce0580570d2c0deea36a615d891b587a71",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/d25f52b3d1af230c8f6d069e515f453daddf1b43",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/2e752c29e75725e223d538d418e2477ede34ff52",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/163dbc54118fdc615a9312b052f9e04fb0a4c3e4",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4ceda6d3341e228d878d7db1b23a8af4dfe1149e",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/017e773db6ffc2ebbd10c661082795a4f14cd68e",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/873eaf664ec41a1b8dd8e48c64be34e482c1f0e6",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/52ad5af919095034752fd9474a03668f0702e83f",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/3d44f0a2fb003df2d6300ba96afb52e8a3894384"
-    ],
-    "related_repositories": [
-      "trustoverip/dtgwg-trust-tasks-tf"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
     "finding_id": "f94dd8e2d02888126763",
     "fingerprint": "f94dd8e2d02888126763af0b",
     "kind": "material_cross_reference",
@@ -706,31 +554,6 @@
     "evidence_urls": [
       "https://github.com/OpenVTC/vta-browser-plugin/pull/255",
       "https://github.com/OpenVTC/vta-browser-plugin/commit/2964d5e1b05f8c3b54888ba353fe298945e47541"
-    ],
-    "related_repositories": [
-      "OpenVTC/vti-didcomm-js"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
-    "finding_id": "d6a40ae8d88299c04464",
-    "fingerprint": "d6a40ae8d88299c04464e61c",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "routine",
-    "assurance_impact": "none",
-    "repository": "OpenVTC/vta-browser-plugin",
-    "title": "fix(didcomm): refuse mediator and VTA endpoints that name a non-public host",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/vta-browser-plugin/pull/241",
-      "https://github.com/OpenVTC/vta-browser-plugin/commit/ce49b1d4cae9779323a64ad145445d0818b612f5"
     ],
     "related_repositories": [
       "OpenVTC/vti-didcomm-js"
