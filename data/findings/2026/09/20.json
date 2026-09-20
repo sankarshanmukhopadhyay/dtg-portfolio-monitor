@@ -270,32 +270,6 @@
     "successor_finding": null
   },
   {
-    "finding_id": "e1da90feba8c351056cc",
-    "fingerprint": "e1da90feba8c351056cc1b85",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "trustoverip/dtgwg-cred-spec",
-    "title": "docs: add an informative identity-vetting profile of the VEC",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-cred-spec/pull/49"
-    ],
-    "related_repositories": [
-      "OpenVTC/openvtc",
-      "trustoverip/dtgwg-trust-tasks-tf",
-      "trustoverip/dtgwg-vds-spec"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
     "finding_id": "5f8c4777756c33257982",
     "fingerprint": "5f8c4777756c3325798222a2",
     "kind": "material_cross_reference",
