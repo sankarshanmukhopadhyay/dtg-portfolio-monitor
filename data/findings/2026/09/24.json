@@ -237,7 +237,8 @@
     "title": "feat(vtc): git namespaces — forge governance, registry projection and bridge messaging",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1694"
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1694",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/70f93f2ca930b27379658ff1c02dc3234127ae88"
     ],
     "related_repositories": [
       "trustoverip/dtgwg-trust-tasks-tf"
@@ -723,6 +724,31 @@
     "successor_finding": null
   },
   {
+    "finding_id": "a82a3115f0125aa3ed25",
+    "fingerprint": "a82a3115f0125aa3ed2518da",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-vti-spec",
+    "title": "Narrow the bearer-token entry in the divergence register to the tasks it still covers",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-vti-spec/pull/39",
+      "https://github.com/trustoverip/dtgwg-vti-spec/commit/9c60edd0bfb842f973a3cbb6f5753bf5d66df256"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
     "finding_id": "fa1aff6bae2a545eacb3",
     "fingerprint": "fa1aff6bae2a545eacb3f040",
     "kind": "material_cross_reference",
@@ -1160,8 +1186,7 @@
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1568",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1564",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1552",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1539",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1529",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/ed672fff3216320bd8f1fb8b74fcc001a73f3785",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/549c3b5bbd8ade14641016e661f26289f719fa4d",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/2ee967f35a3d7e6b074bdb3675cc689093e129d9",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4c440df399e72954fbc1f6afbf0556caf387eb82",
@@ -1172,9 +1197,7 @@
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/1a3155c4a8eac00cfc66dd67cd8c8305114892b2",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/f6b71126107cb02c370d473bc5b31ea6109148ec",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/6767b59700dcc34fbd714fa97f87733b85d637bd",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/1c0a417f0d07d7c5954c979a2188b502d21a3d13",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4045e3ad79d59e6aeeac054fc87bff6538374b11",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/bdb372f25f3027921e704fa39f28e906df6963a0"
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/1c0a417f0d07d7c5954c979a2188b502d21a3d13"
     ],
     "related_repositories": [
       "trustoverip/dtgwg-trust-tasks-tf"
@@ -1799,6 +1822,28 @@
     ],
     "state": "open",
     "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "b3c21d38970772b85d58",
+    "fingerprint": "b3c21d38970772b85d584f55",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "materiality": "informational",
+    "urgency": "informational",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/predicate-credential-system",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/predicate-credential-system"
+    ],
+    "related_repositories": [],
+    "state": "open",
+    "review_status": "observed",
     "authority": null,
     "disposition": null,
     "related_findings": [],

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-24T04:58:04.922498Z",
+  "generated_at": "2026-09-24T17:16:04.253538Z",
   "policy": "config/repository-discovery.yaml",
   "admitted": [
     {
@@ -67,6 +67,36 @@
       "repo": "OpenVTC/openvtc",
       "organisation": "openvtc",
       "workstream": "openvtc",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/predicate-credential-system",
+      "organisation": "openvtc",
+      "workstream": "predicate-credential-system",
       "role": "discovered-openvtc-repository",
       "lifecycle": "active",
       "reporting_weight": "high",
@@ -844,6 +874,36 @@
       }
     },
     {
+      "repo": "trustoverip/dtgwg-vsc-registry",
+      "organisation": "toip",
+      "workstream": "-vsc-registry",
+      "role": "discovered-dtg-workstream",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "trustoverip",
+        "admission": "automatic"
+      }
+    },
+    {
       "repo": "trustoverip/dtgwg-vti-spec",
       "organisation": "toip",
       "workstream": "-vti-spec",
@@ -955,6 +1015,15 @@
     },
     {
       "repository": "OpenVTC/openvtc",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/predicate-credential-system",
       "owner": "OpenVTC",
       "admitted": true,
       "reason": "policy-match",
@@ -1180,6 +1249,15 @@
     },
     {
       "repository": "trustoverip/dtgwg-vds-tf",
+      "owner": "trustoverip",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "trustoverip/dtgwg-vsc-registry",
       "owner": "trustoverip",
       "admitted": true,
       "reason": "policy-match",

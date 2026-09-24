@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-09-24T04:59:34.471126Z  
-**Evidence through:** 2026-09-23T23:16:53Z  
-**Source revision:** `23495612b41a702e59c8a018ca90805100d09720` · **Collection run:** `35957861070`  
+**Generated:** 2026-09-24T17:17:13.661123Z  
+**Evidence through:** 2026-09-24T17:10:40Z  
+**Source revision:** `b4997da03af7d3f79eecb068e62d922f0eb58d16` · **Collection run:** `36033068334`  
 
 ## Review now
 
-**30 decision finding(s)** · **0 review-required assertion(s)**
+**31 decision finding(s)** · **0 review-required assertion(s)**
 
 ### Decision findings
 
@@ -32,14 +32,14 @@ permalink: /dashboard/
 
 ## Watch
 
-**9 deterministic watch assertion(s)** · **44 other finding(s)**
+**9 deterministic watch assertion(s)** · **45 other finding(s)**
 
 - `DTG-A-9106F9CE72B6337D` — Credentials and evidence specification and implementation are moving together in this window.
-- `DTG-A-68DA757B2B45AA43` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-60675FFB39BF59A4` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-007BC95134B84EC3` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-1D01462ED604B229` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-F3A7901C9D5D728F` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-14BDB29F2E4CB491` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-2112875387F8E128` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-81C4964FAECEC763` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-4301FB3FE4D9E1BF` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-5889930821A34BB1` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-5790926CB91430DE` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
 - `DTG-A-6EBD72270E93286E` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
 
@@ -49,8 +49,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 956 · **Material:** 219 · **Breaking:** 39 · **Tagged releases:** 408 · **Cross-repository:** 122  
-**Duplicate representations consolidated:** 366
+**Change units:** 961 · **Material:** 224 · **Breaking:** 40 · **Tagged releases:** 412 · **Cross-repository:** 124  
+**Duplicate representations consolidated:** 362
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -60,18 +60,18 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing** | 17 | 5 |
-| Governed action | **Advancing strongly** | 332 | 53 |
-| Implementation and interoperability | **Advancing strongly** | 444 | 129 |
+| Credentials and evidence | **Advancing** | 19 | 5 |
+| Governed action | **Advancing strongly** | 336 | 54 |
+| Implementation and interoperability | **Advancing strongly** | 437 | 132 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 561
-- **Protocol and interoperability:** 345
-- **Transport and routing:** 281
-- **Credentials and proof:** 253
-- **Authority and delegation:** 179
+- **Delivery and maintenance:** 553
+- **Protocol and interoperability:** 342
+- **Transport and routing:** 266
+- **Credentials and proof:** 265
+- **Authority and delegation:** 184
 
 ### Portfolio intelligence
 

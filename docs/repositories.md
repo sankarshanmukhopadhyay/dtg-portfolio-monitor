@@ -7,7 +7,7 @@ permalink: /repositories/
 
 The effective monitoring scope combines the curated registry with repositories admitted by the deterministic discovery policy. Curated metadata always overrides discovered defaults.
 
-**Discovery evidence generated:** 2026-09-24T04:58:04.922498Z  
+**Discovery evidence generated:** 2026-09-24T17:16:04.253538Z  
 **Policy:** `config/repository-discovery.yaml`
 
 | Repository | Workstream | Role | Lifecycle | Weight | Admission |
@@ -15,6 +15,7 @@ The effective monitoring scope combines the curated registry with repositories a
 | [`OpenVTC/dtg-credentials`](https://github.com/OpenVTC/dtg-credentials) | credentials | implementation-and-examples | active | high | curated |
 | [`OpenVTC/governance`](https://github.com/OpenVTC/governance) | governance | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/openvtc`](https://github.com/OpenVTC/openvtc) | community-platform | implementation | active | high | curated |
+| [`OpenVTC/predicate-credential-system`](https://github.com/OpenVTC/predicate-credential-system) | predicate-credential-system | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/probablistic-sampling-for-connection-vcs`](https://github.com/OpenVTC/probablistic-sampling-for-connection-vcs) | probablistic-sampling-for-connection-vcs | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/rp-sdk-js`](https://github.com/OpenVTC/rp-sdk-js) | rp-sdk-js | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/tsp-conformance`](https://github.com/OpenVTC/tsp-conformance) | tsp-conformance | discovered-openvtc-repository | active | high | dynamic |
@@ -40,6 +41,7 @@ The effective monitoring scope combines the curated registry with repositories a
 | [`trustoverip/dtgwg-ux-tf`](https://github.com/trustoverip/dtgwg-ux-tf) | human-trust-experience | legacy-or-transition | transitional | low | curated |
 | [`trustoverip/dtgwg-vds-spec`](https://github.com/trustoverip/dtgwg-vds-spec) | -vds-spec | discovered-dtg-workstream | active | high | dynamic |
 | [`trustoverip/dtgwg-vds-tf`](https://github.com/trustoverip/dtgwg-vds-tf) | verifiable-data-structures | normative-specification | active | critical | curated |
+| [`trustoverip/dtgwg-vsc-registry`](https://github.com/trustoverip/dtgwg-vsc-registry) | -vsc-registry | discovered-dtg-workstream | active | high | dynamic |
 | [`trustoverip/dtgwg-vti-spec`](https://github.com/trustoverip/dtgwg-vti-spec) | -vti-spec | discovered-dtg-workstream | active | high | dynamic |
 | [`trustoverip/dtgwg-zkp-spec`](https://github.com/trustoverip/dtgwg-zkp-spec) | -zkp-spec | discovered-dtg-workstream | active | high | dynamic |
 | [`trustoverip/dtgwg-zkp-tf`](https://github.com/trustoverip/dtgwg-zkp-tf) | zero-knowledge-proofs | implementation-guidance | active | critical | curated |
@@ -52,7 +54,7 @@ Forks are excluded by default to avoid duplicate observation of upstream or down
 
 ## Discovery decisions
 
-Current run: **31 admitted candidate(s)** and **0 rejected candidate(s)**. The full machine-readable decision record is persisted at `data/repository-discovery.json`.
+Current run: **33 admitted candidate(s)** and **0 rejected candidate(s)**. The full machine-readable decision record is persisted at `data/repository-discovery.json`.
 
 ## Cross-specification assurance seams
 
