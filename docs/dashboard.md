@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-09-24T17:17:13.661123Z  
-**Evidence through:** 2026-09-24T17:10:40Z  
-**Source revision:** `b4997da03af7d3f79eecb068e62d922f0eb58d16` · **Collection run:** `36033068334`  
+**Generated:** 2026-09-25T05:04:50.733393Z  
+**Evidence through:** 2026-09-24T21:17:35Z  
+**Source revision:** `cf397263b800a554f8e92df8d60fe8784d0c346d` · **Collection run:** `36096893602`  
 
 ## Review now
 
-**31 decision finding(s)** · **0 review-required assertion(s)**
+**34 decision finding(s)** · **0 review-required assertion(s)**
 
 ### Decision findings
 
@@ -32,13 +32,13 @@ permalink: /dashboard/
 
 ## Watch
 
-**9 deterministic watch assertion(s)** · **45 other finding(s)**
+**9 deterministic watch assertion(s)** · **44 other finding(s)**
 
 - `DTG-A-9106F9CE72B6337D` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-14BDB29F2E4CB491` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-2112875387F8E128` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-4B5F3E1A823C5BD9` — Governed action specification and implementation are moving together in this window.
 - `DTG-A-81C4964FAECEC763` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-4301FB3FE4D9E1BF` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-BAA481462F683327` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-5889930821A34BB1` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-5790926CB91430DE` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
 - `DTG-A-6EBD72270E93286E` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
@@ -49,8 +49,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 961 · **Material:** 224 · **Breaking:** 40 · **Tagged releases:** 412 · **Cross-repository:** 124  
-**Duplicate representations consolidated:** 362
+**Change units:** 974 · **Material:** 229 · **Breaking:** 40 · **Tagged releases:** 423 · **Cross-repository:** 130  
+**Duplicate representations consolidated:** 372
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -61,17 +61,17 @@ _No explicit finding dispositions are represented in the current snapshot._
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Advancing** | 19 | 5 |
-| Governed action | **Advancing strongly** | 336 | 54 |
-| Implementation and interoperability | **Advancing strongly** | 437 | 132 |
+| Governed action | **Advancing strongly** | 355 | 58 |
+| Implementation and interoperability | **Advancing strongly** | 428 | 133 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 553
+- **Delivery and maintenance:** 555
 - **Protocol and interoperability:** 342
+- **Credentials and proof:** 271
 - **Transport and routing:** 266
-- **Credentials and proof:** 265
-- **Authority and delegation:** 184
+- **Authority and delegation:** 192
 
 ### Portfolio intelligence
 
