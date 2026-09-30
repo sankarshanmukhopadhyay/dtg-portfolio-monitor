@@ -5,19 +5,19 @@ permalink: /domain-brief/
 ---
 # DTG Domain Brief
 
-**Generated:** 2026-09-29T18:09:12.314166Z  
-**Evidence through:** 2026-09-29T18:06:31Z  
-**Source revision:** `6e45588ad5c6da21b40898d558a0f23e232fda87` · **Collection run:** `36609707915` · **Publication state:** `workflow-generated`  
-**Change units:** 942 · **Material:** 314  
+**Generated:** 2026-09-30T05:40:07.146917Z  
+**Evidence through:** 2026-09-29T23:44:28Z  
+**Source revision:** `08d7fd3bae206f93550d57eacebecfff4fa21800` · **Collection run:** `36674318465` · **Publication state:** `workflow-generated`  
+**Change units:** 899 · **Material:** 305  
 
 This is the situational-awareness view of the monitored DTG portfolio. It interprets observed GitHub evidence through the declared [DTG domain model]({{ '/domain-model/' | relative_url }}). It is not an official ToIP architectural statement.
 
 ## Review queue
 
-- **Decision findings:** 68
+- **Decision findings:** 67
 - **Review-required assertions:** 0
 - **Watch assertions:** 9
-- **Open findings:** 100
+- **Open findings:** 97
 
 Review-required items are deterministic coordination or alignment signals. They are not automatic declarations of specification failure.
 
@@ -25,8 +25,8 @@ Review-required items are deterministic coordination or alignment signals. They 
 
 The strongest observed movement is currently concentrated in **Implementation and interoperability, Governed action, and Credentials and evidence**.
 
-**Implementation and interoperability** — 175 material change units, led by delivery and maintenance, transport and routing.
-**Governed action** — 80 material change units, led by delivery and maintenance, protocol and interoperability.
+**Implementation and interoperability** — 171 material change units, led by delivery and maintenance, transport and routing.
+**Governed action** — 75 material change units, led by delivery and maintenance, protocol and interoperability.
 **Credentials and evidence** — 5 material change units, led by delivery and maintenance, credentials and proof.
 
 ## Portfolio pulse
@@ -35,9 +35,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing** | 21 | 5 |
-| Governed action | **Advancing strongly** | 309 | 80 |
-| Implementation and interoperability | **Advancing strongly** | 376 | 175 |
+| Credentials and evidence | **Advancing** | 20 | 5 |
+| Governed action | **Advancing strongly** | 275 | 75 |
+| Implementation and interoperability | **Advancing strongly** | 364 | 171 |
 | Portfolio coordination | **Active** | 2 | 0 |
 
 > **Quiet is not a failure state.** It means no activity was observed in the monitored GitHub streams during this window; the capability may be stable, on a different cadence, or active elsewhere.
@@ -50,9 +50,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 
 ## Specification and implementation alignment
 
-- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 5 material specification change unit(s) and 143 material implementation change unit(s).
-- **Governed action: specification and implementation are moving together.** The monitor observed 75 material specification change unit(s) and 173 material implementation change unit(s).
-- **Governed action: specification and implementation are moving together.** The monitor observed 5 material specification change unit(s) and 173 material implementation change unit(s).
+- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 5 material specification change unit(s) and 140 material implementation change unit(s).
+- **Governed action: specification and implementation are moving together.** The monitor observed 71 material specification change unit(s) and 169 material implementation change unit(s).
+- **Governed action: specification and implementation are moving together.** The monitor observed 4 material specification change unit(s) and 169 material implementation change unit(s).
 
 ## Attention signals
 
@@ -65,14 +65,14 @@ The strongest observed movement is currently concentrated in **Implementation an
 | Assertion | Class | State | Statement |
 |---|---|---|---|
 | `DTG-A-0D6D37C2F91D4D87` | watch | moving-together | Credentials and evidence specification and implementation are moving together in this window. |
-| `DTG-A-3E36DBAB3D98A58E` | watch | moving-together | Governed action specification and implementation are moving together in this window. |
-| `DTG-A-F325ACB4E5CB1FB1` | watch | moving-together | Governed action specification and implementation are moving together in this window. |
-| `DTG-A-83C0F9D2B0F95233` | watch | observed | Material movement is present on both sides of the declared supplies-evidence-to relationship. |
-| `DTG-A-2AED5ED07C2DA105` | watch | observed | Material movement is present on both sides of the declared exercised-by relationship. |
-| `DTG-A-DCF41EA7648091A1` | watch | observed | Material movement is present on both sides of the declared exercised-by relationship. |
+| `DTG-A-B01FBC49BF654996` | watch | moving-together | Governed action specification and implementation are moving together in this window. |
+| `DTG-A-06B2F7C8FCCA240B` | watch | moving-together | Governed action specification and implementation are moving together in this window. |
+| `DTG-A-E8B39D0EF0A8E3EB` | watch | observed | Material movement is present on both sides of the declared supplies-evidence-to relationship. |
+| `DTG-A-0B2EE21302D6F008` | watch | observed | Material movement is present on both sides of the declared exercised-by relationship. |
+| `DTG-A-2551D4E24E77535C` | watch | observed | Material movement is present on both sides of the declared exercised-by relationship. |
 | `DTG-A-B525881D5BE24FEE` | watch | observed | Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window. |
 | `DTG-A-78D09E7BC516E0ED` | watch | observed | Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window. |
-| `DTG-A-284A253DDB5D2E8D` | watch | observed | Governed action has material activity while related capability Human trust and safety is quiet in this observation window. |
+| `DTG-A-BF8A3FDA17393985` | watch | observed | Governed action has material activity while related capability Human trust and safety is quiet in this observation window. |
 
 ## What to watch next
 
