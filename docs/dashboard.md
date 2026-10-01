@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-10-01T06:04:18.867706Z  
-**Evidence through:** 2026-10-01T04:20:04Z  
-**Source revision:** `21059e92770362ac9eb2957f942130d1e1f21973` · **Collection run:** `36822742530`  
+**Generated:** 2026-10-01T18:28:08.821177Z  
+**Evidence through:** 2026-10-01T18:05:47Z  
+**Source revision:** `e34187bebe35098578eec2c5c3f18556e8ae4434` · **Collection run:** `36906856420`  
 
 ## Review now
 
-**68 decision finding(s)** · **0 review-required assertion(s)**
+**69 decision finding(s)** · **0 review-required assertion(s)**
 
 ### Decision findings
 
@@ -32,14 +32,14 @@ permalink: /dashboard/
 
 ## Watch
 
-**9 deterministic watch assertion(s)** · **25 other finding(s)**
+**9 deterministic watch assertion(s)** · **27 other finding(s)**
 
-- `DTG-A-0DE3AE35D85CB3A9` — Credentials and evidence specification and implementation are moving together in this window.
-- `DTG-A-3C24FDA4E078E947` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-D75FE75C53548C90` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-F6052257984203B3` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-2522312941E8C96C` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-0F652337371F1038` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-F1A2330D7F66D989` — Credentials and evidence specification and implementation are moving together in this window.
+- `DTG-A-7075D0E68C8DC009` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-B31B3B96153DA984` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-3949996A027EDF59` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-A941C4349B9AB12D` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-B1B57DA7B8881F37` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-BE695EFE211C6D14` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
 - `DTG-A-815DC3D6E2417981` — Credentials and evidence has material activity while related capability Human trust and safety is quiet in this observation window.
 
@@ -49,8 +49,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 772 · **Material:** 270 · **Breaking:** 48 · **Tagged releases:** 336 · **Cross-repository:** 119  
-**Duplicate representations consolidated:** 357
+**Change units:** 802 · **Material:** 272 · **Breaking:** 53 · **Tagged releases:** 350 · **Cross-repository:** 123  
+**Duplicate representations consolidated:** 385
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -60,17 +60,17 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Quiet this window** | 0 | 0 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing** | 25 | 7 |
-| Governed action | **Advancing strongly** | 242 | 64 |
-| Implementation and interoperability | **Advancing strongly** | 341 | 161 |
+| Credentials and evidence | **Advancing** | 23 | 7 |
+| Governed action | **Advancing strongly** | 257 | 67 |
+| Implementation and interoperability | **Advancing strongly** | 351 | 156 |
 | Portfolio coordination | **Active** | 2 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 444
-- **Credentials and proof:** 297
-- **Protocol and interoperability:** 281
-- **Transport and routing:** 249
+- **Delivery and maintenance:** 469
+- **Credentials and proof:** 317
+- **Protocol and interoperability:** 292
+- **Transport and routing:** 253
 - **Authority and delegation:** 228
 
 ### Portfolio intelligence
