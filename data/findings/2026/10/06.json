@@ -441,30 +441,6 @@
     "successor_finding": null
   },
   {
-    "finding_id": "3c47db47eb8c0243756f",
-    "fingerprint": "3c47db47eb8c0243756f2d34",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "trustoverip/dtgwg-cred-spec",
-    "title": "Relationship policy discovery: both communities must admit an edge, neither can find out",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-cred-spec/issues/25"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
     "finding_id": "4a6d55ea324014afb48f",
     "fingerprint": "4a6d55ea324014afb48f3d92",
     "kind": "material_cross_reference",

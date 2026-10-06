@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-10-06T06:29:11.886216Z  
-**Evidence through:** 2026-10-06T06:12:33Z  
-**Source revision:** `a99277a717aab9795b7a0d545dade82fc8c9a268` · **Collection run:** `37423818485`  
+**Generated:** 2026-10-06T18:27:34.419716Z  
+**Evidence through:** 2026-10-06T17:28:36Z  
+**Source revision:** `a5c43fe20d10c6c091c82072b2153d0d7c50157e` · **Collection run:** `37511225167`  
 
 ## Review now
 
-**33 decision finding(s)** · **1 review-required assertion(s)**
+**32 decision finding(s)** · **1 review-required assertion(s)**
 
 ### Decision findings
 
@@ -40,14 +40,14 @@ permalink: /dashboard/
 
 **8 deterministic watch assertion(s)** · **19 other finding(s)**
 
-- `DTG-A-B7F4CCEDCB670155` — Credentials and evidence specification and implementation are moving together in this window.
+- `DTG-A-93567C3482142430` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-D2F9D48B38566A6E` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-9F85878F81A2438A` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-646BF105DAF1C46C` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-36F98AF721080E99` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-C8A9E8800AEC0C4F` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-E369CBEE28EEDC86` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-F9176A0A3ED5C2D0` — Material movement is present on both sides of the declared pressure-tests relationship.
-- `DTG-A-7F1D354CE04CB69B` — Material movement is present on both sides of the declared pressure-tests relationship.
-- `DTG-A-B86DBA79FC3CCCA0` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
+- `DTG-A-4087A5FA3398E00C` — Material movement is present on both sides of the declared pressure-tests relationship.
+- `DTG-A-566D254F576623A3` — Material movement is present on both sides of the declared pressure-tests relationship.
+- `DTG-A-259D4147740B78BC` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
 
 ## Recently disposed
 
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 797 · **Material:** 173 · **Breaking:** 35 · **Tagged releases:** 412 · **Cross-repository:** 85  
-**Duplicate representations consolidated:** 350
+**Change units:** 807 · **Material:** 173 · **Breaking:** 34 · **Tagged releases:** 413 · **Cross-repository:** 85  
+**Duplicate representations consolidated:** 354
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -64,20 +64,20 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 | Capability | Pulse | Change units | Material |
 |---|---|---:|---:|
-| Human trust and safety | **Active** | 5 | 1 |
+| Human trust and safety | **Advancing** | 10 | 3 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing** | 16 | 6 |
+| Credentials and evidence | **Advancing** | 15 | 5 |
 | Governed action | **Advancing strongly** | 195 | 45 |
-| Implementation and interoperability | **Advancing strongly** | 465 | 100 |
+| Implementation and interoperability | **Advancing strongly** | 468 | 99 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 390
-- **Credentials and proof:** 236
-- **Protocol and interoperability:** 210
-- **Authority and delegation:** 161
-- **Transport and routing:** 160
+- **Delivery and maintenance:** 400
+- **Credentials and proof:** 239
+- **Protocol and interoperability:** 214
+- **Authority and delegation:** 160
+- **Transport and routing:** 159
 
 ### Portfolio intelligence
 
