@@ -1,0 +1,1327 @@
+[
+  {
+    "finding_id": "60e42e78469747988dd0",
+    "fingerprint": "60e42e78469747988dd016d7",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/dtg-credentials",
+    "title": "feat!: conform to the v1 context — issuerScope, StatementCredential, predicate acceptance",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/dtg-credentials/pull/33",
+      "https://github.com/OpenVTC/dtg-credentials/commit/3d84d3630cec29f7ed76fd47fd11d1407d9592cb"
+    ],
+    "related_repositories": [
+      "OpenVTC/openvtc",
+      "OpenVTC/verifiable-trust-infrastructure",
+      "trustoverip/dtgwg-cred-spec",
+      "trustoverip/dtgwg-trust-tasks-tf",
+      "trustoverip/dtgwg-vsc-registry"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "38d80bde7473098fb6de",
+    "fingerprint": "38d80bde7473098fb6de2d9e",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/openvtc",
+    "title": "feat!: DTG Credentials v1 — role VACs, vetted/1 and witnessed/1 statements, issuerScope",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/openvtc/pull/397",
+      "https://github.com/OpenVTC/openvtc/commit/e165bd5532d73b2852d2ddf7c2728e598aaa2ac7"
+    ],
+    "related_repositories": [
+      "OpenVTC/dtg-credentials",
+      "OpenVTC/verifiable-trust-infrastructure",
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "18828d1335ff069040c5",
+    "fingerprint": "18828d1335ff069040c50d46",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc)!: git-namespace rights are capabilities on the ACL entry — one authority model (VTI-VTC-020, VTI-ACL-035 – 037)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1930",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/b15d29c0d10e5a1b91ad5f83e00a85fc7a35a75a"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "517aa2861e9a9c70ffe5",
+    "fingerprint": "517aa2861e9a9c70ffe5dd59",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat!: DTG Credentials v1 — role VACs, vetted/1 and witnessed/1 statements, IDVCs, issuerScope",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1859",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/f9d924f99b39b77e5996e33fede861d4d32cdec3"
+    ],
+    "related_repositories": [
+      "OpenVTC/dtg-credentials",
+      "OpenVTC/openvtc",
+      "trustoverip/dtgwg-cred-spec",
+      "trustoverip/dtgwg-trust-tasks-tf",
+      "trustoverip/dtgwg-vsc-registry"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "529eb5d4991393ffe474",
+    "fingerprint": "529eb5d4991393ffe4741c69",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "vti-common-v0.37.1",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vti-common-v0.37.1"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "6746383deb0d6dae2e0b",
+    "fingerprint": "6746383deb0d6dae2e0bb68e",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc-service)!: git-ns admin reads are signed Trust Tasks",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1841",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/c784e558f90b8a922926867033358295f1425e4a"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "8489f5ccddf1ae91ca45",
+    "fingerprint": "8489f5ccddf1ae91ca458c1f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat!: record the community's own identity check as a vetted/1 statement",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1874",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/ddea15b5165ca67bd54b64ee7ae351a7055abb8e"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf",
+      "trustoverip/dtgwg-vsc-registry"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "8d5718ce13e794725aab",
+    "fingerprint": "8d5718ce13e794725aabb9cb",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc): a subject may relabel its own entry; single-administrator mode is one person under many identifiers (VTI-ACL-052, VTI-APV-022)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1941",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/86fa85d9312c6a59ee878295292c99c86b4e0260"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "94d39806fe806db2aa38",
+    "fingerprint": "94d39806fe806db2aa389a10",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "cnm-cli-v0.27.0",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/cnm-cli-v0.27.0"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "a775c9693b223f68a751",
+    "fingerprint": "a775c9693b223f68a75123e1",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "vta-sdk: keep a trust-task rejection's code and details instead of flattening to Protocol(String)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1952"
+    ],
+    "related_repositories": [
+      "OpenVTC/openvtc"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "bb5f4996fef97c4ed846",
+    "fingerprint": "bb5f4996fef97c4ed846a065",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "cnm-cli-v0.27.1",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/cnm-cli-v0.27.1"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "c5ae0ee9c8cc64e6b2b8",
+    "fingerprint": "c5ae0ee9c8cc64e6b2b8b77e",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc): last member-facing REST routes retire to signed Trust Tasks",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1846",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/b8bc1ba784e6aa96e808f43c69c14a3329846af6"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "da705532743623e49813",
+    "fingerprint": "da705532743623e49813e11f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "fix(vtc)!: removing an administrator, lowering the consent threshold and changing authority policy take a second party (VTI-APV-019, VTI-APV-020, VTI-VTC-022)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1917",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/1e3de1b25b717f9e68e9922265d9ef3e9bde6db5"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "e121b18291ff4d8f4d55",
+    "fingerprint": "e121b18291ff4d8f4d55fd81",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "chore: release",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1980",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1975",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1950",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1947",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1942",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1913",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1910",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1890",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1902",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1897",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1895",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1893",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1888",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1867",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1866",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1861",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1856",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1821",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/39c801ed091cdd0aaa8247b8c7aa8e564903d4d6",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/822ff78a98a9e1c24f2f9a2826c99bd6aa7fbdd1",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/8808f1006caa882790e7aa14a55fdd9c45df9a86",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/ffd1a24d5d17202126b621696cbf41123c6d21e6",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/c244f74eaa6eb8514ecfbc6cc2ff6016f5405086",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/ba1c9515e2c6ae560e7a92855da6354002b5db2a",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/fbf233c0933dcb914ac64246d3e729378c91798a",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/293658a774da4a58543c69abe7afb0018cdbfc2e",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/323d144860fc75c8a0dbf0fa0abf94a78d6b0beb",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/04b868e88e8e473c08479630fefa5ad4d91a47f9",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/8b902ecc28b38506a816af86096aed12b099fac9",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/1a5d7f65bd48ea0e841b1c50882f23611212c179",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/fda3bb4f8fd8183518738672787157d9e069b3b9",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/255375e7ee1bb06646b5f2df5a2f0c47ef6a1c34",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/946efedca511cb32eda3b5763e35960215e9a513",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/44ea74832b1260cb9bc6bc63c624f768b4d1c8e6"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf",
+      "trustoverip/dtgwg-vsc-registry",
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "f4cdc35d8f2c782f247c",
+    "fingerprint": "f4cdc35d8f2c782f247c295f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc): single-administrator mode, set at install, for communities with one administrator (VTI-APV-022)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1925",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/e701579259c149df344cd2a0aeba24838f41668d"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "f5ad8aa1399207519fb6",
+    "fingerprint": "f5ad8aa1399207519fb65fb6",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "chore(vetting-pcs): depend on published predicate-credential-system",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1838",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/e907a34c170e9a3f01d38fd85b3f1998945503b8"
+    ],
+    "related_repositories": [
+      "OpenVTC/predicate-credential-system"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "3c47db47eb8c0243756f",
+    "fingerprint": "3c47db47eb8c0243756f2d34",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-cred-spec",
+    "title": "Relationship policy discovery: both communities must admit an edge, neither can find out",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-cred-spec/issues/25"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "4a6d55ea324014afb48f",
+    "fingerprint": "4a6d55ea324014afb48f3d92",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-cred-spec",
+    "title": "Digest-valued binders are unsalted and enumerable; blinding is deferred from WD02",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-cred-spec/issues/38"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "09ccb1d242fb33d91c00",
+    "fingerprint": "09ccb1d242fb33d91c008f6f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(vtc): cooling-off actions, a reduction-pending notice and an offline-write record type",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/719",
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/82b8cfd0d41992ad50b132ec5771c26c7da09421"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "1c24693b39b565b29637",
+    "fingerprint": "1c24693b39b565b29637f2f6",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "trust-tasks-rs-v0.27.1",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/releases/tag/trust-tasks-rs-v0.27.1"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "50a540262a1b6fc308ca",
+    "fingerprint": "50a540262a1b6fc308cace8f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "vtc/members/update/0.1: publishConsent may be withdrawn by an administrator, never granted — add consentGrantForbidden",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/issues/737"
+    ],
+    "related_repositories": [
+      "OpenVTC/openvtc",
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "6ec931acd09d29e7f7e0",
+    "fingerprint": "6ec931acd09d29e7f7e0c409",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "docs(git-ns): single-administrator mode may waive the self-grant rule",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/725",
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/e0f73b2e43dcf1c8ae28d1d92c27c334777a4274"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "7dd4cece89d11aac5a8a",
+    "fingerprint": "7dd4cece89d11aac5a8a6484",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vtc/join-requests/status): an approved applicant can ask for its credentials again",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/709",
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/5d114b588d59790d552a2b6adfb3dc69943daa0a"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "81050504f25c51f89236",
+    "fingerprint": "81050504f25c51f8923633f8",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vtc/endorsements): community identity checks are vetted/1 statements (#697)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/cb1887863229767e8ef8785b6de68c8d15182afb"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vsc-registry"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "8d8326aa785c31620f36",
+    "fingerprint": "8d8326aa785c31620f36cf7e",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(vtc): administrator action list, approver-device step-up, and role-based authority",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/714",
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/ce07a0397f116ed1b3e762d7f80813fbb6f0cc97"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure",
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "909c057943ad2bfd5c0b",
+    "fingerprint": "909c057943ad2bfd5c0b0738",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec!: conform vetting, member and endorsement credentials to DTG VSC/VAC and the predicate registry",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/691",
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/add16dbf39a1726a3677a1cd949b29bb821f102e"
+    ],
+    "related_repositories": [
+      "OpenVTC/dtg-credentials",
+      "trustoverip/dtgwg-cred-spec",
+      "trustoverip/dtgwg-vsc-registry"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "b3bbc613f0e4c0d0f231",
+    "fingerprint": "b3bbc613f0e4c0d0f2315e66",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vtc/endorsements): a community records its own identity checks as vetted/1",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/697"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vsc-registry"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "c12c84f66c7ded18e420",
+    "fingerprint": "c12c84f66c7ded18e4208225",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(git-ns): separation of duties for elevated rights, with an audited break-glass",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/641"
+    ],
+    "related_repositories": [
+      "OpenVTC/openvtc",
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "ec101912064707597281",
+    "fingerprint": "ec1019120647075972813243",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(auth/signing-key): enroll 0.2 — the identity's own authorization, and key replacement",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/712",
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/87bf0c071221b7366ea33108eec6b243c9280e56"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "edd1c65317ee2a23387e",
+    "fingerprint": "edd1c65317ee2a23387ecacc",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "trust-tasks-rs-v0.26.3",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/releases/tag/trust-tasks-rs-v0.26.3"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure",
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "f840d57f6834702fbc41",
+    "fingerprint": "f840d57f6834702fbc415ed9",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(backup): require an end-to-end confidential channel for backup export and import",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/646"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "5f600796a207a69d9b4a",
+    "fingerprint": "5f600796a207a69d9b4a41ca",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-vsc-registry",
+    "title": "Add the vetted and presented predicates as draft",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-vsc-registry/pull/19",
+      "https://github.com/trustoverip/dtgwg-vsc-registry/commit/0d3094108a00261949ec383358dca6b4a7b2a9d1"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "adde5ccf990f1abb1fdd",
+    "fingerprint": "adde5ccf990f1abb1fdd710f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-vti-spec",
+    "title": "Make second-party consent recommended practice, with a declared single-administrator mode (VTI-APV-014, -018 – 020, -022)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-vti-spec/pull/52",
+      "https://github.com/trustoverip/dtgwg-vti-spec/commit/955e4f0ab67a3d94612f15642f8c7d7bd4dbf88b"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "aaaf6b7febc05b24a978",
+    "fingerprint": "aaaf6b7febc05b24a978955f",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/openvtc",
+    "title": "feat: join speaks join-requests 0.3, falling back to 0.2",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/openvtc/pull/412",
+      "https://github.com/OpenVTC/openvtc/commit/d5fd0193aab936387178b3f67b923b7a350fec59"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "d182ce9271b758b8e3ab",
+    "fingerprint": "d182ce9271b758b8e3ab7daa",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/openvtc",
+    "title": "feat: an approved join asks its community to re-send a credential that never came",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/openvtc/pull/411",
+      "https://github.com/OpenVTC/openvtc/commit/681fb0c631ae5956e42741eb926edc1b17ade537"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure",
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "6f09908015f9ee33f650",
+    "fingerprint": "6f09908015f9ee33f65071aa",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc): hidden vetting (PCS) is visible and run from the admin console",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1955",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/9b2522ec0874b6f9d12fd8e4e2fa8a225f2f420b"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "8072f37112a41471dd03",
+    "fingerprint": "8072f37112a41471dd035a1c",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "cnm-cli-v0.22.0",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/cnm-cli-v0.22.0"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vsc-registry"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "8871afb4cebb3afba2ab",
+    "fingerprint": "8871afb4cebb3afba2ab91bf",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc): an approved applicant can ask for its credentials again (tf#709)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1900",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/68f01ca965660956a6eec5f545faf5c602fb2edc"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "a71ed5f9df08853de18d",
+    "fingerprint": "a71ed5f9df08853de18dbc63",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "vta-sdk-v0.59.0",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.59.0"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vsc-registry"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "e70a3349093565b21341",
+    "fingerprint": "e70a3349093565b213419829",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vtc): hidden vetting (PCS) is turned off, read back and run with events from the console",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1956",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/478da2de1d8c1e45d69cfe9616d21fe81f046d9f"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "50609a51295b04f08336",
+    "fingerprint": "50609a51295b04f083361a61",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/vta-browser-plugin",
+    "title": "feat(extension): answer a VTC step-up with a per-community approver",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/vta-browser-plugin/pull/291",
+      "https://github.com/OpenVTC/vta-browser-plugin/commit/ed57874b3e11234c4f917770e3c398e78f8c7fa2"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "908cfc17633e5849778e",
+    "fingerprint": "908cfc17633e5849778e2b76",
+    "kind": "stale_repository",
+    "severity": "low",
+    "materiality": "low",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-agent-names-tf",
+    "title": "No repository push for 195 days",
+    "summary": "The latest recorded push is 195 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-agent-names-tf"
+    ],
+    "related_repositories": [],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "fa3bd24b6e06eb682752",
+    "fingerprint": "fa3bd24b6e06eb6827520029",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-cred-spec",
+    "title": "Align the identity-vetting worked example with the registry's vetted/1",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-cred-spec/pull/70",
+      "https://github.com/trustoverip/dtgwg-cred-spec/commit/44d5084926ad06ca6395d754c91d8494a7c38c22"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vsc-registry"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "5417ab37317fac935511",
+    "fingerprint": "5417ab37317fac9355113ab2",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(vtc/endorsements): IDVC issuance and reserved type values, matching VTI",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/695",
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/55075b8373d09d72e02349c669762389b1e12452"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "5e31b97dd767fafaf94b",
+    "fingerprint": "5e31b97dd767fafaf94b6536",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "spec(auth/step-up): approve-response 0.5, every response carries the approver's assertionMethod proof",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/650"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "979447f928694c0afa3f",
+    "fingerprint": "979447f928694c0afa3f1f89",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(vtc): pairwise revoke authorization and admin-resend for vetters",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/689",
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/commit/af599d41f05e6e2847fb2e0fbe16e9129bf14f2a"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "885155be706fdcead291",
+    "fingerprint": "885155be706fdcead2911bf1",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-vsc-registry",
+    "title": "Drop registry release tags: pin the commit or the accept-list digest",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-vsc-registry/pull/21",
+      "https://github.com/trustoverip/dtgwg-vsc-registry/commit/7c5ba6c8114dc64cdfe8356992f46850a0d8ead1"
+    ],
+    "related_repositories": [
+      "OpenVTC/dtg-credentials"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "f96687e66cbb38d4c168",
+    "fingerprint": "f96687e66cbb38d4c16817dc",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-vsc-registry",
+    "title": "witnessed/1: state the one-statement-per-direction SHOULD normatively",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-vsc-registry/pull/23",
+      "https://github.com/trustoverip/dtgwg-vsc-registry/commit/e55ede565207ca700596dfdacb4bf2a6382ad409"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-cred-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "ae12f43fa21813ddc5f8",
+    "fingerprint": "ae12f43fa21813ddc5f82c33",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-zkp-spec",
+    "title": "Round 2: hidden vetting (024), 023 amended, formal models, guide split (WG-13)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-zkp-spec/pull/12"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-zkp-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "eb8b2b8fc08ef7484b1e",
+    "fingerprint": "eb8b2b8fc08ef7484b1e2ed1",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-zkp-spec",
+    "title": "Review revision: commitment home, key-profile MUST, record 022, catalogue, Document Status pin, citations by title",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-zkp-spec/pull/11"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-zkp-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "a708c081a7b9061e544c",
+    "fingerprint": "a708c081a7b9061e544c0f1f",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "materiality": "informational",
+    "urgency": "informational",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-rcards-tf",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-rcards-tf"
+    ],
+    "related_repositories": [],
+    "state": "open",
+    "review_status": "observed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "574fb2bcaa465e59eb1e",
+    "fingerprint": "574fb2bcaa465e59eb1e7792",
+    "kind": "empty_repository",
+    "severity": "informational",
+    "materiality": "informational",
+    "urgency": "informational",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-ux-tf",
+    "title": "Repository has no commits",
+    "summary": "GitHub reports that the repository is empty. This is a valid lifecycle condition, not a collection failure.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-ux-tf"
+    ],
+    "related_repositories": [],
+    "state": "open",
+    "review_status": "observed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  }
+]
