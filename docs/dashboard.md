@@ -5,19 +5,18 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-10-07T06:07:53.041809Z  
-**Evidence through:** 2026-10-07T05:37:35Z  
-**Source revision:** `1bf6c1c97adb5ddcd73de4ba6e2a2273dc669215` · **Collection run:** `37579727682`  
+**Generated:** 2026-10-07T18:59:31.905450Z  
+**Evidence through:** 2026-10-07T15:02:06Z  
+**Source revision:** `676dc4fc78bee918640bdbe6a5ef409618170c32` · **Collection run:** `37670863745`  
 
 ## Review now
 
-**30 decision finding(s)** · **1 review-required assertion(s)**
+**25 decision finding(s)** · **1 review-required assertion(s)**
 
 ### Decision findings
 
 | Urgency | Repository | Finding | Impact | Evidence |
 |---|---|---|---|---|
-| **elevated** | `OpenVTC/dtg-credentials` | `60e42e78469747988dd016d7` feat!: conform to the v1 context — issuerScope, StatementCredential, predicate acceptance | potentially-breaking | [source](https://github.com/OpenVTC/dtg-credentials/pull/33) |
 | **elevated** | `OpenVTC/openvtc` | `38d80bde7473098fb6de2d9e` feat!: DTG Credentials v1 — role VACs, vetted/1 and witnessed/1 statements, issuerScope | potentially-breaking | [source](https://github.com/OpenVTC/openvtc/pull/397) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `18828d1335ff069040c50d46` feat(vtc)!: git-namespace rights are capabilities on the ACL entry — one authority model (VTI-VTC-020, VTI-ACL-035 – 037) | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1930) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `517aa2861e9a9c70ffe5dd59` feat!: DTG Credentials v1 — role VACs, vetted/1 and witnessed/1 statements, IDVCs, issuerScope | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1859) |
@@ -27,8 +26,9 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `94d39806fe806db2aa389a10` cnm-cli-v0.27.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/cnm-cli-v0.27.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `a775c9693b223f68a75123e1` vta-sdk: keep a trust-task rejection's code and details instead of flattening to Protocol(String) | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1952) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `bb5f4996fef97c4ed846a065` cnm-cli-v0.27.1 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/cnm-cli-v0.27.1) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `c5ae0ee9c8cc64e6b2b8b77e` feat(vtc): last member-facing REST routes retire to signed Trust Tasks | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1846) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `da705532743623e49813e11f` fix(vtc)!: removing an administrator, lowering the consent threshold and changing authority policy take a second party (VTI-APV-019, VTI-APV-020, VTI-VTC-022) | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1917) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `f4cdc35d8f2c782f247c295f` feat(vtc): single-administrator mode, set at install, for communities with one administrator (VTI-APV-022) | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1925) |
+| **elevated** | `trustoverip/dtgwg-trust-tasks-tf` | `09ccb1d242fb33d91c008f6f` feat(vtc): cooling-off actions, a reduction-pending notice and an offline-write record type | potentially-breaking | [source](https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/719) |
 
 ### Review-required assertions
 
@@ -38,16 +38,16 @@ permalink: /dashboard/
 
 ## Watch
 
-**8 deterministic watch assertion(s)** · **18 other finding(s)**
+**8 deterministic watch assertion(s)** · **14 other finding(s)**
 
-- `DTG-A-93567C3482142430` — Credentials and evidence specification and implementation are moving together in this window.
-- `DTG-A-CF02C8F776E819EE` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-864F503DEA19FB60` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-4E95EDBD60A7F921` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-E803F39F609D515F` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-B14A6E00B093838F` — Material movement is present on both sides of the declared pressure-tests relationship.
-- `DTG-A-886EA01BD7104E83` — Material movement is present on both sides of the declared pressure-tests relationship.
-- `DTG-A-259D4147740B78BC` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
+- `DTG-A-253F04E33D025AAF` — Credentials and evidence specification and implementation are moving together in this window.
+- `DTG-A-43D46A59E9E230A3` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-7CB0CFDE223AF44C` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-C7881696CB536B17` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-7C0C5CE4AA06A0C3` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-B5510680DDC1494F` — Material movement is present on both sides of the declared pressure-tests relationship.
+- `DTG-A-6B74B101B80E0C1D` — Material movement is present on both sides of the declared pressure-tests relationship.
+- `DTG-A-54283C39ABF6648F` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
 
 ## Recently disposed
 
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 795 · **Material:** 172 · **Breaking:** 33 · **Tagged releases:** 405 · **Cross-repository:** 83  
-**Duplicate representations consolidated:** 344
+**Change units:** 728 · **Material:** 149 · **Breaking:** 29 · **Tagged releases:** 363 · **Cross-repository:** 67  
+**Duplicate representations consolidated:** 317
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -64,20 +64,20 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 | Capability | Pulse | Change units | Material |
 |---|---|---:|---:|
-| Human trust and safety | **Advancing** | 14 | 6 |
+| Human trust and safety | **Advancing** | 24 | 7 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Advancing** | 15 | 5 |
-| Governed action | **Advancing strongly** | 186 | 43 |
-| Implementation and interoperability | **Advancing strongly** | 467 | 97 |
+| Credentials and evidence | **Active** | 6 | 2 |
+| Governed action | **Advancing strongly** | 158 | 38 |
+| Implementation and interoperability | **Advancing strongly** | 434 | 83 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 396
-- **Credentials and proof:** 237
-- **Protocol and interoperability:** 211
-- **Authority and delegation:** 162
-- **Transport and routing:** 152
+- **Delivery and maintenance:** 368
+- **Credentials and proof:** 208
+- **Protocol and interoperability:** 183
+- **Authority and delegation:** 144
+- **Transport and routing:** 134
 
 ### Portfolio intelligence
 
