@@ -5,9 +5,9 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-10-08T18:54:10.467001Z  
+**Generated:** 2026-10-09T06:17:13.247376Z  
 **Evidence through:** 2026-10-08T10:47:15Z  
-**Source revision:** `96183af0c91428fbb3746a8bf8993507cad071e1` · **Collection run:** `37827666352`  
+**Source revision:** `fe24e5c38db76fbac08609b68906cb5feddfb14b` · **Collection run:** `37892584936`  
 
 ## Review now
 
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 586 · **Material:** 120 · **Breaking:** 17 · **Tagged releases:** 286 · **Cross-repository:** 56  
-**Duplicate representations consolidated:** 254
+**Change units:** 543 · **Material:** 118 · **Breaking:** 12 · **Tagged releases:** 256 · **Cross-repository:** 55  
+**Duplicate representations consolidated:** 242
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -66,18 +66,18 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Advancing strongly** | 27 | 10 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Active** | 6 | 2 |
+| Credentials and evidence | **Active** | 5 | 2 |
 | Governed action | **Advancing strongly** | 116 | 30 |
-| Implementation and interoperability | **Advancing strongly** | 358 | 64 |
+| Implementation and interoperability | **Advancing strongly** | 321 | 62 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 295
-- **Credentials and proof:** 155
-- **Protocol and interoperability:** 146
-- **Authority and delegation:** 120
-- **Transport and routing:** 102
+- **Delivery and maintenance:** 279
+- **Credentials and proof:** 147
+- **Protocol and interoperability:** 143
+- **Authority and delegation:** 115
+- **Transport and routing:** 99
 
 ### Portfolio intelligence
 

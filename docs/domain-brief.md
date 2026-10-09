@@ -5,10 +5,10 @@ permalink: /domain-brief/
 ---
 # DTG Domain Brief
 
-**Generated:** 2026-10-08T18:54:10.467001Z  
+**Generated:** 2026-10-09T06:17:13.247376Z  
 **Evidence through:** 2026-10-08T10:47:15Z  
-**Source revision:** `96183af0c91428fbb3746a8bf8993507cad071e1` · **Collection run:** `37827666352` · **Publication state:** `workflow-generated`  
-**Change units:** 586 · **Material:** 120  
+**Source revision:** `fe24e5c38db76fbac08609b68906cb5feddfb14b` · **Collection run:** `37892584936` · **Publication state:** `workflow-generated`  
+**Change units:** 543 · **Material:** 118  
 
 This is the situational-awareness view of the monitored DTG portfolio. It interprets observed GitHub evidence through the declared [DTG domain model]({{ '/domain-model/' | relative_url }}). It is not an official ToIP architectural statement.
 
@@ -25,7 +25,7 @@ Review-required items are deterministic coordination or alignment signals. They 
 
 The strongest observed movement is currently concentrated in **Implementation and interoperability, Governed action, and Human trust and safety**.
 
-**Implementation and interoperability** — 64 material change units, led by delivery and maintenance, credentials and proof.
+**Implementation and interoperability** — 62 material change units, led by delivery and maintenance, credentials and proof.
 **Governed action** — 30 material change units, led by protocol and interoperability, credentials and proof.
 **Human trust and safety** — 10 material change units, led by delivery and maintenance, protocol and interoperability.
 
@@ -35,9 +35,9 @@ The strongest observed movement is currently concentrated in **Implementation an
 |---|---|---:|---:|
 | Human trust and safety | **Advancing strongly** | 27 | 10 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Active** | 6 | 2 |
+| Credentials and evidence | **Active** | 5 | 2 |
 | Governed action | **Advancing strongly** | 116 | 30 |
-| Implementation and interoperability | **Advancing strongly** | 358 | 64 |
+| Implementation and interoperability | **Advancing strongly** | 321 | 62 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 > **Quiet is not a failure state.** It means no activity was observed in the monitored GitHub streams during this window; the capability may be stable, on a different cadence, or active elsewhere.
@@ -53,7 +53,7 @@ The strongest observed movement is currently concentrated in **Implementation an
 ## Specification and implementation alignment
 
 - **Credentials and evidence: specification and implementation are moving together.** The monitor observed 2 material specification change unit(s) and 45 material implementation change unit(s).
-- **Governed action: specification and implementation are moving together.** The monitor observed 30 material specification change unit(s) and 62 material implementation change unit(s).
+- **Governed action: specification and implementation are moving together.** The monitor observed 30 material specification change unit(s) and 61 material implementation change unit(s).
 - **Governed action: implementation movement is ahead of normative specification activity in this window.**
 
 ## Attention signals
