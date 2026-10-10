@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-10-10T05:59:53.685669Z  
-**Evidence through:** 2026-10-10T04:14:47Z  
-**Source revision:** `ffb4ed9bc9c3b73607c3ef55b965f631a9ccc9a9` · **Collection run:** `38029325373`  
+**Generated:** 2026-10-10T17:23:51.018098Z  
+**Evidence through:** 2026-10-10T17:18:01Z  
+**Source revision:** `a56c5a4e4d3c095b9520ab7b1661863c12c179a2` · **Collection run:** `38071428199`  
 
 ## Review now
 
-**14 decision finding(s)** · **1 review-required assertion(s)**
+**17 decision finding(s)** · **1 review-required assertion(s)**
 
 ### Decision findings
 
@@ -22,13 +22,13 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `8d5718ce13e794725aabb9cb` feat(vtc): a subject may relabel its own entry; single-administrator mode is one person under many identifiers (VTI-ACL-052, VTI-APV-022) | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1941) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `94d39806fe806db2aa389a10` cnm-cli-v0.27.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/cnm-cli-v0.27.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `a775c9693b223f68a75123e1` vta-sdk: keep a trust-task rejection's code and details instead of flattening to Protocol(String) | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1952) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `aa28149c7babc678e9e7412c` feat(vta-sdk)!: wallet sign-in with a trigger link: sign auth/oob grants, enrol UV keys, advertise TrustTaskHTTPS and SignInPortal | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1997) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `bb5f4996fef97c4ed846a065` cnm-cli-v0.27.1 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/cnm-cli-v0.27.1) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `f4cdc35d8f2c782f247c295f` feat(vtc): single-administrator mode, set at install, for communities with one administrator (VTI-APV-022) | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1925) |
+| **elevated** | `OpenVTC/vta-browser-plugin` | `0ab1aa8e2e70a9099d7354cc` feat: wallet sign-in with a trigger link (VTI 7a, auth/oob) | potentially-breaking | [source](https://github.com/OpenVTC/vta-browser-plugin/pull/303) |
+| **elevated** | `OpenVTC/vta-browser-plugin` | `3b62b0cd590b9b45b3da0de6` chore(deps): Bump @openvtc/trust-tasks from 0.23.0 to 0.23.1 | potentially-breaking | [source](https://github.com/OpenVTC/vta-browser-plugin/pull/300) |
+| **elevated** | `OpenVTC/vta-browser-plugin` | `5f287722cb80cafcb50337ad` feat!: bind every outbound Trust Task to its signer; DIDComm sign-in via challenge and signed authenticate | potentially-breaking | [source](https://github.com/OpenVTC/vta-browser-plugin/pull/279) |
+| **elevated** | `OpenVTC/vta-browser-plugin` | `da3e439ebf70650d0c35d412` feat: sender-bound, purpose-checked Trust Tasks and signed DIDComm sign-in | potentially-breaking | [source](https://github.com/OpenVTC/vta-browser-plugin/pull/304) |
 | **elevated** | `trustoverip/dtgwg-trust-tasks-tf` | `09ccb1d242fb33d91c008f6f` feat(vtc): cooling-off actions, a reduction-pending notice and an offline-write record type | potentially-breaking | [source](https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/719) |
-| **elevated** | `trustoverip/dtgwg-trust-tasks-tf` | `50a540262a1b6fc308cace8f` vtc/members/update/0.1: publishConsent may be withdrawn by an administrator, never granted — add consentGrantForbidden | potentially-breaking | [source](https://github.com/trustoverip/dtgwg-trust-tasks-tf/issues/737) |
-| **elevated** | `trustoverip/dtgwg-trust-tasks-tf` | `6ec931acd09d29e7f7e0c409` docs(git-ns): single-administrator mode may waive the self-grant rule | potentially-breaking | [source](https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/725) |
-| **elevated** | `trustoverip/dtgwg-trust-tasks-tf` | `909c057943ad2bfd5c0b0738` spec!: conform vetting, member and endorsement credentials to DTG VSC/VAC and the predicate registry | potentially-breaking | [source](https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/691) |
-| **elevated** | `trustoverip/dtgwg-trust-tasks-tf` | `c12c84f66c7ded18e4208225` feat(git-ns): separation of duties for elevated rights, with an audited break-glass | potentially-breaking | [source](https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/641) |
 
 ### Review-required assertions
 
@@ -38,12 +38,12 @@ permalink: /dashboard/
 
 ## Watch
 
-**8 deterministic watch assertion(s)** · **7 other finding(s)**
+**8 deterministic watch assertion(s)** · **10 other finding(s)**
 
 - `DTG-A-9D46B03854EC677B` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-5094838CF4BB1FF8` — Governed action specification and implementation are moving together in this window.
 - `DTG-A-4AE2C48DAD70CD02` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-E201CCDB23AD8163` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-F900D8832619A0E1` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-2A826382DEBFAA41` — Material movement is present on both sides of the declared exercised-by relationship.
 - `DTG-A-C7346CD6487636A6` — Material movement is present on both sides of the declared pressure-tests relationship.
 - `DTG-A-6F5F3C78AAC1EB5E` — Material movement is present on both sides of the declared pressure-tests relationship.
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 410 · **Material:** 94 · **Breaking:** 8 · **Tagged releases:** 160 · **Cross-repository:** 43  
-**Duplicate representations consolidated:** 179
+**Change units:** 419 · **Material:** 101 · **Breaking:** 8 · **Tagged releases:** 158 · **Cross-repository:** 52  
+**Duplicate representations consolidated:** 178
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -66,18 +66,18 @@ _No explicit finding dispositions are represented in the current snapshot._
 |---|---|---:|---:|
 | Human trust and safety | **Advancing strongly** | 27 | 10 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Active** | 5 | 2 |
-| Governed action | **Advancing strongly** | 71 | 20 |
-| Implementation and interoperability | **Advancing strongly** | 236 | 50 |
+| Credentials and evidence | **Active** | 4 | 2 |
+| Governed action | **Advancing strongly** | 74 | 22 |
+| Implementation and interoperability | **Advancing strongly** | 243 | 52 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 245
-- **Protocol and interoperability:** 121
-- **Credentials and proof:** 115
-- **Authority and delegation:** 87
-- **Transport and routing:** 77
+- **Delivery and maintenance:** 257
+- **Protocol and interoperability:** 132
+- **Credentials and proof:** 117
+- **Authority and delegation:** 90
+- **Transport and routing:** 80
 
 ### Portfolio intelligence
 

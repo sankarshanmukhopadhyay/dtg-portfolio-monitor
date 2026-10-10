@@ -122,6 +122,31 @@
     "successor_finding": null
   },
   {
+    "finding_id": "aa28149c7babc678e9e7",
+    "fingerprint": "aa28149c7babc678e9e7412c",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vta-sdk)!: wallet sign-in with a trigger link: sign auth/oob grants, enrol UV keys, advertise TrustTaskHTTPS and SignInPortal",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1997"
+    ],
+    "related_repositories": [
+      "OpenVTC/vta-browser-plugin",
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
     "finding_id": "bb5f4996fef97c4ed846",
     "fingerprint": "bb5f4996fef97c4ed846a065",
     "kind": "material_cross_reference",
@@ -146,22 +171,97 @@
     "successor_finding": null
   },
   {
-    "finding_id": "f4cdc35d8f2c782f247c",
-    "fingerprint": "f4cdc35d8f2c782f247c295f",
+    "finding_id": "0ab1aa8e2e70a9099d73",
+    "fingerprint": "0ab1aa8e2e70a9099d7354cc",
     "kind": "material_cross_reference",
     "severity": "high",
     "materiality": "high",
     "urgency": "elevated",
     "assurance_impact": "potentially-breaking",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "feat(vtc): single-administrator mode, set at install, for communities with one administrator (VTI-APV-022)",
+    "repository": "OpenVTC/vta-browser-plugin",
+    "title": "feat: wallet sign-in with a trigger link (VTI 7a, auth/oob)",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1925",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/e701579259c149df344cd2a0aeba24838f41668d"
+      "https://github.com/OpenVTC/vta-browser-plugin/pull/303",
+      "https://github.com/OpenVTC/vta-browser-plugin/commit/362f6ac312ebb3c1cbf24bcc114694e5874cfe6a"
     ],
     "related_repositories": [
       "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "3b62b0cd590b9b45b3da",
+    "fingerprint": "3b62b0cd590b9b45b3da0de6",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/vta-browser-plugin",
+    "title": "chore(deps): Bump @openvtc/trust-tasks from 0.23.0 to 0.23.1",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/vta-browser-plugin/pull/300",
+      "https://github.com/OpenVTC/vta-browser-plugin/commit/987adcb2c7bab172305e5563e6ac0c2aa0a7b63f"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure",
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "5f287722cb80cafcb503",
+    "fingerprint": "5f287722cb80cafcb50337ad",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/vta-browser-plugin",
+    "title": "feat!: bind every outbound Trust Task to its signer; DIDComm sign-in via challenge and signed authenticate",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/vta-browser-plugin/pull/279"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "da3e439ebf70650d0c35",
+    "fingerprint": "da3e439ebf70650d0c35d412",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/vta-browser-plugin",
+    "title": "feat: sender-bound, purpose-checked Trust Tasks and signed DIDComm sign-in",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/vta-browser-plugin/pull/304",
+      "https://github.com/OpenVTC/vta-browser-plugin/commit/06ce81f1437808d3650a0a0ac7a7ebac73f5f518"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
     ],
     "state": "open",
     "review_status": "unreviewed",
@@ -320,22 +420,21 @@
     "successor_finding": null
   },
   {
-    "finding_id": "adde5ccf990f1abb1fdd",
-    "fingerprint": "adde5ccf990f1abb1fdd710f",
+    "finding_id": "95373a0ebd65f20b7922",
+    "fingerprint": "95373a0ebd65f20b79226219",
     "kind": "material_cross_reference",
     "severity": "high",
     "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "trustoverip/dtgwg-vti-spec",
-    "title": "Make second-party consent recommended practice, with a declared single-administrator mode (VTI-APV-014, -018 – 020, -022)",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/rp-sdk-js",
+    "title": "feat: wallet sign-in with a trigger link (auth/oob/*)",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
-      "https://github.com/trustoverip/dtgwg-vti-spec/pull/52",
-      "https://github.com/trustoverip/dtgwg-vti-spec/commit/955e4f0ab67a3d94612f15642f8c7d7bd4dbf88b"
+      "https://github.com/OpenVTC/rp-sdk-js/pull/7"
     ],
     "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
+      "trustoverip/dtgwg-vti-spec"
     ],
     "state": "open",
     "review_status": "unreviewed",
@@ -381,6 +480,7 @@
     "title": "chore: release",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1996",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1986",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1980",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1975",
@@ -466,6 +566,54 @@
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/650"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "95721246edab6b720a00",
+    "fingerprint": "95721246edab6b720a00c0d7",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(auth/oob): add the auth/oob out-of-band sign-in Trust Task family",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/738"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "a39c560266f0aea2a97e",
+    "fingerprint": "a39c560266f0aea2a97e9597",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-trust-tasks-tf",
+    "title": "feat(external): VTA external accounts — management, credential issuance and Sui signing",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-trust-tasks-tf/pull/740"
     ],
     "related_repositories": [
       "OpenVTC/verifiable-trust-infrastructure"
