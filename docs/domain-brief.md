@@ -5,19 +5,19 @@ permalink: /domain-brief/
 ---
 # DTG Domain Brief
 
-**Generated:** 2026-10-09T18:25:04.322236Z  
-**Evidence through:** 2026-10-09T16:57:30Z  
-**Source revision:** `b9d88d53e3aa89fae284a03f0cc9d5531804a332` · **Collection run:** `37972914564` · **Publication state:** `workflow-generated`  
-**Change units:** 441 · **Material:** 106  
+**Generated:** 2026-10-10T05:59:53.685669Z  
+**Evidence through:** 2026-10-10T04:14:47Z  
+**Source revision:** `ffb4ed9bc9c3b73607c3ef55b965f631a9ccc9a9` · **Collection run:** `38029325373` · **Publication state:** `workflow-generated`  
+**Change units:** 410 · **Material:** 94  
 
 This is the situational-awareness view of the monitored DTG portfolio. It interprets observed GitHub evidence through the declared [DTG domain model]({{ '/domain-model/' | relative_url }}). It is not an official ToIP architectural statement.
 
 ## Review queue
 
-- **Decision findings:** 18
+- **Decision findings:** 14
 - **Review-required assertions:** 1
 - **Watch assertions:** 8
-- **Open findings:** 26
+- **Open findings:** 21
 
 Review-required items are deterministic coordination or alignment signals. They are not automatic declarations of specification failure.
 
@@ -25,8 +25,8 @@ Review-required items are deterministic coordination or alignment signals. They 
 
 The strongest observed movement is currently concentrated in **Implementation and interoperability, Governed action, and Human trust and safety**.
 
-**Implementation and interoperability** — 54 material change units, led by delivery and maintenance, credentials and proof.
-**Governed action** — 25 material change units, led by protocol and interoperability, delivery and maintenance.
+**Implementation and interoperability** — 50 material change units, led by delivery and maintenance, credentials and proof.
+**Governed action** — 20 material change units, led by protocol and interoperability, delivery and maintenance.
 **Human trust and safety** — 10 material change units, led by delivery and maintenance, protocol and interoperability.
 
 ## Portfolio pulse
@@ -36,8 +36,8 @@ The strongest observed movement is currently concentrated in **Implementation an
 | Human trust and safety | **Advancing strongly** | 27 | 10 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Active** | 5 | 2 |
-| Governed action | **Advancing strongly** | 97 | 25 |
-| Implementation and interoperability | **Advancing strongly** | 243 | 54 |
+| Governed action | **Advancing strongly** | 71 | 20 |
+| Implementation and interoperability | **Advancing strongly** | 236 | 50 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 > **Quiet is not a failure state.** It means no activity was observed in the monitored GitHub streams during this window; the capability may be stable, on a different cadence, or active elsewhere.
@@ -52,8 +52,8 @@ The strongest observed movement is currently concentrated in **Implementation an
 
 ## Specification and implementation alignment
 
-- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 2 material specification change unit(s) and 37 material implementation change unit(s).
-- **Governed action: specification and implementation are moving together.** The monitor observed 25 material specification change unit(s) and 53 material implementation change unit(s).
+- **Credentials and evidence: specification and implementation are moving together.** The monitor observed 2 material specification change unit(s) and 33 material implementation change unit(s).
+- **Governed action: specification and implementation are moving together.** The monitor observed 20 material specification change unit(s) and 49 material implementation change unit(s).
 - **Governed action: implementation movement is ahead of normative specification activity in this window.**
 
 ## Attention signals
@@ -65,13 +65,13 @@ The strongest observed movement is currently concentrated in **Implementation an
 | Assertion | Class | State | Statement |
 |---|---|---|---|
 | `DTG-A-9D46B03854EC677B` | watch | moving-together | Credentials and evidence specification and implementation are moving together in this window. |
-| `DTG-A-F29F44311EC1FBCA` | watch | moving-together | Governed action specification and implementation are moving together in this window. |
+| `DTG-A-5094838CF4BB1FF8` | watch | moving-together | Governed action specification and implementation are moving together in this window. |
 | `DTG-A-10C75E7EC928C9AD` | review-required | implementation-ahead | Governed action implementation movement is ahead of normative specification activity in this window. |
-| `DTG-A-01C6E8EE0F680156` | watch | observed | Material movement is present on both sides of the declared supplies-evidence-to relationship. |
-| `DTG-A-D20B840A53756C86` | watch | observed | Material movement is present on both sides of the declared exercised-by relationship. |
-| `DTG-A-A476C87351FD62DA` | watch | observed | Material movement is present on both sides of the declared exercised-by relationship. |
+| `DTG-A-4AE2C48DAD70CD02` | watch | observed | Material movement is present on both sides of the declared supplies-evidence-to relationship. |
+| `DTG-A-E201CCDB23AD8163` | watch | observed | Material movement is present on both sides of the declared exercised-by relationship. |
+| `DTG-A-2A826382DEBFAA41` | watch | observed | Material movement is present on both sides of the declared exercised-by relationship. |
 | `DTG-A-C7346CD6487636A6` | watch | observed | Material movement is present on both sides of the declared pressure-tests relationship. |
-| `DTG-A-FBE046FD3ED11A4D` | watch | observed | Material movement is present on both sides of the declared pressure-tests relationship. |
+| `DTG-A-6F5F3C78AAC1EB5E` | watch | observed | Material movement is present on both sides of the declared pressure-tests relationship. |
 | `DTG-A-54283C39ABF6648F` | watch | observed | Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window. |
 
 ## What to watch next
