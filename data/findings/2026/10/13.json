@@ -1,5 +1,37 @@
 [
   {
+    "finding_id": "58f3e21a7dd7227a41ab",
+    "fingerprint": "58f3e21a7dd7227a41ab4200",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "chore(deps): bump the minor-and-patch group with 9 updates",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2070"
+    ],
+    "related_repositories": [
+      "OpenVTC/dtg-credentials",
+      "OpenVTC/openvtc",
+      "OpenVTC/predicate-credential-system",
+      "OpenVTC/rp-sdk-js",
+      "OpenVTC/verifiable-git-infrastructure",
+      "OpenVTC/vta-agent-memory",
+      "OpenVTC/vta-browser-plugin",
+      "OpenVTC/vti-push-gateway",
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
     "finding_id": "93176b4d2a918609a33b",
     "fingerprint": "93176b4d2a918609a33b13f7",
     "kind": "material_cross_reference",
@@ -113,12 +145,15 @@
     "title": "chore: release",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2064",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2061",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2054",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2048",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2038",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2034",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1996",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1986",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/76f8891eeaa27da3c778ff3f505afa2c4016189f",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/c3bb7220a48e5d7b03c4cddf50226bad45f08cd9",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/968f214ae4eabc4b1d4dd2a2585dbb2ae1273c5d",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/08bfa5d9842830692bd41fc4d5e12f92f4d3c06b",
@@ -423,6 +458,30 @@
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-vti-spec/pull/60",
       "https://github.com/trustoverip/dtgwg-vti-spec/commit/dc1ec07d42ec5c0054037795c06dbead608fbc5b"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "e0da9d8b03dd7f460a60",
+    "fingerprint": "e0da9d8b03dd7f460a60cb39",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "trustoverip/dtgwg-vti-spec",
+    "title": "First administrator of a TEE node: is a configured claim identifier an offline enrolment, or a VTI-ACL-001 divergence?",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-vti-spec/issues/64"
     ],
     "related_repositories": [
       "OpenVTC/verifiable-trust-infrastructure"
