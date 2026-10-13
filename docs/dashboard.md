@@ -5,9 +5,9 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-10-12T21:19:07.735401Z  
-**Evidence through:** 2026-10-12T20:47:56Z  
-**Source revision:** `25df0aa5e3a74d0f0a6de625156f961022d1bc24` · **Collection run:** `38309723281`  
+**Generated:** 2026-10-13T06:52:05.032893Z  
+**Evidence through:** 2026-10-13T06:39:52Z  
+**Source revision:** `ae69662074de8e06296a8e78c623cec13b935b5b` · **Collection run:** `38359025727`  
 
 ## Review now
 
@@ -21,7 +21,7 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `aa28149c7babc678e9e7412c` feat(vta-sdk)!: wallet sign-in with a trigger link: sign auth/oob grants, enrol UV keys, advertise TrustTaskHTTPS and SignInPortal | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/1997) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `c114e0f0e370484459c1ba69` vta-sdk-v0.66.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.66.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `d6f06da6be6c24f2917aa922` feat(vtc): member portal, with wallet sign-in by trigger link | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2007) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `e121b18291ff4d8f4d55fd81` chore: release | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2048) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `e121b18291ff4d8f4d55fd81` chore: release | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2054) |
 | **elevated** | `OpenVTC/vta-browser-plugin` | `0ab1aa8e2e70a9099d7354cc` feat: wallet sign-in with a trigger link (VTI 7a, auth/oob) | potentially-breaking | [source](https://github.com/OpenVTC/vta-browser-plugin/pull/303) |
 | **elevated** | `OpenVTC/vta-browser-plugin` | `14345600ab746827b9d8b3ff` fix(links): align the trigger-link parser with VTI-LNK spec d37a675 | potentially-breaking | [source](https://github.com/OpenVTC/vta-browser-plugin/pull/316) |
 | **elevated** | `OpenVTC/vta-browser-plugin` | `3b62b0cd590b9b45b3da0de6` chore(deps): Bump @openvtc/trust-tasks from 0.23.0 to 0.23.1 | potentially-breaking | [source](https://github.com/OpenVTC/vta-browser-plugin/pull/300) |
@@ -35,7 +35,7 @@ permalink: /dashboard/
 | Assertion | State | Statement | Evidence |
 |---|---|---|---|
 | `DTG-A-4A8A31EADE68BAF5` | implementation-ahead | Credentials and evidence implementation movement is ahead of normative specification activity in this window. | [source](https://github.com/OpenVTC/openvtc/pull/477) |
-| `DTG-A-F5F17531531631D7` | implementation-ahead | Governed action implementation movement is ahead of normative specification activity in this window. | [source](https://github.com/OpenVTC/openvtc/pull/469) |
+| `DTG-A-A2F9513297221EF6` | implementation-ahead | Governed action implementation movement is ahead of normative specification activity in this window. | [source](https://github.com/OpenVTC/openvtc/pull/477) |
 
 ## Watch
 
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 415 · **Material:** 114 · **Breaking:** 19 · **Tagged releases:** 172 · **Cross-repository:** 53  
-**Duplicate representations consolidated:** 160
+**Change units:** 367 · **Material:** 109 · **Breaking:** 18 · **Tagged releases:** 142 · **Cross-repository:** 49  
+**Duplicate representations consolidated:** 145
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -64,20 +64,20 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 | Capability | Pulse | Change units | Material |
 |---|---|---:|---:|
-| Human trust and safety | **Advancing strongly** | 26 | 11 |
+| Human trust and safety | **Advancing strongly** | 27 | 11 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Active** | 3 | 1 |
-| Governed action | **Advancing strongly** | 64 | 16 |
-| Implementation and interoperability | **Advancing strongly** | 227 | 56 |
+| Governed action | **Advancing strongly** | 81 | 18 |
+| Implementation and interoperability | **Advancing strongly** | 168 | 52 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 251
-- **Protocol and interoperability:** 157
-- **Credentials and proof:** 124
-- **Transport and routing:** 93
-- **Authority and delegation:** 75
+- **Delivery and maintenance:** 232
+- **Protocol and interoperability:** 153
+- **Credentials and proof:** 121
+- **Transport and routing:** 82
+- **Authority and delegation:** 71
 
 ### Portfolio intelligence
 
