@@ -11,7 +11,8 @@
     "title": "chore(deps): bump the minor-and-patch group with 9 updates",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2070"
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2070",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/a6af3fba0f9bafe8dd5c0bcc4d25d2af556da12f"
     ],
     "related_repositories": [
       "OpenVTC/dtg-credentials",

@@ -5,9 +5,9 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-10-14T05:00:38.967333Z  
-**Evidence through:** 2026-10-13T17:55:15Z  
-**Source revision:** `5a0f42d9470458714483dd688cf077f3d0c29302` · **Collection run:** `38514217382`  
+**Generated:** 2026-10-14T17:18:08.425303Z  
+**Evidence through:** 2026-10-14T17:16:27Z  
+**Source revision:** `370b8b4672a421552d383ec6c55f0d26a573fd16` · **Collection run:** `38605251111`  
 
 ## Review now
 
@@ -41,13 +41,13 @@ permalink: /dashboard/
 
 **7 deterministic watch assertion(s)** · **17 other finding(s)**
 
-- `DTG-A-DA44712FB6AF9D13` — Governed action specification and implementation are moving together in this window.
-- `DTG-A-81AA26D2DD0DFBD6` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
-- `DTG-A-7787FAF97009248E` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-E60672648A0B0295` — Material movement is present on both sides of the declared exercised-by relationship.
-- `DTG-A-A6C44A6781A11DF5` — Material movement is present on both sides of the declared pressure-tests relationship.
-- `DTG-A-A2F839CB4427CB3E` — Material movement is present on both sides of the declared pressure-tests relationship.
-- `DTG-A-21DBC23617C63747` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
+- `DTG-A-A738D1105962A87F` — Governed action specification and implementation are moving together in this window.
+- `DTG-A-4DA12662F13C4990` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
+- `DTG-A-08C0AED865030DF7` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-94CFC235ECB4E726` — Material movement is present on both sides of the declared exercised-by relationship.
+- `DTG-A-4A72460AB84979D0` — Material movement is present on both sides of the declared pressure-tests relationship.
+- `DTG-A-335366483D9A5AAF` — Material movement is present on both sides of the declared pressure-tests relationship.
+- `DTG-A-230C965318FEC508` — Credentials and evidence has material activity while related capability Relationships and naming is quiet in this observation window.
 
 ## Recently disposed
 
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 396 · **Material:** 112 · **Breaking:** 21 · **Tagged releases:** 164 · **Cross-repository:** 54  
-**Duplicate representations consolidated:** 146
+**Change units:** 456 · **Material:** 120 · **Breaking:** 24 · **Tagged releases:** 177 · **Cross-repository:** 54  
+**Duplicate representations consolidated:** 190
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -64,20 +64,20 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 | Capability | Pulse | Change units | Material |
 |---|---|---:|---:|
-| Human trust and safety | **Advancing strongly** | 18 | 10 |
+| Human trust and safety | **Advancing** | 27 | 7 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
-| Credentials and evidence | **Active** | 3 | 1 |
-| Governed action | **Advancing strongly** | 82 | 19 |
-| Implementation and interoperability | **Advancing strongly** | 202 | 53 |
+| Credentials and evidence | **Active** | 4 | 2 |
+| Governed action | **Advancing strongly** | 106 | 24 |
+| Implementation and interoperability | **Advancing strongly** | 225 | 57 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 240
-- **Protocol and interoperability:** 162
-- **Credentials and proof:** 131
-- **Transport and routing:** 88
-- **Authority and delegation:** 81
+- **Delivery and maintenance:** 270
+- **Protocol and interoperability:** 172
+- **Credentials and proof:** 144
+- **Transport and routing:** 92
+- **Authority and delegation:** 89
 
 ### Portfolio intelligence
 
