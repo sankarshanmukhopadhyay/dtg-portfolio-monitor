@@ -1,5 +1,55 @@
 [
   {
+    "finding_id": "2a5769f69aaf67636efe",
+    "fingerprint": "2a5769f69aaf67636efe156b",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/openvtc",
+    "title": "fix(vetting)!: say when a vetter credential is refused, not only in the debug log",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/openvtc/pull/493",
+      "https://github.com/OpenVTC/openvtc/commit/a1424a35b8fc2065a48d394f5e79fa381d718e68"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "1a1152510cfda3e78869",
+    "fingerprint": "1a1152510cfda3e78869be54",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vta): rooms/owner/group/renew renews a sealed room; pnm rooms renew refuses a sealed room",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2112",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/b4c0b1d28c3abc8167c40cb694821d51738fe03e"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
     "finding_id": "1d5c7aef616605f3a972",
     "fingerprint": "1d5c7aef616605f3a972dc2e",
     "kind": "material_cross_reference",
@@ -72,6 +122,30 @@
     ],
     "related_repositories": [
       "OpenVTC/vta-browser-plugin"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "93dc1d4c3ed05d832936",
+    "fingerprint": "93dc1d4c3ed05d8329360c7a",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "elevated",
+    "assurance_impact": "potentially-breaking",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(vta)!: vta/witness/{open,present,accept} — the VTA is its principal's witnessed party, the client carries the documents (#1068)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2123"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
     ],
     "state": "open",
     "review_status": "unreviewed",
@@ -559,6 +633,31 @@
     ],
     "related_repositories": [
       "trustoverip/dtgwg-vti-spec"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "046828519fddea7541de",
+    "fingerprint": "046828519fddea7541de60fb",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(rooms)!: act as the member's persona — rooms/keys/act, seal 0.2, and read/browse/backfill as the principal",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2107",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/ca7c8faa08db5d3ac9f6ea8d84f3f17559c8963e"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
     ],
     "state": "open",
     "review_status": "unreviewed",
