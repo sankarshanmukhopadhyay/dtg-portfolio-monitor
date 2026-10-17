@@ -5,13 +5,13 @@ permalink: /dashboard/
 ---
 # Portfolio dashboard
 
-**Generated:** 2026-10-16T16:45:02.271943Z  
-**Evidence through:** 2026-10-16T16:40:47Z  
-**Source revision:** `60f9f4f88b9ae38c31ff7514686b32458ad080b1` · **Collection run:** `38934157758`  
+**Generated:** 2026-10-17T04:36:15.848455Z  
+**Evidence through:** 2026-10-17T04:33:59Z  
+**Source revision:** `bfce3e7f912dbb6afe5906ab4caec3e01f889145` · **Collection run:** `39003097544`  
 
 ## Review now
 
-**38 decision finding(s)** · **1 review-required assertion(s)**
+**40 decision finding(s)** · **1 review-required assertion(s)**
 
 ### Decision findings
 
@@ -24,23 +24,23 @@ permalink: /dashboard/
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `1a1152510cfda3e78869be54` feat(vta): rooms/owner/group/renew renews a sealed room; pnm rooms renew refuses a sealed room | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2112) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `1d5c7aef616605f3a972dc2e` vta-sdk: keep a trust-task rejection's code and details instead of flattening to Protocol(String) | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/issues/1952) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `3b87559a2585b735cd19f588` vta-cli-common-v0.42.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-cli-common-v0.42.0) |
+| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `4117307f07550112138d39fd` feat(rooms): a member's own private name, description, notes and tags for each room they hold | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2167) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `58f3e21a7dd7227a41ab4200` chore(deps): bump the minor-and-patch group with 9 updates | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2070) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `5ef1e22b1e5bbb81ed1d6fd2` vti-rooms-v0.16.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vti-rooms-v0.16.0) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `90a68168d75c97c9975ecb8d` feat(vtc-member-portal): data rooms through the member's wallet (P8) | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2133) |
 | **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `93176b4d2a918609a33b13f7` vta-sdk-v0.65.0 | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/releases/tag/vta-sdk-v0.65.0) |
-| **elevated** | `OpenVTC/verifiable-trust-infrastructure` | `93dc1d4c3ed05d8329360c7a` feat(vta)!: vta/witness/{open,present,accept} — the VTA is its principal's witnessed party, the client carries the documents (#1068) | potentially-breaking | [source](https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2123) |
 
 ### Review-required assertions
 
 | Assertion | State | Statement | Evidence |
 |---|---|---|---|
-| `DTG-A-45774A2D2A43FCB5` | implementation-ahead | Governed action implementation movement is ahead of normative specification activity in this window. | [source](https://github.com/OpenVTC/openvtc/pull/484) |
+| `DTG-A-95025E570047ACA9` | implementation-ahead | Governed action implementation movement is ahead of normative specification activity in this window. | [source](https://github.com/OpenVTC/openvtc/pull/484) |
 
 ## Watch
 
 **8 deterministic watch assertion(s)** · **20 other finding(s)**
 
-- `DTG-A-5DAD747906411F38` — Credentials and evidence specification and implementation are moving together in this window.
+- `DTG-A-53B5B2D98A2A939C` — Credentials and evidence specification and implementation are moving together in this window.
 - `DTG-A-C6979D573B9F79AA` — Governed action specification and implementation are moving together in this window.
 - `DTG-A-C9627328B585B7F4` — Material movement is present on both sides of the declared supplies-evidence-to relationship.
 - `DTG-A-AA0AF2896D95E4DD` — Material movement is present on both sides of the declared exercised-by relationship.
@@ -55,8 +55,8 @@ _No explicit finding dispositions are represented in the current snapshot._
 
 ## Portfolio movement
 
-**Change units:** 701 · **Material:** 182 · **Breaking:** 44 · **Tagged releases:** 290 · **Cross-repository:** 96  
-**Duplicate representations consolidated:** 296
+**Change units:** 772 · **Material:** 201 · **Breaking:** 47 · **Tagged releases:** 323 · **Cross-repository:** 104  
+**Duplicate representations consolidated:** 322
 
 [Read the DTG Domain Brief]({{ '/domain-brief/' | relative_url }}){: .btn .btn-primary }
 
@@ -67,17 +67,17 @@ _No explicit finding dispositions are represented in the current snapshot._
 | Human trust and safety | **Advancing** | 30 | 6 |
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Advancing** | 6 | 4 |
-| Governed action | **Advancing strongly** | 221 | 49 |
-| Implementation and interoperability | **Advancing strongly** | 335 | 94 |
+| Governed action | **Advancing strongly** | 234 | 54 |
+| Implementation and interoperability | **Advancing strongly** | 375 | 105 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 ### Leading themes
 
-- **Delivery and maintenance:** 410
-- **Credentials and proof:** 263
-- **Protocol and interoperability:** 253
-- **Authority and delegation:** 161
-- **Transport and routing:** 150
+- **Delivery and maintenance:** 453
+- **Credentials and proof:** 284
+- **Protocol and interoperability:** 272
+- **Authority and delegation:** 179
+- **Transport and routing:** 159
 
 ### Portfolio intelligence
 
