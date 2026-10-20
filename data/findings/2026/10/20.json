@@ -758,13 +758,10 @@
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2162",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2137",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2064",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2061",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2054",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/bafc88492c60739eaecd06152b207977527ddef0",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/ca13ae0c9c902332e6becaf8974de825d3c71c16",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/71af6de7be678081f2556234e32ed8ec8d4a62ad",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/648f27e4705cfb6cd8b97845c9768d7322b8ccc3",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/76f8891eeaa27da3c778ff3f505afa2c4016189f"
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/648f27e4705cfb6cd8b97845c9768d7322b8ccc3"
     ],
     "related_repositories": [
       "OpenVTC/vta-browser-plugin",
@@ -1511,6 +1508,31 @@
     "evidence_urls": [
       "https://github.com/OpenVTC/vta-browser-plugin/pull/361",
       "https://github.com/OpenVTC/vta-browser-plugin/commit/0c5fb5ee33e01478b02927de575875c9b7978af7"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "c316ca5660617c4416c3",
+    "fingerprint": "c316ca5660617c4416c3beb9",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/vta-browser-plugin",
+    "title": "fix(sign-in): match the VTA's PIN and phone approval as it landed",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/vta-browser-plugin/pull/368",
+      "https://github.com/OpenVTC/vta-browser-plugin/commit/d9089b1d153ba5d1f1fbb36043bf305aca7330b9"
     ],
     "related_repositories": [
       "OpenVTC/verifiable-trust-infrastructure"
