@@ -393,39 +393,6 @@
     "successor_finding": null
   },
   {
-    "finding_id": "58f3e21a7dd7227a41ab",
-    "fingerprint": "58f3e21a7dd7227a41ab4200",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "elevated",
-    "assurance_impact": "potentially-breaking",
-    "repository": "OpenVTC/verifiable-trust-infrastructure",
-    "title": "chore(deps): bump the minor-and-patch group with 9 updates",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2070",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/a6af3fba0f9bafe8dd5c0bcc4d25d2af556da12f"
-    ],
-    "related_repositories": [
-      "OpenVTC/dtg-credentials",
-      "OpenVTC/openvtc",
-      "OpenVTC/predicate-credential-system",
-      "OpenVTC/rp-sdk-js",
-      "OpenVTC/verifiable-git-infrastructure",
-      "OpenVTC/vta-agent-memory",
-      "OpenVTC/vta-browser-plugin",
-      "OpenVTC/vti-push-gateway",
-      "trustoverip/dtgwg-trust-tasks-tf"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
     "finding_id": "5ef1e22b1e5bbb81ed1d",
     "fingerprint": "5ef1e22b1e5bbb81ed1d6fd2",
     "kind": "material_cross_reference",
@@ -1294,6 +1261,31 @@
     "successor_finding": null
   },
   {
+    "finding_id": "114fe3b992be27239313",
+    "fingerprint": "114fe3b992be272393134768",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/verifiable-trust-infrastructure",
+    "title": "feat(voting): community voting — polls, surveys and elections with blind tickets, a separate ballot box and trustee-encrypted levels (VTI-VOT-001 – 100)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2239",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/dee563205d2c00b2f3c0a00e1698cc980ef5c0ce"
+    ],
+    "related_repositories": [
+      "trustoverip/dtgwg-trust-tasks-tf"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
     "finding_id": "43d0849bae6c2929d028",
     "fingerprint": "43d0849bae6c2929d0284d89",
     "kind": "material_cross_reference",
@@ -1483,6 +1475,31 @@
     "evidence_urls": [
       "https://github.com/OpenVTC/vta-browser-plugin/pull/360",
       "https://github.com/OpenVTC/vta-browser-plugin/commit/603f9882e3ef5bd63983380fbe94da3112264a08"
+    ],
+    "related_repositories": [
+      "OpenVTC/verifiable-trust-infrastructure"
+    ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "5cdc5813a5af334bb1bb",
+    "fingerprint": "5cdc5813a5af334bb1bb43ed",
+    "kind": "material_cross_reference",
+    "severity": "high",
+    "materiality": "high",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "OpenVTC/vta-browser-plugin",
+    "title": "feat(git): link and unlink a member's forge account from the community's portal (window.vtaWallet.git)",
+    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
+    "evidence_urls": [
+      "https://github.com/OpenVTC/vta-browser-plugin/pull/369",
+      "https://github.com/OpenVTC/vta-browser-plugin/commit/05534ea9557239a6abcddfa94dbf12be3286300a"
     ],
     "related_repositories": [
       "OpenVTC/verifiable-trust-infrastructure"
@@ -1712,6 +1729,28 @@
     "related_repositories": [
       "OpenVTC/verifiable-trust-infrastructure"
     ],
+    "state": "open",
+    "review_status": "unreviewed",
+    "authority": null,
+    "disposition": null,
+    "related_findings": [],
+    "successor_finding": null
+  },
+  {
+    "finding_id": "34c52d30e50196266716",
+    "fingerprint": "34c52d30e5019626671616ce",
+    "kind": "stale_repository",
+    "severity": "low",
+    "materiality": "low",
+    "urgency": "routine",
+    "assurance_impact": "none",
+    "repository": "trustoverip/dtgwg-ux-tf",
+    "title": "No repository push for 90 days",
+    "summary": "The latest recorded push is 90 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
+    "evidence_urls": [
+      "https://github.com/trustoverip/dtgwg-ux-tf"
+    ],
+    "related_repositories": [],
     "state": "open",
     "review_status": "unreviewed",
     "authority": null,
