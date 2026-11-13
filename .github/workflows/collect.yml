@@ -78,8 +78,8 @@ jobs:
           delete-branch: true
           title: "chore(monitor): publish DTG portfolio observations"
           commit-message: "chore(monitor): publish DTG portfolio observations"
-          committer: "dtg-portfolio-monitor[bot] <dtg-portfolio-monitor[bot]@users.noreply.github.com>"
-          author: "dtg-portfolio-monitor[bot] <dtg-portfolio-monitor[bot]@users.noreply.github.com>"
+          committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
           signoff: true
           add-paths: |
             data/**
