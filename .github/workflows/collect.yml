@@ -20,8 +20,7 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  pull-requests: write
 
 concurrency:
   group: dtg-portfolio-collection
@@ -30,8 +29,8 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    outputs:
-      deployment_ref: ${{ steps.persist.outputs.deployment_ref }}
+    env:
+      AUTO_TOKEN_PRESENT: ${{ secrets.MONITOR_AUTOMATION_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -60,47 +59,57 @@ jobs:
         run: python scripts/prune_evidence.py
       - name: Run tests
         run: python -m unittest discover -s tests
-      - name: Persist generated outputs
-        id: persist
-        shell: bash
+      # Generated findings are derived evidence. They enter the protected default
+      # branch only through the same PR and DCO gates as other contributions.
+      - name: Propose generated evidence and site updates
+        id: publication
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.MONITOR_AUTOMATION_TOKEN || github.token }}
+          branch: automation/monitor-observations
+          delete-branch: true
+          title: "chore(monitor): publish DTG portfolio observations"
+          commit-message: "chore(monitor): publish DTG portfolio observations"
+          committer: "dtg-portfolio-monitor[bot] <dtg-portfolio-monitor[bot]@users.noreply.github.com>"
+          author: "dtg-portfolio-monitor[bot] <dtg-portfolio-monitor[bot]@users.noreply.github.com>"
+          signoff: true
+          add-paths: |
+            data/**
+            reports/**
+            docs/domain-brief.md
+            docs/portfolio-status.md
+            docs/dashboard.md
+            docs/reports.md
+            docs/repositories.md
+          body: |
+            Generated DTG portfolio observations and report/site views.
+
+            Source: scheduled or manually dispatched collection workflow.
+            All source observations remain derived, with upstream sources authoritative.
+            This PR must satisfy DCO and repository validation before merge.
+            Once merged, the Pages push workflow deploys the reviewed site revision.
+
+      - name: Publish collection status
+        env:
+          PR_NUMBER: ${{ steps.publication.outputs.pull-request-number }}
+          PR_URL: ${{ steps.publication.outputs.pull-request-url }}
         run: |
-          if git diff --quiet -- data reports docs/domain-brief.md docs/portfolio-status.md docs/dashboard.md docs/reports.md docs/repositories.md; then
-            echo "No generated changes to commit."
+          if [ -n "$PR_NUMBER" ]; then
+            echo "Generated evidence proposed in $PR_URL" >> "$GITHUB_STEP_SUMMARY"
+            echo "Publication is pending PR checks and merge; RAHP must not consume unmerged evidence." >> "$GITHUB_STEP_SUMMARY"
           else
-            git config user.name "dtg-portfolio-monitor[bot]"
-            git config user.email "dtg-portfolio-monitor[bot]@users.noreply.github.com"
-            git add data reports docs/domain-brief.md docs/portfolio-status.md docs/dashboard.md docs/reports.md docs/repositories.md
-            git commit -m "chore(monitor): update DTG portfolio observations"
-
-            pushed=false
-            for attempt in 1 2 3; do
-              echo "Persistence attempt $attempt/3"
-              git fetch origin main
-              if ! git rebase origin/main; then
-                git rebase --abort || true
-                echo "::error::Generated monitor evidence conflicts with newer main; refusing to overwrite either evidence set."
-                exit 1
-              fi
-              if git push origin HEAD:main; then
-                pushed=true
-                break
-              fi
-              sleep $((attempt * 2))
-            done
-
-            if [ "$pushed" != "true" ]; then
-              echo "::error::Could not persist generated monitor evidence after 3 fast-forward-safe retries."
-              exit 1
-            fi
+            echo "No new generated evidence to publish." >> "$GITHUB_STEP_SUMMARY"
           fi
 
-          DEPLOYMENT_REF="$(git rev-parse HEAD)"
-          echo "deployment_ref=$DEPLOYMENT_REF" >> "$GITHUB_OUTPUT"
-          echo "Documentation deployment pinned to $DEPLOYMENT_REF"
-
-  deploy-documentation:
-    name: Build and deploy current documentation
-    needs: collect
-    uses: ./.github/workflows/pages.yml
-    with:
-      ref: ${{ needs.collect.outputs.deployment_ref }}
+      # A GitHub App or PAT is necessary to cause normal pull_request checks to
+      # run on automation-created PRs. Without it, keep the PR for human review.
+      - name: Merge validated generated evidence when automation is authorized
+        if: steps.publication.outputs.pull-request-number != '' && env.AUTO_TOKEN_PRESENT == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.MONITOR_AUTOMATION_TOKEN }}
+          PR_NUMBER: ${{ steps.publication.outputs.pull-request-number }}
+        run: |
+          set -euo pipefail
+          # The branch ruleset is the final authority; never bypass DCO or review.
+          timeout 600 gh pr checks "$PR_NUMBER" --watch
+          gh pr merge "$PR_NUMBER" --squash --delete-branch
