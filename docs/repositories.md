@@ -7,7 +7,7 @@ permalink: /repositories/
 
 The effective monitoring scope combines the curated registry with repositories admitted by the deterministic discovery policy. Curated metadata always overrides discovered defaults.
 
-**Discovery evidence generated:** 2026-10-21T17:17:24.907527Z  
+**Discovery evidence generated:** 2026-11-13T01:57:13.206842Z  
 **Policy:** `config/repository-discovery.yaml`
 
 | Repository | Workstream | Role | Lifecycle | Weight | Admission |
@@ -21,6 +21,7 @@ The effective monitoring scope combines the curated registry with repositories a
 | [`OpenVTC/tsp-conformance`](https://github.com/OpenVTC/tsp-conformance) | tsp-conformance | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/verifiable-git-infrastructure`](https://github.com/OpenVTC/verifiable-git-infrastructure) | verifiable-git-infrastructure | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/verifiable-trust-infrastructure`](https://github.com/OpenVTC/verifiable-trust-infrastructure) | verifiable-trust-infrastructure | reference-implementation | active | critical | curated |
+| [`OpenVTC/verifiable-trust-network`](https://github.com/OpenVTC/verifiable-trust-network) | verifiable-trust-network | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/vta-agent-memory`](https://github.com/OpenVTC/vta-agent-memory) | vta-agent-memory | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/vta-browser-plugin`](https://github.com/OpenVTC/vta-browser-plugin) | vta-browser-plugin | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/vta-mobile-agent-ios`](https://github.com/OpenVTC/vta-mobile-agent-ios) | vta-mobile-agent-ios | discovered-openvtc-repository | active | high | dynamic |
@@ -54,7 +55,7 @@ Forks are excluded by default to avoid duplicate observation of upstream or down
 
 ## Discovery decisions
 
-Current run: **33 admitted candidate(s)** and **0 rejected candidate(s)**. The full machine-readable decision record is persisted at `data/repository-discovery.json`.
+Current run: **34 admitted candidate(s)** and **0 rejected candidate(s)**. The full machine-readable decision record is persisted at `data/repository-discovery.json`.
 
 ## Cross-specification assurance seams
 

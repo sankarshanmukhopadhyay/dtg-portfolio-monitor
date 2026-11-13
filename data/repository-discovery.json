@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-21T17:17:24.907527Z",
+  "generated_at": "2026-11-13T01:57:13.206842Z",
   "policy": "config/repository-discovery.yaml",
   "admitted": [
     {
@@ -247,6 +247,36 @@
       "repo": "OpenVTC/verifiable-trust-infrastructure",
       "organisation": "openvtc",
       "workstream": "verifiable-trust-infrastructure",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/verifiable-trust-network",
+      "organisation": "openvtc",
+      "workstream": "verifiable-trust-network",
       "role": "discovered-openvtc-repository",
       "lifecycle": "active",
       "reporting_weight": "high",
@@ -1069,6 +1099,15 @@
     },
     {
       "repository": "OpenVTC/verifiable-trust-infrastructure",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/verifiable-trust-network",
       "owner": "OpenVTC",
       "admitted": true,
       "reason": "policy-match",
