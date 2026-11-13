@@ -87,6 +87,8 @@ class DocumentationTests(unittest.TestCase):
         pages = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
         for expected in (
             '- "docs/**"',
+            '- "data/**"',
+            '- "reports/**"',
             '- "_config.yml"',
             '- "Gemfile"',
             '- "scripts/validate_site.py"',
@@ -94,19 +96,24 @@ class DocumentationTests(unittest.TestCase):
         ):
             self.assertIn(expected, pages)
 
-    def test_collection_explicitly_deploys_persisted_revision(self):
+    def test_collection_publishes_through_protected_pr(self):
         collect = (ROOT / ".github/workflows/collect.yml").read_text(encoding="utf-8")
         pages = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
 
-        self.assertIn("deployment_ref: ${{ steps.persist.outputs.deployment_ref }}", collect)
-        self.assertIn("uses: ./.github/workflows/pages.yml", collect)
-        self.assertIn("ref: ${{ needs.collect.outputs.deployment_ref }}", collect)
-        self.assertIn("docs/domain-brief.md", collect)
-        self.assertIn("data", collect)
-        self.assertNotIn("persist_changes:", collect)
+        self.assertIn("peter-evans/create-pull-request@v7", collect)
+        self.assertIn("signoff: true", collect)
+        self.assertIn("pull-requests: write", collect)
+        self.assertIn("automation/monitor-observations", collect)
+        self.assertIn("gh pr checks", collect)
+        self.assertIn("gh pr merge", collect)
+        self.assertNotIn("git push origin HEAD:main", collect)
+        self.assertNotIn("deployment_ref: ${{ steps.persist.outputs.deployment_ref }}", collect)
+        self.assertIn("on:", pages)
+        self.assertIn("branches: [\"main\"]", pages)
         self.assertIn("workflow_call:", pages)
         self.assertIn("Exact commit to build and deploy", pages)
         self.assertIn("ref: ${{ inputs.ref != '' && inputs.ref || github.sha }}", pages)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -26,7 +26,7 @@ This repository is independently maintained and is not an official Trust over IP
 - machine-readable event, finding, and awareness snapshots with bounded retention;
 - daily and weekly report products;
 - stable GitHub Pages routes with build-time validation;
-- scheduled GitHub Actions collection and exact-revision Pages deployment;
+- scheduled GitHub Actions collection, protected-branch PR publication and post-merge Pages deployment;
 - release automation that validates synchronized version declarations, tests, documentation build, and routes before tagging and publishing.
 
 ## Start here
@@ -39,7 +39,15 @@ For an existing deployment:
 4. Inspect `data/awareness/` for the machine-readable assertion/provenance snapshot.
 5. Record any authorized finding disposition in `config/finding-dispositions.yaml` through the normal issue/PR review path.
 
-For a new deployment, enable **Settings → Pages → Source: GitHub Actions**, run **Collect DTG portfolio activity** manually once, and confirm that the resulting evidence commit is the exact revision deployed by the downstream Pages workflow.
+For a new deployment, enable **Settings → Pages → Source: GitHub Actions** and configure the publication credential described below. Run **Collect DTG portfolio activity** manually once, verify its generated PR passes checks, and confirm the merged evidence revision is deployed by the Pages workflow.
+
+## Scheduled publication and assurance handoff
+
+The collector does **not** directly push generated evidence to protected `main`. It proposes changes to `automation/monitor-observations` in an updating PR, with a signed-off commit. The `protect-main` ruleset remains authoritative: the required DCO and review checks must succeed before merge. The existing Pages workflow deploys the reviewed `main` revision on changes to generated documentation, reports or evidence; Pages publication never implies that the underlying upstream DTG sources have accepted the monitor's conclusions.
+
+For **unattended** PR validation and merge, provision `MONITOR_AUTOMATION_TOKEN` as a repository Actions secret. Use a narrowly scoped GitHub App installation token or fine-grained PAT authorized to write repository contents and PRs. The account must be permitted to merge PRs once branch protection checks pass. Unlike a PR opened with the default workflow `GITHUB_TOKEN`, a PR opened with this credential triggers normal `pull_request` checks. The workflow waits for those checks and merges only after successful validation. Without the secret, a proposed PR is intentionally left for an authorized human to review and merge; automation must not forge or bypass the required DCO check. In Settings → Actions → General, allow GitHub Actions to create PRs if fallback `GITHUB_TOKEN` operation is used.
+
+RAHP continues to fetch only recent **merged** `main` snapshots with a bounded freshness window. Pending PR contents do not count as published observations. A failed publication, DCO check, or Pages deployment must be investigated rather than treated as a valid `no-action` materiality determination. To restore a missed assessment period, first publish current evidence, then reconcile the missing observation interval against pinned upstream changes rather than assuming a current snapshot covers historical epochs.
 
 ## Local use
 

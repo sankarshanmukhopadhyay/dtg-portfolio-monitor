@@ -5,6 +5,8 @@ on:
     branches: ["main"]
     paths:
       - "docs/**"
+      - "data/**"
+      - "reports/**"
       - "_config.yml"
       - "Gemfile"
       - "scripts/validate_site.py"
