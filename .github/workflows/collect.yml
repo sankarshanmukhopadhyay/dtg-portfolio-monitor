@@ -46,10 +46,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/discover_repositories.py
+      - name: Resolve bounded unpublished observation window
+        id: window
+        env:
+          REQUESTED_LOOKBACK: ${{ inputs.lookback_days || '7' }}
+        run: >-
+          python scripts/collection_window.py
+          --requested-days "$REQUESTED_LOOKBACK"
+          --github-output "$GITHUB_OUTPUT"
       - name: Collect activity
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LOOKBACK: ${{ inputs.lookback_days || '7' }}
+          LOOKBACK: ${{ steps.window.outputs.lookback_days }}
         run: python -m dtg_monitor collect --lookback-days "$LOOKBACK"
       - name: Generate reports
         run: |
