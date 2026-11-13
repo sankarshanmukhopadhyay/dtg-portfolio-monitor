@@ -213,6 +213,31 @@ repositories:
   - '**/*spec*.md'
   - .github/workflows/**
   notes: ''
+- repo: OpenVTC/verifiable-trust-network
+  organisation: openvtc
+  workstream: verifiable-trust-network
+  role: discovered-openvtc-repository
+  lifecycle: active
+  reporting_weight: high
+  default_branch: main
+  monitor:
+    commits: true
+    pull_requests: true
+    issues: true
+    releases: true
+    discussions: false
+  material_paths:
+  - README.md
+  - docs/**
+  - spec/**
+  - specs/**
+  - schemas/**
+  - '**/*spec*.md'
+  - .github/workflows/**
+  notes: Dynamically admitted by config/repository-discovery.yaml.
+  discovery:
+    source_owner: OpenVTC
+    admission: automatic
 - repo: OpenVTC/vta-agent-memory
   organisation: openvtc
   workstream: vta-agent-memory
