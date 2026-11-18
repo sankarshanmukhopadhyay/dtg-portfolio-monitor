@@ -71,7 +71,7 @@ jobs:
       # branch only through the same PR and DCO gates as other contributions.
       - name: Propose generated evidence and site updates
         id: publication
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.MONITOR_AUTOMATION_TOKEN || github.token }}
           branch: automation/monitor-observations
