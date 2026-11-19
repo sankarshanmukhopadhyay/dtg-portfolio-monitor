@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-16T06:40:11.126888Z",
+  "generated_at": "2026-11-18T20:37:49.271092Z",
   "policy": "config/repository-discovery.yaml",
   "admitted": [
     {
@@ -67,6 +67,36 @@
       "repo": "OpenVTC/openvtc",
       "organisation": "openvtc",
       "workstream": "openvtc",
+      "role": "discovered-openvtc-repository",
+      "lifecycle": "active",
+      "reporting_weight": "high",
+      "default_branch": "main",
+      "monitor": {
+        "commits": true,
+        "pull_requests": true,
+        "issues": true,
+        "releases": true,
+        "discussions": false
+      },
+      "material_paths": [
+        "README.md",
+        "docs/**",
+        "spec/**",
+        "specs/**",
+        "schemas/**",
+        "**/*spec*.md",
+        ".github/workflows/**"
+      ],
+      "notes": "Dynamically admitted by config/repository-discovery.yaml.",
+      "discovery": {
+        "source_owner": "OpenVTC",
+        "admission": "automatic"
+      }
+    },
+    {
+      "repo": "OpenVTC/openvti-pcs-mono-repo",
+      "organisation": "openvtc",
+      "workstream": "openvti-pcs-mono-repo",
       "role": "discovered-openvtc-repository",
       "lifecycle": "active",
       "reporting_weight": "high",
@@ -1045,6 +1075,15 @@
     },
     {
       "repository": "OpenVTC/openvtc",
+      "owner": "OpenVTC",
+      "admitted": true,
+      "reason": "policy-match",
+      "fork": false,
+      "archived": false,
+      "private": false
+    },
+    {
+      "repository": "OpenVTC/openvti-pcs-mono-repo",
       "owner": "OpenVTC",
       "admitted": true,
       "reason": "policy-match",

@@ -7,7 +7,7 @@ permalink: /repositories/
 
 The effective monitoring scope combines the curated registry with repositories admitted by the deterministic discovery policy. Curated metadata always overrides discovered defaults.
 
-**Discovery evidence generated:** 2026-11-16T06:40:11.126888Z  
+**Discovery evidence generated:** 2026-11-18T20:37:49.271092Z  
 **Policy:** `config/repository-discovery.yaml`
 
 | Repository | Workstream | Role | Lifecycle | Weight | Admission |
@@ -15,6 +15,7 @@ The effective monitoring scope combines the curated registry with repositories a
 | [`OpenVTC/dtg-credentials`](https://github.com/OpenVTC/dtg-credentials) | credentials | implementation-and-examples | active | high | curated |
 | [`OpenVTC/governance`](https://github.com/OpenVTC/governance) | governance | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/openvtc`](https://github.com/OpenVTC/openvtc) | community-platform | implementation | active | high | curated |
+| [`OpenVTC/openvti-pcs-mono-repo`](https://github.com/OpenVTC/openvti-pcs-mono-repo) | openvti-pcs-mono-repo | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/predicate-credential-system`](https://github.com/OpenVTC/predicate-credential-system) | predicate-credential-system | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/probablistic-sampling-for-connection-vcs`](https://github.com/OpenVTC/probablistic-sampling-for-connection-vcs) | probablistic-sampling-for-connection-vcs | discovered-openvtc-repository | active | high | dynamic |
 | [`OpenVTC/rp-sdk-js`](https://github.com/OpenVTC/rp-sdk-js) | rp-sdk-js | discovered-openvtc-repository | active | high | dynamic |
@@ -55,7 +56,7 @@ Forks are excluded by default to avoid duplicate observation of upstream or down
 
 ## Discovery decisions
 
-Current run: **34 admitted candidate(s)** and **0 rejected candidate(s)**. The full machine-readable decision record is persisted at `data/repository-discovery.json`.
+Current run: **35 admitted candidate(s)** and **0 rejected candidate(s)**. The full machine-readable decision record is persisted at `data/repository-discovery.json`.
 
 ## Cross-specification assurance seams
 
