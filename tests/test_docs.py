@@ -100,7 +100,7 @@ class DocumentationTests(unittest.TestCase):
         collect = (ROOT / ".github/workflows/collect.yml").read_text(encoding="utf-8")
         pages = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
 
-        self.assertIn("peter-evans/create-pull-request@v7", collect)
+        self.assertIn("peter-evans/create-pull-request@v8", collect)
         self.assertIn("signoff: true", collect)
         self.assertIn("pull-requests: write", collect)
         self.assertIn("automation/monitor-observations", collect)
