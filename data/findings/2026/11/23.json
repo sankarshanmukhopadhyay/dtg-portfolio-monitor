@@ -679,8 +679,8 @@
     "urgency": "routine",
     "assurance_impact": "none",
     "repository": "trustoverip/dtgwg-rcards-tf",
-    "title": "No repository push for 115 days",
-    "summary": "The latest recorded push is 115 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
+    "title": "No repository push for 116 days",
+    "summary": "The latest recorded push is 116 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-rcards-tf"
     ],
@@ -748,8 +748,8 @@
     "urgency": "routine",
     "assurance_impact": "none",
     "repository": "trustoverip/dtgwg-vds-tf",
-    "title": "No repository push for 115 days",
-    "summary": "The latest recorded push is 115 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
+    "title": "No repository push for 116 days",
+    "summary": "The latest recorded push is 116 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-vds-tf"
     ],
