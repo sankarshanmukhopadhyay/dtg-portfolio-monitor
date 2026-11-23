@@ -39,6 +39,16 @@ class AppPublicationTests(unittest.TestCase):
         self.assertIn('if: steps.publication.outputs.pull-request-number != \'\'', text)
         self.assertIn('gh pr checks "$PR_NUMBER" --watch', text)
         self.assertIn('gh pr merge "$PR_NUMBER" --squash --delete-branch', text)
+        self.assertIn('gh pr checks "$PR_NUMBER" --json name', text)
+        for expected in ("DCO", "validate", "pages-build"):
+            with self.subTest(check=expected):
+                self.assertIn(expected, text)
+        self.assertIn("Native PR checks were not registered", text)
+        self.assertIn("timeout 900 gh pr checks", text)
+        self.assertLess(text.index('gh pr checks "$PR_NUMBER" --json name'),
+                        text.index('gh pr checks "$PR_NUMBER" --watch'))
+        self.assertLess(text.index('gh pr checks "$PR_NUMBER" --watch'),
+                        text.index('gh pr merge "$PR_NUMBER" --squash --delete-branch'))
         self.assertIn("concurrency:\n  group: dtg-portfolio-collection", text)
 
 

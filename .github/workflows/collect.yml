@@ -150,6 +150,25 @@ jobs:
           PR_NUMBER: ${{ steps.publication.outputs.pull-request-number }}
         run: |
           set -euo pipefail
-          # The branch ruleset is the final authority; never bypass DCO or review.
-          timeout 600 gh pr checks "$PR_NUMBER" --watch
+          # Native pull_request checks are created asynchronously after the
+          # App-authored PR. A no-checks response is not a validation failure,
+          # nor evidence that merge is safe: wait for the expected set first.
+          ready=false
+          for attempt in $(seq 1 45); do
+            checks="$(gh pr checks "$PR_NUMBER" --json name --jq '.[].name' 2>/dev/null || true)"
+            if grep -Eq '(^| / )DCO$' <<< "$checks" &&
+               grep -Fxq 'validate' <<< "$checks" &&
+               grep -Fxq 'pages-build' <<< "$checks"; then
+              ready=true
+              break
+            fi
+            sleep 5
+          done
+          if [ "$ready" != true ]; then
+            echo "::error::Native PR checks were not registered; evidence remains unmerged"
+            exit 1
+          fi
+          # Wait for all PR checks, then let branch rules enforce their results.
+          # Never fabricate a status, force merge, or bypass required reviews.
+          timeout 900 gh pr checks "$PR_NUMBER" --watch
           gh pr merge "$PR_NUMBER" --squash --delete-branch
