@@ -372,7 +372,7 @@
       ]
     },
     "implementation": {
-      "change_units": 47,
+      "change_units": 50,
       "evidence_urls": [
         "https://github.com/OpenVTC/openvtc/pull/608",
         "https://github.com/OpenVTC/openvtc/commit/8eb820d9e67a9b71fe34fcc960c79780ab948c7f",
@@ -397,7 +397,7 @@
       ],
       "themes": [
         {
-          "count": 41,
+          "count": 44,
           "id": "delivery-and-maintenance",
           "label": "Delivery and maintenance"
         },
@@ -418,8 +418,8 @@
         },
         {
           "count": 14,
-          "id": "authority-and-delegation",
-          "label": "Authority and delegation"
+          "id": "transport-and-routing",
+          "label": "Transport and routing"
         }
       ]
     },
@@ -434,7 +434,7 @@
       "themes": []
     }
   },
-  "change_units": 214,
+  "change_units": 217,
   "convergences": [
     {
       "evidence_urls": [
@@ -610,7 +610,7 @@
   ],
   "dominant_themes": [
     {
-      "count": 74,
+      "count": 77,
       "id": "delivery-and-maintenance",
       "label": "Delivery and maintenance"
     },
@@ -625,7 +625,7 @@
       "label": "Credentials and proof"
     },
     {
-      "count": 26,
+      "count": 27,
       "id": "transport-and-routing",
       "label": "Transport and routing"
     },
@@ -635,7 +635,7 @@
       "label": "Security and privacy"
     }
   ],
-  "generated_at": "2026-11-23T03:58:20.726701Z",
+  "generated_at": "2026-11-23T07:49:38.963044Z",
   "implementation_alignment": [
     {
       "capability": "credentials-and-evidence",
@@ -719,11 +719,11 @@
   "material_change_units": 54,
   "model_version": 1,
   "observation": {
-    "collection_run_id": "45108828647",
-    "evidence_through": "2026-11-23T03:24:25Z",
+    "collection_run_id": "45133658132",
+    "evidence_through": "2026-11-23T07:34:04Z",
     "publication_state": "workflow-generated",
     "repository": "sankarshanmukhopadhyay/dtg-portfolio-monitor",
-    "source_revision": "c9cc4a29bc3898d9bcbbcc559a5e99e33c5347c4"
+    "source_revision": "554d86b24970dae914d8495ee4a102cd8aaa5757"
   },
   "review_findings": 32,
   "schema_version": 2,

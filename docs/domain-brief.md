@@ -5,10 +5,10 @@ permalink: /domain-brief/
 ---
 # DTG Domain Brief
 
-**Generated:** 2026-11-23T03:58:20.726701Z  
-**Evidence through:** 2026-11-23T03:24:25Z  
-**Source revision:** `c9cc4a29bc3898d9bcbbcc559a5e99e33c5347c4` · **Collection run:** `45108828647` · **Publication state:** `workflow-generated`  
-**Change units:** 214 · **Material:** 54  
+**Generated:** 2026-11-23T07:49:38.963044Z  
+**Evidence through:** 2026-11-23T07:34:04Z  
+**Source revision:** `554d86b24970dae914d8495ee4a102cd8aaa5757` · **Collection run:** `45133658132` · **Publication state:** `workflow-generated`  
+**Change units:** 217 · **Material:** 54  
 
 This is the situational-awareness view of the monitored DTG portfolio. It interprets observed GitHub evidence through the declared [DTG domain model]({{ '/domain-model/' | relative_url }}). It is not an official ToIP architectural statement.
 
@@ -37,7 +37,7 @@ The strongest observed movement is currently concentrated in **Implementation an
 | Relationships and naming | **Quiet this window** | 0 | 0 |
 | Credentials and evidence | **Active** | 6 | 1 |
 | Governed action | **Advancing strongly** | 58 | 8 |
-| Implementation and interoperability | **Advancing strongly** | 47 | 21 |
+| Implementation and interoperability | **Advancing strongly** | 50 | 21 |
 | Portfolio coordination | **Quiet this window** | 0 | 0 |
 
 > **Quiet is not a failure state.** It means no activity was observed in the monitored GitHub streams during this window; the capability may be stable, on a different cadence, or active elsewhere.
