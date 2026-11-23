@@ -635,7 +635,7 @@
       "label": "Security and privacy"
     }
   ],
-  "generated_at": "2026-11-23T02:36:45.801485Z",
+  "generated_at": "2026-11-23T02:42:23.847681Z",
   "implementation_alignment": [
     {
       "capability": "credentials-and-evidence",
@@ -719,11 +719,11 @@
   "material_change_units": 54,
   "model_version": 1,
   "observation": {
-    "collection_run_id": "45101001926",
+    "collection_run_id": "45101559818",
     "evidence_through": "2026-11-22T18:53:21Z",
     "publication_state": "workflow-generated",
     "repository": "sankarshanmukhopadhyay/dtg-portfolio-monitor",
-    "source_revision": "3c17778775ee03d8eab6d6f607c36aa782a47717"
+    "source_revision": "e2075ac6fb17d42baebb611d51852bba5316a5fe"
   },
   "review_findings": 32,
   "schema_version": 2,
