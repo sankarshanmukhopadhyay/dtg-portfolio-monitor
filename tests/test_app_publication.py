@@ -12,7 +12,7 @@ class AppPublicationTests(unittest.TestCase):
         required = (
             "vars.DTG_MONITOR_APP_ID",
             "secrets.DTG_MONITOR_APP_PRIVATE_KEY",
-            "actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510",
+            "actions/create-github-app-token@f418cff399f7aef4c2f0ad47e25ca7a6abbdd6fc",
             "repositories: dtg-portfolio-monitor",
             "permission-contents: write",
             "permission-pull-requests: write",
