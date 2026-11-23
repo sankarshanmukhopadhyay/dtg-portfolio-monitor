@@ -37,6 +37,24 @@ rejection must not be disguised as source collection success. The source
 collection window determines bounded catch-up, not unconditional freshness.
 Review actual generated observation dates after publication.
 
+## Check-registration timing and recovery
+
+The successful 23 November 2026 [collection run #45101001926](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor/actions/runs/45101001926)
+created [App-authored evidence PR #41](https://github.com/sankarshanmukhopadhyay/dtg-portfolio-monitor/pull/41)
+but immediately queried native PR checks before GitHub registered them. The
+merge step failed with `no checks reported`, although the PR subsequently
+passed native DCO, validation and Pages build checks and merged normally
+under protected main as `85b830620e0fcbbfa915da088d420fd0aef76eb2`.
+
+The collector now waits for registration of the DCO, validation and Pages
+checks before watching their terminal results and requesting its normal
+protected-main squash merge. If check registration fails or times out, the
+PR remains unmerged for maintainer disposition; the workflow does not invent
+statuses, bypass reviews, or claim accepted source evidence. A failed
+collection job's terminal status alone must not be used to infer whether an
+App-authored PR exists or eventually passed CI: inspect the linked PR and
+current protected-main revision.
+
 ## Live acceptance
 
 1. Verify a scheduled or deliberately dispatched run obtains a scoped App
