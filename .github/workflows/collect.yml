@@ -29,12 +29,44 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    env:
-      AUTO_TOKEN_PRESENT: ${{ secrets.MONITOR_AUTOMATION_TOKEN != '' }}
     steps:
+      - name: Require repository-scoped portfolio publication App
+        env:
+          APP_ID: ${{ vars.DTG_MONITOR_APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.DTG_MONITOR_APP_PRIVATE_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! [[ "${APP_ID:-}" =~ ^[1-9][0-9]*$ ]] || [ -z "${APP_PRIVATE_KEY:-}" ]; then
+            echo "::error::DTG Monitor publication App ID variable or key secret missing; refuse collection before generating unpublishable source evidence"
+            exit 1
+          fi
+      - name: Authenticate repository-scoped publication App
+        id: publisher-app
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          app-id: ${{ vars.DTG_MONITOR_APP_ID }}
+          private-key: ${{ secrets.DTG_MONITOR_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: dtg-portfolio-monitor
+          permission-contents: write
+          permission-pull-requests: write
+      - name: Resolve authenticated publication bot DCO identity
+        id: bot
+        env:
+          GH_TOKEN: ${{ steps.publisher-app.outputs.token }}
+          APP_SLUG: ${{ steps.publisher-app.outputs.app-slug }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          bot_login="${APP_SLUG}[bot]"
+          bot_id="$(gh api "/users/${bot_login}" --jq '.id')"
+          [[ "$bot_id" =~ ^[1-9][0-9]*$ ]] || { echo "::error::Publication App bot identity invalid"; exit 1; }
+          echo "signature=${bot_login} <${bot_id}+${bot_login}@users.noreply.github.com>" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
@@ -73,13 +105,13 @@ jobs:
         id: publication
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.MONITOR_AUTOMATION_TOKEN || github.token }}
+          token: ${{ steps.publisher-app.outputs.token }}
           branch: automation/monitor-observations
           delete-branch: true
           title: "chore(monitor): publish DTG portfolio observations"
           commit-message: "chore(monitor): publish DTG portfolio observations"
-          committer: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-          author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          committer: ${{ steps.bot.outputs.signature }}
+          author: ${{ steps.bot.outputs.signature }}
           signoff: true
           add-paths: |
             data/**
@@ -109,12 +141,12 @@ jobs:
             echo "No new generated evidence to publish." >> "$GITHUB_STEP_SUMMARY"
           fi
 
-      # A GitHub App or PAT is necessary to cause normal pull_request checks to
-      # run on automation-created PRs. Without it, keep the PR for human review.
-      - name: Merge validated generated evidence when automation is authorized
-        if: steps.publication.outputs.pull-request-number != '' && env.AUTO_TOKEN_PRESENT == 'true'
+      # Native PR checks on a real merge candidate are required; the App
+      # may merge only if normal protected-main rules and review permit.
+      - name: Merge validated App-authored evidence under protected-main checks
+        if: steps.publication.outputs.pull-request-number != ''
         env:
-          GH_TOKEN: ${{ secrets.MONITOR_AUTOMATION_TOKEN }}
+          GH_TOKEN: ${{ steps.publisher-app.outputs.token }}
           PR_NUMBER: ${{ steps.publication.outputs.pull-request-number }}
         run: |
           set -euo pipefail
