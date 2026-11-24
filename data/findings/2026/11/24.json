@@ -331,6 +331,7 @@
     "evidence_urls": [
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2792",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2744",
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/7a4cfe3e8a09dd5a8f5357319795fd28c32d3032",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/0ef009fbefa1c5880adb49eb9233eee53e7fcd34"
     ],
     "related_repositories": [
@@ -911,8 +912,8 @@
     "urgency": "routine",
     "assurance_impact": "none",
     "repository": "trustoverip/dtgwg-agent-names-tf",
-    "title": "No repository push for 243 days",
-    "summary": "The latest recorded push is 243 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
+    "title": "No repository push for 244 days",
+    "summary": "The latest recorded push is 244 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-agent-names-tf"
     ],
@@ -933,8 +934,8 @@
     "urgency": "routine",
     "assurance_impact": "none",
     "repository": "trustoverip/dtgwg-cred-tf",
-    "title": "No repository push for 96 days",
-    "summary": "The latest recorded push is 96 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
+    "title": "No repository push for 97 days",
+    "summary": "The latest recorded push is 97 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-cred-tf"
     ],
@@ -955,8 +956,8 @@
     "urgency": "routine",
     "assurance_impact": "none",
     "repository": "trustoverip/dtgwg-rcards-tf",
-    "title": "No repository push for 116 days",
-    "summary": "The latest recorded push is 116 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
+    "title": "No repository push for 117 days",
+    "summary": "The latest recorded push is 117 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-rcards-tf"
     ],
@@ -1002,8 +1003,8 @@
     "urgency": "routine",
     "assurance_impact": "none",
     "repository": "trustoverip/dtgwg-ux-tf",
-    "title": "No repository push for 123 days",
-    "summary": "The latest recorded push is 123 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
+    "title": "No repository push for 124 days",
+    "summary": "The latest recorded push is 124 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-ux-tf"
     ],
@@ -1024,8 +1025,8 @@
     "urgency": "routine",
     "assurance_impact": "none",
     "repository": "trustoverip/dtgwg-vds-tf",
-    "title": "No repository push for 116 days",
-    "summary": "The latest recorded push is 116 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
+    "title": "No repository push for 117 days",
+    "summary": "The latest recorded push is 117 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
     "evidence_urls": [
       "https://github.com/trustoverip/dtgwg-vds-tf"
     ],
