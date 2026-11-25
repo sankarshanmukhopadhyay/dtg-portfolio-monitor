@@ -374,8 +374,8 @@
     "urgency": "routine",
     "assurance_impact": "none",
     "repository": "OpenVTC/probablistic-sampling-for-connection-vcs",
-    "title": "No repository push for 104 days",
-    "summary": "The latest recorded push is 104 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
+    "title": "No repository push for 105 days",
+    "summary": "The latest recorded push is 105 days old. Review whether the repository is dormant, transitional, or intentionally stable.",
     "evidence_urls": [
       "https://github.com/OpenVTC/probablistic-sampling-for-connection-vcs"
     ],
@@ -527,6 +527,7 @@
     "title": "chore: release",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2821",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2811",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2808",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2805",
@@ -534,43 +535,17 @@
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2800",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2799",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2792",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/pull/2744",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/6e0ea69ab319ca0a8246f8f9e43d8c4c8b1166b7",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/d9548efbdac3a82f55070c381923fd009f400a88",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/769d49c7023f94bc43b172a8bcd87db6d879259f",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/4e5861d95b799c0910e92a81bec6af17d1578e2d",
       "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/313ca11af489bd2c79450a1a149c9f3c2bd60316",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/7a4cfe3e8a09dd5a8f5357319795fd28c32d3032",
-      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/0ef009fbefa1c5880adb49eb9233eee53e7fcd34"
+      "https://github.com/OpenVTC/verifiable-trust-infrastructure/commit/7a4cfe3e8a09dd5a8f5357319795fd28c32d3032"
     ],
     "related_repositories": [
       "OpenVTC/vta-browser-plugin",
       "trustoverip/dtgwg-cred-spec",
       "trustoverip/dtgwg-trust-tasks-tf"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
-    "finding_id": "14fc4f4f978497361b51",
-    "fingerprint": "14fc4f4f978497361b51a458",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "routine",
-    "assurance_impact": "none",
-    "repository": "OpenVTC/verifiable-trust-network",
-    "title": "chore(deps): Bump vti-vtn from 0.8.0 to 0.9.0",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-network/pull/34"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
     ],
     "state": "open",
     "review_status": "unreviewed",
@@ -593,79 +568,6 @@
     "evidence_urls": [
       "https://github.com/OpenVTC/verifiable-trust-network/pull/37",
       "https://github.com/OpenVTC/verifiable-trust-network/commit/db53c022628880ea87f9bfe09de5fa2d7e80faff"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
-    "finding_id": "4a54caa86791a47a7801",
-    "fingerprint": "4a54caa86791a47a7801c883",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "routine",
-    "assurance_impact": "none",
-    "repository": "OpenVTC/verifiable-trust-network",
-    "title": "chore(deps): Bump trust-tasks-rs from 0.37.5 to 0.37.12",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-network/pull/33",
-      "https://github.com/OpenVTC/verifiable-trust-network/commit/4cf3c6a8636c76cacefe95eff63f01acefa03c14"
-    ],
-    "related_repositories": [
-      "trustoverip/dtgwg-trust-tasks-tf"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
-    "finding_id": "6af4025ae4303b073e09",
-    "fingerprint": "6af4025ae4303b073e092a66",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "routine",
-    "assurance_impact": "none",
-    "repository": "OpenVTC/verifiable-trust-network",
-    "title": "chore(deps): Bump vti-trust-task-server from 0.7.0 to 0.8.0",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-network/pull/35"
-    ],
-    "related_repositories": [
-      "OpenVTC/verifiable-trust-infrastructure"
-    ],
-    "state": "open",
-    "review_status": "unreviewed",
-    "authority": null,
-    "disposition": null,
-    "related_findings": [],
-    "successor_finding": null
-  },
-  {
-    "finding_id": "972c2322585ace49f720",
-    "fingerprint": "972c2322585ace49f7202146",
-    "kind": "material_cross_reference",
-    "severity": "high",
-    "materiality": "high",
-    "urgency": "routine",
-    "assurance_impact": "none",
-    "repository": "OpenVTC/verifiable-trust-network",
-    "title": "chore(deps): Bump vti-secrets from 0.34.0 to 0.35.0",
-    "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
-    "evidence_urls": [
-      "https://github.com/OpenVTC/verifiable-trust-network/pull/32"
     ],
     "related_repositories": [
       "OpenVTC/verifiable-trust-infrastructure"
@@ -738,8 +640,7 @@
     "title": "fix!: verify every VTA reply, and sign the TSP announce",
     "summary": "A material consolidated change unit explicitly references another monitored repository and may require cross-workstream examination.",
     "evidence_urls": [
-      "https://github.com/OpenVTC/vta-mobile-agent-ios/pull/29",
-      "https://github.com/OpenVTC/vta-mobile-agent-ios/commit/bcb1640e9490f44379c48b9b892d9f469518d33b"
+      "https://github.com/OpenVTC/vta-mobile-agent-ios/pull/29"
     ],
     "related_repositories": [
       "OpenVTC/verifiable-trust-infrastructure"
